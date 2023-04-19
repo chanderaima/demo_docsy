@@ -1,4 +1,4 @@
-baseURL = "http://localhost:8080"
+baseURL = "/"
 title = "Demo Site"
 # theme = 'docsy'
 theme = ['docsy', 'reveal-hugo-master']
