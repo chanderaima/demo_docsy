@@ -1,0 +1,15 @@
+{{ if .IsNamedParams }}
+
+
+{{/* {{ $data := index $.Site.Data.questions.data $.Params.data }}
+{{ range $data }} */}}
+{{ range $.Site.Data.questions.data }}
+
+
+{{/* {{ range $.Site.Data.caveats.data.items}} */}}
+
+
+{{ partial "questions-p" . }}
+
+{{- end -}}
+{{ end }}

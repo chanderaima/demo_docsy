@@ -1,0 +1,11 @@
+{{ if .IsNamedParams }}
+
+
+{{/* {{ $data := index $.Site.Data.caveats.data $.Params.data }}
+{{ range $data }} */}}
+{{ range $.Site.Data.caveats.data.items}}
+
+{{ partial "caveats-p" . }}
+
+{{- end -}}
+{{ end }}

@@ -1,0 +1,43 @@
+{{/*
+<script type="text/javascript" charset="utf8" src="/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">
+<script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script> */}}
+
+{{ if .IsNamedParams }}
+<table id="book-table">
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Rating</th>
+            <th>Date Read</th>
+            <th>Pages</th>
+            <th>Fiction</th>
+            <th>Female Author</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ $data := index $.Site.Data.books $.Params.data }}
+        {{ range $data }}
+        <tr>
+            {{ partial "books" . }}
+        </tr>
+        {{ end }}
+    </tbody>
+    <table>
+        {{- end -}}
+
+        <script>
+            $(document).ready(function () {
+                $('#book-table').DataTable({
+                    colReoder: true,
+                    autoFill: true,
+                    buttons: true,
+                    fixedHeader: true,
+                    keyTable: true,
+                    responsive: true,
+                    rowReoder: true
+                });
+            });
+        </script>

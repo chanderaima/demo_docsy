@@ -1,0 +1,11 @@
+{{/* {{ define "main" }} */}}
+<h1>Single Page Template</h1>
+
+<hr>
+{{ range .Site.Data.caveats.data.items }}
+<h3>{{ .title }}</h3>
+<p><b>Description</b>: {{ .text}} </p>
+<p><b>Status</b>: {{ .tab}}</p>
+<p><b>Workaround</b>: {{ .workaround}} </p>
+<hr>
+{{end}}

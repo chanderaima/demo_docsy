@@ -1,0 +1,37 @@
+{{/* {{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ partial "metadata.html" . }}
+<br><br>
+{{ .Content }}
+{{ end }} */}}
+<h1>Single Page Template</h1>
+
+{{/* {{ range .Site.Data._bugs }}
+<hr>
+<h2>{{ .name }}</h2>
+<p><b>Description:</b> {{ .description }}</p>
+<p><b>Date:</b> {{ .date }}</p>
+<p><b>Status:</b> {{ .status }}</p>
+
+<hr>
+{{end}} */}}
+
+
+{{/* {{ range .Site.Data.states.json }}
+
+{{ .name }} <br>
+
+{{end}} */}}
+
+
+
+<hr>
+{{ range .Site.Data.videos.data.content }}
+<h3>{{ .title }}</h3>
+
+{{/* {{< youtube "zJjJuS7LgS8" 1070>}} */}}
+    <p><b>youtubeID</b>: {{ .youtubeID}} </p>
+    <p><b>description</b>: {{ .description}}</p>
+
+    <hr>
+    {{end}}

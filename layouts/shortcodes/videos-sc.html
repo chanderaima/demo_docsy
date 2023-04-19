@@ -1,0 +1,11 @@
+{{ if .IsNamedParams }}
+
+
+{{/* {{ $data := index $.Site.Data.caveats.data $.Params.data }}
+{{ range $data }} */}}
+{{ range $.Site.Data.videos.data.content}}
+
+{{ partial "videos-p" . }}
+
+{{- end -}}
+{{ end }}

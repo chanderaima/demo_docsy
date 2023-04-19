@@ -1,0 +1,1116 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.110.0">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>SSH Commands - Reusable | Cisco Intersight Help Center</title>
+<meta name="description" content="Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the **Invoke SSH Commands** reusable task in the workflows.">
+<meta property="og:title" content="SSH Commands - Reusable" />
+<meta property="og:description" content="Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the **Invoke SSH Commands** reusable task in the workflows." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:8080/docs/ico/executors/ssh-reusable/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-01-28T21:22:54+05:30" />
+<meta property="article:modified_time" content="2022-01-28T21:22:54+05:30" /><meta property="og:site_name" content="Cisco Intersight Help Center" />
+<meta itemprop="name" content="SSH Commands - Reusable">
+<meta itemprop="description" content="Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the **Invoke SSH Commands** reusable task in the workflows."><meta itemprop="datePublished" content="2022-01-28T21:22:54+05:30" />
+<meta itemprop="dateModified" content="2022-01-28T21:22:54+05:30" />
+<meta itemprop="wordCount" content="2815">
+<meta itemprop="keywords" content="SSH," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SSH Commands - Reusable"/>
+<meta name="twitter:description" content="Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the **Invoke SSH Commands** reusable task in the workflows."/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" as="style">
+<link href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/prism.css"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-00000000-0');
+}
+</script>
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"></span><span class="navbar-brand__name">Cisco Intersight Help Center</span></a>
+  <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link active" href="/docs/"><span class="active">Documentation</span></a>
+      </li>
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      <li class="nav-item dropdown mr-4 d-none d-lg-block">
+        
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div></li>
+      </ul>
+  </div>
+  <div class="navbar-nav d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+  </div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <div id="content-mobile">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
+  <div id="content-desktop"></div>
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshome-li">
+  <a href="/docs/home/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docshome"><span class="">Home</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
+  <a href="/docs/getting-started/" title="Overview" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting Started</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedaccount_creation-li">
+  <a href="/docs/getting-started/account_creation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedaccount_creation"><span class="">Account Creation</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedclaimntarget-li">
+  <a href="/docs/getting-started/claimntarget/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedclaimntarget"><span class="">Claim Target</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docswhats_new-li">
+  <a href="/docs/whats_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docswhats_new"><span class="">What&#39;s New</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2023-li">
+  <a href="/docs/whats_new/2023/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2023"><span class="">2023</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2022-li">
+  <a href="/docs/whats_new/2022/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2022"><span class="">2022</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2021-li">
+  <a href="/docs/whats_new/2021/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2021"><span class="">2021</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_newtestdata-li">
+  <a href="/docs/whats_new/testdata/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_newtestdata"><span class="">New What&#39;s New</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsico-li">
+  <a href="/docs/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico"><span class="">Intersight Cloud Ochestrator</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicowokflowdesigner-li">
+  <a href="/docs/ico/wokflowdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner"><span class="">Workflow Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicotaskdesigner-li">
+  <a href="/docs/ico/taskdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicotaskdesigner"><span class="">Task Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicodatatype-li">
+  <a href="/docs/ico/datatype/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicodatatype"><span class="">Data Type</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicowokflowdesigner-copy-li">
+  <a href="/docs/ico/wokflowdesigner-copy/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner-copy"><span class="">Sample Topic</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicocheatsheet-li">
+  <a href="/docs/ico/cheatsheet/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicocheatsheet"><span class="">Template Syntax (Go Template)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoico-li">
+  <a href="/docs/ico/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico"><span class="">Cisco Intersight ICO</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoico-cleanup-li">
+  <a href="/docs/ico/ico-cleanup/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico-cleanup"><span class="">Cisco Intersight ICO - Post-conversion Cleanup</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsicoexecutors-li">
+  <a href="/docs/ico/executors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsicoexecutors"><span class="">Executors</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsansible-li">
+  <a href="/docs/ico/executors/ansible/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible"><span class="">Ansible</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsansible-resuable-li">
+  <a href="/docs/ico/executors/ansible-resuable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible-resuable"><span class="">Ansible Resuable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorspowershell-li">
+  <a href="/docs/ico/executors/powershell/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorspowershell"><span class="">Powershell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsssh-li">
+  <a href="/docs/ico/executors/ssh/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh"><span class="">SSH Commands</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsicoexecutorsssh-reusable-li">
+  <a href="/docs/ico/executors/ssh-reusable/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh-reusable"><span class="td-sidebar-nav-active-item">SSH Commands - Reusable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorssamplefile-li">
+  <a href="/docs/ico/executors/samplefile/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorssamplefile"><span class="">Sample File</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorswebapi-li">
+  <a href="/docs/ico/executors/webapi/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorswebapi"><span class="">WebAPI</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsico_new-li">
+  <a href="/docs/ico_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico_new"><span class="">Hulk 2.0</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues1-li">
+  <a href="/docs/ico_new/newfeatues1/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues1"><span class="">New Features 1</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues3-li">
+  <a href="/docs/ico_new/newfeatues3/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues3"><span class="">New Features 2</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatures2-li">
+  <a href="/docs/ico_new/newfeatures2/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatures2"><span class=""></span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docscaveats-li">
+  <a href="/docs/caveats/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docscaveats"><span class="">Caveats</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfaqs-li">
+  <a href="/docs/faqs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfaqs"><span class="">FAQs</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsvidoes-li">
+  <a href="/docs/vidoes/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsvidoes"><span class="">Videos</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/google/docsy-example/tree/master/content/en/docs/ICO/Executors/ssh-reusable.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines fa-fw"></i> View page source</a>
+  <a href="https://github.com/google/docsy-example/edit/master/content/en/docs/ICO/Executors/ssh-reusable.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/google/docsy-example/new/master/content/en/docs/ICO/Executors/ssh-reusable.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Create child page</a>
+  <a href="https://github.com/google/docsy-example/issues/new?title=SSH%20Commands%20-%20Reusable" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create documentation issue</a>
+  <a href="https://github.com/google/docsy/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create project issue</a>
+  <a id="print" href="http://localhost:8080/docs/ico/executors/_print/"><i class="fa-solid fa-print fa-fw"></i> Print entire section</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#supported-targets">Supported Targets</a></li>
+    <li><a href="#using-the-executor-ssh-commands-reusable-task">Using the Executor SSH Commands Reusable Task</a></li>
+    <li><a href="#using-ssh-commands">Using SSH Commands</a></li>
+    <li><a href="#template-parameters">Template Parameters</a></li>
+    <li><a href="#template-functions">Template Functions</a></li>
+    <li><a href="#template-engine-syntax">Template Engine Syntax</a></li>
+    <li><a href="#response-parser">Response Parser</a></li>
+    <li><a href="#invoke-ssh-command-reusable-task-examples">Invoke SSH Command Reusable Task Examples</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+	
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-tags">
+      
+        <h5 class="taxonomy-title">Tag Cloud</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/data-type/" data-taxonomy-term="data-type"><span class="taxonomy-label">Data Type</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">Executors</span><span class="taxonomy-count">4</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/sample/" data-taxonomy-term="sample"><span class="taxonomy-label">sample</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/ssh/" data-taxonomy-term="ssh"><span class="taxonomy-label">SSH</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/task/" data-taxonomy-term="task"><span class="taxonomy-label">Task</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/test/" data-taxonomy-term="test"><span class="taxonomy-label">test</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/webapi/" data-taxonomy-term="webapi"><span class="taxonomy-label">WebAPI</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/whats-new/" data-taxonomy-term="whats-new"><span class="taxonomy-label">What&#39;s New</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/workflow/" data-taxonomy-term="workflow"><span class="taxonomy-label">Workflow</span><span class="taxonomy-count">9</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-categories">
+      
+        <h5 class="taxonomy-title">Categories</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/examples/" data-taxonomy-term="examples"><span class="taxonomy-label">Examples</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">executors</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/ico/" data-taxonomy-term="ico"><span class="taxonomy-label">ICO</span><span class="taxonomy-count">17</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/placeholders/" data-taxonomy-term="placeholders"><span class="taxonomy-label">Placeholders</span><span class="taxonomy-count">1</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/ico/">Intersight Cloud Ochestrator</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/ico/executors/">Executors</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="http://localhost:8080/docs/ico/executors/ssh-reusable/" aria-disabled="true" class="btn-link disabled">SSH Commands - Reusable</a>
+  </li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>SSH Commands - Reusable</h1>
+	<div class="lead">Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the <strong>Invoke SSH Commands</strong> reusable task in the workflows.</div>
+	<header class="article-meta">
+		
+
+  
+    
+      
+
+
+<div class="taxonomy taxonomy-terms-article taxo-tags">
+  <h5 class="taxonomy-title">Tags:</h5>
+  <ul class="taxonomy-terms">
+    
+      <li><a class="taxonomy-term" href="http://localhost:8080/tags/ssh/" data-taxonomy-term="ssh"><span class="taxonomy-label">SSH</span></a></li>
+    
+  </ul>
+</div>
+
+    
+      
+
+
+<div class="taxonomy taxonomy-terms-article taxo-categories">
+  <h5 class="taxonomy-title">Categories:</h5>
+  <ul class="taxonomy-terms">
+    
+      <li><a class="taxonomy-term" href="http://localhost:8080/categories/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">executors</span></a></li>
+    
+  </ul>
+</div>
+
+    
+  
+
+		
+	</header>    
+	<h1 id="executors--invoke-ssh-commands---reusable-task">Executors – Invoke SSH Commands - Reusable Task</h1>
+<p>The <strong>Invoke SSH Commands</strong> task executes SSH commands against the given Intersight SSH endpoint target.</p>
+<h2 id="supported-targets">Supported Targets</h2>
+<p>The Invoke SSH Commands task can be run only on the targets that are added as an SSH or Ansible endpoint target type in Cisco Intersight.</p>
+<p>To run the SSH Command task on the SSH or Ansible endpoint target from Cisco Intersight, ensure that:</p>
+<ul>
+<li>
+<p>The endpoint is reachable through Intersight Assist.</p>
+</li>
+<li>
+<p>The endpoint target is in the Connected state.</p>
+</li>
+<li>
+<p>The endpoint credentials are valid.</p>
+</li>
+</ul>
+<p>For more information on Intersight Target Claim, see <a href="/help/getting_started/claim_targets#target_claim_using_intersight_assist">Target Claim Using Intersight Assist</a>.</p>
+<h2 id="using-the-executor-ssh-commands-reusable-task">Using the Executor SSH Commands Reusable Task</h2>
+<p>Use the <strong>Invoke SSH Commands</strong> from the <strong>Executors</strong> section in the Intersight Orchestrator Task Designer UI to create a Invoke SSH Commands reusable task.</p>
+<p>For more information on tasks, see <a href="/help/resources/Task_Designer#defining_a_task">Defining a Task</a>.</p>
+<p>The following table explains the Invoke SSH Commands task properties:</p>
+<p>Property</p>
+<p>Description</p>
+<p>General</p>
+<p>For more information, see <a href="/help/resources/Task_Designer#defining_a_task">Defining a Task</a>.</p>
+<p>Inputs</p>
+<p>External Target—The external target on which the SSH commands are run. By default, the External Target task input is created for the task.</p>
+<p>The SSH commands can be run only on targets added as SSH or Ansible endpoint target in Intersight and are in the connected state.</p>
+<p>Outputs</p>
+<p>To extract the required values from the command responses and map it to task outputs, do the following:</p>
+<ol>
+<li>
+<p>Create Task Output—Specify the task output.</p>
+</li>
+<li>
+<p>Map to Task Output—Check the check box to map the task output to an command response.</p>
+</li>
+<li>
+<p>Task Output—Select the command response to which the task output is mapped. The options available are:</p>
+<ul>
+<li>
+<p><em>Exit Code | Invoke SSH Commands</em></p>
+</li>
+<li>
+<p><em>Command Output | Invoke SSH Commands</em></p>
+</li>
+<li>
+<p><em>Command Execution Error| Invoke SSH Commands</em></p>
+</li>
+<li>
+<p><em>Extracted Parameters | Invoke SSH Commands</em></p>
+</li>
+</ul>
+<p>For more information on task outputs, see Executor Output properties.</p>
+</li>
+</ol>
+<p>The following table explains the Invoke SSH Commands executor input:</p>
+<p>Property</p>
+<p>Description</p>
+<p>SSH Command</p>
+<p>The SSH commands that need to be executed on the remote server along with the details of command type.</p>
+<p>Command— The SSH command string to execute against the given target. You need to specify only the command string.</p>
+<p>You can specify multiple commands that need to run on the given target. For more information, see <a href="/help/resources/Executor_SSH#using_ssh_commands">Using SSH Commands</a>.</p>
+<p>Note:</p>
+<p>The command chaining is allowed only when the command type is non-interactive.</p>
+<ul>
+<li>
+<p>Static Value—The SSH commands that are to be run on the remote server.</p>
+<ul>
+<li>
+<p>Non-Interactive Command—The SSH command that does not require user prompts.</p>
+</li>
+<li>
+<p>Interactive Command—The SSH commands that require user prompts. For example, the Sudo or install packages command prompts for the user inputs. To specify the user inputs for the command, do the following:</p>
+<ul>
+<li>
+<p>Expect —The regular expression of the expect prompt of the interactive command. You must provide the complete regular expression of the Expect string and the expression must end with the special character &lsquo;$&rsquo; to match the end of the Expect string.</p>
+</li>
+<li>
+<p>Send—The answer string to the expect prompt. You can specify a string value.</p>
+</li>
+<li>
+<p>End prompt—The regular expression of the Shell Prompt of the remote server or target. You must provide the complete regular expression of the Shell Prompt and it must end with special character &lsquo;$&rsquo; to match the end of the Shell Prompt string.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Direct Mapping—Select an existing task input or task output field.</p>
+<p>You can map only a custom data type of type SSH Command.</p>
+<p>Note:</p>
+<p>Direct mapping of task input or output of string data type is not valid.</p>
+</li>
+<li>
+<p>Advanced Mapping—You can use Go template expressions for advance use cases where data manipulation is required.</p>
+<p>For example, to use substring of the task input StringInput in the SSH command, the advanced mapping can be:</p>
+<pre><code>{Command: &quot;{{Substring .global.task.input.StringInput 5 15}}&quot;, 
+CommandType: &quot;NonInteractiveCmd&quot;}
+</code></pre>
+<p>The <em>CommandType</em> can be `NonInteractiveCmd` and `InteractiveCmd`.</p>
+<p>Following is an example for the &lsquo;InteractiveCmd&rsquo;:</p>
+<pre><code>{
+&quot;Command&quot;: &quot;{{Substring .global.task.input.StringInput 5 15}}&quot;,
+&quot;CommandType&quot;: &quot;InteractiveCmd&quot;,
+&quot;ExpectPrompts&quot;: [
+{
+&quot;Expect&quot;: &quot;Password:\\s+$&quot;,
+&quot;Send&quot;: &quot;dummyValue&quot;
+}
+],
+&quot;ShellPrompt&quot;: &quot;\\[root\\@onprem-appliance\\]\\s+$&quot;
+}
+</code></pre>
+<p>For more information on template functions, see <a href="/help/resources/Executor_SSH_Reusable#template_functions">Template Functions</a>.</p>
+</li>
+</ul>
+<p>Command Timeout</p>
+<p>The command timeout in seconds for the execution of the command against the given endpoint. The range is 10 to 7200 seconds.</p>
+<p>The default timeout value is 600 seconds.</p>
+<ul>
+<li>
+<p>Static Value—The command timeout in seconds for the execution of the command against the given target.</p>
+</li>
+<li>
+<p>Direct Mapping——Select an existing task input or task output field.</p>
+</li>
+<li>
+<p>Transformed Mapping—Allows applying data transformation through a combination of one or more transformation stages for a task&rsquo;s input. In each transformation stage, you can select a transformation function along with its inputs. The transformation stages will be converted into a template.</p>
+</li>
+<li>
+<p>Advanced Mapping—Map a Golang template to the task input. For example, <code>FindAllString</code> function returns a slice of all substrings that match the given regular expression in the given string.</p>
+</li>
+</ul>
+<p>Expected Exit Codes</p>
+<p>The list of expected exit codes for the SSH command that is run by the task. Task status is set to Success if the obtained exit code is present in the list of expected exit codes.</p>
+<p>If this input is not specified, then the default exit code is 0 and is used to determine the status of command execution.</p>
+<ul>
+<li>
+<p>Static Value—The exit code for the SSH command that is run by the task.</p>
+</li>
+<li>
+<p>Direct Mapping—Select the expected exit codes from the task input or task output.</p>
+</li>
+<li>
+<p>Advanced Mapping—Map a Golang template to the task input. For example, <code>FindAllString</code> function returns a slice of all substrings that match the given regular expression in the given string.</p>
+</li>
+</ul>
+<p>Response Parser</p>
+<p>The response parser specification which is used to extract the values from the command response.</p>
+<ul>
+<li>
+<p>Static Value</p>
+<ul>
+<li>
+<p>Regular Expression—The regular expression of the line in the command response where the interested capture value resides. The format to specify the capture value in this input is &lsquo;$<Name of the parameter>&rsquo;. For example, if we need to capture <em>&lsquo;intersight&rsquo;</em> in the sample response &lsquo;<a href="mailto:intersight@cisco.com">intersight@cisco.com</a>&rsquo;, the regular expression looks like $<Name>\@cisco\.com where &lsquo;<em>Name</em>&rsquo; is the name given to this captured parameter.</p>
+</li>
+<li>
+<p>Name—The name of the output under which the captured value is saved. This name should be the same that is provided in the Regular Expression—$<Name>.</p>
+</li>
+<li>
+<p>Type—The response parameter type—String, Integer, Float, or Boolean.</p>
+<p>The default value is String.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Direct Mapping—Select a task input or task output field.</p>
+<p>To create a new Workflow input, select the Create Workflow Input from the drop-down. The Add Input screen appears with auto-populated fields.</p>
+</li>
+<li>
+<p>Advanced Mapping—Map a Golang template to the task input. For example, <code>FindAllString</code> function returns a slice of all substrings that match the given regular expression in the given string.</p>
+</li>
+</ul>
+<p>For more information, see <a href="/help/resources/Executor_SSH#response_parser">Response Parser</a>.</p>
+<p>The following table explains the SSH Command executor Outputs :</p>
+<p>Property</p>
+<p>Description</p>
+<p>Exit Code</p>
+<p>The exit code after the execution of the command against the given endpoint.</p>
+<p>Command Output</p>
+<p>The complete response after the execution of the command against the given endpoint.</p>
+<p>Command Execution Error</p>
+<p>Captures the error encountered while executing the command.</p>
+<p>Extracted Parameters</p>
+<p>The response parser extracted outputs from the command execution response.</p>
+<p>The following table explains the Invoke SSH Commands task Outcomes:</p>
+<p>Property</p>
+<p>Description</p>
+<p>Outcomes</p>
+<p>To set the custom execution status and status message based on the obtained outputs, do the following:</p>
+<ol>
+<li>
+<p>Click Add Outcome.</p>
+</li>
+<li>
+<p>Name—The name for the outcome.</p>
+</li>
+<li>
+<p>Outcome Type—Select the outcome type. The options available are Success, Skip To Success, Error, Terminal Error, Skip Task Execution, or Status.</p>
+<p>For more information on Outcomes, see <a href="/help/resources/Task_Designer#outcomes">Outcomes</a></p>
+</li>
+<li>
+<p>Message—The message when the condition is met.</p>
+</li>
+<li>
+<p>Condition—The condition for the outcome.</p>
+<p>For example, {{eq .global.InvokeSshCommands1.output.ExitCode &ldquo;0&rdquo;}}.</p>
+<p>This condition checks whether the output `ExitCode` of the executor named `InvokeSshCommands1` equals to 0. If the condition is true, the task status is set to the value provided in `Outcome Type` and task status message is set to value provided in `Message`.</p>
+</li>
+</ol>
+<h2 id="using-ssh-commands">Using SSH Commands</h2>
+<p>You can specify multiple commands that need to run on the given target by chaining the commands with special characters. The following table explains the operators.</p>
+<p>Operators</p>
+<p>Function</p>
+<p>&amp;&amp; (Logical AND)</p>
+<p>The command following this operator will only execute if the command preceding this operator has been successfully executed.</p>
+<p>; (Semi-colon)</p>
+<p>The command following this operator will execute even if the command preceding this operator is not successfully executed.</p>
+<p>|| ( Logical OR)</p>
+<p>The command succeeding this operator is only executed if the command preceding it has failed.</p>
+<p>| (Pipe)</p>
+<p>The output of the first command acts as input to the second command.</p>
+<p>! (NOT)</p>
+<p>Negates an expression within a command. It is much like an “except” statement.</p>
+<p>&gt;,&raquo;, &lt; (Redirection)</p>
+<p>Redirects the output of a command or a group of commands to a file or stream.</p>
+<h2 id="template-parameters">Template Parameters</h2>
+<p>The request body template can refer to values from task inputs, previous task outputs, or implicit parameters. The following table explains the template parameters.</p>
+<p>Prefix/Format</p>
+<p>Description</p>
+<pre><code>{{.global.task.input.&lt;ParameterName&gt;}}
+</code></pre>
+<p>Task input reference.</p>
+<pre><code>{{.global.&lt;ExecutorRefName&gt;.output.&lt;ParameterName&gt;}}
+</code></pre>
+<p>Previous executor output reference. <strong>ExecutorRefName</strong> is the name of the previous executor having output <strong>ParameterName</strong>.</p>
+<pre><code>{{.security.AccountMoid}}
+</code></pre>
+<p>Implicit parameter reference to Account MoID under which the workflow is running.</p>
+<pre><code>{{.security.OrganizationMoid}}
+</code></pre>
+<p>Implicit parameter reference to Organization MoID under which the workflow is running.</p>
+<h2 id="template-functions">Template Functions</h2>
+<p>The template engine has in-built functions to transform values before they are populated in the request templates. The following table explains the functions supported in <strong>Invoke SSH Commands</strong> task.</p>
+<p>Function</p>
+<p>Description</p>
+<p>TrimSpace</p>
+<p>Returns a string after removing white spaces from a the string.</p>
+<p>Example:</p>
+<pre><code>{{TrimSpace .global.task.input.HostName}}
+</code></pre>
+<p>ContainsString</p>
+<p>Returns a boolean if a substring is present in a given string.</p>
+<p>Example:</p>
+<pre><code>{{if (ContainsString .global.task.input.SizeAsString \”MB\”)}}Mega Bytes{{else}}Bytes{{end}}
+</code></pre>
+<p>FindAllString</p>
+<p>Returns a slice of substrings matching the regular expression in a given string.</p>
+<p>Example:</p>
+<pre><code>{{(FindAllString .global.task.input.NumberString \”([0-9]+)\”)}}
+</code></pre>
+<p>The above example returns array [“123”, “456”] for input string “123 some text 456.”</p>
+<p>ToJson</p>
+<p>Converts a value to a JSON format.</p>
+<p>Example:</p>
+<pre><code>{{(FindAllString .global.task.input.NumberString \&quot;([0-9]+)\&quot;) | ToJson}}
+</code></pre>
+<p>The above example returns JSON array literal [“123”, “456”] for input string “123 some text 456.”</p>
+<p>AsArray</p>
+<p>Takes in an element and returns an array of one element.</p>
+<p>Example:</p>
+<pre><code>{{AsArray .global.task.output.serverMo}}
+</code></pre>
+<p>The above example returns an array of one server Mo.</p>
+<p>Substring</p>
+<p>Returns a substring within the given index bounds.</p>
+<p>Example:</p>
+<pre><code>{{Substring .global.task.input.StorageId 2 6}}
+</code></pre>
+<p>The above example returns “ABCD” for string “12ABCD3456.”</p>
+<p>IpToCidr</p>
+<p>Returns the classless inter-domain routing (CIDR) notation of an IPv4 address and subnet mask.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span>{{<span style="color:#000">IpToCidr .global.task.input.Ip .global.task.input.Netmask}}</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>The above example returns “10.10.10.10/24” for the input parameters “10.10.10.10” and “255.255.255.0.”</p>
+<p>LookupInSlice</p>
+<p>Checks if a given value is present in given slice or array and returns true if it exists. This function can be used for any value.</p>
+<p>Example:</p>
+<pre><code>{{LookupInSlice .global.task.input.IpAddressList \”10.10.10.10\”}}
+</code></pre>
+<p>The above example returns true for input [”10.10.10.10”, “20.20.20.20”].</p>
+<p>Index</p>
+<p>Returns a value from an array when an input index exists.</p>
+<p>Example:</p>
+<pre><code>{{ index .global.task.input.nodes .global.task.input.idx }} 
+</code></pre>
+<p>In the above example, if nodes is an array of devices and idx is 2, the index function returns the second device in the array.</p>
+<p>Itob</p>
+<p>Converts an integer to a boolean.</p>
+<p>Example:</p>
+<pre><code>{{ Itob global.task.input.OnOffFlip }} 
+</code></pre>
+<p>The above example returns true and false for inputs 1 and 0 respectively.</p>
+<p>Itoa</p>
+<p>Converts a given number to a string value.</p>
+<p>Example:</p>
+<pre><code>{{ Itoa global.task.input.Port }} 
+</code></pre>
+<p>The above example returns “12345” for input 12345.</p>
+<p>Itof</p>
+<p>Converts a given integer to a float value.</p>
+<p>Example:</p>
+<pre><code>{{ Itof global.task.input.Rate }}
+</code></pre>
+<p>The above example returns 15.0 for an input 15.</p>
+<p>Btoa</p>
+<p>Converts a given boolean to a string value.</p>
+<p>Example:</p>
+<pre><code>{{ Btoa global.task.input.OnOffFlip }}
+</code></pre>
+<p>The above example returns “true” for input true.</p>
+<p>Btoi</p>
+<p>Converts a given boolean to a integer value.</p>
+<p>Example:</p>
+<pre><code>{{ Btoi global.task.input.OnOffFlip }}
+</code></pre>
+<p>The above example returns 1 and 0 for inputs true and false respectively.</p>
+<p>Atob</p>
+<p>Converts the given string into a boolean value.</p>
+<p>Example:</p>
+<pre><code>{{ Atob global.task.input.OnOffFlip }}Returns true for input “true”
+</code></pre>
+<p>Atoi</p>
+<p>Converts a given number in string format to the integer type.</p>
+<p>Example:</p>
+<pre><code>{{Atoi .global.task.input.SizeString}} returns integer 2048 for input string “2048”
+</code></pre>
+<p>Ftoa</p>
+<p>Converts a given number into the string form based on the given precision.</p>
+<p>Example:</p>
+<pre><code>{{Ftoa .global.task.input.Size 2}} returns the following output: 123.456 =&gt; “123.45”, 1028 =&gt; “1028.00”
+</code></pre>
+<p>Ftoi</p>
+<p>Converts a given float input to a integer value.</p>
+<p>Example:</p>
+<pre><code>{{ Ftoi global.task.input.Rate }}
+</code></pre>
+<p>The above example returns 15 for an input 15.833.</p>
+<p>Eval</p>
+<p>Supports an expression evaluation function. The below example returns 2GB for a input value of 2048. Note that the second argument is passed as ‘.’ in the template, which represents the map of all parameters.</p>
+<pre><code>{{Eval \&quot;{{.global.task.input.Size}} / 1024\&quot; .}}GB
+</code></pre>
+<h2 id="template-engine-syntax">Template Engine Syntax</h2>
+<p>The template engine uses <code>prefix</code> notation for the statements. In case of operational statements, the operators are specified before the operands. All the operations are invoked after all the operands are evaluated.</p>
+<p><strong>Comparison Statements</strong></p>
+<p>The comparison statements can be written using <strong>eq</strong> (equal check), <strong>ne</strong> (not equal check), <strong>lt</strong> (less than check), <strong>le</strong> (less than or equal check), <strong>gt</strong> (greater than check), and <strong>ge</strong> (greater than or equal check).</p>
+<p>Here is an example that checks the parameter HttpStatusCode is in the client error code range 400 – 500. Note that the template engine supports prefix notation and hence the operators <strong>and</strong>, <strong>ge</strong>, and <strong>lt</strong> are specified before their operands.</p>
+<pre><code>{{and (ge .local.response.HttpStatusCode 400) (lt .local.response.HttpStatusCode 500)}}
+</code></pre>
+<p><strong>Conditional Statements</strong></p>
+<p>The template engine supports conditional statements in prefix notation syntax. This section has some examples of these conditional statements.</p>
+<pre><code>{{if &lt;comparision_statement&gt;}} Template to be used {{end}}
+
+{{if &lt;comparision_statement&gt;}} Template to be used {{else}} Template to be used {{end}}
+
+{{if &lt;comparision_statement&gt;}} Template to be used {{else if &lt;comparision_statement}} Tempalte to be used {{end}}
+</code></pre>
+<h2 id="response-parser">Response Parser</h2>
+<p>A response parser is a collection of parameters that model values to be extracted from the SSH command response.</p>
+<p><strong>Example: Create a response parser to get the IP address for a ping command</strong></p>
+<p>To get the IP address for the host such as <em><a href="https://www.example.com">www.example.com</a></em>, you can use the ping command:</p>
+<p><div class="td-card card">
+  
+  
+  
+  
+  <div class="card-body code p-l0 m-0">
+      <pre tabindex="0"><code>
+    ping example.com -4
+    Pinging example.com [93.184.216.34] with 32 bytes of data:
+    Reply from 93.184.216.34: bytes=32 time=229ms TTL=53
+    Reply from 93.184.216.34: bytes=32 time=230ms TTL=53
+    Reply from 93.184.216.34: bytes=32 time=230ms TTL=53
+    Reply from 93.184.216.34: bytes=32 time=229ms TTL=53ping example.com
+</code></pre>
+  </div>
+</div>
+
+To extract the IP address from the command output for an SSH Command task, you can configure the response parser as:</p>
+<ul>
+<li>
+<p>Regular Expression—Pinging\s+example.com\s+\[$<IP>\]\s+.*</p>
+</li>
+<li>
+<p>Name—IP</p>
+<p>Note:</p>
+<p>This name should be the same that is provided in the Regular Expression field. In the above example, the Regular Expression uses name $<IP> so the Name specified must be &ldquo;IP&rdquo;.</p>
+<p>Type—String</p>
+</li>
+</ul>
+<h2 id="invoke-ssh-command-reusable-task-examples">Invoke SSH Command Reusable Task Examples</h2>
+<p><strong>Example 1: Create a reusable SSH Command task to list the current working directory on the host</strong></p>
+<p>This example task runs on an Intersight SSH endpoint target. This task runs the <em>pwd</em> command on the SSH endpoint target and obtains the current working directory in the output.</p>
+<p>Property</p>
+<p>Description</p>
+<p>General</p>
+<ul>
+<li>
+<p>Organization—The organization that you are creating the task in.</p>
+</li>
+<li>
+<p>Display Name—A user friendly short name to identify the task definition.</p>
+</li>
+<li>
+<p>Reference Name—The name of the Task definition.</p>
+</li>
+</ul>
+<p>Inputs</p>
+<ul>
+<li>
+<p>External Target—By default, the External Target task input is created for the task.</p>
+<ul>
+<li>
+<p>Reference Name—Target</p>
+</li>
+<li>
+<p>Type—Target Data Type</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Outputs</p>
+<ul>
+<li>
+<p>ExitCode—Task output</p>
+<ul>
+<li>
+<p>Reference Name—ExitCode</p>
+</li>
+<li>
+<p>Type—String</p>
+</li>
+<li>
+<p>Map to Task Output—<em>Exit Code | Invoke SSH Command</em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Response—Task output</p>
+<ul>
+<li>
+<p>Reference Name—Response</p>
+</li>
+<li>
+<p>Type—String</p>
+</li>
+<li>
+<p>Map to Task Output—<em>Command Output| Invoke SSH Command</em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Lastline—Task output</p>
+<ul>
+<li>
+<p>Reference Name—Response</p>
+</li>
+<li>
+<p>Type—String</p>
+</li>
+<li>
+<p>Map to Task Output—<em>Extracted Parameters | Invoke SSH Command</em> - <em>WorkingDirectory</em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Error—Task output</p>
+<ul>
+<li>
+<p>Reference Name—Error</p>
+</li>
+<li>
+<p>Type—String</p>
+</li>
+<li>
+<p>Map to Task Output—<em>Extracted Parameters | Invoke SSH Command</em> - <em>CommandExecutionError</em></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>The following table explains the Invoke SSH Command executor inputs:</p>
+<p>Property</p>
+<p>Description</p>
+<p>SSH Command</p>
+<p>Static | Non-interactive—Command—pwd</p>
+<p>Command Timeout</p>
+<p>Default value.</p>
+<p>Expected Exit Codes</p>
+<p>Default value.</p>
+<p>Response Parser</p>
+<p>When you run the pwd command, you get the following output:</p>
+<pre><code>$pwd
+/home/user
+</code></pre>
+<p>To extracts the path and display it, configure the response parser as:</p>
+<ul>
+<li>
+<p>Regular Expression—$<WorkingDirectory></p>
+</li>
+<li>
+<p>Name—WorkingDirectory</p>
+</li>
+<li>
+<p>Type—String</p>
+</li>
+</ul>
+<p>The configured response parser captures the entire response line.</p>
+<p><strong>Example 2: Create a reusable SSH Command task to install jq Linux command line utility on a host using interactive SSH commands</strong></p>
+<p>This example task runs on an Intersight SSH endpoint target. In this task, the <em>Sudo</em> password is provided by the command input field, and jq Linux command line utility is installed on the SSH endpoint target.</p>
+<p>The task properties required for this example are as following:</p>
+<p>Property</p>
+<p>Description</p>
+<p>General</p>
+<ul>
+<li>
+<p>Organization—The organization that you are creating the task in.</p>
+</li>
+<li>
+<p>Display Name—A user friendly short name to identify the task definition.</p>
+</li>
+<li>
+<p>Reference Name—The name of the Task definition.</p>
+</li>
+</ul>
+<p>Inputs</p>
+<ul>
+<li>
+<p>External Target—By default, the External Target task input is created for the task.</p>
+<ul>
+<li>
+<p>Reference Name—Target</p>
+</li>
+<li>
+<p>Type—Target Data Type</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Outputs</p>
+<ul>
+<li>
+<p>ExitCode—Task output</p>
+<ul>
+<li>
+<p>Reference Name—ExitCode</p>
+</li>
+<li>
+<p>Type—String</p>
+</li>
+<li>
+<p>Map to Task Output—<em>Exit Code | Invoke SSH Command</em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Response—Task output</p>
+<ul>
+<li>
+<p>Reference Name—Response</p>
+</li>
+<li>
+<p>Type—String</p>
+</li>
+<li>
+<p>Map to Task Output—<em>Command Output| Invoke SSH Command</em></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>The following table explains the Invoke SSH Command executor inputs:</p>
+<p>Property</p>
+<p>Description</p>
+<p>SSH Command</p>
+<p>Static | Interactive—Command—<em>sudo yum install -y jq</em> | Interactive</p>
+<ul>
+<li>
+<p>Expect—The Expect string obtained while executing the SSH command is <em>[sudo]</em> password for <em>qali:</em>. You need to specify the Expect input as the regular expression of the Obtained prompt <em>\[sudo\]\spassword\sfor\sqali:\s$</em>.</p>
+</li>
+<li>
+<p>Send—<em>testPasswd</em>.</p>
+</li>
+<li>
+<p>Shell Prompt—The shell prompt obtained before executing the SSH command is <em>qali@automationvm-15:~$</em>. You need to specify the regular expression of the obtained shell prompt <em>qali\@automationvm-15:~\$\s?$</em>.</p>
+</li>
+</ul>
+<p>Command Timeout</p>
+<p>Default value.</p>
+<p>Expected Exit Codes</p>
+<p>Default value.</p>
+<p>Response Parser</p>
+<p>Default value.</p>
+
+	
+	
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="User mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/twitter" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/stack" aria-label="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/slack" aria-label="Slack">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Developer mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2023 Cisco Systems All Rights Reserved</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
+	
+		<p class="mt-2"><a href="/about/">About Goldydocs</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha512-E/owfVh8/U1xwhvIT4HSI064DRc1Eo/xf7AYax84rt9gVqA8tc/JNH/lvTl1tuw9PUHQIMGUtObkjYkgRjFqAA==" crossorigin="anonymous"></script>
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src='/js/deflate.js'></script>
+<script src="/js/main.min.0df8230201e8a69481dceaf8138a4187f74aaa2cbd4771f365bdf85869c9d57a.js" integrity="sha256-DfgjAgHoppSB3Or4E4pBh/dKqiy9R3HzZb34WGnJ1Xo=" crossorigin="anonymous"></script>
+<script src='/js/prism.js'></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

@@ -1,0 +1,1829 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.110.0">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Caveats | Cisco Intersight Help Center</title>
+<meta name="description" content="CSCwb90747 - Intersight Cloud Orchestrator: HSM Enabled field goes to disabled state even after enabling in the UI.Status: Resolved
+Date: August 11, 2022
+Workaround: For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.
+CSCwb45235 - Intersight Cloud Orchestrator: Support for variables mapping to and from serial loop tasks.">
+<meta property="og:title" content="Caveats" />
+<meta property="og:description" content="CSCwb90747 - Intersight Cloud Orchestrator: HSM Enabled field goes to disabled state even after enabling in the UI.Status: Resolved
+Date: August 11, 2022
+Workaround: For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.
+CSCwb45235 - Intersight Cloud Orchestrator: Support for variables mapping to and from serial loop tasks." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:8080/docs/caveats/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-01-28T15:53:12+00:00" />
+<meta property="article:modified_time" content="2022-01-28T15:53:12+00:00" /><meta property="og:site_name" content="Cisco Intersight Help Center" />
+<meta itemprop="name" content="Caveats">
+<meta itemprop="description" content="CSCwb90747 - Intersight Cloud Orchestrator: HSM Enabled field goes to disabled state even after enabling in the UI.Status: Resolved
+Date: August 11, 2022
+Workaround: For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.
+CSCwb45235 - Intersight Cloud Orchestrator: Support for variables mapping to and from serial loop tasks."><meta itemprop="datePublished" content="2022-01-28T15:53:12+00:00" />
+<meta itemprop="dateModified" content="2022-01-28T15:53:12+00:00" />
+<meta itemprop="wordCount" content="8189">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Caveats"/>
+<meta name="twitter:description" content="CSCwb90747 - Intersight Cloud Orchestrator: HSM Enabled field goes to disabled state even after enabling in the UI.Status: Resolved
+Date: August 11, 2022
+Workaround: For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.
+CSCwb45235 - Intersight Cloud Orchestrator: Support for variables mapping to and from serial loop tasks."/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" as="style">
+<link href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/prism.css"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-00000000-0');
+}
+</script>
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"></span><span class="navbar-brand__name">Cisco Intersight Help Center</span></a>
+  <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link active" href="/docs/"><span class="active">Documentation</span></a>
+      </li>
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      <li class="nav-item dropdown mr-4 d-none d-lg-block">
+        
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div></li>
+      </ul>
+  </div>
+  <div class="navbar-nav d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+  </div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <div id="content-mobile">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
+  <div id="content-desktop"></div>
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshome-li">
+  <a href="/docs/home/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docshome"><span class="">Home</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
+  <a href="/docs/getting-started/" title="Overview" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting Started</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedaccount_creation-li">
+  <a href="/docs/getting-started/account_creation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedaccount_creation"><span class="">Account Creation</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedclaimntarget-li">
+  <a href="/docs/getting-started/claimntarget/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedclaimntarget"><span class="">Claim Target</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docswhats_new-li">
+  <a href="/docs/whats_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docswhats_new"><span class="">What&#39;s New</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2023-li">
+  <a href="/docs/whats_new/2023/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2023"><span class="">2023</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2022-li">
+  <a href="/docs/whats_new/2022/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2022"><span class="">2022</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2021-li">
+  <a href="/docs/whats_new/2021/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2021"><span class="">2021</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_newtestdata-li">
+  <a href="/docs/whats_new/testdata/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_newtestdata"><span class="">New What&#39;s New</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsico-li">
+  <a href="/docs/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico"><span class="">Intersight Cloud Ochestrator</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicowokflowdesigner-li">
+  <a href="/docs/ico/wokflowdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner"><span class="">Workflow Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicotaskdesigner-li">
+  <a href="/docs/ico/taskdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicotaskdesigner"><span class="">Task Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicodatatype-li">
+  <a href="/docs/ico/datatype/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicodatatype"><span class="">Data Type</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicowokflowdesigner-copy-li">
+  <a href="/docs/ico/wokflowdesigner-copy/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner-copy"><span class="">Sample Topic</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicocheatsheet-li">
+  <a href="/docs/ico/cheatsheet/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicocheatsheet"><span class="">Template Syntax (Go Template)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoico-li">
+  <a href="/docs/ico/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico"><span class="">Cisco Intersight ICO</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoico-cleanup-li">
+  <a href="/docs/ico/ico-cleanup/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico-cleanup"><span class="">Cisco Intersight ICO - Post-conversion Cleanup</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsicoexecutors-li">
+  <a href="/docs/ico/executors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsicoexecutors"><span class="">Executors</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorsansible-li">
+  <a href="/docs/ico/executors/ansible/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible"><span class="">Ansible</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorsansible-resuable-li">
+  <a href="/docs/ico/executors/ansible-resuable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible-resuable"><span class="">Ansible Resuable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorspowershell-li">
+  <a href="/docs/ico/executors/powershell/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorspowershell"><span class="">Powershell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorsssh-li">
+  <a href="/docs/ico/executors/ssh/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh"><span class="">SSH Commands</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorsssh-reusable-li">
+  <a href="/docs/ico/executors/ssh-reusable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh-reusable"><span class="">SSH Commands - Reusable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorssamplefile-li">
+  <a href="/docs/ico/executors/samplefile/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorssamplefile"><span class="">Sample File</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorswebapi-li">
+  <a href="/docs/ico/executors/webapi/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorswebapi"><span class="">WebAPI</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsico_new-li">
+  <a href="/docs/ico_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico_new"><span class="">Hulk 2.0</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues1-li">
+  <a href="/docs/ico_new/newfeatues1/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues1"><span class="">New Features 1</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues3-li">
+  <a href="/docs/ico_new/newfeatues3/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues3"><span class="">New Features 2</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatures2-li">
+  <a href="/docs/ico_new/newfeatures2/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatures2"><span class=""></span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docscaveats-li">
+  <a href="/docs/caveats/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docscaveats"><span class="td-sidebar-nav-active-item">Caveats</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfaqs-li">
+  <a href="/docs/faqs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfaqs"><span class="">FAQs</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsvidoes-li">
+  <a href="/docs/vidoes/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsvidoes"><span class="">Videos</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/google/docsy-example/tree/master/content/en/docs/caveats.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines fa-fw"></i> View page source</a>
+  <a href="https://github.com/google/docsy-example/edit/master/content/en/docs/caveats.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/google/docsy-example/new/master/content/en/docs/caveats.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Create child page</a>
+  <a href="https://github.com/google/docsy-example/issues/new?title=Caveats" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create documentation issue</a>
+  <a href="https://github.com/google/docsy/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create project issue</a>
+  <a id="print" href="http://localhost:8080/docs/_print/"><i class="fa-solid fa-print fa-fw"></i> Print entire section</a>
+
+</div>
+
+            
+            
+
+	
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-tags">
+      
+        <h5 class="taxonomy-title">Tag Cloud</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/data-type/" data-taxonomy-term="data-type"><span class="taxonomy-label">Data Type</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">Executors</span><span class="taxonomy-count">4</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/sample/" data-taxonomy-term="sample"><span class="taxonomy-label">sample</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/ssh/" data-taxonomy-term="ssh"><span class="taxonomy-label">SSH</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/task/" data-taxonomy-term="task"><span class="taxonomy-label">Task</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/test/" data-taxonomy-term="test"><span class="taxonomy-label">test</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/webapi/" data-taxonomy-term="webapi"><span class="taxonomy-label">WebAPI</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/whats-new/" data-taxonomy-term="whats-new"><span class="taxonomy-label">What&#39;s New</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/workflow/" data-taxonomy-term="workflow"><span class="taxonomy-label">Workflow</span><span class="taxonomy-count">9</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-categories">
+      
+        <h5 class="taxonomy-title">Categories</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/examples/" data-taxonomy-term="examples"><span class="taxonomy-label">Examples</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">executors</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/ico/" data-taxonomy-term="ico"><span class="taxonomy-label">ICO</span><span class="taxonomy-count">17</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/placeholders/" data-taxonomy-term="placeholders"><span class="taxonomy-label">Placeholders</span><span class="taxonomy-count">1</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="http://localhost:8080/docs/caveats/" aria-disabled="true" class="btn-link disabled">Caveats</a>
+  </li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Caveats</h1>
+	
+	<header class="article-meta">
+		
+
+  
+    
+      
+
+
+    
+      
+
+
+    
+  
+
+		
+	</header>    
+	
+
+
+
+
+
+<div>
+    <h3> CSCwb90747 - Intersight Cloud Orchestrator: HSM Enabled field goes to disabled state even after enabling in the UI.</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> August 11, 2022</p>
+    <p><b>Workaround:</b> For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb45235 - Intersight Cloud Orchestrator: Support for variables mapping to and from serial loop tasks.</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> August 11, 2022</p>
+    <p><b>Workaround:</b> Variable support is added for Serial Loop.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb30421 - Intersight Cloud Orchestrator: Workflow execution terminates if input array size is less than the loop count or condition.</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> August 11, 2022</p>
+    <p><b>Workaround:</b> Workflow execution continues when input array size is less than the loop count or condition.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb20925  - Intersight Managed Mode: Server Inventory fails to display the latest Server Certificate.</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> August 25, 2022</p>
+    <p><b>Workaround:</b> In Cisco UCS B-Series servers, the Server Inventory Page does not display the latest Server Certificate due to delayed Unified Endpoint Management (UEM) events.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz44489 - Intersight Managed Mode: The Not Deployed Changes message is not displayed when the UUID property is modified.</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 3, 2022</p>
+    <p><b>Workaround:</b> When the UUID property is modified for a previously deployed Server Profile, the server profile status shows OK instead of Not Deployed Changes</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa44246 - Intersight Managed Mode: Out-of-Band IP address on an Intersight Managed Mode server becomes unreachable after Fabric Interconnect reboot</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 3, 2022</p>
+    <p><b>Workaround:</b> The Out-of-Band IP address configured on an Intersight Managed Mode server using the IMC Access policy becomes unreachable after Fabric Interconnect reboot.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz25126 - Intersight Managed Mode: The power consumption reading of UCSX-210C-M6 server is lower than the actual power that the server consumes.</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> December 2, 2021</p>
+    <p><b>Workaround:</b> When the UCSX-210C-M6 server is powered on, the power consumption reading is lower than the actual power that the server consumes. The difference amount is -7% to -8% of the actual power.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz36957 - Intersight Managed Mode: The server UUID defined during server profile deployment is not displayed on the Server Inventory page for Cisco UCS C-series servers.</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> October 26, 2021</p>
+    <p><b>Workaround:</b> When the server profile deployment is complete, the latest UUID is not displayed on the Server Inventory page, even after the server restart. This issue is specifically observed on Cisco UCS C-series servers.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz08702 - Intersight Managed Mode: NVMe controllers are not displayed on the HCL Validation page</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> October 14, 2021</p>
+    <p><b>Workaround:</b> The Non-Volatile Memory Express (NVMe) controllers are not displayed in HCL Validation page. However, the controllers are displayed in the Server Inventory page. This will result in incorrect HCL evaluation.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv50863 – Intersight Managed Mode: ISO mapping fails when port numbers are explicitly mentioned in NI-HUU or NI-SCU config files</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> October 14, 2021</p>
+    <p><b>Workaround:</b> Upgrade from a custom port is not supported for servers running software version earlier than Cisco IMC 4.0(4m).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz84786 - Infrastructure: On the Software Downloads page, the tabs are not clickable for the existing users</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> October 14, 2021</p>
+    <p><b>Workaround:</b> The existing users are not able to click the tabs present on the Software Downloads page. New users do not face this issue.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz25321 - Intersight Managed Mode: Python OS Discovery Tool (ODT) fails on UCSX 210C M6 servers for Linux OS</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> October 7, 2021</p>
+    <p><b>Workaround:</b> Python ODT is currently not supported on UCSX 210C M6 servers for the Linux OS that includes Red Hat Enterprise Linux (RHEL), SUSE Linux Enterprise Server(SLES), Ubuntu Sever, CentOS, and Oracle Linux. This will result in ODT script failure.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz72536 - Infrastructure: Organization edit operation is not working as expected</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> October 1, 2021</p>
+    <p><b>Workaround:</b> While editing the Organization name results in removal of the Resource Groups and editing the Organization name along with unselecting/selecting the Resource Group, results in the Organization edit page becoming unresponsive.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy00846 - Intersight Managed Mode: The user configuration on blades may be lost when there is a power outage to a rack hosting the Fabric Interconnect and Chassis</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 30, 2021</p>
+    <p><b>Workaround:</b> When there is a power outage to a rack, all user configuration on the blade servers may be lost.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz48955 - Intersight Virtual Appliance: The APIDocs for Storage Policy is not in sync with the UI and API</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 30, 2021</p>
+    <p><b>Workaround:</b> You can now fetch and modify Storage policies using APIDocs URI</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvu88769 - Infrastructure: The embedded installation mode fails when using file server with domain name</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 23, 2020</p>
+    <p><b>Workaround:</b> The embedded installation mode fails when using file server with domain name.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv61398 - Infrastructure: Target claim fails if the password for the admin login includes any of the XML reserved</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 23, 2020</p>
+    <p><b>Workaround:</b> The issue of target claim failing if the password for the admin login includes any of the XML reserved characters (&amp;, &lt;, &gt;, “, ‘) has been resolved.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz46580 - Intersight Managed Mode: vKVM SSO login might show Login denied after the system time is changed on Cisco IMC</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 23, 2020</p>
+    <p><b>Workaround:</b> vKVM SSO login might show Login denied after the system time is changed on the Cisco IMC version between 4.1(3a) and 4.1(3d).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz14268 – Intersight Managed Mode: For the cluster Fabric Interconnect, redeployment of the server profile fails on the rack server</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 23, 2020</p>
+    <p><b>Workaround:</b> Redeployment of the server profile on the rack server fails with the error that the Domain Profile is not associated with the Fabric Interconnects to which the server is attached. This error appears even though the Domain Profile was deployed on the Fabric Interconnects</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy77588 – Intersight Managed Mode: M6 servers in IMM do not show the local disks during server discovery</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 16, 2021</p>
+    <p><b>Workaround:</b> The M6 servers in IMM do not show the local disks on server discovery after decommissioning/recommissioning.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz22743 - Intersight Managed Mode: Direct upgrade fails for M6 server when the proxy is not set in the Device Connector</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 2, 2021</p>
+    <p><b>Workaround:</b> Direct upgrade of M6 standalone servers fails if the proxy is not set on the device connector.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz14208 – Intersight Managed Mode: The Replace option is not available in the Detailed View page of the Fabric Interconnect that is to be replaced</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> July 30, 2021</p>
+    <p><b>Workaround:</b> Replace Fabric Interconnect and Replace UCS Domain options are added to the Actions menu in the Fabric Interconnect Detailed View page.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy65585 - Intersight Managed Mode: Physical disk and Virtual Drives states are not updated in Server inventory report</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> July 22, 2021</p>
+    <p><b>Workaround:</b> For M6 standalone servers, the state of the physical drives and virtual disks is not updated even after the storage policy is deployed. The virtual drive creation and set state actions are carried out, and the drive state alone is not updated in Server inventory page. This behavior is observed with firmware 4.2(1a). The fix is expected in 4.2(1b).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy50227 – Intersight Managed Mode: Upgrade Impact Error is observed when EFT image is selected for an upgrade</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> June 10, 2021</p>
+    <p><b>Workaround:</b> The selected image appears invalid when the user tries an upgrade using an EFT firmware bundle.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy21552 - Intersight Managed Mode: BIOS POST is pending during upgrade of Cisco UCS B200 M5 Blade Server for more than 12 minutes</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> June 9, 2021</p>
+    <p><b>Workaround:</b> The upgrade of Cisco UCS B200 M5 Blade Server is failed with timeout error as the BIOS POST was in pending status for more than 12 minutes. This issue is resolved in the infrastructure B and C bundles 4.1(3e).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy31340 - Security: Migration of One Identity to the identity provider Okta is complete</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> June 3, 2021</p>
+    <p><b>Workaround:</b> Multi-Factor Authentication now works for all Cisco domain users.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv35790 - Intersight Managed Mode: Tunneled vKVM fails when using server firmware version 4.1(2a)</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 25, 2021</p>
+    <p><b>Workaround:</b> Tunneled vKVM fails when using server firmware version 4.1(2a).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx43924 – Intersight Managed Mode: The discovery workflow of rack server gets into a loop and fails</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 20, 2021</p>
+    <p><b>Workaround:</b> When the firmware 4.1(3a) or 4.1(3b), is running on the endpoint, the discovery workflow of rack server may get into a loop and fails. </p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy35774 - Intersight Managed Mode: Launch of Tunneled vKVM fails with specific hostname format</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 18, 2021</p>
+    <p><b>Workaround:</b> Tunneled vKVM fails to launch with hostnames in the format of www.intersight.com or {account_moid}.intersight.com.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx39905 – Intersight Managed Mode: All the assigned policies may not sync when template configured with all the supported policies is attached to a Server Profile</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 13, 2021</p>
+    <p><b>Workaround:</b> When an imported standalone server profile is attached to a standalone server template configured with a completely different set of policies, then some of the server template policies may not sync to the server profile.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvt20882 – Intersight Managed Mode: Chrome browser throws an error and does not let the user to proceed and launch KVM</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 13, 2021</p>
+    <p><b>Workaround:</b> This failure is due to stronger security restrictions in the browser for a self-signed server certificate. Trying another browser that allows such exceptions, such as Firefox, can solve the issue.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy08053 – Intersight Managed Mode: The false HDD missing alarms are displayed on servers</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 5, 2021</p>
+    <p><b>Workaround:</b> Though the HDD is not removed, the EquipmentFruMissing alarm is displayed.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx16605 - Infrastructure: The health status of a server or Fabric Interconnect is updated in the Cisco Intersight user interface, whereas the health status does not synchronize to the device console</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 6, 2021</p>
+    <p><b>Workaround:</b> The health status of a server or Fabric Interconnect is updated in the Cisco Intersight user interface, whereas the health status does not synchronize to the device console.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx58446 - UCSM Managed Mode: The UMM server upgrade workflow fails at the firmware image download stage</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 29, 2021</p>
+    <p><b>Workaround:</b> The UMM server upgrade workflow fails at the firmware image download stage.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx01686 - Infrastructure: State cannot be set for the physical drives on M.2 controller</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 22, 2021</p>
+    <p><b>Workaround:</b> Set State action of MSTOR-RAID/M.2 controller on physical disk tab is disabled.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa77606 - Kubernetes: Error while deleting worker node groups</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 10, 2022</p>
+    <p><b>Workaround:</b> An error occurs when you delete a Worker Node Group from the Worker Node Pools Configuration screen.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz66973 - Kubernetes: Unable to change a VM configuration</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 10, 2022</p>
+    <p><b>Workaround:</b> VM resizing is not supported.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy59071 - Kubernetes: Missing privileges for the Kubernetes Operator role</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 10, 2022</p>
+    <p><b>Workaround:</b> A user with the Kubernetes Operator role is not able to download the KubeConfig and deploy add-ons to an existing clusters.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa69598 - Kubernetes: Hyperlinks to the optional add-ons are disabled</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 03, 2022</p>
+    <p><b>Workaround:</b> Hyperlinks to the optional add-ons such as Grafana, Kubernetes Dashboard, and SMM Dashboard, are disabled in the Operate tab of the Cluster Details page.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa51286 - Kubernetes: Prometheus crashes repeatedly when Persistent Volume exceeds the configured storage capacity</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 03, 2022</p>
+    <p><b>Workaround:</b> Prometheus crashes repeatedly when you use Persistent Volume with the default size of 20 GB.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa25562 - Kubernetes: Add-on installation fails after an incomplete uninstall</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 03, 2022</p>
+    <p><b>Workaround:</b> If an add-on is not completely uninstalled, a subsequent add-on installation will fail. Even though the ‘helm -n iks ls` list command does not list any add-on resources, it is possible that some of the resources are not removed. This issue causes a subsequent add-on installation to fail.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz24357 - Kubernetes: Add-on URLs do not work</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 03, 2022</p>
+    <p><b>Workaround:</b> If more than 1 LoadBalancer IP address is assigned to a cluster, the add-on URL does not work.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz99130 - Kubernetes: Status and address information is missing from IKS inventory collection</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 03, 2022</p>
+    <p><b>Workaround:</b> The IKS inventory collection is dropping data about the node status and IP addresses due to misconfiguration of the inventory yaml.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz88105 - Kubernetes: Add-on installations fail with custom Namespace and Overrides configuration</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 03, 2022</p>
+    <p><b>Workaround:</b> Installation of the Dashboard, Monitor, and SMM add-on fails on tenant clusters that are configured with a custom Namespace or an Override settings.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy37909 - Kubernetes: essential-vsphere-csi custom resource fails</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 03, 2022</p>
+    <p><b>Workaround:</b> Occasionally, the essential-vsphere-csi HelmChart custom resource fails due to a race condition.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz25142 - Kubernetes: Pagination issue in the Kubernetes cluster table</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 19, 2021</p>
+    <p><b>Workaround:</b> The Kubernetes cluster table displays 10 clusters at a time. Selection of clusters for a bulk action is limited to 10 because the next page, and previous page buttons are disabled.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvw81794 - Kubernetes: Unable to parse / in the network name</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 19, 2021</p>
+    <p><b>Workaround:</b> While creating an Infrastructure Provider policy, IKS VM creation fails if you use the / in the input to the Interface field.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx27447 - Kubernetes: Push cached images to tenant registry</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 19, 2021</p>
+    <p><b>Workaround:</b> When you import a new VM template into vCenter, it has a name format that is shorter because “ubuntu” is replaced with “u”. This consumes additional storage space.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvw50943 - Kubernetes: Incorrect style applied to Create button in the Infra Provider Policy page</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 19, 2021</p>
+    <p><b>Workaround:</b> The Create button in the Infra Provider Policy page is enabled even if the mandatory fields are not filled. Moreover, there are no error messages displayed when you click the Create button without entering the mandatory fields. This is a button styling issue.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx41865 - Intersight Managed Mode: The deployment of Server Profile fails with an error- UnconfigureSingleVeth failed with error : Commit request failed</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 13, 2021</p>
+    <p><b>Workaround:</b> After recommission or decommission of chassis, the deployment of server profile on a server may fail with an error - - UnconfigureSingleVeth failed with error : Commit request failed. This issue is resolved in Release 4.1(3c).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv23834 – Intersight Managed Mode: vHBA bound vETH&#39;s VLAN do not change after modification of FCoE VLAN, resulting in hosts losing SAN connection</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 2, 2021</p>
+    <p><b>Workaround:</b> When an FCoE VLAN of a VSAN is modified in the domain profile, the hosts that are using the VSAN lose SAN connectivity.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa76782 - Kubernetes: API DELETE of Kubernetes NodeGroup fails</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 18, 2022</p>
+    <p><b>Workaround:</b> If you issue a REST API DELETE for a Kubernetes NodeGroupProfile that has NodeProfiles in the Nodes property, you will see a 202 HTTP response (delete accepted). A workflow will be initiated, and it will conclude with a COMPLETED status, however, the NodeGroupProfile is not deleted.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx72042 - Kubernetes: Add-on data is not displayed in the Cluster Details page</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 2, 2021</p>
+    <p><b>Workaround:</b> The data of the deployed add-ons is not displayed in the Monitor and Operate tabs of the Cluster Details page.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx76462 - Kubernetes: Ingress IP address changes on scale or upgrade</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 2, 2021</p>
+    <p><b>Workaround:</b> The virtual IP address of Nginx ingress might not be retained after a tenant upgrade.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx01762 - Intersight Managed Mode: Locator LED operation is not working for FEX</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> March 5, 2021</p>
+    <p><b>Workaround:</b> The FEX LED operation is not working from both the API and the GUI.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv81281 - Cloud Orchestration: Hitachi - Missing Data Reduction and Provisioned fields in main view</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 25, 2021</p>
+    <p><b>Workaround:</b> Data Reduction and Provisioned fields available under Intersight &gt; Operate &gt; Storage for Hitachi targets managed via Intersight display null values.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx40544 - HyperFlex: Server firmware upgrade for HyperFlex Edge clusters may fail when all servers in the cluster are not claimed in Intersight</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 25, 2021</p>
+    <p><b>Workaround:</b> An error message is now available in the Intersight UI to indicate that all the servers must be claimed for a successful server firmware upgrade.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx36564 - Infrastructure: iSCSI Boot policy creation fails with Auto Target Source and Auto Initiator IP Source options</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 18, 2021</p>
+    <p><b>Workaround:</b> When you create an iSCSI Boot policy with “Auto” target source type, policy creation fails with the following error “Failed to create a policy iSCSI Boot”. A similar error is seen when you create an iSCSI Boot policy with &#34;Static&#34; target source type with &#34;Auto&#34; Initiator IP Source.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx03750 - Infrastructure: Unable to create network connectivity policy with only IPv6 address</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> February 15, 2021</p>
+    <p><b>Workaround:</b> The user is unable to create a network connectivity policy exclusively with IPv6 address. This issue is found both in the user interface and in the API.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx13383 - Intersight Managed Mode: The default value of Tunneled vKVM is toggled to the on state on resetting the device connector</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> January 26, 2021</p>
+    <p><b>Workaround:</b> Tunneled vKVM is toggled to the off state for all servers to rectify this issue.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv64458 - Intersight Virtual Appliance: In the Cisco Intersight Virtual Appliance release, 1.0.9-164, UCS Firmware Upgrade images fail to display in the UI</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> December 9, 2020</p>
+    <p><b>Workaround:</b> UCS Firmware Upgrade images fail to display in the UI in the Cisco Intersight Virtual Appliance release, 1.0.9-164.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvt61722 - Infrastructure: Unexpected errors are seen if System QoS policy is not selected during UCS Domain profile creation</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> October 29, 2020</p>
+    <p><b>Workaround:</b> UCS Domain profile creation for Intersight Managed targets are allowed without selecting System QoS Policy</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv13330 - Infrastructure: User cannot NTP, Network Connectivity and Syslog policies for Domain Profile in an account at Cisco Intersight Base license</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 8, 2020</p>
+    <p><b>Workaround:</b> User cannot use NTP, Network Connectivity and Syslog policies for Domain Profile in an account at Cisco Intersight Base license.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvs96324 - Infrastructure: Port policy configuration option is shown for Server Administrators</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> September 4, 2020</p>
+    <p><b>Workaround:</b> Although, a Server Administrator can edit and save a Port Policy, it will fail to deploy with  HTTP 403 forbidden error.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv12655 - HyperFlex: HyperFlex cluster deployment is not supported on Intersight Private Virtual Appliance</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> August 24, 2020</p>
+    <p><b>Workaround:</b> HyperFlex cluster deployment is not supported on Intersight Private Virtual Appliance releases, 1.0.9-148 and 1.0.9-150.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvt70211 - Infrastructure: The user label set does not work for blade servers</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> August 21, 2020</p>
+    <p><b>Workaround:</b> The user label set does not work for blade servers.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv27196 - Intersight Private Virtual Appliance: Tech Support collection is not initiated for endpoints</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> August 13, 2020</p>
+    <p><b>Workaround:</b> This caveat is applicable only for Intersight Private Virtual Appliance. Clicking on the UI action &#34;Collect Tech Support&#34; for Servers, Fabric Interconnects, and UCS Director targets does not initiate the tech support collection process.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv14616 - Intersight Managed Mode: Intersight Managed FI-attached rack server fails to discover in Intersight</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> August 10, 2020</p>
+    <p><b>Workaround:</b> Intersight Managed FI-attached rack server fails to discover in Intersight. The failure is at the &#34;Enable Server Event Channel&#34; workflow stage.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvu39006 - Infrastructure: IPv6 HTTP file share of custom port mapping with DNS name gives an error</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 28, 2020</p>
+    <p><b>Workaround:</b> OS installations using an IPv6 HTTP file share with custom port mapping with the DNS name for vMedia mapping results in an error.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvu01357 - Infrastructure: HTTP, HTTPS file shares to add support for non-default port number</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 18, 2020</p>
+    <p><b>Workaround:</b> OS installations using IPv6-based HTTP and HTTPS file shares for vMedia mapping results in an error.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvr69139 - Infrastructure: Persistent Memory security operations</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> May 11, 2020</p>
+    <p><b>Workaround:</b> Persistent Memory security operations may fail when the passphrase contains the ’&amp;’ symbol.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvr88988 - Infrastructure: Boot Policy does not support non-VIC adapters for PXE boot configuration</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 30, 2020</p>
+    <p><b>Workaround:</b> Boot policy in Intersight requires an Interface name or MAC addresses for non-VIC adapters including the LOM and the adapters in PCI slots.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvq80554 - Infrastructure: Stale or missing HCL data in Intersight</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> Apr 10, 2020</p>
+    <p><b>Workaround:</b> Stale or missing HCL data in Intersight due to a failure in the communication between the Cisco IMC and Cisco UCS Manager.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvp88912 - Infrastructure: Persistent Memory Inventory not updated</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> March 24, 2020</p>
+    <p><b>Workaround:</b> In the Persistent Memory Inventory, Regions and Namespaces are not updated after configuration changes.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvs49282 - HyperFlex: HX Cluster Capacity Runway is not displayed even when the servers are licensed under the Essentials tier</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> December 19, 2019</p>
+    <p><b>Workaround:</b> After a server belonging to a Fabric Interconnect-attached HyperFlex cluster gets decommissioned and recommissioned from Cisco UCS Manager, the license validation for the cluster reports an incorrect result. Therefore, the HyperFlex Cluster Capacity Runway is not displayed even when the servers are licensed under the Essentials tier.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvp28844 - Infrastructure: Deployment of LAN Connectivity Policy on Cisco UCS C240 M5 Rack Servers with Quad Port adapters running on Cisco IMC 4.0(x) fails</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> November 21, 2019</p>
+    <p><b>Workaround:</b> Deployment of LAN Connectivity Policy on Cisco UCS C240 M5 Rack Servers with Quad Port adapters running on Cisco IMC 4.0(x) fails.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvr88366 - Infrastructure: Cisco UCSC-MLOM-C25Q-04 driver is not listed in the Cisco UCS Hardware and Software Compatibility tool for Standalone UCS C240 M5S servers</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> November 15, 2019</p>
+    <p><b>Workaround:</b> Cisco UCSC-MLOM-C25Q-04 driver is not listed in the UCS Hardware and Software Compatibility tool for Standalone UCS C240 M5S servers with Intel Xenon Processor Scalable Family running Oracle Linux UEK 4.1.4.35-1902.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvr88381 - Infrastructure: 12G Modular SAS RAID Controller is not listed in the Cisco UCS Hardware and Software Compatibility tool for Standalone UCS C240 M5S servers</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> November 14, 2019</p>
+    <p><b>Workaround:</b> Cisco 12G Modular SAS RAID Controller is not listed in the UCS Hardware and Software Compatibility tool for Standalone UCS C240 M5S servers with Intel Xenon Processor Scalable Family running Oracle Linux UEK 4.1.12-112 and Oracle Linux UEK 4.1.12-124, on Cisco IMC 4.0(4).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvr26096 - Infrastructure: LSI Mega Raid SAS 3108 and UCSC-MLOM-C40Q-03 driver is not listed in the Cisco UCS Hardware and Software Compatibility tool for Standalone Cisco UCS C240 M5S servers</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> November 6, 2019</p>
+    <p><b>Workaround:</b> LSI Mega Raid SAS 3108 and UCSC-MLOM-C40Q-03 driver is not listed in the in the UCS Hardware and Software Compatibility tool for Standalone UCS C240 M5S servers running Oracle Linux UEK 4.1.4.35-1902, on Cisco IMC 4.0(4).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvo05293 - Infrastructure: Deployment of Network Policies fails intermittently on Cisco UCS C-Series Standalone M4 and M5 servers</h3>
+    <p><b>Status:</b> Resolved</p>
+    <p><b>Date:</b> April 23, 2019</p>
+    <p><b>Workaround:</b> Deployment of LAN Connectivity, SAN Connectivity, and Adapter Configuration Policies on Cisco UCS C-Series Standalone M4 and M5 servers running Cisco IMC version 4.0(2c) fails intermittently. This condition is caused when there are more than 2 Cisco VIC (Virtual Interface Card) Adapters on the server, and the policies are deployed on all of them.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwd14586 - For UCS-IOM-2304 and UCS-IOM-2304V2 IO Modules, after adding or deleting no-drop class, IOM reboot is required</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When the no-drop class in System QoS policy is changed after deploying the Domain Profile on the Fabric Interconnects,  all UCS-IOM-2304 IO Modules on both sides of the Fabric Interconnect need to be reset (IOM reset will reboot the IOM) for the QoS changes to be applied.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwe08601 - Intersight Managed Mode: Chassis profile deployment fails after IOM reset, decommission, or recommission</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> After the reset, decommission, or recommission activity on the IOM (UCS-IOM-2304V or UCS-IOM-2304V2), the IOM displays online state, but the Chassis (UCSB-5108) profile deployment fails with this error message &#34;Unable to apply the configuration because the IOM-B is offline. Retry when the IOM is online. If the issue persists, contact Cisco TAC.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwd53385 - Intersight Managed Mode: OS boot fails in Cisco UCS B200 M6 server after chassis power-cycle</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When power is lost and restored on a chassis, the server boot to the host OS fails when booting via FC LUN. It is due to a delay in configuring the HIF ports of the adapter. The host tries to boot but has no path, so it fails and boots into the UEFI shell instead.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc54734 - Intersight Managed Mode: vNIC status is not operational.</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Faults are not displayed for all vNICs after a reboot in Intersight Managed Mode. This is either due to the Server Profile that has vNICs are pinned to an uplink which is down or the vNICs are not pinned to any uplink or host OS down.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwd14758 - Intersight Managed Mode: Cisco UCS VIC 1380 adapter does not get updated on moving a Cisco UCS B-Series M5 server from UMM to IMM</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> A Cisco UCS B-Series M5 server having firmware version 4.2(2a) is migrated from UMM to IMM. Cisco UCS 1400 Series adapters are replaced with Cisco UCS 1300 Series adapters. After the discovery of the server, Cisco UCS VIC 1340 adapter gets updated, but Cisco UCS VIC 1380 does not get updated.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwd76511 - Intersight Managed Mode: Server discovery failure due to adapter issues</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Server discovery fails for a B-Series or C-Series M5 server with Cisco UCS VIC 1300 Series adapters. The GUI shows message as &#34;No Adapter Units found. Try a rediscovery of the server after sometime.&#34; The possible causes can be adapter not working, connectivity issues with the adapter, unsupported Cisco IMC firmware version.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwd16403 - Intersight Managed Mode: The Hostname displays as Linux after SUSE Linux Enterprise Server (SLES) Operating System (OS) 12 SP5 version install</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> After SLES OS install, the Hostname is displayed as Linux by default instead of SLES. This is specifically observed on SLES OS 12 SP5 version</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc91572 - Intersight Managed Mode: Modifications to domain profile PVLAN configuration are not reflected in the server profile PVLAN</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When a domain profile PVLAN is modified, for example, mapping the Isolated or Community VLAN to a different Primary VLAN, the changes are not reflected in the server profile PVLAN.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc40084 - Intersight Managed Mode: Domain profile deployment fails when a VLAN with the same ID as a residual FCoE VLAN is used in VLAN configuration</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Deployment of the domain profile fails, when a VLAN with the same ID as a residual FCoE VLAN, is used in VLAN configuration. Deployment of the domain profile fails when the FCoE VLAN, created during previous operations, is not cleared from the Fabric Interconnects.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwd10649 - Intersight Managed Mode: When the Placement mode changes, the Server Profile goes to Pending Changes state</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> If you move the placement option from Simple to advanced or vice versa, the Server Profile moves to Not Deployed state. If the server has a single VIC, the Server Profile redeployment is not required. If the server has a multiple VICs and when the vNICs or vHBAs get assigned to a different VIC other than the one configured earlier, the Server Profile needs to be redeployed.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc96598 - Intersight Managed Mode: Bundle version is not seen for already claimed Fabric Interconnects</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Bundle version is not seen for already claimed Fabric Interconnects. However, the bundle version comes up once the upgrade firmware is successful.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz51265 - Intersight Managed Mode: Scale Issue: Internal error occurs while deleting policies</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> The operation to delete an Ethernet Network policy with 3000 VLANs leads to Internal Error in the first attempt. Deleting an Ethernet Network Policy with 3000 VLANs triggers a cascade delete and DB operations of the VLANs leading to Internal Error.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb68483 - Intersight Managed Mode: Scale Issue: Profiles fail to get assigned to multiple servers in parallel</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> The operation to assign profiles to a large number (greater than 100) of servers in parallel gets timed out.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc62086 - Intersight Managed Mode: UEFI Secure Boot not supported on ESXi Operating System for Standalone and IMM servers</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> In Cisco UCS C-Series Standalone and Intersight Managed Mode servers, the UEFI Secure Boot is not supported on ESXi Operating System Installation.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc35483 - Intersight Managed Mode: UEFI Secure Boot not supported on RHEL Operating System for IMM servers</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> For RHEL installation with UEFI Secure Boot on Intersight Managed Mode (IMM) servers, the keys used for signing LSI storage drivers are to be added manually in the Machine Owner Key (MOK) database for booting the OS after installation.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc26997: Intersight Managed Mode - Server upgrade to 4.2(1) patches fails on a few Micron and Samsung HDD models</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Server upgrade to 4.2(1) patches fails on a few Micron and Samsung HDD models including MTFDDAK120TDT.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb40651 - Intersight Managed Mode: SLDP login with FI Admin password fails for C-Series FI-attached servers</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> SLDP login with FI Admin password fails for C-Series FI-attached servers with breakout connection.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb25229 - Intersight Managed Mode: Disabling the proxy on the Device Connector causes the server to return an invalid JSON response</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When the proxy is disabled on the Device Connector, the server does not return a valid JSON response. However, this invalid response does not have any impact on any of the settings.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa85888 - Intersight Managed Mode: Domain Profile redeploy and port configuration fails after erase-configuration for Cisco UCS 6400 Series FI</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> On re-deploying a domain profile after performing the erase configuration, Ethernet related port configuration is not pushed to Fabric Interconnect device connector for 6400 Series FI.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa77455 - Intersight Managed Mode: Server discovery is not initiated on dynamically adding servers to N9K-C93180YC-FX3 Fabric Extender</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Re-claim and re-deploy the domain profile whose servers were discovered through N9K-C93180YC-FX3 FEX. FEX discovers both the Fabric Interconnects but the discovery of servers connected using 25G cables is not initiated.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa80829 - Intersight Managed Mode: VNIC/VHBA configuration is not restored for N9K-C93180YC-FX3 Fabric Extender connected server after decom/recom fex</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> N9K-C93180YC-FX3 Fabric Extender is first decommissioned, then re-commissioned and discovered. VNIC/VHBA configuration is not restored after FEX re-discovery.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa24768 - Intersight Managed Mode: Switch mode changes are not reflected in the Fabric Interconnect, when the Port Policy is not assigned to the Domain Profile</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When the switching mode is set using the Switch Control policy, and the Domain Profile is deployed with the Switch Control policy but without the Port policy, the Fabric Interconnects do not reboot, and the switch mode changes are not reflected in the Fabric Interconnect.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa34969 - Intersight Managed Mode: Switch mode changes are not reflected in the Fabric Interconnect inventory immediately after the Fabric Interconnect reboots</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When the switching mode is changed, the Fabric Interconnect reboots, but the switch mode changes are sometimes not reflected in the Fabric Interconnect inventory.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz41858 - Intersight Managed Mode: On rebooting a server after successful Windows installation with iSCSI Boot and UEFI, the server boot is getting stuck at the EFI shell.</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When a server profile is configured with UEFI &#43; iSCSI Boot and during the installation if the custom partitioning of LUN is selected, the boot loader is installed on the M.2 RAID controller disks or local disks, if present. The server boot after the Windows installation is getting stuck at the EFI shell.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy97064 - Intersight Managed Mode: Disk numbers cannot be swapped between different Drive Groups and between Drive Group and Global Hot Spare.</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Updating a Storage policy by swapping the disk numbers shows an update failure message.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy19447 - Intersight Managed Mode: The critical alarms are not getting cleared even after changing state of vHBA/vNIC from down to up state.</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> The critical alarms are not getting cleared even after changing state of vHBA/vNIC from down to up state. The adapter events are dropped.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz18604 - Intersight Managed Mode: Failure of login to BMC through the serial console, using the Fabric Interconnect new admin password</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When a user logs into BMC through the serial console using the Fabric Interconnect new admin password, the authentication is failed. Whereas, the login is successful with the old password.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz31237 - Intersight Managed Mode: Storage policy is not getting imported when virtual drive name is empty</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> In Intersight, storage policy is not getting imported when the virtual drive name is empty in the endpoint.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy00949 - Intersight Managed Mode: Unable to swap disk slots between Drive Group and Global Hot Spare, and between different Drive Groups</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> While editing a storage policy, an error occurs when the user tries to swap a disk slot from Drive Group to Global Hot Spare OR when they try to swap a disk slot from one Drive Group to another.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz14187 – Intersight Managed Mode: The Replace workflow status of the cluster Fabric Interconnect displays the workflow state as Unknown</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> The Replace workflow status of the cluster Fabric Interconnect is displayed as Unknown when the workflow is a success</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx85657 – Intersight Managed Mode: Reset CMOS does not preserve the Boot policy and Bios policy settings</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> CMOS reset operation does not preserve the configuration settings of Boot and BIOS policies on the server.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz04956 – Intersight Managed Mode: Switch role is not supported in IdP initiated SSO</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Switching of user role is not supported when a user with multiple accounts or multiple roles is logged in using IdP initiated SSO.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvn57742 – Intersight Managed Mode: The usage of sub-policies is not displayed in the policy view page</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> The usage of sub-policies like Ethernet adapter policy, Ethernet network policy, Ethernet QoS policy, FC QoS policy, FC Network policy, and FC adapter policy, is not displayed in the policy view page.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx70944 — Intersight Managed Mode: OS installation together on multiple servers fails intermittently</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When you select multiple servers together for OS install, then OS installation fails sometimes.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx73658 – Intersight Managed Mode: For IMM c240 rack servers, the field-replaceable-unit fan module 7 is shown as missing</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> c240 specification has six fan modules. Fan module 7 should not be shown as missing.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy09951 – Intersight Managed Mode: IMM expects both the Fabric interconnects to be available for implementing configuration changes through domain profile, chassis profile, and server profile</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> IMM expects both the Fabric interconnects to be available for implementing configuration changes through domain profile, chassis profile, and server profile.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb47181 - UCSM Managed Mode:  Intersight HCL shows incomplete for compliance with UCSM servers and Cisco Custom VMWare ESXi OS installed</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> UCSM servers are missing the host inventory annotations. Some of the values in the key-value pairs are mismatched or missing.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvu70337 - UCSM Managed Mode: The user is unable to trigger any workflow if the UMM upgrade fails once</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Once the user starts an upgrade, the supported hardware becomes incompatible. Even after decommissioning the hardware, Cisco Intersight picks up the last failure state. Hence, it throws a validation error.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwe22713 - HyperFlex: When adding a M6 compute node to a HyperFlex DC-No-FI cluster running HFDP 5.0(2b), the node personality is not set to compute on CIMC/IS.</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> After adding an M6 compute node to a HyperFlex DC-No-FI cluster running HyperFlex Data Platform 5.0(2b) in Intersight, the server will have a converged node personality set. The personality name shown in the CIMC web interface and Intersight may show as either &#34;HyperFlex Hybrid Server&#34;, &#34;HyperFlex All Flash Server&#34;, or &#34;HyperFlex All NVMe Server&#34; instead of the intended value of &#34;HyperFlex Compute Server&#34;. Additionally, the &#34;server-role&#34; property in the &#34;Additional Info&#34; field of the personality will be &#34;storage&#34; instead of &#34;compute&#34;.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc80899 - HyperFlex: hx_post_install fails on expanded NIC-based cluster</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> hx_post_install fails on expanded NIC-based custer with vMotion already configured. The vMotion switch cannot be found.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa79851 - HyperFlex: Upgrade ESXi on all nodes to 7.0U2 or above and retry</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> For FI-attached clusters, the following error may be seen during the Hypervisor management network configuration step, even if all of the nodes are running the same ESXi version: Please upgrade ESXi on all nodes to 7.0U2 or above and retry.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy94937 - HyperFlex: HyperFlex cluster expansion for compute nodes fails with error message: Insufficient Replication IPs</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> For a HyperFlex cluster in which Backup policy is deployed, cluster expansion may fail due to insufficient replication IPs.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz06219 - HyperFlex: After HyperFlex cluster expansion datastore displays ‘Mount Failure’ status</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> After HyperFlex cluster expansion when an existing backup target datastore is mounted on newly added node of the target HyperFlex cluster, the datastore displays ‘Mount Failure’ status.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy84658 - HyperFlex: Upgrading ESXi to 7.0 U2 may fail on servers running older generation CPUs</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> HyperFlex cluster upgrade initiated through Intersight or HX Connect will display the failure message &#34;CPU_SUPPORT WARNING: The CPU in this host may not be supported in future ESXi releases. Please plan accordingly.&#34;</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvu52248 - HyperFlex: HyperFlex Cluster Capacity Runway may be shown as locked in the HyperFlex cluster table view due to insufficient license</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> For some HyperFlex clusters in the Essentials or higher licensing tier claimed before May 28th, 2020, the Capacity Runway may be shown as locked in the HyperFlex cluster table view due to miscalculated license.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvw85728 - HyperFlex: HX Controller VM actions are not disabled by default for vCenter Targets, or, internal HX Datastore actions are not disabled by default for vCenter Targets</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> HX Controller VM actions are not disabled by default for vCenter Targets, or, internal HX Datastore actions are not disabled by default for vCenter Targets</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx46827 - HyperFlex: HX Upgrade with an update to the latest ESXi patch fails if server firmware is already at the desired version</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When you perform a combined HX upgrade with an update to the latest ESXi patch, the update node sub-workflow fails, if the server firmware is already at the desired version.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx61290 – HyperFlex: Cluster profile may not be automatically imported if a HyperFlex cluster has nodes with the same hostname</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> HyperFlex cluster import fails when the cluster deployed outside of the current account is claimed and if the cluster has nodes with duplicate hostnames.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc27500 - HPE ProLiant Servers: Some of the adapters are not shown in inventory</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> This issue is seen when the HPE ProLiant servers have HP or Broadcom adapters. Redfish API response from the server does not return the details for these adapters because of which Intersight server inventory is not able to display them.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc17410 - Dell PowerEdge Servers: Mismatch in the number of storage controllers between BMC UI and Intersight Server Inventory UI</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> This issue is seen due to the discrepancy in the number of storage controllers returned in the Redfish API response.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc17404 - Dell PowerEdge Servers: Mismatch in the number of PCIe devices between iDRAC UI and Intersight Server Inventory UI</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> This issue is seen due to the discrepancy in the number of PCIe devices returned in the Redfish API response.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwc51914 - Third-Party Servers: Incorrect values shown for CPU in the inventory</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> This issue is seen in all servers claimed through Intersight Assist.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa47304 - Workload Optimizer: Log4j vulnerability</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Intersight Assist Version 1.0.9-361 addresses the Log4j vulnerability.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvw48300 - Workload Optimizer: Editing a Dynatrace target does not pre-fill the current Environment ID parameter</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When editing a Dynatrace target, the Environment ID parameter that was filled during target claim is not displayed.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx72064 - Workload Optimizer: In the Workload Optimizer supply chain HyperFlex DiskArray and Hyper-V storage may not display some values</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> In the Workload Optimizer supply chain, HyperFlex DiskArray will not display Hyper-V storage, attached hosts, and virtual machine; likewise Hyper-V cluster will not display HyperFlex DiskArray.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa92321 - Intersight Cloud Orchestrator: Assigning a value to the workflow variable using the transformed mapping template option does not work</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When you use the transformed mapping template option to assign a value to the workflow variable, the transformed mapping rule does not get applied during workflow execution. Instead, the initial value of the variable is mapped.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb41333 - Intersight Cloud Orchestrator: Require proper validation of outputs/inputs used in condition</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When Condition is used as the loop mode in a Serial Loop task, the evaluation of the condition fails if the task name or input/output names are wrong, and the loop exits after the first iteration without honoring the condition.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb83887 - Kubernetes: Cluster profile deployment fails if the Port for the vCenter Target is set to 0</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> If the Port for the vCenter Target is set to 0, cluster profile deployment fails with the following error: Missing Port for vCenter target specified in VirtualMachineInfraConfigPolicy my-infra-policy. Check Target configuration and retry.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb32462 - Kubernetes: Nvidia-device-plugin pods fail to start after a cluster upgrade</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> IKS Images 1.20.14-iks.0 and later do not cache the container image required for the nvidia-device-plugin daemonset. Not caching the image results in the nvidia-device-plugin pods remaining in the ImagePullBackOff state and the pods failing to start.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa17374 - Kubernetes: Unable to reconfigure some of the IKS settings after initial cluster deployment</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> You can configure the following settings only during the initial cluster deployment: &lt;br&gt; - Container Runtime policy &lt;br&gt; - Virtual Machine Infra Config policy &lt;br&gt; - Virtual Machine Instance Type policy &lt;br&gt; - IP Pools &lt;br&gt; - Trusted Registries policy &lt;br&gt; - SSH keys &lt;br&gt; Any change to these settings thereafter will not be applied to the cluster.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa92460 - Kubernetes: Upgrading the Monitoring add-on to 0.4.11-cisco1 or later fails and creates multiple Monitoring jobs</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Upgrading the Monitoring add-on to 0.4.11-cisco1 or later fails and creates multiple Monitoring jobs.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa51692 - Kubernetes: Upgrading 1.19.15 IKS tenant with SMM addon times out and fails</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> 1.19.15 IKS tenant upgrade fails when you install the SMM add-on and then try to upgrade the tenant.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz89618 - Kubernetes: SMM add-on installation fails with Docker proxy configuration</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Installation of SMM add-on fails on tenant clusters that are configured with docker proxy settings.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz24357 - Kubernetes: Add-on URLs do not work</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> If more than 1 LoadBalancer IP address is assigned to a cluster, the add-on URL does not work.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy10553 - Kubernetes: Unable to configure VM of disk size greater than 40GB</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When you configure a VM of disk size greater than 40GB, the system defaults to a disk size of 40 GB.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx97900 - Kubernetes: Certs validation is not supported</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Validation for invalid and expired certs is not supported.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvw96794 - Kubernetes: IKS cluster deployment fails if ESX clusters use a resource pool with the same name across multiple datacenters</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> In a given datacenter, if multiple ESX clusters use resource pools having the same name then deployment of IKS clusters that use this resource pool fails.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwb19524 - Infrastructure: Image download fails when you trigger, from Intersight, an upgrade of the UCSM infrastructure to the 4.2(1l)A bundle</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> UCS firmware download fails for the 4.2(1l) packages.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz22743 - Infrastructure:Download of firmware upgrade image fails when the proxy is not set in CIMC for M6 Standalone Rack Servers</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> During the workflow of direct upgrade of rack servers, the download of the firmware upgrade image fails when the proxy is not set in CIMC.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCwa09515 - Infrastructure: Adapters, NIC and HBA interfaces count in server view might not be accurate for all hardware configurations</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> In the current implementation, the count for these interfaces is derived from CIMC ComputeRackUnit MO. The NIC and HBA interfaces count provides information only for VIC cards and does not include interfaces of non-Cisco adapters (NIC and FC HBA PCI cards).</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvz40348 - Infrastructure: The Resource Group count field shows incorrect count</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> In the Claim Target page, the Resource Group Count field shows incorrect count. It is expected to display only the count of Resource Groups associated with the Organization mapped against Device Administrator and Device Technician roles</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy83825 - Infrastructure: An Organization user is unable to perform bulk target claim</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> In the Claim Target page, an Organization user is unable to perform bulk target claim using Set the Configuration via File option.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvy65585 - Infrastructure: Drive State is not updated after policy deployment on M6 servers</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Physical drive state for the M6 server does not get updated after the deployment of the service profile containing the Storage policy.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvm67025 - Infrastructure: Unable to install Windows on a JBOD or virtual disk if these targets contain an existing Windows version</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Unable to install Windows on a JBOD or virtual disk if these targets contain an existing Windows version.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvo06115 - Infrastructure: OS Installation and Server Profile deployment cannot be performed simultaneously on the same server</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> OS installation and server profile deployment cannot be performed simultaneously on the same server. When the OS installation is in progress, power actions on the server are also disallowed.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvq43037 - Infrastructure: Unable to install Windows Server OS, if the host already has a Windows Server OS installed on it</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Unable to redeploy or reinstall Windows Server OS using the embedded mode of installation without Server Configuration Utility (SCU), if another Windows Server OS is already deployed on the same host.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvs09817 - Infrastructure: Persistent Memory shows 41 Namespaces only</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Persistent Memory Inventory shows 41 Namespaces only, out of the 64 Namespaces configured.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvs34452 - Infrastructure: Unable to view vCenter in Device Connector Manager for custom organizations with specific privileges</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> vCenter is not visible in Device Connector Manager for a custom organization with Server Administrator, HyperFlex Administrator, and Read-Only privileges. However, vCenter appears in the devices list.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvt21720 - Infrastructure: Deployed Secure Passphrase window shows up during Server Profile deployment</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When you change the Persistent Memory policy to a different one in the Server Profile and use the same Secure Passphrase for Persistent Memory Local Security, the Deployed Secure Passphrase window shows up during Server Profile deployment.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvt39285 - Infrastructure: RHEL8 installation is not supported on C125 M5 server with 4.0(2h) BIOS and firmware</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When you install RHEL 8 with 4.0(2h) server firmware, the server becomes unresponsive.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvt62202 - Infrastructure: User roles modified in the GUI do not update in the backend</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> User roles modified in the GUI do not update in the backend.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvu84717 - Infrastructure: Special characters in file share like space and % can render a Bad Request format for OS installation</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Special characters in file share like space and % can render a Bad Request format for OS installation.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv16489 - Infrastructure: The API gateway returns a timeout error</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> August 13, 2020</p>
+    <p><b>Workaround:</b> The API gateway returns a timeout error when 3000 VLANs are created at a time under the VLAN policy.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvv81399 - Infrastructure: When using firmware 4.1(1x), the Install Target Selection page does not display a created virtual drive that is out of sync</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When using firmware 4.1(1x), the Install Target Selection page does not display a created virtual drive that is out of sync.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvw02532 - Infrastructure: Login fails when the LDAP Policy is deployed on a server running firmware version 4.1(2a) and higher</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> Login fails when the LDAP Policy is deployed on a server running firmware version 4.1(2a) and higher.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvw97203 - Infrastructure: The blade discovery workflow fails with the error message: Failed to send Http Request to Device</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> When a user replaces a blade, the blade discovery workflow gets triggered twice. The first blade discovery workflow that gets triggered for the old blade server, fails with the Failed to Send Http Request to Device error. This workflow can be ignored by the user. The second blade discovery workflow gets triggered for the newly replaced blade which is executed without any issue.</p>
+    <hr>
+</div>
+
+<div>
+    <h3> CSCvx03878 - Infrastructure: Unable to delete M.2 Virtual Drive</h3>
+    <p><b>Status:</b> Open</p>
+    <p><b>Date:</b> </p>
+    <p><b>Workaround:</b> M.2 Virtual Drive does not get deleted from the Storage Controllers tab on the UI or through API. This happens because the virtual drive gets marked as bootable.</p>
+    <hr>
+</div>
+
+	
+	
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="User mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/twitter" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/stack" aria-label="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/slack" aria-label="Slack">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Developer mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2023 Cisco Systems All Rights Reserved</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
+	
+		<p class="mt-2"><a href="/about/">About Goldydocs</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha512-E/owfVh8/U1xwhvIT4HSI064DRc1Eo/xf7AYax84rt9gVqA8tc/JNH/lvTl1tuw9PUHQIMGUtObkjYkgRjFqAA==" crossorigin="anonymous"></script>
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src='/js/deflate.js'></script>
+<script src="/js/main.min.0df8230201e8a69481dceaf8138a4187f74aaa2cbd4771f365bdf85869c9d57a.js" integrity="sha256-DfgjAgHoppSB3Or4E4pBh/dKqiy9R3HzZb34WGnJ1Xo=" crossorigin="anonymous"></script>
+<script src='/js/prism.js'></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

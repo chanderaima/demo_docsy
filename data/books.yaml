@@ -1,0 +1,97 @@
+  books:
+  - name: Book of LifeThe Jamstack Book - Beyond Static Sites with JavaScript, APIs, and Markup
+    author: Chander Aima, Raymond Camden, Brian Rinaldi
+    pages: 392
+    publisher: ABC Publishers
+    date_read: 2022-03-31
+    fiction: yes
+    female_author: yes
+    rating: 5
+  - name: DITA for Print - A DITA Open Toolkit Workbook
+    author: Leigh W. White
+    pages: 100
+    publisher: XML Press
+    date_read: 2023-03-23
+    fiction: yes
+    female_author: yes
+    rating: 4
+  - name: ABC of XML
+    author: XML Press
+    pages: 100
+    publisher: XML Press
+    date_read: 2023-03-23
+    fiction: no
+    female_author: yes
+    rating: 5
+  - name: Book of LifeThe Jamstack Book - Beyond Static Sites with JavaScript, APIs, and Markup
+    author: Raymond Camden, Brian Rinaldi
+    pages: 392
+    publisher: ABC Publishers
+    date_read: 2022-03-31
+    fiction: yes
+    female_author: yes
+    rating: 5
+  - name: DITA for Print - A DITA Open Toolkit Workbook
+    author: Leigh W. White
+    pages: 100
+    publisher: XML Press
+    date_read: 2023-03-23
+    fiction: yes
+    female_author: yes
+    rating: 4
+  - name: ABC of XML
+    author: XML Press
+    pages: 100
+    publisher: XML Press
+    date_read: 2023-03-23
+    fiction: no
+    female_author: yes
+    rating: 5
+  - name: Book of LifeThe Jamstack Book - Beyond Static Sites with JavaScript, APIs, and Markup
+    author: Raymond Camden, Brian Rinaldi
+    pages: 392
+    publisher: ABC Publishers
+    date_read: 2022-03-31
+    fiction: yes
+    female_author: yes
+    rating: 5
+  - name: DITA for Print - A DITA Open Toolkit Workbook
+    author: Leigh W. White
+    pages: 100
+    publisher: XML Press
+    date_read: 2023-03-23
+    fiction: yes
+    female_author: yes
+    rating: 4
+  - name: ABC of XML
+    author: XML Press
+    pages: 100
+    publisher: XML Press
+    date_read: 2023-03-23
+    fiction: no
+    female_author: yes
+    rating: 5
+  - name: Book of LifeThe Jamstack Book - Beyond Static Sites with JavaScript, APIs, and Markup
+    author: Raymond Camden, Brian Rinaldi
+    pages: 392
+    publisher: ABC Publishers
+    date_read: 2022-03-31
+    fiction: yes
+    female_author: yes
+    rating: 5
+  - name: DITA for Print - A DITA Open Toolkit Workbook
+    author: Leigh W. White
+    pages: 100
+    publisher: XML Press
+    date_read: 2023-03-23
+    fiction: yes
+    female_author: yes
+    rating: 4
+  - name: ABC of XML
+    author: XML Press
+    pages: 100
+    publisher: XML Press
+    date_read: 2023-03-23
+    fiction: no
+    female_author: yes
+    rating: 5

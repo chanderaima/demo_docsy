@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Intersight Help Center – What&#39;s New</title>
+    <link>http://localhost:1313/docs/whats_new/</link>
+    <description>Recent content in What&#39;s New on Cisco Intersight Help Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="http://localhost:1313/docs/whats_new/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

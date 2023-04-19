@@ -1,0 +1,52 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Intersight Help Center – Hulk 2.0</title>
+    <link>http://localhost:1313/docs/ico_new/</link>
+    <description>Recent content in Hulk 2.0 on Cisco Intersight Help Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="http://localhost:1313/docs/ico_new/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: </title>
+      <link>http://localhost:1313/docs/ico_new/newfeatures2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/ico_new/newfeatures2/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Installation&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    Check system compatibility before proceeding.
+
+&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download the installation files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run the installation script&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo sh install.sh&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Test that your installation was successfully completed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Intersight Help Center – WebAPI</title>
+    <link>http://localhost:8080/tags/webapi/</link>
+    <description>Recent content in WebAPI on Cisco Intersight Help Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Jan 2022 15:53:22 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:8080/tags/webapi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: WebAPI</title>
+      <link>http://localhost:8080/docs/ico/executors/webapi/</link>
+      <pubDate>Fri, 28 Jan 2022 15:53:22 +0000</pubDate>
+      
+      <guid>http://localhost:8080/docs/ico/executors/webapi/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;webapi&#34;&gt;WebAPI&lt;/h1&gt;
+&lt;p&gt;Param (
+[switch]$EnableBasicAuth = $false,
+[switch]$SKipNetworkProfileCheck = $false,
+[switch]$ForceNewSSLCert = $false,
+[string]$SubjectName = $env:COMPUTERNAME,
+[int]$CertValidityDays = 1095
+)&lt;/p&gt;
+&lt;p&gt;Function New-SelfSignedCert
+{
+Param (
+[string]$SubjectName,
+[int]$ValidDays = 1095
+)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

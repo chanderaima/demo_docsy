@@ -1,0 +1,1058 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Intersight Help Center – sample</title>
+    <link>http://localhost:1313/tags/sample/</link>
+    <description>Recent content in sample on Cisco Intersight Help Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/sample/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Account Creation</title>
+      <link>http://localhost:1313/docs/getting-started/account_creation/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/getting-started/account_creation/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;create-a-cisco-intersight-account&#34;&gt;Create a Cisco Intersight Account&lt;/h1&gt;
+&lt;div class=&#34;body refbody&#34;&gt;
+&lt;div class=&#34;section&#34;&gt;
+&lt;p&gt;To get started with Cisco Intersight, create a Cisco Intersight account:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div
+id=&#34;Cisco_Reference.dita_efc3aa2d-db50-4b94-8833-a045c8b74929__li_8FCCA39C338E44A0A84FA4B729A80BAA&#34;&gt;
+&lt;p&gt;Visit &lt;a href=&#34;https://intersight.com/&#34; class=&#34;xref&#34;
+target=&#34;_blank&#34;&gt;https://intersight.com/&lt;/a&gt; to create your
+Intersight account. You must have a valid Cisco ID to create a Cisco
+Intersight account. If you do not have a Cisco ID, create one
+&lt;a href=&#34;https://id.cisco.com/ui/v1.0/profile-ui&#34; class=&#34;xref&#34;
+target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;span class=&#34;keyword wintitle&#34;&gt;Welcome to Intersight&lt;/span&gt;
+screen, click the &lt;span class=&#34;ph uicontrol&#34;&gt;Create an
+account&lt;/span&gt; link.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;span class=&#34;ph uicontrol&#34;&gt;End User License Agreement&lt;/span&gt;,
+click the checkbox next to &lt;span class=&#34;ph uicontrol&#34;&gt;I
+accept&lt;/span&gt;, and then click &lt;span
+class=&#34;ph uicontrol&#34;&gt;Next&lt;/span&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;span class=&#34;keyword wintitle&#34;&gt;Account Creation&lt;/span&gt; dialog
+box, enter a name for your account in the &lt;span
+class=&#34;ph uicontrol&#34;&gt;Account Name&lt;/span&gt; field.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:&lt;/span&gt;
+An &lt;span class=&#34;ph uicontrol&#34;&gt;Account Name&lt;/span&gt; can only contain
+letters(a-z, A-Z), numbers(0-9) or hyphen(-).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;span class=&#34;ph uicontrol&#34;&gt;Create&lt;/span&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do one of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+href=&#34;http://localhost:1313/help/getting_started/licensing_requirements#enabling_trial_license&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Enable Trial License&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+href=&#34;http://localhost:1313/help/getting_started/licensing_requirements#registering_product_license&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Register Product License&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After creating an Intersight account, you can begin claiming targets to
+manage your endpoints.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    It is possible to bypass the Intersight main page during login by using
+a link containing the Intersight account and SSO ID, which takes take
+you directly to your identity provider for authentication. The link
+should be structured to include the Account ID, as well as the user ID
+being authenticated. An example of the link is: &lt;a
+href=&#34;https://5eb2e1e47564612d3079fe92.intersight.com/iam/weblogin?email=abc@domain.com&#34;
+class=&#34;xref&#34;
+target=&#34;_blank&#34;&gt;&lt;a href=&#34;https://5eb2e1e47564612d3079fe92.intersight.com/iam/weblogin?email=abc@domain.com&#34;&gt;https://5eb2e1e47564612d3079fe92.intersight.com/iam/weblogin?email=abc@domain.com&lt;/a&gt;&amp;lt;/a
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;To know more about the Cisco Intersight account creation process, watch
+the video:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oFzOqjoQ7t0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Claim Target</title>
+      <link>http://localhost:1313/docs/getting-started/claimntarget/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/getting-started/claimntarget/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;minimum-permissions-for-targets&#34;&gt;Minimum Permissions for Targets&lt;/h2&gt;
+&lt;p&gt;The following table lists the minimum endpoint privileges required for
+targets:&lt;/p&gt;
+&lt;div class=&#34;tablenoborder&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Targets&lt;/th&gt;
+&lt;th&gt;Endpoint Privileges&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Hitachi Virtual Storage Platform&lt;/td&gt;
+&lt;td&gt;Administrator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VMware vCenter&lt;/td&gt;
+&lt;td&gt;Administrator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pure Storage FlashArray&lt;/td&gt;
+&lt;td&gt;Array Administrator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NetApp Active IQ Unified Manager for NetApp ONTAP&lt;/td&gt;
+&lt;td&gt;Administrator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cisco UCS C890 M5 Rack Server&lt;/td&gt;
+&lt;td&gt;Administrator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Dell PowerEdge and HPE ProLiant Redfish Servers&lt;/td&gt;
+&lt;td&gt;Administrator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cisco Nexus Switch&lt;/td&gt;
+&lt;td&gt;Administrator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cisco MDS Switch&lt;/td&gt;
+&lt;td&gt;Administrator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section&#34;&gt;
+&lt;h2 id=&#34;target-claim&#34;&gt;Target Claim&lt;/h2&gt;
+&lt;p&gt;To claim a new target, do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log into Intersight with the Account Administrator, Device
+Administrator, or Device Technician privileges.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the &lt;strong&gt;Service Selector&lt;/strong&gt;
+drop-down list, select &lt;strong&gt;System&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;ADMIN** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Targets** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Claim a New Target****.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose &lt;strong&gt;Available for Claiming&lt;/strong&gt; and
+select the target type you want to claim. Click &lt;span
+class=&#34;ph uicontrol&#34;&gt;Start**.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the required details and click &lt;span
+class=&#34;ph uicontrol&#34;&gt;Claim** to complete the claiming process.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section&#34;&gt;
+&lt;h3 id=&#34;target-claim-for-computefabric-hyperconverged-orchestrator-and-platform-services-targets&#34;&gt;Target Claim for Compute/Fabric, Hyperconverged, Orchestrator, and Platform Services Targets&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;From the Targets table view, click &lt;strong&gt;Claim a
+New Target&lt;/strong&gt;, select the target type, and enter the following
+details:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the applicable &lt;strong&gt;Device ID&lt;/strong&gt;.
+Endpoint targets connect to the Cisco Intersight portal through a
+Device Connector that is embedded in the management controller
+(Management VM for Cisco UCS Director) of each system. The Device
+Connector provides a secure way for connected targets to send
+information and receive control instructions from the Cisco
+Intersight portal, using a secure Internet connection. The following
+table provides the format of the device ID and the device connector
+location:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Claim Code&lt;/strong&gt;&amp;mdash;Enter the device claim
+code and click &lt;strong&gt;Claim&lt;/strong&gt;. You can find
+this code in the Device Connector.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**
+Before you gather the Claim Code, ensure that the Device Connector
+has outbound network access to Cisco Intersight, and is in the &amp;ldquo;Not
+Claimed&amp;rdquo; state.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Resource Groups&lt;/strong&gt;&amp;mdash;Select the
+Resource Group from the list to add it to the Organization.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**
+The Resource Group selection is enabled for the supported targets.
+Refer **Note** added in the following
+targets table to view supported target list.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Claim&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;After the targets are claimed, you can view the managed targets in
+the &lt;strong&gt;Targets&lt;/strong&gt; table view.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Device ID Format and Device Connector
+Location&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;tablenoborder&#34;&gt;
+&lt;table data-frame=&#34;border&#34; data-border=&#34;1&#34;  &gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 30%&#34; /&gt;
+&lt;col style=&#34;width: 35%&#34; /&gt;
+&lt;col style=&#34;width: 33%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead class=&#34;thead&#34; &gt;
+&lt;tr class=&#34;header row&#34;&gt;
+&lt;th id=&#34;d33e326&#34; class=&#34;entry cellrowborder&#34;
+style=&#34;vertical-align: top&#34;&gt;&lt;p&gt;Targets&lt;/p&gt;&lt;/th&gt;
+&lt;th id=&#34;d33e332&#34; class=&#34;entry cellrowborder&#34;
+style=&#34;vertical-align: top&#34;&gt;&lt;p&gt;Device ID Format and Example&lt;/p&gt;&lt;/th&gt;
+&lt;th id=&#34;d33e338&#34; class=&#34;entry cellrowborder&#34;
+style=&#34;vertical-align: top&#34;&gt;&lt;p&gt;Device Connector Location&lt;/p&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody class=&#34;tbody&#34;&gt;
+&lt;tr class=&#34;odd row&#34;&gt;
+&lt;td colspan=&#34;3&#34; class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 d33e332 d33e338 &#34;&gt;&lt;p&gt;**Compute
+/ Fabric**&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco UCS Server (Standalone)&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Serial Number&lt;/p&gt;
+&lt;p&gt;Example: NGTR12345&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Admin** &amp;gt; **
+Device Connector**** in Cisco IMC&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco UCS Domain (UCSM Managed)&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Device serial ID of the primary and subordinate
+Fabric Interconnects&lt;/p&gt;
+&lt;p&gt;Example: [SAL1924GKV6&amp;amp;SAL1913CJ7V]&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Admin** &amp;gt; **
+Device Connector**** in Cisco UCS Manager&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco UCS Domain (Intersight Managed)&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Device serial ID of the primary and subordinate
+Fabric Interconnects&lt;/p&gt;
+&lt;p&gt;Example: [SAL1924GKV6&amp;amp;SAL1913CJ7V]&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;Device Connector in Device Console&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd row&#34;&gt;
+&lt;td colspan=&#34;3&#34; class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 d33e332 d33e338 &#34;&gt;&lt;p&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Platform Services**&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco Intersight Appliance&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Settings** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Cloud Connection** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Device Connector**** in Intersight
+Appliance&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco Intersight Assist&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Settings** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Cloud Connection** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Device Connector**** in Intersight
+Assist&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even row&#34;&gt;
+&lt;td colspan=&#34;3&#34; class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 d33e332 d33e338 &#34;&gt;&lt;p&gt;Hyperconverged Target&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco HyperFlex Cluster&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Cluster UUID&lt;/p&gt;
+&lt;p&gt;Example: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;HyperFlex Connect UI** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt; Settings** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Device Connector**** in Cisco
+HyperFlex&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even row&#34;&gt;
+&lt;td colspan=&#34;3&#34; class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 d33e332 d33e338 &#34;&gt;&lt;p&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Orchestrator**&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco UCS Director&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Device ID&lt;/p&gt;
+&lt;p&gt;Example: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Administration** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Device Connector**** in Cisco UCS
+Director&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even row&#34;&gt;
+&lt;td colspan=&#34;3&#34; class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 d33e332 d33e338 &#34;&gt;&lt;p&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Others**&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco Data Center Network Manager (DCNM)&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Device ID&lt;/p&gt;
+&lt;p&gt;Example: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Administration** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;DCNM Server ** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Device Connector**** in Cisco
+DCNM&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco Application Policy Infrastructure Controller
+(APIC)&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Device ID made up of the serial ID of the APIC
+nodes&lt;/p&gt;
+&lt;p&gt;Example: DIF1123FGFG&amp;amp; DIF2345GHJK &amp;amp; DIS5678SDFG&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;System** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;System Settings** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Intersight** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Intersight Device Connector**** in Cisco
+APIC&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco Application Services Engine&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Device ID made up of the serial ID of the Service
+nodes&lt;/p&gt;
+&lt;p&gt;Example: DIF1123FGFG&amp;amp; DIF2345GHJK &amp;amp; DIS5678SDFG&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Cisco APIC** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Apps** &amp;gt; **Cisco
+Application Services Engine** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Intersight**** for Cisco Application
+Services Engine&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even row&#34;&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e326 &#34;&gt;&lt;p&gt;Cisco Nexus Dashboard&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e332 &#34;&gt;&lt;p&gt;Device ID made up of the serial ID of the Service
+nodes&lt;/p&gt;
+&lt;p&gt;Example:WMP24070021&amp;amp;WMP240700ED&amp;amp;WMP240700FN&amp;amp;WMP241000RJ&amp;amp;WMP241000UQ&amp;amp;WMP241000UR&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&#34;entry cellrowborder&#34; style=&#34;vertical-align: top&#34;
+headers=&#34;d33e338 &#34;&gt;&lt;p&gt;From &lt;span class=&#34;ph menucascade&#34;&gt;&lt;span
+class=&#34;ph uicontrol&#34;&gt;Cisco Nexus Dashboard** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Infrastructure** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Intersight ** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Intersight Device Connector****&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Following are the targets that support target claim for the
+Organization using Resource Groups:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco UCS Server (Standalone)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco UCS Domain (UCSM Managed)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco UCS Domain (Intersight Managed)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco Intersight Appliance&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco Intersight Assist&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco HyperFlex Cluster&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco UCS Director&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco Data Center Network Manager (DCNM)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco Application Policy Infrastructure Controller (APIC)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cisco Nexus Dashboard&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For more information about Enabling Intersight Management and
+Configuring the Device Connector on the Management Interfaces, see the
+appropriate documentation that is listed below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+href=&#34;https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/4-2/b_Cisco_UCS_Admin_Mgmt_Guide_4-2/m_gui_cisco_intersight_management.html#concept_BBBDE52F9AFB484B880F625B14CE6483&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Cisco UCS Manager Administration Guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+href=&#34;https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/gui/config/guide/4_2/b_cisco_ucs_c-series_gui_configuration_guide_42/b_Cisco_UCS_C-series_GUI_Configuration_Guide_41_chapter_010001.html#task_D1C22EDEC0BA41A59475EDA920AB6B13&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Cisco UCS C-Series Integrated Management
+Controller GUI Configuration Guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+href=&#34;https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/HyperFlex_Installation_Guide_for_Intersight/b_HyperFlex_Installation_Guide_for_Intersight/b_HyperFlex_Installation_Guide_for_Intersight_chapter_011.html?bookSearch=true&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Cisco HyperFlex Systems Installation Guide
+for Cisco Intersight&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+href=&#34;https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-director/administration-guide/6-8/cisco-ucs-director-administration-68/cisco-ucs-director-administration-67_chapter_0101.html#concept_x1p_4lv_mcb&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Cisco UCS Director Administration Guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+href=&#34;https://www.cisco.com/c/en/us/support/data-center-analytics/network-insights-advisor/model.html&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Cisco Network Insights Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/help/resources/cisco_intersight_managed_mode_configuration&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Cisco Intersight Managed Mode Guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section&#34;&gt;
+&lt;h3 id=&#34;target-claim-in-intersight-managed-mode&#34;&gt;Target Claim in Intersight Managed Mode&lt;/h3&gt;
+&lt;p&gt;Target Claim in Intersight Managed Mode has the following
+considerations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can choose between the native UCSM Managed Mode (UMM) or
+Intersight Managed Mode (IMM) for the Fabric attached UCS Systems
+during initial setup of the Fabric Interconnects. If you choose to
+switch back between UMM and IMM, you must erase the present
+configuration and start from initial setup.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**
+Before erasing the configuration, you must ensure to unclaim the
+device from Intersight and decommission all rack servers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For the complete set of hardware and software requirements, see &lt;a
+href=&#34;http://localhost:1313/help/supported_systems#supported_hardware_for_intersight_managed_mode&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Supported Hardware for Intersight Managed
+Mode&lt;/a&gt; and
+&lt;a href=&#34;http://localhost:1313/help/getting_started/software_compatibility&#34; class=&#34;xref&#34;
+target=&#34;_blank&#34;&gt;Software Compatibility&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Complete these steps to claim these targets in Intersight Managed Mode:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;From the Targets table view, click &lt;strong&gt;Claim
+a New Target&lt;/strong&gt; &amp;gt; &lt;strong&gt;Cisco UCS Domain
+(Intersight Managed)&lt;/strong&gt;. Click &lt;span
+class=&#34;ph uicontrol&#34;&gt;Start**.&lt;/p&gt;
+&lt;div class=&#34;note important&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;importanttitle&#34;&gt;Important:**
+Complete the initial configuration of the Fabric Interconnects
+before claiming them for use with the Cisco Intersight platform.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the following details to complete the target claim:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Device ID&lt;/strong&gt;&amp;mdash;Device serial ID of
+the primary or subordinate Fabric Interconnect. Example:
+[SAL1924GKV6&amp;amp;SAL1913CJ7V].&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Claim Code&lt;/strong&gt;&amp;mdash;Device claim code
+of Fabric Interconnect.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To get the device ID and claim code after completing the initial
+configuration of the Fabric Interconnects, run the following
+commands in Fabric Interconnect CLI:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-pre&#34; data-lang=&#34;pre&#34;&gt;connect device-connector
+show status
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The command displays the device serial ID and claim code only when
+Fabric Interconnects have formed the cluster and connection to
+Intersight has been established.&lt;/p&gt;
+&lt;p&gt;Alternately, you can get the device ID and claim code from the &lt;span
+class=&#34;ph uicontrol&#34;&gt;Device Connector** tab of Device Console
+that is accessed using the Fabric Interconnect IP address.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Resource Groups&lt;/strong&gt;&amp;mdash;Select the
+Resource Group from the list to add it to the Organization.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**
+The Resource Group selection is enabled for the supported targets.
+Refer **Note** section in the above
+targets table to view supported target list.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Claim&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;After the targets are claimed, you can view Intersight Managed
+targets in the &lt;strong&gt;Targets&lt;/strong&gt; table view.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section&#34;&gt;
+&lt;h2 id=&#34;unclaim-targets&#34;&gt;Unclaim Targets&lt;/h2&gt;
+&lt;p&gt;You can unclaim a target directly from the Intersight portal or from the
+Device Connector on the endpoints. Cisco recommends that you unclaim a
+target from the Intersight portal, when possible. Use the &lt;span
+class=&#34;ph uicontrol&#34;&gt;Unclaim** option on the Device Connector only
+when you do not have access to the account that the target was
+originally claimed to, or if you lose connection to Intersight and you
+want to unclaim the target locally from the endpoint.&lt;/p&gt;
+&lt;p&gt;Unclaiming a target directly from the Intersight portal ensures that the
+target inventory is completely removed and the target gets reset to the
+onboarding account. The target can next be reclaimed. However, when you
+unclaim a target from the endpoint, the target stays in the &lt;span
+class=&#34;ph uicontrol&#34;&gt;Unclaimed ** status in the current Intersight
+account or the virtual appliance it is claimed to. You must remove the
+target inventory from the Intersight UI to enable the target to move to
+the onboarding account before you can claim the target again.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;When you unclaim a target, you will no longer be able to manage it
+from Intersight.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When a target is unclaimed, it is immediately detached from the
+corresponding Intersight account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The target retains any configuration applied before the unclaim
+operation, but any subsequent attempt to change the configuration
+fails. Any associated profiles will be detached from the corresponding
+targets. Before you assign the profiles again or perform any other
+action, you must reclaim the target into another Intersight account,
+and then recreate and redeploy the policies, profiles, and other
+configuration settings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;To unclaim a target from the Intersight
+UI:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log into Intersight.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the &lt;strong&gt;Service Selector&lt;/strong&gt;
+drop-down list, select &lt;strong&gt;System&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Targets&lt;/strong&gt; to view the Targets
+table view.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select the target(s) that you want to unclaim and click the &lt;span
+class=&#34;ph uicontrol&#34;&gt;Trash can** icon. You can reclaim the
+target(s) later as required by following the steps in the &lt;span
+class=&#34;ph uicontrol&#34;&gt;Claim a Target** wizard.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**
+Unclaiming a target does not change the target configuration but
+just removes it from the Intersight account it is claimed to. Access
+to the target by Intersight after unclaiming would only be possible
+if you claim the target again.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;To unclaim a target from the Device Connector
+on the endpoint&lt;/strong&gt;&amp;mdash;Do this only if you do not have access to the
+Intersight account the target was claimed to.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log in directly to the target and navigate to the Device Connector.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Unclaim&lt;/strong&gt;. The target now
+becomes available for Claim. After the unclaim from account is
+complete from the endpoint, verify that the &lt;span
+class=&#34;ph uicontrol&#34;&gt;Targets** table view displays &lt;span
+class=&#34;ph uicontrol&#34;&gt;Unclaimed** status for the targets that
+are detached from the account. Complete the unclaim process in the
+Intersight UI before you claim this target in Intersight again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section&#34;&gt;
+&lt;h2 id=&#34;target-claim-using-intersight-assist&#34;&gt;Target Claim Using Intersight Assist&lt;/h2&gt;
+&lt;p&gt;You can add endpoint targets, such as Pure Storage, Hitachi Virtual
+Storage Platform devices, NetApp Active IQ Unified Manager, Cisco UCS
+C890 M5, HTTP Endpoint, SSH Endpoint, Ansible Endpoint, PowerShell
+Endpoint, Cisco Nexus Switch, Cisco MDS Switch, and VMware vCenter, into
+Cisco Intersight only if you use Cisco Intersight Assist to claim them.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**&lt;/p&gt;
+&lt;p&gt;The HTTP endpoint targets can be added either directly or via Intersight
+Assist.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Complete the following steps to claim these targets using Intersight
+Assist:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log into Intersight with the Account Administrator, Device
+Administrator, or Device Technician privileges.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the &lt;strong&gt;Service Selector&lt;/strong&gt;
+drop-down list, select &lt;strong&gt;System&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to &lt;strong&gt;ADMIN&lt;/strong&gt; &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Targets** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Claim a New Target**.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose &lt;strong&gt;Available for Claiming&lt;/strong&gt; and
+select the target type that you want to claim. Click &lt;span
+class=&#34;ph uicontrol&#34;&gt;Start**.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the following details to complete the target claim:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Connect through an Intersight
+Assist&lt;/strong&gt;&amp;mdash;For HTTP endpoint targets, enable if the target is
+reachable via Intersight Assist only. This option is applicable
+for endpoint targets that can be reached either directly or via
+Intersight Assist.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Intersight Assist&lt;/strong&gt;&amp;mdash;If there is
+more than one Intersight Assist, select one from the list to
+use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;&amp;mdash;A user provided name for
+the managed target for SSH, Ansible, or PowerShell endpoint
+target.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hostname/IP Address/Management
+Address&lt;/strong&gt;&amp;mdash;Management address of the Pure Storage
+FlashArray, Hitachi Virtual Storage Platform devices, NetApp
+Active IQ Unified Manager, Cisco UCS C890 M5, HTTP Endpoint, SSH
+Endpoint, Ansible Endpoint, PowerShell Endpoint, Nexus Switch,
+MDS Switch, or the VMware vCenter. It can be IPv4 or a Fully
+Qualified Domain Name (FQDN). For Hitachi, specify ctl1Ip,
+ctl2Ip, or svpIp from Hitachi Ops Center API Configuration
+Manager. Use the same entry that is assigned to targetCtl
+(ctl1Ip or ctl2Ip).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Port&lt;/strong&gt;&amp;mdash;Port number to connect to
+the managed target. This is an optional field. If you do not
+specify a port number, the default port is chosen.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Authentication
+Required&lt;/strong&gt;&amp;mdash;Disable if the HTTP endpoint does not require
+any authentication or when the authentication required for the
+endpoint is not supported in the Authentication Scheme.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Authentication Scheme&lt;/strong&gt;&amp;mdash;If &lt;span
+class=&#34;ph uicontrol&#34;&gt;Authentication Required** is enabled,
+select the athentication scheme for the HTTP endpoint as &lt;span
+class=&#34;ph uicontrol&#34;&gt;Basic** to provide the &lt;em&gt;Username&lt;/em&gt; and
+&lt;em&gt;Password&lt;/em&gt; or select &lt;strong&gt;Bearer
+Token&lt;/strong&gt; to provide the bearer token.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Authentication Mode&lt;/strong&gt;&amp;mdash;Select the
+authentication protocol as &lt;em&gt;Password&lt;/em&gt; or &lt;em&gt;Key Based&lt;/em&gt; for the SSH
+or Ansible endpoint.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Username&lt;/strong&gt;&amp;mdash;Login credential for
+the managed target.&lt;/p&gt;
+&lt;p&gt;For VMware vCenter targets, NetApp Active IQ Unified Manager,
+HTTP Endpoint, SSH Endpoint, Ansible Endpoint, PowerShell
+Endpoint, Nexus Switch, MDS Switch, or Cisco UCS C890 M5
+targets, enter the username of the administrator.&lt;/p&gt;
+&lt;p&gt;For Pure Storage targets, enter the username of the array
+administrator.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Password&lt;/strong&gt;&amp;mdash;Password associated
+with the username.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Private Key&lt;/strong&gt;&amp;mdash;The private key
+that is used to authenticate a managed target for the SSH or
+Ansible endpoint. When you generate the SSH Key for an endpoint,
+do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SSH Keys in PEM format:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh-keygen -m PEM -t &amp;lt;rsa, ecdsa, ed25519, or dsa&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;OpenSSH has deprecated DSA keys due to security weakness. You
+must update the SSH configuration to enable it to work with
+DSA keys.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SSH Keys in OpenSSH format:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;``ssh-keygen -t &amp;lt;rsa, ed25519&amp;gt;``&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;DSA and ECDSA keys are not supported.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You need to provide the passphrase if required.&lt;/p&gt;
+&lt;p&gt;The private key and passphrase are treated as a single entity.
+When you modify the private key, the passphrase field is
+cleared.&lt;/p&gt;
+&lt;p&gt;The corresponding public key needs to be added to the authorized
+list of the remote SSH or Ansible endpoint.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**
+The authorized keys are by default configured in
+&lt;code&gt;.ssh/authorized_keys&lt;/code&gt; in the home directory.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Passphrase&lt;/strong&gt;&amp;mdash;(Optional) The
+passphrase associated with the private key.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hitachi Ops Center API Configuration
+Manager Address&lt;/strong&gt;&amp;mdash;Management address of the Hitachi Ops
+Center API Configuration Manager. It can be IPv4 or a Fully
+Qualified Domain Name (FQDN).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enable HTTPS Protocol&lt;/strong&gt;&amp;mdash;Select
+if the connection to the HTTP endpoint target should be
+established using HTTPS.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Claim&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After the targets are claimed, you can view Pure Storage, Hitachi
+Virtual Storage Platform, NetApp Active IQ Unified Manager, Cisco UCS
+C890 M5, HTTP Endpoint, SSH Endpoint, Ansible Endpoint, PowerShell
+Endpoint, Nexus Switch, MDS Switch, and VMware vCenter targets in the
+&lt;strong&gt;Targets&lt;/strong&gt; tab. In addition, you can view
+the &lt;strong&gt;Storage&lt;/strong&gt; and &lt;span
+class=&#34;ph uicontrol&#34;&gt;Virtualization** tabs on the left panel.&lt;/p&gt;
+&lt;p&gt;For more information on Cisco Intersight with NetApp Storage see, &lt;a
+href=&#34;https://docs.netapp.com/us-en/flexpod/ontap-connector-for-intersight/index.html&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Cisco Intersight with NetApp Storage Quick
+Start Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**&lt;/p&gt;
+&lt;p&gt;You must ensure that NX-API is enabled through HTTPS on the MDS or Nexus
+endpoint target to claim an MDS or a Nexus switch.&lt;/p&gt;
+&lt;p&gt;To verify that NX-API is enabled and to get the HTTPS port number, run
+the &lt;span class=&#34;keyword cmdname&#34;&gt;show nxapi** command on the MDS
+or Nexus endpoint target. The following is an example of the &lt;span
+class=&#34;keyword cmdname&#34;&gt;show nxapi** command:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-pre&#34; data-lang=&#34;pre&#34;&gt;switch# show nxapi
+NX-API:       Enabled         Sandbox:      Disabled
+HTTPS Port:   8443
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To enable NX-API, run the &lt;code&gt; &lt;/code&gt;&lt;strong&gt;&lt;code&gt;nxapi https port&lt;/code&gt;&lt;/strong&gt;&lt;code&gt; &lt;/code&gt;&lt;em&gt;&lt;code&gt;port&lt;/code&gt;&lt;/em&gt;&lt;code&gt; &lt;/code&gt;
+command on the MDS or Nexus endpoint target.&lt;/p&gt;
+&lt;p&gt;To know more about the process of claiming a target, watch the
+&lt;a href=&#34;https://www.youtube.com/watch?v=oFzOqjoQ7t0&amp;amp;t=156s&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Claim Target&lt;/a&gt; video.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section&#34;&gt;
+&lt;h2 id=&#34;target-claim-using-vmware-vcenter&#34;&gt;Target Claim Using VMware vCenter&lt;/h2&gt;
+&lt;p&gt;You can add VMware vCenter endpoint targets into Cisco Intersight only,
+if you use Cisco Intersight Assist to claim them. Hence, before claiming
+a target, ensure you have deployed and claimed Intersight Assist.&lt;/p&gt;
+&lt;p&gt;Complete the following steps to claim these targets using VMware
+vCenter:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log into Intersight with the Account Administrator, Device
+Administrator, or Device Technician privileges.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the &lt;strong&gt;Service Selector&lt;/strong&gt;
+drop-down list, select &lt;strong&gt;System&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to &lt;strong&gt;ADMIN&lt;/strong&gt; &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Targets** &amp;gt; &lt;span
+class=&#34;ph uicontrol&#34;&gt;Claim a New Target**.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose &lt;strong&gt;Available for Claiming&lt;/strong&gt; and
+select the &lt;strong&gt;VMware vCenter&lt;/strong&gt; target
+type that you want to claim. Click &lt;span
+class=&#34;ph uicontrol&#34;&gt;Start**.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the following details to complete the target claim:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Intersight Assist&lt;/strong&gt;&amp;mdash;Select the
+appropriate Intersight Assist from the list to use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hostname/IP Address&lt;/strong&gt;&amp;mdash;Enter the
+hostname or IP address.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Port&lt;/strong&gt;&amp;mdash;Enter the port number to
+connect to the target. This is an optional field. If you do not
+specify a port number, the default port is chosen.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Username&lt;/strong&gt;&amp;mdash;Enter the username of
+the target. For VMware vCenter targets, you can enter the
+username of the administrator.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Password&lt;/strong&gt;&amp;mdash;Enter the password
+associated with the username.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Secure&lt;/strong&gt;&amp;mdash;Select to establish the
+HTTP endpoint target using HTTPS. This option is enabled by
+default.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Datastore Browsing
+Enabled&lt;/strong&gt;&amp;mdash;Select to control the Workload Optimizer scanning
+the vCenter datastores to identify files which are not used and
+can be deleted to reclaim space and improve actual disk
+utilization. For example, orphaned VMDK files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Guest Metrics Enabled&lt;/strong&gt;&amp;mdash;Select
+to enable retrieval of advanced memory metrics by Workload
+optimizerService. It issupported only on vCenterServer version
+6.5U3 or later. Guest Virtual Machines must run VMware Tools
+10.3.2 Build 10338 or later.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enable HSM&lt;/strong&gt;&amp;mdash;Select to enable
+Hardware Support Manager (HSM) in VMware vCenter targets. This
+option allows you to perform firmware upgrade on UCS servers
+claimed in Cisco Intersight.&lt;/p&gt;
+&lt;p&gt;To enable HSM for the previously created VMware vCenter targets,
+you can select the target and use edit option. HSM also can be
+enabled while claiming the VMware vCenter targets in Cisco
+Intersight.&lt;/p&gt;
+&lt;div class=&#34;note note&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;notetitle&#34;&gt;Note:**&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The HSM allows you to manage the server firmware upgrade
+operations outside of the Intersight application, from VMware
+vSphere Lifecycle Manager (vLCM) plug-in. For more
+information, see &lt;a
+href=&#34;http://localhost:1313/help/resources#managing_firmware_using_hardware_support_manager&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Managing Firmware Using Hardware Support
+Manager&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Before using vLCM plug-in, ensure to upgrade the vCenter
+server and all ESXi hosts in the cluster to vSphere 7.0 or
+later versions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The HSM is supported on Cisco UCS C-Series Standalone and
+Intersight Managed Mode (IMM) servers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Claim&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To know more about the process of claiming a target, watch the
+&lt;a href=&#34;https://www.youtube.com/watch?v=oFzOqjoQ7t0&amp;amp;t=156s&#34;
+class=&#34;xref&#34; target=&#34;_blank&#34;&gt;Claim Target&lt;/a&gt; video.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div
+id=&#34;Cisco_Reference.dita_3c4ad70c-a54a-4e6f-9999-c8d415652a9e__section_d3y_nrf_nsb&#34;
+class=&#34;section&#34;&gt;
+&lt;h2 id=&#34;claim-a-public-cloud-as-a-target&#34;&gt;Claim a Public Cloud as a Target&lt;/h2&gt;
+&lt;p&gt;Public cloud endpoints such as Amazon Web Services (AWS) can be added to
+Cisco Intersight by claiming them as a target.&lt;/p&gt;
+&lt;p&gt;To claim a public cloud as a target, perform the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Log into Intersight with the Account Administrator, Device
+Administrator, or Device Technician privileges.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the &lt;strong&gt;Service Selector&lt;/strong&gt;
+drop-down list, select &lt;strong&gt;System&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the Admin grouping in the left navigation pane in the home
+Intersight screen, click &lt;strong&gt;Targets&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Intersight displays the targets list in the All Targets tab that
+contains existing targets and columns of information about each
+including their connection status, the time of their claim, and who
+claimed them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Claim a New Target&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Intersight displays the Select a Target Type screen.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the Categories section under Filters in the lefthand side of the
+screen, ensure the &lt;strong&gt;All&lt;/strong&gt; radio
+button is selected (default).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the Cloud section of the main part of the Select a Target screen,
+click &lt;strong&gt;Amazon Web Services&lt;/strong&gt; and
+click the &lt;strong&gt;Start&lt;/strong&gt; button at the
+bottom of the screen.&lt;/p&gt;
+&lt;p&gt;Intersight displays the Claim Amazon Web Services Target screen.
+Provide the required information here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt; &amp;mdash; Provide a name for the
+Amazon Web Service target.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Access Key &amp;amp; Secret Access Key&lt;/strong&gt; &amp;mdash;
+Ensure you have generated an AWS access key and AWS secret access
+key. Locate the access key and type it in the Access Key field.
+Locate the secret access key and type it in the Secret Access Key
+field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Regional Distribution&lt;/strong&gt; &amp;mdash; Optional
+for users with an Essential license, but mandatory with Intersight
+Advantage or Premier licenses and will enable access to public
+cloud inventory and operations management features within
+Intersight.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Region Group&lt;/strong&gt; &amp;mdash; Click the list
+box and select the appropriate region for your public cloud
+account&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Region(s)&lt;/strong&gt; &amp;mdash; Click the Edit
+Region (pencil) icon and browse the resulting region list until
+you find the region you want to apply to the AWS cloud, click
+the checkbox to the left of it and then click Select. Public
+cloud inventory is collected only for those regions that are
+enabled here&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Claim&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;After the targets are claimed, you can view the managed targets in
+the Targets tablie view.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

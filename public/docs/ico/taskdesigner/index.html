@@ -1,0 +1,2128 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.110.0">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Task Designer | Cisco Intersight Help Center</title>
+<meta name="description" content="Cisco Intersight allows you to create tasks in which API requests can be executed in remote targets that can be reached through Intersight. You create tasks so that they can be used in workflows.">
+<meta property="og:title" content="Task Designer" />
+<meta property="og:description" content="Cisco Intersight allows you to create tasks in which API requests can be executed in remote targets that can be reached through Intersight. You create tasks so that they can be used in workflows." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:8080/docs/ico/taskdesigner/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-01-28T15:53:12+00:00" />
+<meta property="article:modified_time" content="2022-01-28T15:53:12+00:00" /><meta property="og:site_name" content="Cisco Intersight Help Center" />
+<meta itemprop="name" content="Task Designer">
+<meta itemprop="description" content="Cisco Intersight allows you to create tasks in which API requests can be executed in remote targets that can be reached through Intersight. You create tasks so that they can be used in workflows."><meta itemprop="datePublished" content="2022-01-28T15:53:12+00:00" />
+<meta itemprop="dateModified" content="2022-01-28T15:53:12+00:00" />
+<meta itemprop="wordCount" content="7462">
+<meta itemprop="keywords" content="Task," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Task Designer"/>
+<meta name="twitter:description" content="Cisco Intersight allows you to create tasks in which API requests can be executed in remote targets that can be reached through Intersight. You create tasks so that they can be used in workflows."/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" as="style">
+<link href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/prism.css"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-00000000-0');
+}
+</script>
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"></span><span class="navbar-brand__name">Cisco Intersight Help Center</span></a>
+  <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link active" href="/docs/"><span class="active">Documentation</span></a>
+      </li>
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      <li class="nav-item dropdown mr-4 d-none d-lg-block">
+        
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div></li>
+      </ul>
+  </div>
+  <div class="navbar-nav d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+  </div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <div id="content-mobile">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
+  <div id="content-desktop"></div>
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshome-li">
+  <a href="/docs/home/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docshome"><span class="">Home</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
+  <a href="/docs/getting-started/" title="Overview" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting Started</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedaccount_creation-li">
+  <a href="/docs/getting-started/account_creation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedaccount_creation"><span class="">Account Creation</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedclaimntarget-li">
+  <a href="/docs/getting-started/claimntarget/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedclaimntarget"><span class="">Claim Target</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docswhats_new-li">
+  <a href="/docs/whats_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docswhats_new"><span class="">What&#39;s New</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2023-li">
+  <a href="/docs/whats_new/2023/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2023"><span class="">2023</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2022-li">
+  <a href="/docs/whats_new/2022/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2022"><span class="">2022</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2021-li">
+  <a href="/docs/whats_new/2021/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2021"><span class="">2021</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_newtestdata-li">
+  <a href="/docs/whats_new/testdata/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_newtestdata"><span class="">New What&#39;s New</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsico-li">
+  <a href="/docs/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico"><span class="">Intersight Cloud Ochestrator</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicowokflowdesigner-li">
+  <a href="/docs/ico/wokflowdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner"><span class="">Workflow Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsicotaskdesigner-li">
+  <a href="/docs/ico/taskdesigner/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsicotaskdesigner"><span class="td-sidebar-nav-active-item">Task Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicodatatype-li">
+  <a href="/docs/ico/datatype/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicodatatype"><span class="">Data Type</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicowokflowdesigner-copy-li">
+  <a href="/docs/ico/wokflowdesigner-copy/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner-copy"><span class="">Sample Topic</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicocheatsheet-li">
+  <a href="/docs/ico/cheatsheet/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicocheatsheet"><span class="">Template Syntax (Go Template)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoico-li">
+  <a href="/docs/ico/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico"><span class="">Cisco Intersight ICO</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoico-cleanup-li">
+  <a href="/docs/ico/ico-cleanup/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico-cleanup"><span class="">Cisco Intersight ICO - Post-conversion Cleanup</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsicoexecutors-li">
+  <a href="/docs/ico/executors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsicoexecutors"><span class="">Executors</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorsansible-li">
+  <a href="/docs/ico/executors/ansible/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible"><span class="">Ansible</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorsansible-resuable-li">
+  <a href="/docs/ico/executors/ansible-resuable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible-resuable"><span class="">Ansible Resuable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorspowershell-li">
+  <a href="/docs/ico/executors/powershell/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorspowershell"><span class="">Powershell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorsssh-li">
+  <a href="/docs/ico/executors/ssh/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh"><span class="">SSH Commands</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorsssh-reusable-li">
+  <a href="/docs/ico/executors/ssh-reusable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh-reusable"><span class="">SSH Commands - Reusable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorssamplefile-li">
+  <a href="/docs/ico/executors/samplefile/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorssamplefile"><span class="">Sample File</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsicoexecutorswebapi-li">
+  <a href="/docs/ico/executors/webapi/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorswebapi"><span class="">WebAPI</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsico_new-li">
+  <a href="/docs/ico_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico_new"><span class="">Hulk 2.0</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues1-li">
+  <a href="/docs/ico_new/newfeatues1/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues1"><span class="">New Features 1</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues3-li">
+  <a href="/docs/ico_new/newfeatues3/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues3"><span class="">New Features 2</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatures2-li">
+  <a href="/docs/ico_new/newfeatures2/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatures2"><span class=""></span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docscaveats-li">
+  <a href="/docs/caveats/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docscaveats"><span class="">Caveats</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfaqs-li">
+  <a href="/docs/faqs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfaqs"><span class="">FAQs</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsvidoes-li">
+  <a href="/docs/vidoes/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsvidoes"><span class="">Videos</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/google/docsy-example/tree/master/content/en/docs/ICO/TaskDesigner.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines fa-fw"></i> View page source</a>
+  <a href="https://github.com/google/docsy-example/edit/master/content/en/docs/ICO/TaskDesigner.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/google/docsy-example/new/master/content/en/docs/ICO/TaskDesigner.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Create child page</a>
+  <a href="https://github.com/google/docsy-example/issues/new?title=Task%20Designer" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create documentation issue</a>
+  <a href="https://github.com/google/docsy/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create project issue</a>
+  <a id="print" href="http://localhost:8080/docs/ico/_print/"><i class="fa-solid fa-print fa-fw"></i> Print entire section</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#supported-requests">Supported Requests</a></li>
+        <li><a href="#response-parser">Response Parser</a></li>
+        <li><a href="#outcomes">Outcomes</a></li>
+      </ul>
+    </li>
+    <li><a href="#creating-a-task">Creating a Task</a></li>
+    <li><a href="#defining-a-task">Defining a Task</a>
+      <ul>
+        <li><a href="#defining-task-inputs-and-outputs">Defining Task Inputs and Outputs</a></li>
+        <li><a href="#template-engine-syntax">Template Engine Syntax**</a></li>
+        <li><a href="#comparison-statements">Comparison Statements**</a></li>
+        <li><a href="#conditional-statements">Conditional Statements</a></li>
+        <li><a href="#example-task-creating-a-snapshot-of-pure-flash-array">Example Task: Creating a Snapshot of Pure Flash Array</a></li>
+      </ul>
+    </li>
+    <li><a href="#task-input-and-executor-output-mapping">Task Input and Executor Output Mapping</a></li>
+    <li><a href="#exporting-a-task">Exporting a Task</a></li>
+    <li><a href="#importing-a-task">Importing a Task</a></li>
+    <li><a href="#managing-the-lifecycle-of-a-task">Managing the Lifecycle of a Task</a></li>
+    <li><a href="#cloning-a-task">Cloning a Task</a></li>
+    <li><a href="#supported-target-management-tasks">Supported Target Management Tasks</a></li>
+    <li><a href="#compute-tasks-matrix">Compute Tasks Matrix</a></li>
+    <li><a href="#supported-tasks-for-storage-targets">Supported Tasks for Storage Targets</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+	
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-tags">
+      
+        <h5 class="taxonomy-title">Tag Cloud</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/data-type/" data-taxonomy-term="data-type"><span class="taxonomy-label">Data Type</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">Executors</span><span class="taxonomy-count">4</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/sample/" data-taxonomy-term="sample"><span class="taxonomy-label">sample</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/ssh/" data-taxonomy-term="ssh"><span class="taxonomy-label">SSH</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/task/" data-taxonomy-term="task"><span class="taxonomy-label">Task</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/test/" data-taxonomy-term="test"><span class="taxonomy-label">test</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/webapi/" data-taxonomy-term="webapi"><span class="taxonomy-label">WebAPI</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/whats-new/" data-taxonomy-term="whats-new"><span class="taxonomy-label">What&#39;s New</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/workflow/" data-taxonomy-term="workflow"><span class="taxonomy-label">Workflow</span><span class="taxonomy-count">9</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-categories">
+      
+        <h5 class="taxonomy-title">Categories</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/examples/" data-taxonomy-term="examples"><span class="taxonomy-label">Examples</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">executors</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/ico/" data-taxonomy-term="ico"><span class="taxonomy-label">ICO</span><span class="taxonomy-count">17</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/placeholders/" data-taxonomy-term="placeholders"><span class="taxonomy-label">Placeholders</span><span class="taxonomy-count">1</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/ico/">Intersight Cloud Ochestrator</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="http://localhost:8080/docs/ico/taskdesigner/" aria-disabled="true" class="btn-link disabled">Task Designer</a>
+  </li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Task Designer</h1>
+	<div class="lead">Cisco Intersight allows you to create tasks in which API requests can be executed in remote targets that can be reached through Intersight. You create tasks so that they can be used in workflows.</div>
+	<header class="article-meta">
+		
+
+  
+    
+      
+
+
+<div class="taxonomy taxonomy-terms-article taxo-tags">
+  <h5 class="taxonomy-title">Tags:</h5>
+  <ul class="taxonomy-terms">
+    
+      <li><a class="taxonomy-term" href="http://localhost:8080/tags/task/" data-taxonomy-term="task"><span class="taxonomy-label">Task</span></a></li>
+    
+  </ul>
+</div>
+
+    
+      
+
+
+<div class="taxonomy taxonomy-terms-article taxo-categories">
+  <h5 class="taxonomy-title">Categories:</h5>
+  <ul class="taxonomy-terms">
+    
+      <li><a class="taxonomy-term" href="http://localhost:8080/categories/ico/" data-taxonomy-term="ico"><span class="taxonomy-label">ICO</span></a></li>
+    
+  </ul>
+</div>
+
+    
+  
+
+		
+	</header>    
+	
+
+
+
+<a id="td-block-0" class="td-offset-anchor"></a>
+<section class="row td-box td-box--pink position-relative td-box--gradient td-box--height-auto">
+	<div class="container text-center td-arrow-down">
+		<div class="h4 mb-0">
+			
+				<p>TechOS is the OS of the future.</p>
+<p>Runs on <strong>bare metal</strong> in the <strong>cloud</strong>!</p>
+
+			
+		</div>
+	</div>
+</section>
+
+<BR>
+
+
+
+ 
+<a id="td-block-1" class="td-offset-anchor"></a>
+<section class="row td-box td-box--blue td-box--gradient td-box--height-auto">
+	<div class="col">
+		<div class="row row">
+			
+				<div class="col-lg-4 mb-5 mb-lg-0 text-center">
+<div class="mb-4 h1">
+  <i class="fas fa-lightbulb"></i>
+</div>
+<h4 class="h3">Fastest OS <strong>on the planet</strong>!</h4>
+<div class="mb-0">
+<p>The new <strong>TechOS</strong> operating system is an open source project. It is a new project, but with grand ambitions.
+Please follow this space for updates!</p>
+</div>
+</div>
+<div class="col-lg-4 mb-5 mb-lg-0 text-center">
+<div class="mb-4 h1">
+  <i class="fas fa-brands fa-github"></i>
+</div>
+<h4 class="h3">Contributions welcome!</h4>
+<div class="mb-0">
+<p>We do a <a href="https://github.com/gohugoio/hugo/pulls">Pull Request</a> contributions workflow on <strong>GitHub</strong>. New users are always welcome!</p>
+</div>
+<p><a href="https://github.com/gohugoio/hugo">Read more …</a></p>
+</div>
+<div class="col-lg-4 mb-5 mb-lg-0 text-center">
+<div class="mb-4 h1">
+  <i class="fas fa-brands fa-twitter"></i>
+</div>
+<h4 class="h3">Follow us on Twitter!</h4>
+<div class="mb-0">
+<p>For announcement of latest features etc.</p>
+</div>
+<p><a href="https://twitter.com/GoHugoIO">Read more …</a></p>
+</div>
+
+			
+		</div>
+	</div>
+</section>
+
+<div class="col-lg-4 mb-5 mb-lg-0 text-center">
+<div class="mb-4 h1">
+  <i class="fas fa-brands fa-github"></i>
+</div>
+<h4 class="h3">Contributions welcome!</h4>
+<div class="mb-0">
+<p>We do a <a href="https://github.com/gohugoio/hugo/pulls">Pull Request</a> contributions workflow on <strong>GitHub</strong>. New users are always welcome!</p>
+</div>
+<p><a href="https://github.com/gohugoio/hugo">Read more …</a></p>
+</div>
+
+        <style>
+          #redoc input { height: 64px; }
+          #redoc span[type="put"], span[type="get"], span[type="delete"], span[type="post"], span[type="options"], span[type="patch"], span[type="basic"], span[type="link"], span[type="head"] {
+              border-radius: 4px;
+            }
+          #redoc h2 { margin-top: 0px;}
+      </style>
+  
+    
+    <style>
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #30638E;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color: #555;
+      }
+  </style>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+      
+      var mybutton = document.getElementById("myBtn");
+      
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+  </script>
+    
+
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    
+   <div id="redoc-container">
+   <redoc spec-url='https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v2.0/yaml/petstore.yaml' hide-hostname="true" suppress-warnings="true" lazy-rendering  native-scrollbars scroll-y-offset=".js-navbar-scroll" ZgotmplZ></redoc>
+   </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/redoc@latest/bundles/redoc.standalone.js"></script>
+
+<div class="td-card card mb-4">
+  
+    <div class="card-header">
+      
+        <strong>Imagine</strong>
+      
+    </div>
+  
+  <div class="card-body">
+    
+      <h5 class="card-title">
+        
+          Artist and songwriter: John Lennon
+        
+      </h5>
+    
+    
+      <h6 class="card-title mb-2 text-muted">
+        
+          Co-writer: Yoko Ono
+        
+      </h6>
+    
+    
+      <p class="card-text">
+        
+          <p>Imagine there&rsquo;s no heaven, It&rsquo;s easy if you try<br/>
+No hell below us, above us only sky<br/>
+Imagine all the people living for today…</p>
+<p>…</p>
+
+        
+      </p>
+    
+  </div>
+  
+    <div class="card-footer">
+      
+        <img src="https://server.tld/%E2%80%A6/signature.png" alt="SignatureJohnLennon" title="Signature John Lennon">
+      
+    </div>
+  
+</div>
+
+<div class="td-card card">
+  
+  
+    
+  
+  
+  <div class="card-header bg-white"><strong>C</strong></div>
+  
+  <div class="card-body code p-l0 m-0">
+      <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdlib.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">puts</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello World!&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">EXIT_SUCCESS</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+  </div>
+</div>
+
+<div class="td-card-deck card-deck mb-4">
+  <div class="td-card card mb-4">
+  
+    <div class="card-header">
+      
+        Header card 1
+      
+    </div>
+  
+  <div class="card-body">
+    
+    
+    
+      <p class="card-text">
+        
+          <pre><code>Content card 1
+</code></pre>
+
+        
+      </p>
+    
+  </div>
+  
+</div>
+
+  <div class="td-card card mb-4">
+  
+    <div class="card-header">
+      
+        Header card 2
+      
+    </div>
+  
+  <div class="card-body">
+    
+    
+    
+      <p class="card-text">
+        
+          <pre><code>Content card 2
+</code></pre>
+
+        
+      </p>
+    
+  </div>
+  
+</div>
+
+  <div class="td-card card mb-4">
+  
+    <div class="card-header">
+      
+        Header card 3
+      
+    </div>
+  
+  <div class="card-body">
+    
+    
+    
+      <p class="card-text">
+        
+          <pre><code>Content card 3
+</code></pre>
+
+        
+      </p>
+    
+  </div>
+  
+</div>
+
+</div>
+<p><strong>Note:</strong> To execute the new tasks for VMware vCenter networking
+operations, you should upgrade to Intersight Assist version 1.0.9-278.</p>
+<p>To launch the Task Designer, choose Orchestration <strong>&gt;</strong> Task. A
+dashboard displays the following details under these tabs, namely, My
+Tasks, System Tasks, and All Tasks:</p>
+<ul>
+<li>
+<p>Top Task Categories</p>
+</li>
+<li>
+<p>Number of System Defined Tasks</p>
+</li>
+<li>
+<p>Top Workflows by Targets</p>
+</li>
+</ul>
+<p>Below the dashboard is a tabular list of tasks displaying the following
+information:</p>
+<ul>
+<li>
+<p>Display Name</p>
+</li>
+<li>
+<p>Description</p>
+</li>
+<li>
+<p>Validation Status</p>
+</li>
+<li>
+<p>Last Update</p>
+</li>
+<li>
+<p>System Defined</p>
+</li>
+<li>
+<p>Organization</p>
+</li>
+</ul>
+<p>From this screen, with an account administrator or a Workflow Designer
+role, you can perform the following actions for an organization:</p>
+<ul>
+<li>
+<p>Create a task</p>
+</li>
+<li>
+<p>Edit or delete a task</p>
+</li>
+</ul>
+<p><strong>Note:</strong> Tasks created in an organization can be used in workflows
+created within that organization only.</p>
+<h3 id="supported-requests">Supported Requests</h3>
+<p>You can define and execute one or more API requests in the task
+definition. You can extract the required values from the API responses
+and use them in subsequent API requests as task output values. You
+provide values for different properties in an HTTP API request and use
+them in subsequent API request or as task output values. You can also
+provide values for different properties of an HTTP API request, such as,
+HTTP method, URL, header, cookies, etc.</p>
+<p>The API requests can be executed on external targets that are reachable
+by Intersight, either directly or through device connectors. The
+supported HTTP authentication scheme is Basic Authentication over HTTPS.
+The external targets with their credentials are defined when specifying
+the Targets in the Targets screen (see: <a href="file://E:%5Chelp%5Cfeatures%5Ccisco_intersight%5Cadmin">Target
+Management</a>). Hence,
+there is no need to provide credentials or authentication specific
+headers in the request. The input parameter of type target data type is
+the source from which the details are automatically collected from.</p>
+<h3 id="response-parser">Response Parser</h3>
+<p>The response parser contains information about the required values,
+their types, and the location in the API responses. You specify the
+required values along with API request details. These details are used
+by the response parser to extract values from the API responses. The
+extracted values are used as task output values and to determine the
+task execution status and the status message.</p>
+<p>The supported response type is JSON. The response parser supports
+extraction of values from JSON responses. The users shall provide the
+information such as the value parameter name, type and the JSON path of
+the value location. You can extract multiple values from the API
+response by providing the above details for each required value.</p>
+<h3 id="outcomes">Outcomes</h3>
+<p>An outcome is the combination of a condition and task status. You use
+the extracted values from the API response to determine the task status
+and set the status with an appropriate message, when the conditions
+match. You can specify one or more outcomes and the outcomes are
+evaluated in the specified order. The first outcome condition that
+matches sets the task status and message. If none of the outcome
+condition matches, the task shall be marked as successful. The outcomes
+of a task are as follows:</p>
+<ul>
+<li>
+<p>Success&mdash;Marks the API execution as Success if the condition
+matches</p>
+</li>
+<li>
+<p>Skip to Success&mdash;Stops further API executions of the task and marks
+the task as successful when the condition matches</p>
+</li>
+<li>
+<p>Status&mdash;Retains a task as work in progress, only updating the
+status</p>
+</li>
+<li>
+<p>Error&mdash;Marks the API execution as Failed if the condition matches.
+Task retry will be attempted if the task has any retries left</p>
+</li>
+<li>
+<p>Terminal error&mdash;Marks the API execution as Failed if the condition
+matches. This marks a non-recoverable error and no retries are
+attempted</p>
+</li>
+<li>
+<p>Skip Task Execution&mdash;Skips execution of task if the condition
+matches in the API. This will skip execution of all the subsequent
+APIs in the task</p>
+</li>
+</ul>
+<p>If the task status is Terminal Error, there are no retries for that
+task.</p>
+<h2 id="creating-a-task">Creating a Task</h2>
+<p>Task creation can be broken down into the following sequence of steps:</p>
+<ol>
+<li>
+<p>Defining a task&mdash;you specify the name of the task and provide a few
+other generic details.</p>
+</li>
+<li>
+<p>Defining task inputs and task outputs&mdash;you can specify which input
+parameters are required to execute the task and the output expected
+from the execution.</p>
+</li>
+<li>
+<p>Adding multiple API requests in the Task Designer.</p>
+</li>
+</ol>
+<h2 id="defining-a-task">Defining a Task</h2>
+<ol>
+<li>
+<p>Choose Orchestration from the left navigation pane.</p>
+</li>
+<li>
+<p>Click Tasks tab.</p>
+</li>
+<li>
+<p>Choose Create Task.</p>
+</li>
+<li>
+<p>Drag and drop a task from the Tools section on the Design area.</p>
+</li>
+<li>
+<p>In the Task Properties area, choose the General tab and enter the
+following information:</p>
+<p>a.  Organization&mdash;Name of the organization that you are creating
+the task in</p>
+<p>b.  Task Name&mdash;A user-friendly short name for the task</p>
+<p>c.  Description&mdash;A description for the task</p>
+<p>d.  Retry Count&mdash;Number of times a task should be tried before it
+is marked failed</p>
+<p>e.  Retry Delay&mdash;Delay, in seconds, after which a task is tried
+again</p>
+<p>f.  Timeout&mdash;Timeout value, in seconds, after which a task is
+termed as timed out</p>
+<p>g.  Set Tags&mdash;Set a tag for the task in the key:value format</p>
+<p>h.  Enable Rollback Task&mdash;Enable to rollback a task and choose an
+appropriate task from the drop-down list. Create the required
+workflow inputs and map it accordingly</p>
+</li>
+</ol>
+<p><strong>Note:</strong> Rollback operation for Assign IP Address to Virtual Machine
+Network task is not supported on Windows virtual machines.</p>
+<h3 id="defining-task-inputs-and-outputs">Defining Task Inputs and Outputs</h3>
+<ol>
+<li>
+<p>In the Task Properties area, choose the Input tab and choose a
+parameter. For more information about the Input properties, see
+<a href="http://localhost:8080/docs/ico/wokflowdesigner/">Workflow Designer</a>.</p>
+</li>
+<li>
+<p>Click the Edit icon to open the Create Task Input dialog.</p>
+</li>
+<li>
+<p>In the Add Input screen, enter the following details:</p>
+<p>a.  Display Name&mdash;Enter user-friendly short name.</p>
+<p>b.  Reference Name</p>
+<p>c.  Description&mdash;Detailed description of the input</p>
+<p>d.  Value Restrictions&mdash;Choose Required, Collection/Multiple, or
+can be left blank</p>
+<p>e.  Type&mdash;Choose a data type for primitive data type. For example,
+enum</p>
+<p>f.  Enum List&mdash;Label for the enum value</p>
+<p>g.  Minimum and Maximum Range</p>
+<p>h.  Regex&mdash;Validates the regular expression when you select String
+in the Type field.</p>
+<p>i.  Object Selector&mdash;Enable to configure the Intersight managed
+object selectors. This attribute is available only when the
+primitive data is String. Specify the Intersight API Reference
+and selector attributes to feed the input from the table
+selection. Value will be passed according to the configuration
+set in the Value attribute.</p>
+<p>j.  Intersight API Reference&mdash;Enter the URL of the Intersight API
+configured with parameters.</p>
+<p>k.  Selector Attribute&mdash;Enter the attribute name(s) that needs to
+be displayed in the input table column. You can add multiple
+selector attributes by clicking +.</p>
+<p>l.  Value Attribute&mdash;Enter the value to be passed as an input while
+executing a task. This value should be any one of the attribute
+name specified in the Selector Attribute field. This attribute
+is available only when the primitive data is String.</p>
+<p>m.  Secure&mdash;Indicates that the values of these properties are
+encrypted and stored in Cisco Intersight.</p>
+</li>
+</ol>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ol start="17">
+<li>The fields displayed depend on the value you select for the Type
+field. Task designer does not support target date type.</li>
+</ol>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ol start="4">
+<li>
+<p>Click Add.</p>
+</li>
+<li>
+<p>Repeat this procedure to create multiple task inputs.</p>
+</li>
+<li>
+<p>In the Task Properties area, choose the Output tab and choose a
+parameter. For more information about the output properties, see
+Input and Output.</p>
+</li>
+</ol>
+<p>The created task is available in the General category in Workflow
+Designer. You can create a workflow by dragging and dropping the task on
+the Workflow Design area.</p>
+<h3 id="template-engine-syntax">Template Engine Syntax**</h3>
+<p>The template engine uses prefix notation for the statements. In case of
+operational statements, the operators are specified before the operands.
+All the operations are invoked after all the operands are evaluated.</p>
+<h3 id="comparison-statements">Comparison Statements**</h3>
+<p>The comparison statements can be written using <strong>eq</strong> (equal check),
+<strong>ne</strong> (not equal check), <strong>lt</strong> (less than check), <strong>le</strong> (less than or
+equal check), <strong>gt</strong> (greater than check), and <strong>ge</strong> (greater than or
+equal check).</p>
+<p>Here is an example that checks the parameter HttpStatusCode is in the
+client error code range 400 &ndash; 500. Note that the template engine
+supports prefix notation and hence the operators <strong>and</strong>, <strong>ge</strong>, and
+<strong>lt</strong> are specified before their operands.</p>
+<p>{{and (ge .global.CreateSnapshot.output.HttpStatusCode 400) (lt .global.CreateSnapshot.output.HttpStatusCode 500)}}</p>
+<h3 id="conditional-statements">Conditional Statements</h3>
+<p>The template engine supports conditional statements in prefix notation
+syntax. This section has some examples of these conditional statements.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#a40000"> \</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">comparision_statement</span><span style="color:#000;font-weight:bold">&gt;}}</span><span style="color:#a40000"> </span><span style="color:#000">Template</span><span style="color:#a40000"> </span><span style="color:#000">to</span><span style="color:#a40000"> </span><span style="color:#000">be</span><span style="color:#a40000"> </span><span style="color:#000">used</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{</span><span style="color:#000">end</span><span style="color:#000;font-weight:bold">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#a40000"> \</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">comparision_statement</span><span style="color:#000;font-weight:bold">&gt;}}</span><span style="color:#a40000"> </span><span style="color:#000">Template</span><span style="color:#a40000"> </span><span style="color:#000">to</span><span style="color:#a40000"> </span><span style="color:#000">be</span><span style="color:#a40000"> </span><span style="color:#000">used</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">else</span><span style="color:#000;font-weight:bold">}}</span><span style="color:#a40000"> </span><span style="color:#000">Template</span><span style="color:#a40000"> </span><span style="color:#000">to</span><span style="color:#a40000"> </span><span style="color:#000">be</span><span style="color:#a40000"> </span><span style="color:#000">used</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{</span><span style="color:#000">end</span><span style="color:#000;font-weight:bold">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#a40000"> \</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">comparision_statement</span><span style="color:#000;font-weight:bold">&gt;}}</span><span style="color:#a40000"> </span><span style="color:#000">Template</span><span style="color:#a40000"> </span><span style="color:#000">to</span><span style="color:#a40000"> </span><span style="color:#000">be</span><span style="color:#a40000"> </span><span style="color:#000">used</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">else</span><span style="color:#a40000"> </span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#a40000"> \</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">comparision_statement</span><span style="color:#000;font-weight:bold">}}</span><span style="color:#a40000"> </span><span style="color:#000">Tempalte</span><span style="color:#a40000"> </span><span style="color:#000">to</span><span style="color:#a40000"> </span><span style="color:#000">be</span><span style="color:#a40000"> </span><span style="color:#000">used</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{</span><span style="color:#000">end</span><span style="color:#000;font-weight:bold">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">eq</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">output</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">HttpStatusCode</span><span style="color:#a40000"> </span><span style="color:#0000cf;font-weight:bold">200</span><span style="color:#000;font-weight:bold">)}}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000">Snapshot</span><span style="color:#a40000"> </span><span style="color:#000">with</span><span style="color:#a40000"> </span><span style="color:#000">name</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">input</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Name</span><span style="color:#000;font-weight:bold">}}</span><span style="color:#a40000"> </span><span style="color:#000">is</span><span style="color:#a40000"> </span><span style="color:#000">created</span><span style="color:#a40000"> </span><span style="color:#000">successfully</span><span style="color:#000;font-weight:bold">.</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#000">end</span><span style="color:#000;font-weight:bold">}}</span>\
+</span></span><span style="display:flex;"><span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">eq</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">output</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">HttpStatusCode</span><span style="color:#a40000"> </span><span style="color:#0000cf;font-weight:bold">200</span><span style="color:#000;font-weight:bold">)}}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000">Snapshot</span><span style="color:#a40000"> </span><span style="color:#000">with</span><span style="color:#a40000"> </span><span style="color:#000">name</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">input</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Name</span><span style="color:#000;font-weight:bold">}}</span><span style="color:#a40000"> </span><span style="color:#000">is</span><span style="color:#a40000"> </span><span style="color:#000">created</span><span style="color:#a40000"> </span><span style="color:#000">successfully</span><span style="color:#000;font-weight:bold">.</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">else</span><span style="color:#000;font-weight:bold">}}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000">Snapshot</span><span style="color:#a40000"> </span><span style="color:#000">creation</span><span style="color:#a40000"> </span><span style="color:#000">failed</span><span style="color:#a40000"> </span><span style="color:#000">with</span><span style="color:#a40000"> </span><span style="color:#000">message</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">output</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">HttpStatusMsg</span><span style="color:#000;font-weight:bold">}}.</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#000">end</span><span style="color:#000;font-weight:bold">}}</span>\
+</span></span><span style="display:flex;"><span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">eq</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">output</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">HttpStatusCode</span><span style="color:#a40000"> </span><span style="color:#0000cf;font-weight:bold">200</span><span style="color:#000;font-weight:bold">)}}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000">Snapshot</span><span style="color:#a40000"> </span><span style="color:#000">with</span><span style="color:#a40000"> </span><span style="color:#000">name</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">input</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Name</span><span style="color:#000;font-weight:bold">}}</span><span style="color:#a40000"> </span><span style="color:#000">is</span><span style="color:#a40000"> </span><span style="color:#000">created</span><span style="color:#a40000"> </span><span style="color:#000">successfully</span><span style="color:#000;font-weight:bold">.</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">else</span><span style="color:#a40000"> </span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">eq</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">output</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">HttpStatusCode</span><span style="color:#a40000"> </span><span style="color:#0000cf;font-weight:bold">409</span><span style="color:#000;font-weight:bold">)}}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000">A</span><span style="color:#a40000"> </span><span style="color:#000">Snapshot</span><span style="color:#a40000"> </span><span style="color:#000">with</span><span style="color:#a40000"> </span><span style="color:#000">name</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">input</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Name</span><span style="color:#000;font-weight:bold">}}</span><span style="color:#a40000"> </span><span style="color:#000">already</span><span style="color:#a40000"> </span><span style="color:#000">exists</span><span style="color:#000;font-weight:bold">.</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#204a87;font-weight:bold">else</span><span style="color:#000;font-weight:bold">}}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000">Snapshot</span><span style="color:#a40000"> </span><span style="color:#000">creation</span><span style="color:#a40000"> </span><span style="color:#000">failed</span><span style="color:#a40000"> </span><span style="color:#000">with</span><span style="color:#a40000"> </span><span style="color:#000">message</span><span style="color:#a40000"> </span><span style="color:#000;font-weight:bold">{{.</span><span style="color:#000">global</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CreateSnapshot</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">output</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">HttpStatusMsg</span><span style="color:#000;font-weight:bold">}}.</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{{</span><span style="color:#000">end</span><span style="color:#000;font-weight:bold">}}</span>
+</span></span></code></pre></div><h3 id="example-task-creating-a-snapshot-of-pure-flash-array">Example Task: Creating a Snapshot of Pure Flash Array</h3>
+<p>This example shows how to create a snapshot of a volume in a Pure Flash
+Array. Specify the following information in the General tab of the Task
+Properties area.</p>
+<p>+&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Field | Value                                                        |
+| Name  |                                                              |
++=======+==============================================================+
+| Task  | New Pure Volume Snapshot                                     |
+| Name  |                                                              |
++&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Retry | 1                                                            |
+| Count |                                                              |
+|       | The task will be retried once more when the task fails.      |
++&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Retry | 10                                                           |
+| Delay |                                                              |
+|       | The task will be retried after 10 seconds.                   |
++&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Ti    | 20                                                           |
+| meout |                                                              |
+|       | If the task does not complete execution in 20 seconds, then  |
+|       | it is marked as Failed. If a retry count is configured       |
+|       | (which is 1 for this task), the task is retried after the    |
+|       | specified retry delay, which is 10 seconds.                  |
++&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>The snapshot is created using the Pure Flash Array volume API. Below is
+a sample API request and response from Pure Flash Array API Reference.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#000">POST</span><span style="color:#a40000"> </span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">volume</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    \</span><span style="color:#4e9a06">&#34;snap\&#34;: true,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">    \&#34;source\&#34;: \[\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;\&lt;Volume Name 1&gt;\&#34;,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;\&lt;Volume Name 2&gt;\&#34;</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    \</span><span style="color:#000;font-weight:bold">]</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>From the above API, it can be inferred that the name of the source
+volume is required, for which the snapshot is created. To do this, add a
+task input parameter of type string to fetch the volume name as a task
+input. Assuming the task input parameter is named as VolumeName, the
+following template can be used to create the above request. This
+template is populated as value for Body field in the API request&rsquo;s input
+panel.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    \</span><span style="color:#4e9a06">&#34;snap\&#34;: true,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">    \&#34;source\&#34;: \[\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;{{.global.task.input.VolumeName}}\&#34;</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    \</span><span style="color:#000;font-weight:bold">]</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>You either receive a success or a failure message for the request. The
+following is a sample of the success message. The success message
+displays the serial number and the new snapshot name against the Name
+and Serial properties. This information is extracted as a task output.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">200</span><span style="color:#a40000"> </span><span style="color:#000">OK</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">\</span><span style="color:#000;font-weight:bold">[</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    </span><span style="color:#000;font-weight:bold">{</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">        \</span><span style="color:#4e9a06">&#34;created\&#34;: \&#34;2017-12-16T05:12:53Z\&#34;,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;name\&#34;: \&#34;\&lt;snapshot name&gt;\&#34;,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;serial\&#34;: \&#34;\&lt;serial number&gt;\&#34;,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;size\&#34;: 5368709120,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;source\&#34;: \&#34;\&lt;volume name&gt;\&#34;</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    </span><span style="color:#000;font-weight:bold">}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">\</span><span style="color:#000;font-weight:bold">]</span>
+</span></span></code></pre></div><p>In case of a failure, the response displays an array of errors. Each
+error contains a message, a code, and a context. In this example, if the
+specified volume name is not found, the following message is displayed.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">400</span><span style="color:#a40000"> </span><span style="color:#000">BAD</span><span style="color:#a40000"> </span><span style="color:#000">REQUEST</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">\</span><span style="color:#000;font-weight:bold">[</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    </span><span style="color:#000;font-weight:bold">{</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">        \</span><span style="color:#4e9a06">&#34;msg\&#34;: \&#34;Volume does not exist.\&#34;,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;code\&#34;: 6,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;ctx\&#34;: \&#34;\&lt;Volume Name&gt;\&#34;</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    </span><span style="color:#000;font-weight:bold">}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">\</span><span style="color:#000;font-weight:bold">]</span>
+</span></span></code></pre></div><p>If the msg property is present in the response, the property can be used
+to determine the task status with HTTP status code 400. The property
+named msg can be accessed using the JSON path \$[0].msg. The details
+to extract the parameters are provided as value for Response Parser
+field in API request&rsquo;s input area. The path is a valid JSON path that
+locates a required data in the API response.</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Response          | Details                                          |
+| Parameter         |                                                  |
++===================+==================================================+
+| SnapshotName      | This parameter contains the extracted snapshot   |
+|                   | name in the API output.                          |
+|                   |                                                  |
+|                   | -   <strong>Name:</strong> SnapshotName                       |
+|                   |                                                  |
+|                   | -   <strong>Path:</strong> \$[0].name                       |
+|                   |                                                  |
+|                   | -   <strong>Type:</strong> string                             |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Serial            | This parameter contains the extracted serial     |
+|                   | value in the API output.                         |
+|                   |                                                  |
+|                   | -   <strong>Name:</strong> Serial                             |
+|                   |                                                  |
+|                   | -   <strong>Path:</strong> \$[0].serial                     |
+|                   |                                                  |
+|                   | -   <strong>Type:</strong> string                             |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Error             | This parameter contains the extracted error      |
+|                   | message in the API output.                       |
+|                   |                                                  |
+|                   | -   <strong>Name:</strong> Error                              |
+|                   |                                                  |
+|                   | -   <strong>Path:</strong> \$[0].msg                        |
+|                   |                                                  |
+|                   | -   <strong>Type:</strong> string                             |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>To define a task, drag and drop the <strong>Invoke Web API Request</strong> task into
+the Task Designer area. Use the Properties area to populate API details.
+The following is sample information that can be entered the General tab.</p>
+<p>+&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| F    | Value                                                         |
+| ield |                                                               |
+| Name |                                                               |
++======+===============================================================+
+| Name | <strong>Create Snapshot</strong>                                           |
+|      |                                                               |
+|      | The name must be unique. The APIs inside the task cannot be   |
+|      | named as <strong>Create Snapshot</strong>. A name without space, such as   |
+|      | <strong>CreateSnapshot</strong> can be used to refer the API output in     |
+|      | subsequent API requests. In this example the following        |
+|      | details are referred using API name.                          |
+|      |                                                               |
+|      | <strong>HTTP Status Code:</strong>                                         |
+|      |                                                               |
+|      | {{.global.CreateSnapshot.output.HttpStatusCode}}              |
+|      |                                                               |
+|      | The parameters extracted from the response are referred using |
+|      | the API name after extracting the value from the response     |
+|      | through the response parser as follows:                       |
+|      |                                                               |
+|      | {{.global.CreateSnapshot.output.Serial}}                      |
++&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Set  | <strong>Checked - true</strong>                                            |
+| Exte |                                                               |
+| rnal | As this is the first API and task does not have an input of   |
+| Ta   | type Target, a dialog appears that can be used to add a task  |
+| rget | input of Target type. The claimed Pure Storage Array target   |
+|      | is provided as value for this task input during execution.    |
++&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+</p>
+<p>The task input pertains to the API request details and to extract the
+required values from response. The following is an example of the
+required input values for the create snapshot API.</p>
+<p>+&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Field   | Value                                                      |
+| Name    |                                                            |
++=========+============================================================+
+| Method  | POST                                                       |
++&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| URL     | /volume                                                    |
+|         |                                                            |
+|         | The relative URL of the REST API end point is specified.   |
+|         | The host part is filled through the information in pure    |
+|         | target (Protocol, IPAddress, Port).                        |
++&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Body    | Content Type: JSON                                         |
+|         |                                                            |
+|         | Text:                                                      |
+|         |                                                            |
+|         | {\                                                         |
+|         |     \&ldquo;snap\&quot;: true,\                                       |
+|         |     \&ldquo;source\&quot;: [\                                        |
+|         |         \&rdquo;{{.global.task.input.VolumeName}}\&rdquo;\             |
+|         |     ]\                                                    |
+|         | }                                                          |
++&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| R       | The following parameters are added:                        |
+| esponse |                                                            |
+| Parser  | -   <strong>SnapshotName:</strong> Path: \$[0].name, Type: string     |
+|         |                                                            |
+|         | -   <strong>Serial:</strong> Path: \$[0].serial, Type: string         |
+|         |                                                            |
+|         | -   <strong>Error:</strong> Path: \$[0].msg, Type: string             |
++&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+</p>
+<p>The extracted values from the API responses determine the task status.
+In this example, the following outcomes are added based on the API
+response.</p>
+<ol>
+<li>If the status code is 401, the task encounters terminal failure with
+<strong>Authorization Failed</strong> message. The retry also fails. Hence the
+outcome type is set as <strong>Terminal Error</strong>. So, the task is not
+retried despite a retry is being specified.</li>
+</ol>
+<p>+&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Outcome    | Value                                                   |
+| Property   |                                                         |
++============+=========================================================+
+| Name       | <strong>Authorization Error</strong>                                 |
+|            |                                                         |
+|            | Identifies an outcome in the outcomes list of task      |
+|            | designer. The name is not used for any other purpose.   |
++&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Condition  | {{eq .global.CreateSnapshot.output.HttpStatusCode 401}} |
+|            |                                                         |
+|            | This condition checks whether the response status code  |
+|            | of API named &lsquo;Create Snapshot&rsquo; is 401.                  |
++&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Outcome    | <strong>Terminal Error</strong>                                      |
+| Type       |                                                         |
++&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| _          | <strong>Authorization Error. Check the target credentials.</strong>  |
+| _Message** |                                                         |
++&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+</p>
+<ol start="2">
+<li>If the HTTP status code is 400 and the extracted error is <strong>Volume
+does not exist</strong>, the task fails terminally. In this case, the retry
+execution also fails, hence the outcome type is set as <strong>Terminal
+Error</strong>.</li>
+</ol>
+<p>+&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| O      | Value                                                       |
+| utcome |                                                             |
+| Pr     |                                                             |
+| operty |                                                             |
++========+=============================================================+
+| Name   | <strong>Volume does not exist</strong>                                   |
+|        |                                                             |
+|        | The name here is to identify an outcome quickly in the      |
+|        | outcomes list of task. The name is not used for any other   |
+|        | purpose.                                                    |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Con    | {                                                           |
+| dition | {and (eq .global.CreateSnapshot.output.HttpStatusCode 400)\ |
+|        |  (eq .globa                                                 |
+|        | l.CreateSnapshot.output.Error \&lsquo;Volume does not exist.\&rsquo;)}} |
+|        |                                                             |
+|        | If we refer the sample response in previous sections, we    |
+|        | will get a 400-Bad Request with response containing error   |
+|        | msg &lsquo;Volume does not exist.&rsquo;.                               |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| O      | <strong>Terminal Error</strong>                                          |
+| utcome |                                                             |
+| Type   |                                                             |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| M      | <strong>A volume with name {{.global.task.input.VolumeName}} does |
+| essage | not exist. Check the volume name given.</strong>                   |
+|        |                                                             |
+|        | This outcome for a given volume name input &lsquo;oracle-db&rsquo; will |
+|        | fail the task with message &lsquo;A volume with name oracle-db    |
+|        | does not exist. Check the volume name given.                |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<ol start="3">
+<li>For any API failure caused by bad user input, do not retry and fail
+the task immediately.</li>
+</ol>
+<p>+&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| O      | Value                                                       |
+| utcome |                                                             |
+| Pr     |                                                             |
+| operty |                                                             |
++========+=============================================================+
+| **     | <strong>Any client error</strong>                                        |
+| Name** |                                                             |
+|        | Identifies a result in the outcomes list of task designer,  |
+|        | and is not used for any other purpose                       |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| _      | {                                                           |
+| _Condi | {and (ge .global.CreateSnapshot.output.HttpStatusCode 400)\ |
+| tion** | (lt .global.CreateSnapshot.output.HttpStatusCode 500)}}     |
+|        |                                                             |
+|        | This condition checks if the HTTP status code is in the     |
+|        | range between 400 to 499.                                   |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| <strong>O    | <strong>Terminal Error</strong>                                          |
+| utcome |                                                             |
+| Type</strong> |                                                             |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| <strong>Mes  | API request                                                 |
+| sage</strong> |  failed - {{.global.CreateSnapshot.output.HttpStatusCode}}\ |
+|        | {{if (index .global.CreateSnapshot.output `Error`)}}:\    |
+|        | {{.global.CreateSnapshot.output.Error}}{{else}} \           |
+|        | {{.global.CreateSnapshot.output.HttpStatusMsg}}{{end}}      |
+|        |                                                             |
+|        | This message checks that a valid error message is extracted |
+|        | by using an if else block                                   |
+|        |                                                             |
+|        | {{if (index .global.CreateSnapshot.output `Error`)}}      |
+|        |                                                             |
+|        | If the error value is &lsquo;Snapshot not supported&rsquo;, the task    |
+|        | status message is &lsquo;API request failed &ndash; 405: Snapshot not  |
+|        | supported&rsquo;.                                                 |
+|        |                                                             |
+|        | If no valid error message is present in the response, the   |
+|        | HTTP status message is used. For example, **API request     |
+|        | failed &ndash; 413 Payload Too Large**.                          |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<ol start="4">
+<li>For errors on the server, the task must be tried again before
+setting the outcome type as <strong>Error</strong> instead of <strong>Terminal Error</strong>.</li>
+</ol>
+<p>+&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| O   | Value                                                          |
+| utc |                                                                |
+| ome |                                                                |
+| Pr  |                                                                |
+| ope |                                                                |
+| rty |                                                                |
++=====+================================================================+
+| **  | <strong>Any server error</strong>                                           |
+| Nam |                                                                |
+| e** | The name here is to identify an outcome quickly in the         |
+|     | outcomes list of task designer. The name is not used for any   |
+|     | other purpose.                                                 |
++&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| _   | {{and (ge .global.CreateSnapshot.output.HttpStatusCode 500) \  |
+| _Co | (lt .global.CreateSnapshot.output.HttpStatusCode 600)}}        |
+| ndi |                                                                |
+| tio | This condition checks if the HTTP status code is in the range  |
+| n** | between 500 to 599.                                            |
++&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| <strong>O | <strong>Error</strong>                                                      |
+| utc |                                                                |
+| ome | The outcome type is set as <strong>Error</strong>. Hence, the request is    |
+| Typ | retried, if retries are configured.                            |
+| e</strong> |                                                                |
++&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| **  | API requ                                                       |
+| Mes | est failed - {{.global.CreateSnapshot.output.HttpStatusCode}}\ |
+| sag | {{if (index .global.CreateSnapshot.output `Error`)}}:\       |
+| e** | {{.global.CreateSnapshot.output.Error}}{                       |
+|     | {else}} {{.global.CreateSnapshot.output.HttpStatusMsg}}{{end}} |
+|     |                                                                |
+|     | This is the same message that is used in the client error      |
+|     | outcome.                                                       |
++&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<ol start="5">
+<li>This can be termed as the final outcome for a successful completion.</li>
+</ol>
+<p>+&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| O      | Value                                                       |
+| utcome |                                                             |
+| Pr     |                                                             |
+| operty |                                                             |
++========+=============================================================+
+| **     | <strong>All Good</strong>                                                |
+| Name** |                                                             |
+|        | The name identifies an outcome in the outcomes list of task |
+|        | designer. The name is not used for any other purpose.       |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| _      | <strong>True</strong>                                                    |
+| _Condi |                                                             |
+| tion** | {{eq .global.CreateSnapshot.output.HttpStatusCode 200}}     |
+|        |                                                             |
+|        | <strong>True</strong> can be used as the condition to capture all        |
+|        | scenarios or the specific success response status code can  |
+|        | be used, which is 200.                                      |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| <strong>O    | <strong>Success</strong>                                                 |
+| utcome |                                                             |
+| Type</strong> |                                                             |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| <strong>Mes  | A snapshot with name                                        |
+| sage</strong> |                                                             |
+|        | {{.global.CreateSnapshot.output.SnapshotName}}              |
+|        |                                                             |
+|        | and serial                                                  |
+|        |                                                             |
+|        | {{.global.CreateSnapshot.output.Serial}}                    |
+|        |                                                             |
+|        | is created successfully for volume with name                |
+|        |                                                             |
+|        | {{.global.task.input.VolumeName}}                           |
+|        |                                                             |
+|        | .                                                           |
+|        |                                                             |
+|        | The outcome for a given volume name input oracle-db sets    |
+|        | the task to success with the message: **A snapshot with     |
+|        | name oracle-db.8 and serial B3CD9AF2175A4E2800011010 is     |
+|        | created successfully for volume with name oracle-db**.      |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>As part of this task, an inventory refresh request can be sent to pull
+the new snapshot inventory. This API contains the following details in
+the request.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#000">POST</span><span style="color:#a40000"> </span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">v1</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">task</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">PureScopedInventories</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    \</span><span style="color:#4e9a06">&#34;Type\&#34;: \&#34;storage.PureVolumeSnapshot\&#34;,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">    \&#34;NamingProperty\&#34;: \&#34;Name\&#34;,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">    \&#34;Values\&#34;: \[\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;\&lt;Snapshot_Name&gt;\&#34;\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">    \],\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">    \&#34;RegisteredDevice\&#34;: {\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;ObjectType\&#34;: \&#34;asset.DeviceRegistration\&#34;,\
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">        \&#34;Moid\&#34;: \&#34;\&lt;Pure Device Registration Id&gt;\&#34;</span>\
+</span></span><span style="display:flex;"><span><span style="color:#a40000">    </span><span style="color:#000;font-weight:bold">}</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>The snapshot name is obtained from previous API output by using the
+following reference: {{.global.CreateSnapshot.output.SnapshotName}}.</p>
+<p>The device registration ID is obtained by performing a GET API of the
+selected target and extracting the <strong>MOID</strong> from the
+<strong>RegisteredDevice</strong>. For more information, see <a href="http:///apidocs">API
+Docs</a>.</p>
+<p>This section is realized by sending two Intersight API requests: GET
+/v1/asset/Targets/\&lt;Target_Moid&gt; and using the extracted registered
+device Moid in the above request. Having explained the API specific
+details in the previous section, we will quickly add two API calls to
+the same task.</p>
+<p>Do not choose the Set External Target option in the General tab. This is
+because the API calls can be inferred as Intersight API calls.</p>
+<p>This section captures the details related to the Intersight API call
+that gets the registered device Moid from the given target task input.</p>
+<p>The outcomes shall be added for better experience with these Intersight
+API calls and since the previous section explains the outcomes in
+detail, this section does not cover them.</p>
+<p>GET is used as the default, if no value is provided for Method field.</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Field Name       | Value                                             |
++==================+===================================================+
+| <strong>API Name</strong>     | Get Device Id                                     |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| <strong>Set External   | Unchecked/false                                   |
+| Target</strong>         |                                                   |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| <strong>URL</strong>          | /v1/asset/Targets/                                |
+|                  |                                                   |
+|                  | {{.global.task.input.Target.Moid}}                |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| <strong>Response       | We will extract the Moid of the                   |
+| Parser</strong>         | &lsquo;RegisteredDevice&rsquo; relation.                      |
+|                  |                                                   |
+|                  | DeviceMoid &ndash; Path: \$.RegisteredDevice.Moid,     |
+|                  | Type: string                                      |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+</p>
+<p>The target Moid required in the URL is populated from the task input
+Target. As part of this API output, the extracted device Moid can be
+referred in the next API request body with the following reference:</p>
+<p>{{.global.GetDeviceId.output.DeviceMoid}}</p>
+<p>Using this example, you can also capture details for the Intersight API
+that requests the inventory refresh for Pure Flash Array snapshots. The
+snapshot name is extracted from the first API and the device Moid is
+extracted from the second API to create a request for this API.</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Field Name    | Value                                                |
++===============+======================================================+
+| <strong>API Name</strong>  | Request Inventory Refresh                            |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| <strong>Set         | Unchecked or false                                   |
+| External      |                                                      |
+| Target</strong>      |                                                      |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| <strong>Method</strong>    | POST                                                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| <strong>URL</strong>       | <strong>/v1/task/PureScopedInventories</strong>                   |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| <strong>Body</strong>      | Content Type: JSON                                   |
+|               |                                                      |
+|               | Text:                                                |
+|               |                                                      |
+|               | {\                                                   |
+|               |     \&ldquo;Type\&quot;: \&ldquo;storage.PureVolumeSnapshot\&rdquo;,\       |
+|               |     \&ldquo;NamingProperty\&quot;: \&ldquo;Name\&rdquo;,\                   |
+|               |     \&ldquo;Values\&quot;: [\                                  |
+|               |                                                      |
+|               |  \&rdquo;{{.global.CreateSnapshot.output.SnapshotName}}\&rdquo;\ |
+|               |     ],\                                             |
+|               |     \&ldquo;RegisteredDevice\&quot;: {\                         |
+|               |                                                      |
+|               |       \&ldquo;ObjectType\&quot;: \&ldquo;asset.DeviceRegistration\&rdquo;,\ |
+|               |         \&ldquo;Mo                                         |
+|               | id\&quot;: \&rdquo;{{.global.GetDeviceId.output.DeviceMoid}}\&rdquo;\ |
+|               |     }\                                               |
+|               | }                                                    |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+</p>
+<p>There is no response body for this request. Therefore, the outcomes can
+be added based on API HTTP status code to set the task status. The
+outcome is not added her as they have been captured in detail for the
+first outcome. The extracted values from the API response
+<strong>SnapshotName</strong> and <strong>Serial</strong> are mapped to task output so that they
+are available as task output that can be referred in subsequent tasks in
+a workflow. This can be done by creating two task output parameters
+named &lsquo;<strong>SnapshotName</strong>&rsquo; and &lsquo;<strong>Serial</strong>&rsquo; in &lsquo;Output tab of Properties
+area. The task output can be mapped to take API response values by using
+Map to Task Output action. The values extracted using <strong>Response
+Parser</strong> in an API can be mapped by selecting Parameters and then the
+API Name entry in Task Output drop down and providing the actual
+parameter names in Path field.</p>
+<p><strong>Example: Obtaining Cisco ASA Details</strong></p>
+<p>The previous example illustrates the need to make API requests to a
+claimed target in Intersight. This section explains a sample task that
+obtains simple information from Cisco ASA, while is reachable from
+Intersight Assist. Intersight does not have a device connector for Cisco
+ASA.</p>
+<p>As a first step, Cisco ASA is added as custom target. Cisco ASA uses
+HTTP basic authentication and has REST API interface. Hence, requests
+can be made to Cisco ASA as part of Intersight IO tasks. The device must
+be reachable from Intersight Assist. The device can be added as a Custom
+Target in Targets screen, by providing IP address, credentials and
+Intersight Assist from which the device is reachable. Cisco ASA added as
+custom target must be configured from Intersight tasks. Though, Cisco
+ASA supports basic authentication and does not need a session token to
+be created in Intersight, you can use a session token to showcase the
+Web API support for handling values for request and response headers.</p>
+<p>A session token is created and used in the request header to facilitate
+in the extraction of response headers. In this example, the task
+executes two API requests in Cisco ASA, namely create a session token
+and use the session token to obtain the Cisco ASA version.</p>
+<p>To obtain a session token, use the <strong>Post</strong> call /api/tokenservices&rsquo; to
+create a session token. Use the <strong>Delete</strong> request
+/api/tokenservices/\<Token> to delete the session. Cisco ASA expects a
+request to create a session token. It must include the basic
+authentication header that Intersight populates when using the details
+in the custom target.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#000">POST</span><span style="color:#a40000"> </span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">api</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">tokenservices</span>\
+</span></span><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">204</span><span style="color:#a40000"> </span><span style="color:#000">No</span><span style="color:#a40000"> </span><span style="color:#000">Content</span>\
+</span></span><span style="display:flex;"><span>\
+</span></span><span style="display:flex;"><span><span style="color:#000">Response</span><span style="color:#a40000"> </span><span style="color:#000">Headers</span>\
+</span></span><span style="display:flex;"><span><span style="color:#000">X</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">Auth</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">Token</span><span style="color:#000;font-weight:bold">:</span><span style="color:#a40000"> \</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">New</span><span style="color:#a40000"> </span><span style="color:#000">Session</span><span style="color:#a40000"> </span><span style="color:#000">Token</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><p>The subsequent API requests must have the X-Auth-Token request header.</p>
+<p>The following table explains the request details that need to be
+provided in Task Designer to create session token.</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Field Name    | Value                                                |
++===============+======================================================+
+| API Name      | Get Session Token                                    |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Set External  | Checked                                              |
+| Target        |                                                      |
+|               | A task input of target type is added through the     |
+|               | Task Designer dialog.                                |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Method        | POST                                                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| URL           | /api/tokenservices                                   |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+</p>
+<p><strong>Note:</strong> There is no need to have a request body or response parser
+given because the API does not generate a response body.</p>
+<p>Details, such as, response headers, cookies, status code, and status
+message, can be referred in subsequent API requests using references
+based on the API name as follows:</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Response     | Reference Name                                        |
+| Parameter    |                                                       |
++==============+=======================================================+
+| Headers&mdash;-A | {{.global.GetSessionToken.output.HttpHeaders}}        |
+| map of       |                                                       |
+| headers with | A specific response header value can be obtained      |
+| keys being   | using two notations:                                  |
+| the header   | {{.glob                                               |
+| name and     | al.GetSessionToken.output.HttpHeaders.\<HeaderName>}} |
+| values being | or {{index .global.GetSessionToken.output.HttpHeaders |
+| a string     | `HeaderName`}}                                      |
+| array of     |                                                       |
+| header       | Examples of above notations are:                      |
+| values.      |                                                       |
+|              | {{.global.GetSessionToken.output.HttpHeaders.Date}}   |
+|              |                                                       |
+|              | {{index .global.GetSessionToken.output.HttpHeaders    |
+|              | `X-Auth-Token`}}                                    |
+|              |                                                       |
+|              | The above examples get the header value in the form   |
+|              | of <strong>string array</strong> and individual values can be      |
+|              | accessed by index template function. The index        |
+|              | function can also be used to access a specific header |
+|              | in Headers.                                           |
+|              |                                                       |
+|              | {{index                                               |
+|              | .global.GetSessionToken.output.HttpHeaders.Date 0}}   |
+|              |                                                       |
+|              | {{index (index                                        |
+|              | .global.GetSessionToken.output.HttpHeaders            |
+|              | `X-Auth-Token`) 0}}                                 |
+|              |                                                       |
+|              | <strong>Note:</strong> The template engine used by Intersight IO   |
+|              | considers hyphens (-) as special characters and does  |
+|              | not allow obtaining headers with hyphens using the    |
+|              | first dotted notation. Considering the fact that most |
+|              | of the header names are hyphenated, it is recommended |
+|              | to use the second notation only.                      |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Cookies&mdash;A  | {{.global.GetSessionToken.output.HttpCookies}}        |
+| map of       |                                                       |
+| cookies with | The further values of specific cookies can be         |
+| keys being   | referred using either the dot notation or with index  |
+| cookie names | function. The details are explained in the previous   |
+| and the      | row about Headers.                                    |
+| values being |                                                       |
+| strings.     |                                                       |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| HTTP Status  | {{.global.GetSessionToken.output.HttpStatusCode}}     |
+| C            |                                                       |
+| ode&mdash;Number |                                                       |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| HTTP Status  | {{.global.GetSessionToken.output.HttpStatusMsg}}      |
+| Mess         |                                                       |
+| age&mdash;String |                                                       |
++&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>The following table explains the various outcomes that the API request
+can produce.</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Outcome Name    | Details                                            |
++=================+====================================================+
+| Unauthorized    | Condition&mdash;{{eq                                   |
+|                 | .global.GetSessionToken.output.HttpStatusCode      |
+|                 | 401}}                                              |
+|                 |                                                    |
+|                 | Outcome Type:&mdash;Terminal Error                     |
+|                 |                                                    |
+|                 | Message: Authorization failed. Check the target    |
+|                 | credentials.                                       |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Session Limit   | Condition&mdash;{{eq                                   |
+| Breached        | .global.GetSessionToken.output.HttpStatusCode      |
+|                 | 503}}                                              |
+|                 |                                                    |
+|                 | Outcome&mdash;Type: Error                              |
+|                 |                                                    |
+|                 | Message&mdash;Maximum number of sessions reached.      |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| All Well        | Condition&mdash;{{eq                                   |
+|                 | .global.GetSessionToken.output.HttpStatusCode      |
+|                 | 204}}                                              |
+|                 |                                                    |
+|                 | Outcome Type&mdash;Success                             |
+|                 |                                                    |
+|                 | Message&mdash;Session token is Obtained.               |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<p>The auth token obtained from the first API can be used in the second API
+to obtain the ASA version and other details as follows:</p>
+<p>GET /api/monitoring/device/components/version\
+Request Headers:\
+X-Auth-Token: \<Auth-Token-Obtained-from-Token-Api>\
+200 OK\
+{\
+    \&ldquo;kind\&quot;: \&ldquo;object#Version\&rdquo;,\
+    \&ldquo;selfLink\&quot;: \&quot;/api/monitoring/device/version\&rdquo;,\
+    \&ldquo;deviceType\&quot;: \&ldquo;ASAv\&rdquo;,\
+    \&ldquo;upTimeinSeconds\&quot;: 208800,\
+    \&ldquo;totalFlashinMB\&quot;: 8192,\
+    \&ldquo;currentTimeinSeconds\&quot;: 1612870500,\
+    \&ldquo;firewallMode\&quot;: \&ldquo;Transparent\&rdquo;,\
+    \&ldquo;asaVersion\&quot;: \&ldquo;9.5(2)\&rdquo;\
+} </p>
+<p>The following table explains the request details that need to be
+provided in Task Designer API request panel for the ASA version request.</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Field Name    | Value                                                |
++===============+======================================================+
+| API Name      | Get ASA Version                                      |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Set External  | Checked                                              |
+| Target        |                                                      |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| URL           | /api/monitoring/device/components/version            |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| H             | {\                                                   |
+| eaders&mdash;JSON |   \&ldquo;X-Auth-Token\&quot;: [\                              |
+| with header   |     \&rdquo;{{index                                        |
+| name mapped   |  (index .global.GetSessionToken.output.HttpHeaders \ |
+| to array of   | `X-Auth-Token`) 0}}\&rdquo;\                             |
+| header values |   ]\                                                |
+|               | }                                                    |
+|               |                                                      |
+|               | The token value is extracted from the previous API   |
+|               | response header and used here in this API request    |
+|               | header.                                              |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+
+| Response      | Version&mdash;Path: \$.asaVersion, Type: string          |
+| Parser        |                                                      |
++&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+</p>
+<p>A simple outcome checks for status code. If outcome is 200, the task is
+marked as failed.</p>
+<ul>
+<li>
+<p>Name&mdash;Not OK</p>
+</li>
+<li>
+<p>Condition&mdash;{{ne .global.GetASAVersion.output.HttpStatusCode 200}}</p>
+</li>
+<li>
+<p>Outcome Type&mdash;Error</p>
+</li>
+<li>
+<p>Message&mdash;GET ASA version failed</p>
+</li>
+</ul>
+<p>The two API requests have been added to obtain session token and then to
+obtain the ASA version. The extracted API output can be mapped to the
+task output.</p>
+<h2 id="task-input-and-executor-output-mapping">Task Input and Executor Output Mapping</h2>
+<p>Task inputs and previous executors output can be used for direct mapping
+or transformed mappings. The syntax to refer to these will depend on the
+type of mapping. Task inputs are referenced as
+{{.global.task.input.InputName}} where InputName is the Reference Name
+given to the Task input and not the Display Name or Label. Similarly,
+task outputs are referenced as \${TaskName.output.TaskOutput}.</p>
+<p>To specify an input mapping, select a task and click <strong>Edit</strong> against a
+task input parameter.</p>
+<p>The options available are:</p>
+<ul>
+<li>
+<p><strong>Static Value</strong>&mdash;Enter a value that is assigned to the task input
+field.</p>
+</li>
+<li>
+<p><strong>Direct Mapping</strong>&mdash;Map an existing task input or previous executors
+output to the selected task input</p>
+</li>
+<li>
+<p><strong>Transformed Mapping</strong>&mdash;Allows applying data transformation through a
+combination of one or more transformation stages for a task\&rsquo;s
+input. In each transformation stage, you can select a transformation
+function along with its inputs. The transformation stages will be
+converted into a template. You can then preview the template and
+test the transformation with sample values.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Transformed mapping is only supported for task inputs of
+primitive data types, such as <em>string</em>, <em>integer</em>, <em>boolean</em>, and
+<em>float</em>.</p>
+</blockquote>
+<ul>
+<li><strong>Advanced Mapping</strong>&mdash;Map a Golang template to the task input. For
+example, FindAllString function returns a slice of all substrings
+that match the given regular expression in the given string.</li>
+</ul>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ul>
+<li>
+<p>Example 1:</p>
+</li>
+<li>
+<p>FindAllString(s, regex string) ([]string, error)\
+Example: {{(FindAllString .global.task.input.NumberString \\&rdquo;([0-9]+)\\&rdquo;)}} \
+returns array [&ldquo;123&rdquo;, &ldquo;456&rdquo;] for input string &ldquo;123 some text 456&rdquo;.</p>
+</li>
+<li>
+<p>Example 2:</p>
+</li>
+<li>
+<p>Atoi function converts the given number in string format to integer type.\
+Atoi(s string) (int, error)\
+Example: {{Atoi .global.task.input.SizeString}} \
+returns integer 2048 for input string &ldquo;2048&rdquo;</p>
+</li>
+</ul>
+<h2 id="exporting-a-task">Exporting a Task</h2>
+<p>Intersight Cloud Orchestrator enables you to export tasks from an
+account to your system and then import them to another account.</p>
+<p>To export a task, complete the following steps:</p>
+<ol>
+<li>
+<p>Choose Orchestration from the left navigation pane.</p>
+</li>
+<li>
+<p>Click Tasks.</p>
+</li>
+<li>
+<p>From the tabular list of tasks, do one of the following:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Select a task, click the Ellipsis (&hellip;) icon in the same row, and
+then choose Export Task.</p>
+</li>
+<li>
+<p>Select multiple tasks, click the Ellipsis (&hellip;) icon from the header
+or footer of the tabular list, and then choose Export Task.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> You can also export tasks from the Actions menu in the Task
+Designer window.</p>
+</blockquote>
+<ol start="4">
+<li>
+<p>In the Export Task screen:</p>
+<p>a.  In the JSON File Name field, use the default filename or enter a
+filename of your choice for the JSON file that stores the task
+components.</p>
+<p>b.  Use the Export Tags toggle button to include or exclude the
+user-defined tags. ICO does not export the system-defined tags.</p>
+<p>c.  Click Export.</p>
+<p>d.  Save a local copy of the JSON file.</p>
+</li>
+</ol>
+<h2 id="importing-a-task">Importing a Task</h2>
+<p>Intersight Cloud Orchestrator enables you to import tasks to your
+account by importing a JSON file that contains the task components. You
+can create the JSON file by exporting the task components from another
+account.</p>
+<p>To import a task, complete the following steps:</p>
+<ol>
+<li>
+<p>Choose Orchestration from the left navigation pane.</p>
+</li>
+<li>
+<p>Click Tasks.</p>
+</li>
+<li>
+<p>Click Import.</p>
+</li>
+</ol>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ol start="18">
+<li>The Import wizard appears.</li>
+</ol>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ol start="4">
+<li>
+<p>In the Select File screen:</p>
+<p>a.  From the Organization drop-down list, choose the organization to
+which you want to import the task(s).</p>
+<p>b.  Click Browse, and then select the JSON file that contains the
+task(s).</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Ensure that the file size of the JSON file is not more than
+1MB. If the file size is more than 1MB, export the task(s) in batches,
+and then try import.</p>
+</blockquote>
+<p>c.  Click Next.</p>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ol start="19">
+<li>Intersight Cloud Orchestrator validates the JSON file and displays
+<blockquote>
+<p>the task(s) in the Details screen.</p>
+</blockquote>
+</li>
+</ol>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ol start="5">
+<li>
+<p>In the Details screen:</p>
+<p>a.  To associate an additional tag to the components listed in the
+table, enter the tag in the Set Tags field.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Set Tags is an optional field. You must enter the tag in the
+key:value format.</p>
+</blockquote>
+<p>b.  If one or more task or task components are already available in the
+system, choose a rule to replace or skip the duplicate components.</p>
+<p>c.  Click Import.</p>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ol start="6">
+<li>
+<p>In the Import Result screen:</p>
+<p>a.  Verify the status of the imported task and task components.</p>
+<p>b.  If you want to view the details of the import request:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Click the link displayed above the table.</p>
+</li>
+<li>
+<p>Alternatively, click the Requests icon displayed in the menu bar.</p>
+</li>
+</ul>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ul>
+<li>
+<p>For more information, see
+<a href="file://E:%5Chelp%5Cresources%5CWorkflow_Designer">Requests</a>.</p>
+<p>a.  Click Close.</p>
+</li>
+</ul>
+<h2 id="managing-the-lifecycle-of-a-task">Managing the Lifecycle of a Task</h2>
+<p>Task management consists of organizing, creating, updating, and deletion
+of tasks. The following table describes the set of actions that you can
+perform with tasks in Cisco Intersight.</p>
+<p>+&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| A      | Description                                                 |
+| ctions |                                                             |
++========+=============================================================+
+| View   | Choosing Orchestration from the left navigation pane will   |
+| Tasks  | display all workflows in a tabular format. Clicking Tasks   |
+|        | will display all tasks in a tabular format. You can view    |
+|        | information such as the task name and description, the      |
+|        | number of versions available, the number of times the task  |
+|        | has been executed, the last execution status, validation    |
+|        | information and the last update time and date.              |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Create | Choose Orchestration from the left navigation pane and      |
+| a New  | click Tasks. Then, click Create Task. This option opens up  |
+| Task   | the Task Designer, using which you can create a new task.   |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Delete | From the tabular list of workflows, you can select a task   |
+| a Task | and click Delete. This will remove the task.                |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Clone  | From the tabular list of tasks, you can select a task and   |
+| a Task | click Clone. This will clone the selected task.             |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Save a | From the tabular list of tasks, you can choose a task and   |
+| Task   | click. By default, the workflow details are displayed in    |
+| as     | the Designer tab. You can choose Save As option from the    |
+|        | Action drop-down list to clone a task.                      |
+|        |                                                             |
+|        | In the Save As screen, you can specify user-friendly short  |
+|        | name, reference name, description, and tag key. Click Save. |
+|        | For more information, see Cloning a Task.                   |
++&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
+<h2 id="cloning-a-task">Cloning a Task</h2>
+<p>You can clone only a user-defined task. The cloned task is identical to
+the original task. You can edit the new task immediately. You might do
+this, for example, to create a task that is similar to the source task
+that can be edited based on your requirements.</p>
+<p>To clone a task, complete the following steps:</p>
+<ol>
+<li>
+<p>Choose Orchestration from the left navigation pane.</p>
+</li>
+<li>
+<p>Click Tasks.</p>
+</li>
+<li>
+<p>From the tabular list of tasks, select a task and choose Clone.</p>
+</li>
+<li>
+<p>In the Clone Task screen, edit the user-friendly short name,
+reference name, and description.</p>
+</li>
+<li>
+<p>Check the Open Clone in Editor check box if you want to open the
+cloned task and edit the details.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Open Clone in Editor check box is not displayed when you
+clone a task using the Save As option</p>
+</blockquote>
+<ol start="6">
+<li>Click Clone. The cloned task will be created in the same
+organization the source task belongs to.</li>
+</ol>
+<h2 id="supported-target-management-tasks">Supported Target Management Tasks</h2>
+<p>The Target Management tasks contain a subset of tasks that can be used
+within workflows to perform a range ot operations on the endpoint
+targets. The Target Management tasks supported in Intersight are:</p>
+<ul>
+<li>
+<p>New Target&mdash;Claim a new endpoint within a workflow in Intersight.
+The supported target types are HTTP, SSH, Powershell, or Ansible
+endpoints.</p>
+</li>
+<li>
+<p>Get Target&mdash;Get the details of a claimed target within a workflow.
+The task inputs are name, hostname or IP address, and target type.
+On successful execution, name, moid, hostname or IP address, port,
+connection status, and target type are generated as the task
+outputs.</p>
+</li>
+</ul>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ul>
+<li>The supported target types are HTTP, SSH, Powershell, or Ansible
+endpoints.</li>
+</ul>
+<pre tabindex="0"><code>&lt;!-- --&gt;
+</code></pre><ul>
+<li>Remove Target&mdash;Unclaim the target endpoint from Intersight. When a
+target is unclaimed, it is immediately detached from the
+corresponding Intersight account. The target retains any
+configuration applied before the unclaim operation.</li>
+</ul>
+<h2 id="compute-tasks-matrix">Compute Tasks Matrix</h2>
+<p>The following table lists compute tasks supported on UCS C-Series
+Standalone Server and Intersight Managed Mode (IMM) Server:</p>
+<hr>
+<p>Compute Tasks                      UCS C-Series Standalone    IMM Server
+Server</p>
+<hr>
+<p>Copy Server Profile                Y                          Y</p>
+<p>Deploy Server Profile              Y                          Y</p>
+<p>Dismount Server Virtual Media      Y                          N
+Device</p>
+<p>Mount Server Virtual Media Device  Y                          N</p>
+<p>Remove Server from Server Profile  Y                          Y</p>
+<p>Restart IMC                        Y                          Y</p>
+<p>Set Server One Time Boot Device    Y                          N</p>
+<p>Set Server Power State             Y                          Y</p>
+<p>Set Server to Server Profile       Y                          Y</p>
+<p>Stop Server Operating System       Y                          Y</p>
+<p>Add Server Policies to Profile     Y                          Y</p>
+<p>Remove Server Policies from        Y                          Y
+Profile</p>
+<p>New Server Profile                 Y                          Y</p>
+<p>New Server Profile from Template   Y                          Y</p>
+<p>Delete Server Virtual Drives       Y                          Y</p>
+<p>Clear Server Storage Controller    Y                          Y
+Foreign Configuration</p>
+<p>Import Server Storage Controller   Y                          Y
+Foreign Configuration</p>
+<p>Set Server Physical Drive State    Y                          Y</p>
+<p>New Server Precision Boot Device   Y                          N</p>
+<p>Remove Server Precision Boot       Y                          N
+Device</p>
+<hr>
+<h2 id="supported-tasks-for-storage-targets">Supported Tasks for Storage Targets</h2>
+<p>The following table lists tasks supported in the various storage targets
+available on Intersight:</p>
+<hr>
+<p>List of Tasks                         Pure Storage   NetApp    Hitachi</p>
+<hr>
+<p>Add Storage Export Policy to Volume   N              Y         N</p>
+<p>Add Host to Storage Host Group        Y              N         N</p>
+<p>Add Hosts to Storage Host Group       Y              N         N</p>
+<p>Compress Storage Pool                 N              N         Y</p>
+<p>Connect Initiators to Storage Host    Y              Y         Y</p>
+<p>Connect Volume to Storage Host        Y              N         Y</p>
+<p>Connect Volume to Storage Host Group  Y              N         N</p>
+<p>Connect WWNs or IQNs to Storage Host  Y              N         N</p>
+<p>Copy Storage Volume                   N              N         Y</p>
+<p>Disconnect Initiators from Storage    Y              N         Y
+Host</p>
+<p>Disconnect Volume from Storage Host   Y              N         Y</p>
+<p>Disconnect Volume from Storage Host   Y              N         N
+Group</p>
+<p>Disconnect WWNs or IQNs from Storage  Y              N         N
+Host</p>
+<p>Expand Storage LUN                    N              Y         N</p>
+<p>Edit Storage Pool                     N              N         Y</p>
+<p>Expand Storage Volume                 Y              Y         Y</p>
+<p>Find NetApp igroup LUN Map            N              Y         N</p>
+<p>Expand Storage Pool                   N              N         Y</p>
+<p>Find Storage LUN by ID                N              Y         N</p>
+<p>Find Storage Volume by ID             Y              Y         N</p>
+<p>Format Storage Volume                 N              N         Y</p>
+<p>New Storage Export Policy             N              Y         N</p>
+<p>New Storage Fibre Channel Interface   N              Y         N</p>
+<p>New storage IP interface              N              Y         N</p>
+<p>New Storage Host                      Y              Y         Y</p>
+<p>New Storage Host Group                Y              N         N</p>
+<p>New Storage LUN                       N              Y         N</p>
+<p>New Storage LUN ID                    N              Y         N</p>
+<p>New Storage Virtual Machine           N              Y         N</p>
+<p>New Storage Pool                      N              N         Y</p>
+<p>New Storage Volume                    Y              Y         Y</p>
+<p>Remove storage export policy          N              Y         N</p>
+<p>Remove Host from Storage Host Group   Y              N         N</p>
+<p>Remove Hosts from Storage Host Group  Y              N         N</p>
+<p>Remove Storage Host                   Y              Y         Y</p>
+<p>Remove Storage Host Group             Y              N         N</p>
+<p>Remove Storage LUN                    N              Y         N</p>
+<p>Remove Storage LUN ID                 N              Y         N</p>
+<p>Remove Storage Pool                   N              N         Y</p>
+<p>Remove Storage Volume                 Y              Y         Y</p>
+
+	
+	
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="User mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/twitter" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/stack" aria-label="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/slack" aria-label="Slack">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Developer mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2023 Cisco Systems All Rights Reserved</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
+	
+		<p class="mt-2"><a href="/about/">About Goldydocs</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha512-E/owfVh8/U1xwhvIT4HSI064DRc1Eo/xf7AYax84rt9gVqA8tc/JNH/lvTl1tuw9PUHQIMGUtObkjYkgRjFqAA==" crossorigin="anonymous"></script>
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src='/js/deflate.js'></script>
+<script src="/js/main.min.0df8230201e8a69481dceaf8138a4187f74aaa2cbd4771f365bdf85869c9d57a.js" integrity="sha256-DfgjAgHoppSB3Or4E4pBh/dKqiy9R3HzZb34WGnJ1Xo=" crossorigin="anonymous"></script>
+<script src='/js/prism.js'></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

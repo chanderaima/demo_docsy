@@ -1,0 +1,46 @@
+type: caveats
+data:
+  tabs:
+    - label: caveats.tabs.label.open
+      # selected:true
+    - label: Resolved
+      # selected:true
+  items:
+  # -----------------------------RESOLVED DEFECTS ------------------------------------------------------------------------
+  # PLEASE MOVE/ADD ALL RESOLVED DEFECTS HERE. MAKE SURE THE LATEST RESOLVED DEFECT IS AT THE TOP.
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 
+    - title: "Sample Text"
+      tab: Resolved
+      date: August 11, 2022
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.For an Intersight Account with Intersight Workload Optimizer (IWO) license, the Hardware Support Manager (HSM) will go back to disabled state even after enabling HSM in the UI. However, the HSM functionality works as expected.' 

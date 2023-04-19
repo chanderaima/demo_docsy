@@ -1,0 +1,2822 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.110.0">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Sample File | Cisco Intersight Help Center</title>
+<meta name="description" content="Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the **Invoke SSH Commands** reusable task in the workflows.">
+<meta property="og:title" content="Sample File" />
+<meta property="og:description" content="Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the **Invoke SSH Commands** reusable task in the workflows." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:8080/docs/ico/executors/samplefile/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-01-28T21:23:12+05:30" />
+<meta property="article:modified_time" content="2022-01-28T21:23:12+05:30" /><meta property="og:site_name" content="Cisco Intersight Help Center" />
+<meta itemprop="name" content="Sample File">
+<meta itemprop="description" content="Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the **Invoke SSH Commands** reusable task in the workflows."><meta itemprop="datePublished" content="2022-01-28T21:23:12+05:30" />
+<meta itemprop="dateModified" content="2022-01-28T21:23:12+05:30" />
+<meta itemprop="wordCount" content="10252">
+<meta itemprop="keywords" content="Executors," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sample File"/>
+<meta name="twitter:description" content="Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the **Invoke SSH Commands** reusable task in the workflows."/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" as="style">
+<link href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/prism.css"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-00000000-0');
+}
+</script>
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"></span><span class="navbar-brand__name">Cisco Intersight Help Center</span></a>
+  <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link active" href="/docs/"><span class="active">Documentation</span></a>
+      </li>
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      <li class="nav-item dropdown mr-4 d-none d-lg-block">
+        
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div></li>
+      </ul>
+  </div>
+  <div class="navbar-nav d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+  </div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <div id="content-mobile">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
+  <div id="content-desktop"></div>
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshome-li">
+  <a href="/docs/home/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docshome"><span class="">Home</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
+  <a href="/docs/getting-started/" title="Overview" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting Started</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedaccount_creation-li">
+  <a href="/docs/getting-started/account_creation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedaccount_creation"><span class="">Account Creation</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedclaimntarget-li">
+  <a href="/docs/getting-started/claimntarget/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedclaimntarget"><span class="">Claim Target</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docswhats_new-li">
+  <a href="/docs/whats_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docswhats_new"><span class="">What&#39;s New</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2023-li">
+  <a href="/docs/whats_new/2023/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2023"><span class="">2023</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2022-li">
+  <a href="/docs/whats_new/2022/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2022"><span class="">2022</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2021-li">
+  <a href="/docs/whats_new/2021/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2021"><span class="">2021</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_newtestdata-li">
+  <a href="/docs/whats_new/testdata/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_newtestdata"><span class="">New What&#39;s New</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsico-li">
+  <a href="/docs/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico"><span class="">Intersight Cloud Ochestrator</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicowokflowdesigner-li">
+  <a href="/docs/ico/wokflowdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner"><span class="">Workflow Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicotaskdesigner-li">
+  <a href="/docs/ico/taskdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicotaskdesigner"><span class="">Task Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicodatatype-li">
+  <a href="/docs/ico/datatype/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicodatatype"><span class="">Data Type</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicowokflowdesigner-copy-li">
+  <a href="/docs/ico/wokflowdesigner-copy/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner-copy"><span class="">Sample Topic</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicocheatsheet-li">
+  <a href="/docs/ico/cheatsheet/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicocheatsheet"><span class="">Template Syntax (Go Template)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoico-li">
+  <a href="/docs/ico/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico"><span class="">Cisco Intersight ICO</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoico-cleanup-li">
+  <a href="/docs/ico/ico-cleanup/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico-cleanup"><span class="">Cisco Intersight ICO - Post-conversion Cleanup</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsicoexecutors-li">
+  <a href="/docs/ico/executors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsicoexecutors"><span class="">Executors</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsansible-li">
+  <a href="/docs/ico/executors/ansible/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible"><span class="">Ansible</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsansible-resuable-li">
+  <a href="/docs/ico/executors/ansible-resuable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible-resuable"><span class="">Ansible Resuable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorspowershell-li">
+  <a href="/docs/ico/executors/powershell/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorspowershell"><span class="">Powershell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsssh-li">
+  <a href="/docs/ico/executors/ssh/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh"><span class="">SSH Commands</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsssh-reusable-li">
+  <a href="/docs/ico/executors/ssh-reusable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh-reusable"><span class="">SSH Commands - Reusable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsicoexecutorssamplefile-li">
+  <a href="/docs/ico/executors/samplefile/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorssamplefile"><span class="td-sidebar-nav-active-item">Sample File</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorswebapi-li">
+  <a href="/docs/ico/executors/webapi/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorswebapi"><span class="">WebAPI</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsico_new-li">
+  <a href="/docs/ico_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico_new"><span class="">Hulk 2.0</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues1-li">
+  <a href="/docs/ico_new/newfeatues1/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues1"><span class="">New Features 1</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues3-li">
+  <a href="/docs/ico_new/newfeatues3/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues3"><span class="">New Features 2</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatures2-li">
+  <a href="/docs/ico_new/newfeatures2/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatures2"><span class=""></span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docscaveats-li">
+  <a href="/docs/caveats/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docscaveats"><span class="">Caveats</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfaqs-li">
+  <a href="/docs/faqs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfaqs"><span class="">FAQs</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsvidoes-li">
+  <a href="/docs/vidoes/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsvidoes"><span class="">Videos</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/google/docsy-example/tree/master/content/en/docs/ICO/Executors/SampleFile.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines fa-fw"></i> View page source</a>
+  <a href="https://github.com/google/docsy-example/edit/master/content/en/docs/ICO/Executors/SampleFile.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/google/docsy-example/new/master/content/en/docs/ICO/Executors/SampleFile.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Create child page</a>
+  <a href="https://github.com/google/docsy-example/issues/new?title=Sample%20File" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create documentation issue</a>
+  <a href="https://github.com/google/docsy/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create project issue</a>
+  <a id="print" href="http://localhost:8080/docs/ico/executors/_print/"><i class="fa-solid fa-print fa-fw"></i> Print entire section</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#creating-a-workflow">Creating a Workflow</a></li>
+    <li><a href="#defining-a-workflow">Defining a Workflow</a></li>
+    <li><a href="#requests">Requests</a></li>
+    <li><a href="#defining-workflow-inputs-variables-and-outputs">Defining Workflow Inputs, Variables, and Outputs</a></li>
+    <li><a href="#workflow-input-parameter-set-and-progressive-disclosure-rules">Workflow Input Parameter Set and Progressive Disclosure Rules</a></li>
+    <li><a href="#workflow-variables">Workflow Variables</a></li>
+    <li><a href="#input-variable-and-output-mapping">Input, Variable, and Output Mapping</a></li>
+    <li><a href="#operations---conditional-task">Operations - Conditional Task</a></li>
+    <li><a href="#operations---parallel-loop-task">Operations - Parallel Loop Task</a></li>
+    <li><a href="#managing-the-lifecycle-of-a-workflow">Managing the Lifecycle of a Workflow</a></li>
+    <li><a href="#cloning-a-workflow">Cloning a Workflow</a></li>
+    <li><a href="#managing-versions-for-workflows">Managing Versions for Workflows</a></li>
+    <li><a href="#exporting-a-workflow">Exporting a Workflow</a></li>
+    <li><a href="#importing-a-workflow">Importing a Workflow</a></li>
+    <li><a href="#defining-workflow-input-rules">Defining Workflow Input Rules</a></li>
+    <li><a href="#supported-workflows-for-storage-targets">Supported Workflows for Storage Targets</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+	
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-tags">
+      
+        <h5 class="taxonomy-title">Tag Cloud</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/data-type/" data-taxonomy-term="data-type"><span class="taxonomy-label">Data Type</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">Executors</span><span class="taxonomy-count">4</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/sample/" data-taxonomy-term="sample"><span class="taxonomy-label">sample</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/ssh/" data-taxonomy-term="ssh"><span class="taxonomy-label">SSH</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/task/" data-taxonomy-term="task"><span class="taxonomy-label">Task</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/test/" data-taxonomy-term="test"><span class="taxonomy-label">test</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/webapi/" data-taxonomy-term="webapi"><span class="taxonomy-label">WebAPI</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/whats-new/" data-taxonomy-term="whats-new"><span class="taxonomy-label">What&#39;s New</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/workflow/" data-taxonomy-term="workflow"><span class="taxonomy-label">Workflow</span><span class="taxonomy-count">9</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-categories">
+      
+        <h5 class="taxonomy-title">Categories</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/examples/" data-taxonomy-term="examples"><span class="taxonomy-label">Examples</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">executors</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/ico/" data-taxonomy-term="ico"><span class="taxonomy-label">ICO</span><span class="taxonomy-count">17</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/placeholders/" data-taxonomy-term="placeholders"><span class="taxonomy-label">Placeholders</span><span class="taxonomy-count">1</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/ico/">Intersight Cloud Ochestrator</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/ico/executors/">Executors</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="http://localhost:8080/docs/ico/executors/samplefile/" aria-disabled="true" class="btn-link disabled">Sample File</a>
+  </li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Sample File</h1>
+	<div class="lead">Intersight Cloud Orchestrator allows workflow designers to run commands over SSH by using the <strong>Invoke SSH Commands</strong> reusable task in the workflows.</div>
+	<header class="article-meta">
+		
+
+  
+    
+      
+
+
+<div class="taxonomy taxonomy-terms-article taxo-tags">
+  <h5 class="taxonomy-title">Tags:</h5>
+  <ul class="taxonomy-terms">
+    
+      <li><a class="taxonomy-term" href="http://localhost:8080/tags/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">Executors</span></a></li>
+    
+  </ul>
+</div>
+
+    
+      
+
+
+<div class="taxonomy taxonomy-terms-article taxo-categories">
+  <h5 class="taxonomy-title">Categories:</h5>
+  <ul class="taxonomy-terms">
+    
+      <li><a class="taxonomy-term" href="http://localhost:8080/categories/ico/" data-taxonomy-term="ico"><span class="taxonomy-label">ICO</span></a></li>
+    
+  </ul>
+</div>
+
+    
+  
+
+		
+	</header>    
+	<h1 id="ariaid-title1" class="title topictitle1">Sample</h1>
+<p>::: {.body .refbody}
+::: section
+The Workflow Designer helps you create new workflows (as well as tasks
+and data types) and also edit existing workflows to manage targets in
+Cisco Intersight.</p>
+<p>::: {.note .note}
+[Note:]{.notetitle}</p>
+<p>To execute the new tasks for VMware vCenter networking operations, you
+should upgrade to Intersight Assist version 1.0.9-278.
+:::</p>
+<p>::: {.note .important}
+[Important:]{.importanttitle}</p>
+<ul>
+<li>
+<p>The [Orchestration]{.ph .uicontrol} option is visible in the left
+panel only if you have installed the Intersight Premier license.</p>
+</li>
+<li>
+<p>Only an Account Administrator or a user with the Workflow Designer
+privilege can use the Workflow Designer to create and edit
+workflows.
+:::</p>
+</li>
+</ul>
+<p>To launch the Workflow Designer, choose [[Orchestration]{.ph .uicontrol}
+&gt; [Workflows]{.ph .uicontrol}]{.ph .menucascade}. A dashboard displays
+the following details under these tabs, namely, [My Workflows]{.ph
+.uicontrol}, [Sample Workflows]{.ph .uicontrol}, and [All Workflows]{.ph
+.uicontrol}:</p>
+<ul>
+<li>
+<p>[Validation Status]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Last Execution Status]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Top Workflows by Execution Count]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Top Workflow Categories]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Number of System Defined Workflows]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Top Workflows by Targets]{.ph .uicontrol}</p>
+</li>
+</ul>
+<p>Using the dashboard, you can create, edit, clone, or delete a tab. To
+create your own custom view tab, click + and specify a name and then
+choose the required parameters that need to be displayed in the columns,
+tag columns, and widgets. You can rename the tabs if it does not have a
+Lock icon.</p>
+<p>Below the dashboard is a tabular list of workflows displaying the
+following information:</p>
+<ul>
+<li>
+<p>[Display Name]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Description]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[System Defined]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Default Version]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Executions]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Last Execution Status]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Validation Status]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Last Update]{.ph .uicontrol}</p>
+</li>
+<li>
+<p>[Organization]{.ph .uicontrol}</p>
+</li>
+</ul>
+<p>The [Actions]{.ph .uicontrol} column allows you to do the following
+actions:</p>
+<ul>
+<li>
+<p>[Execute]{.ph .uicontrol}&mdash;Executes the workflow.</p>
+</li>
+<li>
+<p>[History]{.ph .uicontrol}&mdash;Displays workflow execution history.</p>
+</li>
+<li>
+<p>[Manage Versions]{.ph .uicontrol}&mdash;create and manage versions for
+workflows. See <em>Managing Versions for Workflows</em> later in this
+document.</p>
+</li>
+<li>
+<p>[Delete]{.ph .uicontrol}&mdash;Delete a workflow.</p>
+</li>
+<li>
+<p>[Retry]{.ph .uicontrol}&mdash;Retry a failed workflow.
+:::</p>
+</li>
+</ul>
+<p>::: section</p>
+<h2 id="creating-a-workflow" class="title sectiontitle">Creating a Workflow</h2>
+<p>Workflow creation can be broken down into the following sequence of
+steps:</p>
+<ol>
+<li>
+<p>[Defining a workflow]{.ph .uicontrol}&mdash;you specify the display
+name, description, and other important attributes.</p>
+</li>
+<li>
+<p>[Defining workflow inputs, workflow variables, and workflow
+outputs]{.ph .uicontrol}&mdash;you can specify which input parameters
+are mandatory for the workflow execution, define variable(s) for
+workflow, and the output(s) generated on successful execution.</p>
+</li>
+<li>
+<p>[Adding workflow tasks]{.ph .uicontrol}&mdash;you can add one or more
+workflow tasks in the Workflow Designer that are needed for the
+workflow to carry out its function.</p>
+</li>
+<li>
+<p>[Validate the workflow]{.ph .uicontrol}&mdash;you can validate a
+workflow to ensure that there are no errors in connecting task
+inputs and outputs.
+:::</p>
+</li>
+</ol>
+<p>::: section</p>
+<h2 id="defining-a-workflow" class="title sectiontitle">Defining a Workflow</h2>
+<ol>
+<li>
+<p>Choose [Orchestration]{.ph .uicontrol} from the left navigation
+pane.</p>
+</li>
+<li>
+<p>Choose [Create Workflow]{.ph .uicontrol}. The [Create
+Workflow]{.keyword .wintitle} screen is categorized into the
+following areas to help you create a workflow:</p>
+<p>The following table describes the options available to you while
+creating a workflow:</p>
+<p>::: tablenoborder
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Workflow Designer    | Description          | Details              |
+| Area/Option          |                      |                      |
++======================+======================+======================+
+| [General Tab]{.ph    | Displays workflow    | You can add a        |
+| .uicontrol}          | details, and also    | user-friendly short  |
+|                      | inputs, variables,   | name, reference      |
+|                      | and outputs of the   | name, description,   |
+|                      | workflow.            | and assign an        |
+|                      |                      | organization to the  |
+|                      |                      | workflow. You can    |
+|                      |                      | also specify a       |
+|                      |                      | version or set a tag |
+|                      |                      | to the workflow. In  |
+|                      |                      | order to categorize  |
+|                      |                      | your workflow, use   |
+|                      |                      | the tag key          |
+|                      |                      | [Category]{.ph       |
+|                      |                      | .uicontrol} and      |
+|                      |                      | provide an           |
+|                      |                      | appropriate category |
+|                      |                      | value. Use the       |
+|                      |                      | following checkboxes |
+|                      |                      | to:                  |
+|                      |                      |                      |
+|                      |                      | [Set as Default      |
+|                      |                      | Version]{.ph         |
+|                      |                      | .uicontrol}&mdash;Sets   |
+|                      |                      | this version as the  |
+|                      |                      | default version for  |
+|                      |                      | the workflow.        |
+|                      |                      |                      |
+|                      |                      | [Retryable]{.ph      |
+|                      |                      | .                    |
+|                      |                      | uicontrol}&mdash;Execute |
+|                      |                      | the workflow from    |
+|                      |                      | the point of a       |
+|                      |                      | failure or retry the |
+|                      |                      | execution of the     |
+|                      |                      | entire workflow. You |
+|                      |                      | can retry the        |
+|                      |                      | execution of the     |
+|                      |                      | workflow for up to   |
+|                      |                      | two weeks after the  |
+|                      |                      | last update to the   |
+|                      |                      | workflow.            |
+|                      |                      |                      |
+|                      |                      | [Enable Debug        |
+|                      |                      | Logs]{.ph            |
+|                      |                      | .u                   |
+|                      |                      | icontrol}&mdash;Collects |
+|                      |                      | the workflow logs    |
+|                      |                      | for each tasks. You  |
+|                      |                      | can analyze and      |
+|                      |                      | debug the workflow   |
+|                      |                      | execution.           |
+|                      |                      |                      |
+|                      |                      | [Workflow            |
+|                      |                      | Inputs]{.ph          |
+|                      |                      | .uicontrol}&mdash;You    |
+|                      |                      | can click [Add       |
+|                      |                      | Workflow Input]{.ph  |
+|                      |                      | .uicontrol} and add  |
+|                      |                      | workflow inputs.     |
+|                      |                      | Each input has a     |
+|                      |                      | user-friendly        |
+|                      |                      | display name, a      |
+|                      |                      | reference name,      |
+|                      |                      | description,         |
+|                      |                      | restrictions, and    |
+|                      |                      | data type. Also, you |
+|                      |                      | can set a default    |
+|                      |                      | value and encrypt    |
+|                      |                      | it. For more         |
+|                      |                      | information, see     |
+|                      |                      | [Defining Workflow   |
+|                      |                      | Inputs, Variables,   |
+|                      |                      | and                  |
+|                      |                      | Outputs](/help/res   |
+|                      |                      | ources/Workflow_Desi |
+|                      |                      | gner#defining_workfl |
+|                      |                      | ow_inputs_variables_ |
+|                      |                      | and_outputs){.xref}. |
+|                      |                      |                      |
+|                      |                      | [Workflow            |
+|                      |                      | Variable]{.ph        |
+|                      |                      | .uicontrol}&mdash;You    |
+|                      |                      | can click [Add       |
+|                      |                      | Workflow             |
+|                      |                      | Variable]{.ph        |
+|                      |                      | .uicontrol} and add  |
+|                      |                      | a workflow variable. |
+|                      |                      | Each workflow        |
+|                      |                      | variable has a       |
+|                      |                      | reference name, data |
+|                      |                      | type, and so on.     |
+|                      |                      | Also, you can set a  |
+|                      |                      | default value. For   |
+|                      |                      | more information,    |
+|                      |                      | see [Defining        |
+|                      |                      | Workflow Inputs,     |
+|                      |                      | Variables, and       |
+|                      |                      | Outputs](/help/res   |
+|                      |                      | ources/Workflow_Desi |
+|                      |                      | gner#defining_workfl |
+|                      |                      | ow_inputs_variables_ |
+|                      |                      | and_outputs){.xref}. |
+|                      |                      |                      |
+|                      |                      | [Workflow            |
+|                      |                      | Outputs]{.ph         |
+|                      |                      | .uicontrol}&mdash;You    |
+|                      |                      | can click [Add       |
+|                      |                      | Workflow Output]{.ph |
+|                      |                      | .uicontrol} and add  |
+|                      |                      | workflow outputs.    |
+|                      |                      | Each output has a    |
+|                      |                      | user-friendly        |
+|                      |                      | display name, a      |
+|                      |                      | reference name,      |
+|                      |                      | description,         |
+|                      |                      | restrictions, and    |
+|                      |                      | data type. Also, you |
+|                      |                      | can encrypt a value  |
+|                      |                      | and map it to task   |
+|                      |                      | output.              |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| [Designer Tab]{.ph   | Displays the design  | Categorized into the |
+| .uicontrol}          | area where you       | following areas to   |
+|                      | synthesize your      | help you create a    |
+|                      | workflow.            | workflow:            |
+|                      |                      |                      |
+|                      |                      | -   Tools            |
+|                      |                      |     Area&mdash;lists all |
+|                      |                      |     the tasks,       |
+|                      |                      |     workflows, and   |
+|                      |                      |     operations that  |
+|                      |                      |     are currently    |
+|                      |                      |     available in     |
+|                      |                      |     Intersight. You  |
+|                      |                      |     can drag and     |
+|                      |                      |     drop a task or a |
+|                      |                      |     workflow to the  |
+|                      |                      |     canvas to create |
+|                      |                      |     or edit the      |
+|                      |                      |     workflow. You    |
+|                      |                      |     can collapse or  |
+|                      |                      |     expand the Tools |
+|                      |                      |     area. You can    |
+|                      |                      |     use the Search   |
+|                      |                      |     feature to find  |
+|                      |                      |     a specific task  |
+|                      |                      |     or workflow.     |
+|                      |                      |                      |
+|                      |                      | -   Design           |
+|                      |                      |     Area&mdash;where you |
+|                      |                      |     can build your   |
+|                      |                      |     workflow. Drag   |
+|                      |                      |     and drop tasks   |
+|                      |                      |     and workflows    |
+|                      |                      |     from the Tools   |
+|                      |                      |     area to this     |
+|                      |                      |     area of the      |
+|                      |                      |     screen. This     |
+|                      |                      |     area includes    |
+|                      |                      |     the following    |
+|                      |                      |     options that you |
+|                      |                      |     can use while    |
+|                      |                      |     creating the     |
+|                      |                      |     workflow:        |
+|                      |                      |                      |
+|                      |                      |     -   Zoom in and  |
+|                      |                      |         Zoom         |
+|                      |                      |                      |
+|                      |                      |        out&mdash;Magnify |
+|                      |                      |         or reduce    |
+|                      |                      |         the view of  |
+|                      |                      |         the          |
+|                      |                      |         workflow.    |
+|                      |                      |                      |
+|                      |                      |     -   Auto Align   |
+|                      |                      |         Work         |
+|                      |                      | flow&mdash;Automatically |
+|                      |                      |         align the    |
+|                      |                      |         workflow     |
+|                      |                      |         tasks in the |
+|                      |                      |         design area. |
+|                      |                      |                      |
+|                      |                      |     -   Auto Align   |
+|                      |                      |         Selected     |
+|                      |                      |         Workflow     |
+|                      |                      |                      |
+|                      |                      |     Entities&mdash;Align |
+|                      |                      |         selected     |
+|                      |                      |         workflow     |
+|                      |                      |         entities in  |
+|                      |                      |         the design   |
+|                      |                      |         area.        |
+|                      |                      |                      |
+|                      |                      |     -   Toggle Task  |
+|                      |                      |                      |
+|                      |                      |      Search&mdash;Search |
+|                      |                      |         for a        |
+|                      |                      |         specific     |
+|                      |                      |         task within  |
+|                      |                      |         the          |
+|                      |                      |         workflow.    |
+|                      |                      |         This is      |
+|                      |                      |         useful when  |
+|                      |                      |         you have     |
+|                      |                      |         several      |
+|                      |                      |         tasks within |
+|                      |                      |         the          |
+|                      |                      |         workflow.    |
+|                      |                      |                      |
+|                      |                      |     -   Auto Connect |
+|                      |                      |         Selected     |
+|                      |                      |         Workflow     |
+|                      |                      |         Entity&mdash;Add |
+|                      |                      |         the workflow |
+|                      |                      |         entity in    |
+|                      |                      |         the design   |
+|                      |                      |         area. You    |
+|                      |                      |         can drag and |
+|                      |                      |         drop a task  |
+|                      |                      |         in between   |
+|                      |                      |         the tasks.   |
+|                      |                      |         The possible |
+|                      |                      |         locations    |
+|                      |                      |         where the    |
+|                      |                      |         selected     |
+|                      |                      |         task can be  |
+|                      |                      |         added is     |
+|                      |                      |         denoted with |
+|                      |                      |         [+ ]{.ph     |
+|                      |                      |         .uicontrol}  |
+|                      |                      |         icon.        |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| [Mapping Tab]{.ph    | Displays the         | Expand and collapse  |
+| .uicontrol}          | relationship between | the [Task            |
+|                      | the task inputs and  | Inputs]{.ph          |
+|                      | the outputs of the   | .uicontrol} and      |
+|                      | selected workflow.   | [Task Outputs]{.ph   |
+|                      |                      | .uicontrol} pane.    |
+|                      | Information on       |                      |
+|                      | workflow inputs and  |                      |
+|                      | workflow outputs is  |                      |
+|                      | also displayed.      |                      |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| [Code Tab]{.ph       | Displays the code    | Read-only view of    |
+| .uicontrol}          | view of the workflow | the workflow. You    |
+|                      | definition           | can copy the code,   |
+|                      |                      | use this as a sample |
+|                      |                      | to create a workflow |
+|                      |                      | using Intersight     |
+|                      |                      | APIs.                |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| [History Tab]{.ph    | Status of the        | View workflow        |
+| .uicontrol}          | executed/in-progress | execution history,   |
+|                      | workflows. This tab  | retry or clone a     |
+|                      | appears after        | previous execution.  |
+|                      | executing a          | The system displays  |
+|                      | workflow.            | a maximum of 100     |
+|                      |                      | instances of the     |
+|                      |                      | workflow execution.  |
+|                      |                      | The workflow         |
+|                      |                      | execution is         |
+|                      |                      | populated for each   |
+|                      |                      | version of the       |
+|                      |                      | workflow.            |
+|                      |                      |                      |
+|                      |                      | ::: {.note .note}    |
+|                      |                      | [Note:]{.notetitle}  |
+|                      |                      | When a workflow is   |
+|                      |                      | successfully         |
+|                      |                      | executed, the        |
+|                      |                      | options for retrying |
+|                      |                      | the workflow are not |
+|                      |                      | displayed. You can   |
+|                      |                      | retry a failed       |
+|                      |                      | workflow only when   |
+|                      |                      | the [Retryable]{.ph  |
+|                      |                      | .uicontrol} option   |
+|                      |                      | is enabled in the    |
+|                      |                      | [General]{.ph        |
+|                      |                      | .uicontrol} tab.     |
+|                      |                      | :::                  |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| [Execute]{.ph        | Launches the [Enter  | Choose the           |
+| .uicontrol}          | Workflow             | Organization and the |
+|                      | Inputs]{.keyword     | Workflow instance    |
+|                      | .wintitle} window.   | name to execute the  |
+|                      |                      | workflow.            |
+|                      |                      |                      |
+|                      |                      | For user-created     |
+|                      |                      | workflows, the       |
+|                      |                      | organization must    |
+|                      |                      | match where it was   |
+|                      |                      | created.             |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| [Save Workflow]{.ph  | Validates and saves  | Review validation    |
+| .uicontrol}          | the workflow.        | errors, if any, and  |
+|                      |                      | rectify them.        |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| [Close Designer]{.ph | Closes the Workflow  | Closes the Workflow  |
+| .uicontrol}          | Designer.            | Designer and         |
+|                      |                      | displays the table   |
+|                      |                      | view of available    |
+|                      |                      | workflows.           |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+:::
+:::</p>
+</li>
+</ol>
+<p>::: section</p>
+<h2 id="requests" class="title sectiontitle">Requests</h2>
+<p>Requests are closely related to workflows. You create requests by
+running workflows; a request is generated every time you execute a
+workflow in Cisco Intersight. A request is a process under the control
+of Cisco Intersight.</p>
+<p>You can schedule a workflow for later execution, and Cisco Intersight
+stores details of completed requests. To view the detailed information
+of a request, choose a request. The following information is displayed
+in the <strong>Requests</strong> screen:</p>
+<ul>
+<li>
+<p>Status&mdash;Displays the status of a workflow. Request can have one of
+several states depending on its execution status:</p>
+<ul>
+<li>
+<p>Running</p>
+</li>
+<li>
+<p>Blocked (for example, awaiting an approval)</p>
+</li>
+<li>
+<p>Completed</p>
+</li>
+<li>
+<p>Failed (a request can fail when one of its component tasks fails
+to execute properly)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Details&mdash;Displays the request details such as name, request ID,
+target name and type, source name and type, name of the user who has
+executed the request along with the start time and end time, and
+duration of the request.</p>
+</li>
+<li>
+<p>Inputs&mdash;Displays the workflow input details</p>
+</li>
+<li>
+<p>Outputs&mdash;Displays the workflow output details</p>
+</li>
+<li>
+<p>Execution Flow&mdash;Enable [Show Additional Details]{.ph .uicontrol} to
+view the logs, input, and output mapping details of the user-defined
+workflows. Displays the workflow execution history details similar
+to the details displayed in the [History]{.ph .uicontrol} tab.
+:::</p>
+</li>
+</ul>
+<p>::: {#id_131513__Defining_WF_IO .section}</p>
+<h2 id="defining-workflow-inputs-variables-and-outputs" class="title sectiontitle">Defining Workflow Inputs, Variables, and Outputs</h2>
+<p>Workflows can have any number of tasks, inputs, variables, and outputs.</p>
+<p>Any task or workflow input can be either mandatory or optional. A task
+or workflow cannot run without all of its mandatory inputs. You define
+whether an input is mandatory or optional when you create the task or
+workflow.</p>
+<p>After specifying the generic properties for a task or workflow, you
+define the input parameters and variables required for task or workflow
+execution. In addition, you can set workflow input Parameter Set or
+Progressive Disclosure rules. These rules control the availability of
+workflow inputs or filter the data based on the preceding selection
+during the workflow execution. The Task Designer uses the same
+parameters and information types as the workflow designer to validate
+the mappings of task input and output parameters when a task is used in
+a workflow along with other tasks. Task designer uses the same form as
+workflow designer to obtain the parameter and information type so as
+provide same user experience between workflow designer and task
+designer.</p>
+<ol>
+<li>
+<p>Choose [Orchestration]{.ph .uicontrol} from the left navigation pane
+and click [Create Workflow]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>In the [General]{.ph .uicontrol} tab, click [Add Workflow Input]{.ph
+.uicontrol} in the [Workflow Inputs]{.ph .uicontrol} tab.</p>
+</li>
+<li>
+<p>In the [Add Workflow Input]{.ph .uicontrol} screen, enter the
+following details:</p>
+<p>a.  [Display Name]{.ph .uicontrol}&mdash;Enter user-friendly short name.</p>
+<p>b.  [Reference Name]{.ph .uicontrol}</p>
+<p>c.  [Description]{.ph .uicontrol}&mdash;Detailed description of the
+input</p>
+<p>d.  [Value Restrictions]{.ph .uicontrol}&mdash;Choose [Required]{.ph
+.uicontrol}, [Collection/Multiple]{.ph .uicontrol}, or can be
+left blank</p>
+<p>e.  [Type]{.ph .uicontrol}&mdash;Select a data type. For example,
+String, Integer, Float, Boolean, Json, Enum, MoReference, Target
+Data Type, or a custom data type.</p>
+<pre><code>The fields displayed depend on the value you select for the Type
+field.
+</code></pre>
+<p>f.  If you select the data type as [Enum]{.ph .uicontrol}, specify
+the following:</p>
+<pre><code>i.  [Enum List]{.ph .uicontrol}---Label for the Enum value.
+
+ii. [Widget type]{.ph .uicontrol}.
+
+iii. [Set Default Value]{.ph .uicontrol}---Select the checkbox
+     and select the corresponding default value.
+
+iv. [Override]{.ph .uicontrol}---Allow the user to override the
+    default value.
+</code></pre>
+<p>g.  If you select the data type as [String]{.ph .uicontrol}, specify
+the following:</p>
+<pre><code>i.  [Minimum]{.ph .uicontrol} and [Maximum Range]{.ph
+    .uicontrol}
+
+ii. [Regex]{.ph .uicontrol}---Validates the regular expression
+    when you select [String]{.ph .uicontrol} in the [Type]{.ph
+    .uicontrol} field.
+
+iii. [Secure]{.ph .uicontrol}---Indicates that the values of
+     these properties are encrypted and stored in Cisco
+     Intersight.
+
+iv. [Object Selector]{.ph .uicontrol}---Enable to configure the
+    Intersight managed object selectors. This attribute is
+    available only when the primitive data is [String]{.ph
+    .uicontrol}.
+
+    Specify the Intersight API Reference and selector attributes
+    to feed the input from the table selection. Value will be
+    passed according to the configuration set in the Value
+    attribute.
+</code></pre>
+<p>h.  If you select the data type as [Integer]{.ph .uicontrol} or
+[Float]{.ph .uicontrol}, specify the following:</p>
+<pre><code>i.  [Minimum]{.ph .uicontrol} and [Maximum Range]{.ph
+    .uicontrol}
+
+ii. [Set Default Value]{.ph .uicontrol}---Select the checkbox
+    and the corresponding default value.
+</code></pre>
+<p>i.  If you select the data type as [Target Data Type]{.ph
+.uicontrol} or [MoReference]{.ph .uicontrol}, specify the
+following:</p>
+<pre><code>i.  [Intersight API Reference]{.ph .uicontrol}---Enter the URL
+    of the Intersight API configured with parameters.
+
+ii. [Selector Attribute]{.ph .uicontrol}---Enter the attribute
+    name(s) that needs to be displayed in the input table
+    column. You can add multiple selector attributes by clicking
+    [+]{.ph .uicontrol}.
+</code></pre>
+<p>j.  If you select the data type as [Composite Data Type]{.ph
+.uicontrol}, you can specify the field mapping for the input
+field. With field mapping, you can pass the value of workflow
+input to a composite data field.</p>
+<pre><code>To pass the value from the parent composite data type to a child
+composite data type, you must specify the field mapping in the
+composite data type field. For more information, see [Creating a
+Data
+Type](../../../../../../../../help/resources/Data_Types#creating_a_data_type){.xref}.
+
+To specify the field mapping, do the following:
+
+i.  [Key]{.ph .uicontrol}---The input field that you want to
+    hide.
+
+ii. [Value Attribute]{.ph .uicontrol}---The value in a template
+    style to be passed dynamically during the execution.
+
+    If the data type is Object Selector, Enum, or Boolean then
+    the input is referenced as
+    `${workflow.input.InputReferenceName`{.ph .codeph}}.
+
+    If the data type is MoReference or Target Data Type the
+    input is referenced as
+    `${workflow.input.InputReferenceName.AttributeName}`{.ph
+    .codeph}.
+
+    The `InputReferenceName`{.ph .codeph} is the Reference Name
+    given to the input field and not the Display Name or Label.
+</code></pre>
+</li>
+<li>
+<p>Click [Add]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>Repeat this procedure to create multiple inputs.</p>
+</li>
+<li>
+<p>To add a Parameter Set rule, click [Add Rule]{.ph .uicontrol} &gt;
+[Parameter Set]{.ph .uicontrol}.</p>
+<p>For more information, see Workflow <a href="../../../../../../../../help/resources/Workflow_Designer#workflow_input_parameter_set_and_progressive_disclosure_rules">Workflow Input Parameter Set and
+Progressive Disclosure
+Rules</a>{.xref}.</p>
+<p>a.  [Name]{.ph .uicontrol}&mdash;The name of the Parameter Set rule.</p>
+<p>b.  [If Field]{.ph .uicontrol}&mdash;Select the input field and the
+properties that will be used to define the Parameter Set rule.</p>
+<pre><code>The inputs are referenced as *InputName* or
+*InputName.Properties*.
+
+::: {.note .note}
+[Note:]{.notetitle}
+The properties are applicable only if the data type is
+[MoRefefence]{.ph .uicontrol} or [Target Data Type]{.ph
+.uicontrol}. For example, for a Target Data Type input field
+(DeviceRegistrations), you can specify *Hypervisor Manager.IP
+Address*.
+:::
+</code></pre>
+<p>c.  [Condition]{.ph .uicontrol}&mdash;The condition for the rule. The
+condition can be Equal to, Not equal to, Contains, or Matches
+Pattern.</p>
+<p>d.  [Value]{.ph .uicontrol}&mdash;Select or enter the value. The
+Parameter Set rule uses this value along with the Condition
+specified to compare the value from the [If Field]{.ph
+.uicontrol}.</p>
+<p>e.  [Field to be shown]{.ph .uicontrol}&mdash;Select the input field(s)
+that should be made available when the Parameter Set rule
+condition is satisfied.</p>
+<p>f.  Click [Save]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>To add a Progressive Disclosure rule, click [Add Rule]{.ph
+.uicontrol} &gt; [Progressive Disclosure]{.ph .uicontrol}.</p>
+<p>For more information, see <a href="../../../../../../../../help/resources/Workflow_Designer#workflow_input_parameter_set_and_progressive_disclosure_rules">Workflow Input Parameter Set and
+Progressive Disclosure
+Rules</a>{.xref}.</p>
+<p>a.  [Target Field]{.ph .uicontrol}&mdash;The target input field on which
+the progressive disclosure is applied.</p>
+<p>b.  [Attribute ]{.ph .uicontrol}&mdash;The inputs are referenced as
+<em>AttributeName.ParameterName</em>. For example, for an input field,
+Virtual Manager, you can specify the attribute name as
+<em>RegisteredDevice.Moid</em> or <em>ConnectionStatus</em>.</p>
+<p>c.  [Condition]{.ph .uicontrol}&mdash;The rule condition for the rule.
+The condition can be Equal to, Not equal to, or Contains.</p>
+<p>d.  [Value]{.ph .uicontrol}&mdash;The inputs are referenced as
+<code>${InputReferenceName.Attribute</code>{.ph .codeph}} or
+<code>${InputReferenceName.ParameterName}</code>{.ph .codeph}. For example,
+for a VM input field, you can specify the value as
+<code>${HypervisorManager.Moid}</code>{.ph .codeph} or
+<code>${Target.ConnectionStatus}</code>{.ph .codeph}.</p>
+<pre><code>::: {.note .note}
+[Note:]{.notetitle}
+For a [String]{.ph .uicontrol} input field, if you have selected
+the Object Selector option then you need not specify the
+Attribute or Parameter value.
+:::
+</code></pre>
+</li>
+<li>
+<p>In the [General]{.ph .uicontrol} tab, click [Add Workflow
+Variables]{.ph .uicontrol} in the [Workflow Variables]{.ph
+.uicontrol} tab. For more information, see <a href="/help/resources/Workflow_Designer#workflow_variables">Workflow
+Variables</a>{.xref}.</p>
+</li>
+<li>
+<p>In the [Add Workflow Variable]{.ph .uicontrol} screen, enter the
+following details:</p>
+<p>a.  [Reference Name]{.ph .uicontrol}&mdash;Enter user-friendly short
+name.</p>
+<p>b.  [Type]{.ph .uicontrol}&mdash;Select the data type. For example,
+String, Integer, Float, Boolean, Json, Enum, MoReference, or
+Target Data Type.</p>
+<pre><code>The fields displayed depend on the value you select for the Type
+field.
+</code></pre>
+<p>c.  If you select the data type as [String]{.ph .uicontrol}, specify
+the following:</p>
+<pre><code>i.  [Object Selector]{.ph .uicontrol}---Enable to configure the
+    Intersight managed object selectors.
+
+    The Object Selector field is optional.
+
+ii. Specify the Intersight API Reference and selector attributes
+    to feed the input from the table selection. The value will
+    be passed according to the configuration set in the Value
+    attribute.
+</code></pre>
+<p>d.  If you select the data type as [Enum]{.ph .uicontrol}, specify
+the following:</p>
+<pre><code>i.  [Enum List]{.ph .uicontrol}---Label and value for the Enum
+    list.
+
+ii. [Widget type]{.ph .uicontrol}---The widget type as Radio or
+    none.
+</code></pre>
+<p>e.  If you select the data type as [Target Data Type]{.ph
+.uicontrol} or [MoReference]{.ph .uicontrol}, specify the
+following:</p>
+<pre><code>i.  [Intersight API Reference]{.ph .uicontrol}---Enter the URL
+    of the Intersight API configured with parameters.
+
+ii. [Selector Attribute]{.ph .uicontrol}---Enter the attribute
+    name(s) that needs to be displayed in the input table
+    column. You can add multiple selector attributes by clicking
+    [+]{.ph .uicontrol}.
+</code></pre>
+<p>f.  Select the [Initial Mapping To]{.ph .uicontrol} type and specify
+the corresponding variable value.</p>
+<p>g.  Click [Add]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>Click [Workflow Outputs]{.ph .uicontrol} and click [Add Workflow
+Output]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>Choose a parameter and click [Add]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>Click [Save]{.ph .uicontrol}.
+:::</p>
+</li>
+</ol>
+<p>::: {#id_131513__section_z2q_jns_drb .section}</p>
+<h2 id="workflow-input-parameter-set-and-progressive-disclosure-rules" class="title sectiontitle">Workflow Input Parameter Set and Progressive Disclosure Rules</h2>
+<p>When you create a workflow, you can specify the inputs for the workflow
+execution. After you define the workflow inputs, you can set Parameter
+Set or Progressive Disclosure rules. These rules control the
+availability of workflow inputs or filter the data based on the
+preceding selection during the workflow execution.</p>
+<p>::: {.note .note}
+[Note:]{.notetitle}</p>
+<p>You can define a Parameter Set or Progressive Disclosure rule only for a
+workflow that has more than two input fields with the supported data
+type.
+:::</p>
+<p><strong>Parameter Set Rule</strong></p>
+<p>The Parameter Set rules control the availability of specific parameters
+or inputs during the execution. After the first input is specified, the
+Parameter Set rule controls which subsequent input fields are made
+available during the workflow execution.</p>
+<p><strong>Example:</strong> The following example shows how to create a Parameter Set
+rule for a workflow with three input fields. The workflow input fields
+are:</p>
+<ul>
+<li>
+<p>[Enum]{.ph .uicontrol}&mdash;[Type]{.ph .uicontrol} is <em>Enum</em> and [Enum
+list]{.ph .uicontrol} is <em>VM</em> and <em>HX</em>.</p>
+</li>
+<li>
+<p>[Input1]{.ph .uicontrol}&mdash;[Type]{.ph .uicontrol} is <em>String</em>.</p>
+</li>
+<li>
+<p>[Input2]{.ph .uicontrol}&mdash;[Type]{.ph .uicontrol} is <em>String</em>.</p>
+</li>
+</ul>
+<p>You can create two workflow input Parameter Set rules. During the
+workflow execution when the [Enum]{.ph .uicontrol} value is <em>VM</em> only
+[Input1]{.ph .uicontrol} field is made available. Alternately, when the
+[Enum]{.ph .uicontrol} value is <em>HX</em>, only [Input2]{.ph .uicontrol} is
+made available. The details of the Parameter Set rules are:</p>
+<ul>
+<li>
+<p>[Rule1]{.ph .uicontrol}&mdash;[If Field]{.ph .uicontrol} is <em>Enum</em>,
+[Condition]{.ph .uicontrol} is <em>Equal to</em>, [Value ]{.ph
+.uicontrol}is <em>VM</em>, and [Fields to be shown ]{.ph .uicontrol}is
+<em>Input1.</em></p>
+</li>
+<li>
+<p>[Rule2]{.ph .uicontrol}&mdash;[If Field]{.ph .uicontrol} is <em>Enum</em>,
+[Condition]{.ph .uicontrol} is <em>Equal to</em>, [Value ]{.ph
+.uicontrol}is <em>HX</em>, and [Fields to be shown ]{.ph .uicontrol}is
+<em>Input2.</em></p>
+</li>
+</ul>
+<p>The following is a sample of the API request.</p>
+<pre tabindex="0"><code>  &#34;InputParameterSet&#34;: [
+    {
+      &#34;Condition&#34;: &#34;eq&#34;,
+      &#34;ControlParameter&#34;: &#34;Enum&#34;,
+      &#34;EnableParameters&#34;: [
+        &#34;Input1&#34;
+      ],
+      &#34;Name&#34;: &#34;Rule1&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.ParameterSet&#34;,
+      &#34;Value&#34;: &#34;VM&#34;
+    },
+    {
+      &#34;Condition&#34;: &#34;eq&#34;,
+      &#34;ControlParameter&#34;: &#34;Enum&#34;,
+      &#34;EnableParameters&#34;: [
+        &#34;Input2&#34;
+      ],
+      &#34;Name&#34;: &#34;Rule2&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.ParameterSet&#34;,
+      &#34;Value&#34;: &#34;HX&#34;
+    },
+</code></pre><p>The supported data types for Parameter Set rules are:</p>
+<ul>
+<li>
+<p>Boolean</p>
+</li>
+<li>
+<p>Enum</p>
+</li>
+<li>
+<p>String Object Selector</p>
+</li>
+<li>
+<p>MoReference</p>
+</li>
+<li>
+<p>Target</p>
+</li>
+</ul>
+<p><strong>Progressive Disclosure Rule</strong></p>
+<p>The Progressive Disclosure rules filter the data available in an input
+field based on the preceding selection during a workflow execution. The
+first input field is populated with broadest options. The subsequent
+input fields are populated with options based on the previous selection.</p>
+<p><strong>Example 1:</strong> The following example shows how to create a Progressive
+Disclosure rule for a workflow with two input fields. Both these input
+fields are MoReference data type. The workflow input fields are:</p>
+<ul>
+<li>
+<p>[Field1]{.ph .uicontrol}&mdash;[Type]{.ph .uicontrol} is <em>MoReference</em>,
+[Intersight API Reference]{.ph .uicontrol} is
+<code>/api/v1/asset/DeviceRegistrations</code>{.ph .codeph}, and [Selector
+attribute]{.ph .uicontrol} is <code>ConnectionStatus</code>{.ph .codeph}.</p>
+</li>
+<li>
+<p>[Field2]{.ph .uicontrol}&mdash;[Type ]{.ph .uicontrol}is <em>MoReference</em>,
+[Intersight API Reference]{.ph .uicontrol} is
+<code>/api/v1/asset/DeviceRegistrations</code>{.ph .codeph}, and [Selector
+attribute]{.ph .uicontrol} is <code>ConnectionStatus</code>{.ph .codeph}.</p>
+</li>
+</ul>
+<p>You can create a Progressive Disclosure rule so that during the workflow
+execution, the data is filtered for [Field2 ]{.ph .uicontrol}fields
+based on value in the [Field1 ]{.ph .uicontrol}field. The details of the
+Progressive Disclosure rule are:</p>
+<ul>
+<li>[Field2 Rule]{.ph .uicontrol}&mdash;[Target Field]{.ph .uicontrol} is
+<code>Field2</code>{.ph .codeph}, [Attribute]{.ph .uicontrol} is
+<code>ConnectionStatus</code>{.ph .codeph}, [Condition]{.ph .uicontrol} is
+<em>Equal to</em>, and [Value]{.ph .uicontrol} is
+<code>${Field1.ConnectionStatus}.</code>{.ph .codeph}</li>
+</ul>
+<p><strong>Example 2:</strong>: The following example shows how to create a Progressive
+Disclosure rule for a workflow with two input fields. Both these input
+fields are composite custom data type. The workflow input fields are:</p>
+<ul>
+<li>
+<p>[Input1]{.ph .uicontrol}&mdash;Composite data type with two fields
+(Field1 and Field2)</p>
+<ul>
+<li>
+<p>[Field1]{.ph .uicontrol}&mdash;[Type]{.ph .uicontrol} is
+<em>MoReference</em>, [Intersight API Reference]{.ph .uicontrol} is
+<code>/api/v1/asset/DeviceRegistrations</code>{.ph .codeph}, and [Selector
+attribute]{.ph .uicontrol} is <code>ConnectionStatus</code>{.ph .codeph}.</p>
+</li>
+<li>
+<p>[Field2]{.ph .uicontrol}&mdash;[Type ]{.ph .uicontrol}is
+<em>MoReference</em>, [Intersight API Reference]{.ph .uicontrol} is
+<code>/api/v1/asset/DeviceRegistrations</code>{.ph .codeph}, and [Selector
+attribute]{.ph .uicontrol} is <code>ConnectionStatus</code>{.ph .codeph}.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[Input2]{.ph .uicontrol}&mdash;Composite data type with two fields
+(Field3 and Field4)</p>
+<ul>
+<li>
+<p>[Field3]{.ph .uicontrol}&mdash;[Type]{.ph .uicontrol} is
+<em>MoReference</em>, [Intersight API Reference]{.ph .uicontrol} is
+<code>/api/v1/asset/DeviceRegistrations</code>{.ph .codeph}, and [Selector
+attribute]{.ph .uicontrol} is <code>ConnectionStatus</code>{.ph .codeph}.</p>
+</li>
+<li>
+<p>[Field4]{.ph .uicontrol}&mdash;[Type ]{.ph .uicontrol}is
+<em>MoReference</em>, [Intersight API Reference]{.ph .uicontrol} is
+<code>/api/v1/asset/DeviceRegistrations</code>{.ph .codeph}, and [Selector
+attribute]{.ph .uicontrol} is <code>ConnectionStatus</code>{.ph .codeph}.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>You can create two Progressive Disclosure rules. During the workflow
+execution, the data is filtered for [Input2 ]{.ph .uicontrol}fields
+based on value in the [Input1]{.ph .uicontrol} fields. The details of
+the two Progressive Disclosure rules are:</p>
+<ul>
+<li>
+<p>[Input2.Field3 Rule]{.ph .uicontrol}&mdash;[Target Field]{.ph
+.uicontrol} is <code>Input2.Field3</code>{.ph .codeph}, [Attribute]{.ph
+.uicontrol} is <code>ConnectionStatus</code>{.ph .codeph}, [Condition]{.ph
+.uicontrol} is <em>Equal to</em>, and [Value]{.ph .uicontrol} is
+<code>${Input1.Field1.ConnectionStatus}.</code>{.ph .codeph}</p>
+</li>
+<li>
+<p>[Input2.Field4 Rule]{.ph .uicontrol}&mdash;[Target Field]{.ph
+.uicontrol} is <code>Input2.Field4</code>{.ph .codeph}, [Attribute]{.ph
+.uicontrol} is <code>ConnectionStatus</code>{.ph .codeph}, [Condition]{.ph
+.uicontrol} is <em>Equal to</em>, and [Value]{.ph .uicontrol} is
+<code>${Input1.Field2.ConnectionStatus}.</code>{.ph .codeph}</p>
+</li>
+</ul>
+<p>The following is a sample of the API request.</p>
+<pre tabindex="0"><code>  &#34;UiInputFilters&#34;: [
+    {
+      &#34;Filters&#34;: [
+        &#34;ConnectionStatus eq &#39;${Input1.Field1.ConnectionStatus}&#39;&#34;
+      ],
+      &#34;Name&#34;: &#34;Input2.Field3&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.UiInputFilter&#34;,
+      &#34;UserHelpMessage&#34;: &#34;&#34;
+    },
+    {
+      &#34;Filters&#34;: [
+        &#34;ConnectionStatus eq &#39;${Input1.Field2.ConnectionStatus}&#39;&#34;
+      ],
+      &#34;Name&#34;: &#34;Input2.Field4&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.UiInputFilter&#34;,
+      &#34;UserHelpMessage&#34;: &#34;&#34;
+    }
+  ]
+</code></pre><p>The supported data types for the Progressive Disclosure rules are:</p>
+<ul>
+<li>
+<p>MoReference</p>
+</li>
+<li>
+<p>Target</p>
+</li>
+<li>
+<p>String Object Selector
+:::</p>
+</li>
+</ul>
+<p>::: section</p>
+<h2 id="workflow-variables" class="title sectiontitle">Workflow Variables</h2>
+<p>Workflow variables are similar to local variables within functions of a
+programming language. You define variables for workflows in Workflow
+Designer, and the scope of the workflow variables lies within the
+defined workflow. In a workflow, all tasks are bound to the scope of the
+workflow and have access to the workflow variables that are defined for
+the workflow. You can use the workflow variable to do the following:</p>
+<ul>
+<li>
+<p>Simplify complex workflows which have multiple branches based on the
+conditional operator. Save the output of tasks that get executed in
+different branches of the workflow into a single variable. This
+variable can then be mapped in the downstream tasks irrespective of
+the branch from which it was taken.</p>
+</li>
+<li>
+<p>Evaluate the workflow input using a complex expression, save the
+result as a variable, and reuse the variable in the subsequent
+tasks.</p>
+</li>
+<li>
+<p>Transform the output of a task with the help of template functions
+and map the value into a workflow variable. The variables can then
+be used in multiple mappings without having to redo the
+transformation in every mapping.</p>
+</li>
+</ul>
+<p>To define the workflow variable and specify the corresponding value, you
+can do the following:</p>
+<ul>
+<li>
+<p>In the [General]{.ph .uicontrol} tab, click [Add Workflow
+Variable]{.ph .uicontrol} and define the variable properties.</p>
+</li>
+<li>
+<p>In the [Designer]{.ph .uicontrol} tab, click the task, and then
+click the [Variables]{.ph .uicontrol} tab.</p>
+<ul>
+<li>
+<p>To add a new workflow variable, click [Add Workflow
+Variable]{.ph .uicontrol} and define the variable properties.</p>
+</li>
+<li>
+<p>To add or edit a mapping to an existing variable, click [Edit
+Mapping]{.ph .uicontrol} and specify the new value.</p>
+<p>::: {.note .note}
+[Note:]{.notetitle}
+To view events for a workflow variable, click the [View]{.ph
+.uicontrol} icon.
+:::</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>The workflow variables can be assigned one of the following values:</p>
+<ul>
+<li>
+<p>[Static value]{.ph .uicontrol}&mdash;Either the default value of the
+variable or the value specified in the workflow tasks.</p>
+</li>
+<li>
+<p>[Direct mapping ]{.ph .uicontrol}&mdash;Mapped to a workflow input, task
+output, or another workflow variable.</p>
+</li>
+<li>
+<p>[Advanced or Transformational mapping]{.ph .uicontrol}&mdash;Evaluate a
+complex expression and save the result in a variable.</p>
+</li>
+</ul>
+<p>After you define the workflow variable, you can map the workflow
+variable to task input, workflow output, or as an input for another
+variable. For more information, see <a href="file:/help/resources/Workflow_Designer#input_variable_and_output_mapping">Input, Variable, and Output
+Mapping</a>{.xref}.</p>
+<p>Following is a simple example which explains static mapping for a
+workflow variable. A workflow has two tasks <em>Task1</em> and <em>Task2</em> and a
+workflow variable <em>Variable1</em> is defined with a default value as <em>100</em>.
+For <em>Task1</em>, in the [Variable]{.ph .uicontrol} tab for the task, you can
+specify a static mapping for the workflow variable value as 90.
+Similarly, for <em>Task2</em>, in the [Variable]{.ph .uicontrol} tab for the
+task, you can specify the workflow variable value as 80 by mapping the
+<em>Variable1</em> value.</p>
+<p>When you execute the workflow, the start value of <em>Variable1</em> is the
+default value <em>100</em> . After <em>Task1</em> is executed, the value of
+<em>Variable1</em> is set to <em>90</em> based on the static value that is mapped for
+the task. After <em>Task2</em> is executed, the value of <em>Variable1</em> is set to
+<em>80</em> based on the static value that is mapped for the task.
+:::</p>
+<p>::: {#id_131513__section_ycb_mjr_4sb .section}</p>
+<h2 id="input-variable-and-output-mapping" class="title sectiontitle">Input, Variable, and Output Mapping</h2>
+<p>Workflows inputs, variables, and task outputs can be used for mapping
+and they can be used as direct, transformed, or advanced mapping. The
+syntax to refer to these will depend on the type of mapping.</p>
+<ul>
+<li>
+<p>Workflow inputs are referenced as <code>${workflow.input.InputName}</code>{.ph
+.codeph} where [InputName]{.ph .uicontrol} is the Reference Name
+given to the workflow input and not the Display Name or Label.</p>
+</li>
+<li>
+<p>Workflow variables are referenced as
+<code>${workflow.variable.InputName}</code>{.ph .codeph} , where
+[InputName]{.ph .uicontrol} is the Reference Name for the workflow
+variable.</p>
+</li>
+<li>
+<p>Task outputs are referenced as <code>${TaskName.output.OutputName}</code>{.ph
+.codeph} where [TaskName]{.ph .uicontrol} is the Instance Name for
+the task and not the Display Name or Label and [OutputName]{.ph
+.uicontrol} is the Reference Name for the task output.</p>
+</li>
+</ul>
+<p>To specify an input mapping, select a task and click [Edit]{.ph
+.uicontrol} against a task input parameter.</p>
+<p>To specify a workflow variable mapping, select a task and click
+[Map]{.ph .uicontrol} against a workflow variable parameter.</p>
+<p>Following are the available options:</p>
+<ul>
+<li>
+<p>[Static Value]{.ph .uicontrol}&mdash;Enter a value that is assigned to
+the task input or workflow variable field.</p>
+</li>
+<li>
+<p>[Direct Mapping]{.ph .uicontrol}&mdash;Map an existing input, workflow
+variable, or task output to the task input.</p>
+</li>
+<li>
+<p>[Transformed Mapping]{.ph .uicontrol}&mdash;Allows applying data
+transformation through a combination of one or more transformation
+stages for a task's input. In each transformation stage, you can
+select a transformation function along with its inputs. The
+transformation stages will be converted into a template. You can
+then preview the template and test the transformation with sample
+values.</p>
+<p>::: {.note .note}
+[Note:]{.notetitle}
+Transformed mapping is only supported for task inputs of primitive
+data types, such as <em>string</em>, <em>integer</em>, <em>boolean</em>, and <em>float</em>.
+:::</p>
+</li>
+<li>
+<p>::: p
+[Advanced Mapping]{.ph .uicontrol}&mdash;Map a Golang template to the
+task input or workflow variable. For example, <code>FindAllString</code>{.ph
+.codeph} function returns a slice of all substrings that match the
+given regular expression in the given string.</p>
+<pre tabindex="0"><code>FindAllString(s, regex string) ([]string, error)
+Example: {{(FindAllString .global.task.input.NumberString \&#34;([0-9]+)\&#34;)}} 
+returns array [“123”, “456”] for input string “123 some text 456”.
+</code></pre><p>For example, <code>Atoi</code>{.ph .codeph} function converts the given number
+in string format to integer type.</p>
+<pre tabindex="0"><code>Atoi(s string) (int, error)
+Example: {{Atoi .global.task.input.SizeString}} 
+returns integer 2048 for input string “2048”
+</code></pre><p>:::
+:::</p>
+</li>
+</ul>
+<p>::: section</p>
+<h2 id="operations---conditional-task" class="title sectiontitle">Operations - Conditional Task</h2>
+<p>Operations can be used to control the execution path of the workflows.
+Orchestrator supports Condition tasks which can be used to control the
+tasks that need to be executed.</p>
+<p><strong>Tasks to Control Execution Flow of Workflows</strong></p>
+<p>The [Conditional Task]{.ph .uicontrol} under [Operations]{.ph
+.uicontrol} allows you to perform programmatic decisional expressions in
+a conditional task during a workflow execution. The conditional
+expression can be simple expression or a combined compound expression.</p>
+<p>::: {.note .note}
+[Note:]{.notetitle}</p>
+<p>Only JSON style template is supported with conditional expressions.
+:::</p>
+<p>Conditional expressions support the following operators:</p>
+<ul>
+<li>
+<p><strong>Comparison operators</strong> such as === (Equal to), != (Not equal to),
+&gt; (Greater than), &lt; (Less than), &gt;= (Greater than or equal to),
+&lt;= (Less than or equal to)</p>
+</li>
+<li>
+<p><strong>Arithmetic operators</strong> such as =, -, * (Multiplication), /
+(division), % (Modulo), ** (Logical AND)</p>
+</li>
+<li>
+<p><strong>Logical operators</strong> such as &amp;&amp; (Logical AND), || (Logical OR), !
+((Logical NOT)</p>
+</li>
+<li>
+<p><strong>Ternary operator</strong> such as condition ? val1 : val2</p>
+</li>
+</ul>
+<p>The syntax for workflow input is
+<code>${workflow.input.&lt;workflow input ReferenceName&gt;}</code>{.ph .codeph} and the
+syntax for task output is <code>${&lt;Task Name&gt;.output.&lt;Task Output Name&gt;}</code>{.ph
+.codeph}. You can get the values for the task name and task output name
+from the Code view.</p>
+<p>::: p
+Following is an example for conditional expressions:</p>
+<pre tabindex="0"><code>if ( (${workflow.input.name} != &#39;test&#39; || ${workflow.input.name} != &#39;test123’)) &#39;bad input&#39;; else if((${workflow.input.id} != null &amp;&amp; ${workflow.input.id} % 2 == 0)) &#39;even&#39;; else &#39;odd&#39;;
+if ( (${workflow.input.name} != &#39;test123’ || ${workflow.input.name} != &#39;test123’)) &#39;bad input&#39;; else if((${workflow.input.id} != null &amp;&amp; ${workflow.input.id} % 2 == 0)) &#39;even&#39;; else &#39;odd&#39;;
+if ( (${workflow.input.name}.length === 12 || ${workflow.input.name} !== ‘test’ )) &#39;even&#39;; else &#39;odd&#39;; &lt;&lt; fgfgfgfgfgfg , even
+if ( (${workflow.input.name}.length === 12 || ${workflow.input.name} !== ‘test’ )) &#39;even&#39;; else &#39;odd&#39;; &lt;&lt; test , odd
+if ( (${workflow.input.name} != null &amp;&amp; &#39;decisionTest&#39;.indexOf(${workflow.input.name}) != -1 )) &#39;even&#39;; else &#39;odd&#39;;
+if ( (${workflow.input.name}.toLowerCase() == ‘testing’)) &#39;even&#39;; else &#39;odd&#39;; &lt;&lt; used integers as input name to try odd path
+if ( (${workflow.input.name}.search(/\s/g) != -1)) &#39;even&#39;; else &#39;odd&#39;;
+if ( (${workflow.input.name}.match(/\s/g) != -1)) &#39;even&#39;; else &#39;odd&#39;;
+if ( (${workflow.input.name}.startsWith(&#39;Not&#39;,0) || ${workflow.input.name}.endsWith(&#39;.&#39;))) &#39;even&#39;; else &#39;odd&#39;;
+if ( (${workflow.input.name}.length &gt;= 3 &amp;&amp; ${workflow.input.name}.length &lt;= 20)) &#39;even&#39;; else &#39;odd&#39;;
+if ( (${workflow.input.name}. === undefined)) ‘odd’; else ‘even’;
+if ( (${workflow.input.name}.search(&#39;Failed&#39;) != -1)) &#39;even&#39;; else &#39;odd&#39;;
+if ( (${workflow.input.name}.toLowerCase() != &#39;&#39; || ${workflow.input.name}.toUpperCase() != ‘Not-assigned’ )) &#39;even&#39;; else &#39;odd&#39;;
+</code></pre><p>:::</p>
+<p>The expression is executed during runtime and depending on the result,
+the respective path is chosen. If none of the conditions match, the
+default path is chosen.</p>
+<p>For example, you can have a conditional task that follows a path of
+execution depending on the profile state. You can create a condition in
+a workflow to check the state of the profile. If the profile is in the
+[Assigned]{.ph .uicontrol} state then you can deploy the profile, else
+delete the profile.</p>
+<p>After choosing the conditional task, use the [Conditions]{.ph
+.uicontrol} tab to specify expressions in the [Condition]{.ph
+.uicontrol} field of the tab. The values for the condition are specified
+in the [Value]{.ph .uicontrol} field of the [Cases]{.ph .uicontrol}
+area. Expressions are validated for syntax accuracy when workflow is
+saved.</p>
+<p>The following examples return the value of the condition.</p>
+<p>::: p</p>
+<pre tabindex="0"><code>${workflow.input.Names}.length
+${workflow.input.ArrayOfIds}.length              (here ArrayOfIds represent an array)
+${workflow.input.Names}.toLowerCase()
+${workflow.input.Names}.toUpperCase()
+</code></pre><p>:::</p>
+<p>The following examples return the boolean value 'true' or 'false'.</p>
+<p>::: p</p>
+<pre tabindex="0"><code>${workflow.input.Names}.startsWith(&#39;Te&#39;)
+${workflow.input.Names}.endsWith(&#39;st&#39;)
+${workflow.input.Names} == null
+${workflow.input.Names} != null
+</code></pre><p>:::</p>
+<p>In addition to workflow, task output can also be used. Here a boolean
+value is used in a ternary operation. If True, branch1 executes,
+otherwise branch2 executes <em>${task1.output.IsValid} ? branch1 :
+branch2</em>.
+:::</p>
+<p>::: {#id_131513__section_j5c_qy5_rrb .section}</p>
+<h2 id="operations---parallel-loop-task" class="title sectiontitle">Operations - Parallel Loop Task</h2>
+<p>Operations can be used to control the execution path of the workflows.
+Orchestrator supports the Parallel Loop operation task that can be used
+to run a single task or sub-workflow, iteratively, based on a specified
+count input.</p>
+<p>The iteration count can either be a static value that is specified when
+the workflow is created or a dynamic value that is derived from a
+workflow input or task output.</p>
+<p>When the task is executed, the count 'N' is determined, and the tasks
+or sub-workflows are scheduled for execution in parallel. When all the
+instances of the task or sub-workflow reach a final state, the parallel
+loop operation completes, and the workflow execution moves on to the
+next task.</p>
+<p>::: {.note .note}
+[Note:]{.notetitle}</p>
+<p>If one of the tasks or sub-workflows fails then the entire parallel loop
+task fails.
+:::</p>
+<p>The dynamic values for the count must be specified as a template
+function. For example, if a loop must run for a count which matches the
+length of a workflow input called [StringArray]{.ph .uicontrol}, then
+the count must be specified using a template function <em>{{ len
+.global.workflow.input.StringArray }}</em>.</p>
+<p>In addition, you can use the keyword <em>.iteration</em> in a workflow template
+input to control the inputs that feed into the task. For example, the
+task within the loop needs to take one value from the workflow input
+[StringArray]{.ph .uicontrol}, then the task string input can be mapped
+to the template <em>HostGroupName{{.iteration}}</em> during the workflow
+creation.</p>
+<p>Use the <strong>Parallel Loop</strong> task from the <strong>Operations</strong> section in the
+Intersight Orchestrator Workflow Designer UI to build the workflow.</p>
+<p>To add a task or a sub-workflow to a Parallel Loop task, you must drag
+and drop the single task or sub-workflow inside the Parallel Loop task
+in the Workflow Designer UI.</p>
+<p>The following table explains the Parallel Loop task input properties:</p>
+<p>::: tablenoborder
++&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Property | Description                                              |
++==========+==========================================================+
+| Count    | The iteration count value for the parallel loop. The     |
+|          | count can either be a static value defined as a constant |
+|          | or a dynamic value defined as an expression that is      |
+|          | evaluated to an integer value at execution time.         |
+|          |                                                          |
+|          | The dynamic values for the count must be specified as a  |
+|          | template function. For example, if a loop must run for a |
+|          | count which matches the length of a workflow input       |
+|          | called <code>StringArray</code>{.ph .codeph}, then the count must   |
+|          | be specified using a template function                   |
+|          | <code>{{ len .global.workflow.input.StringArray }}</code>{.ph       |
+|          | .codeph}.                                                |
+|          |                                                          |
+|          | The count must be less than or equal to 100.             |
++&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+:::</p>
+<p><strong>Example: <strong>Create a workflow with the Parallel Loop task to create
+multiple storage host groups</strong></strong></p>
+<p>The following example workflow has two tasks&mdash;Parallel Loop and New
+Storage Host Group. The first task runs the Parallel Loop task. In this
+task, the Count input is a static value and is set to <em>2</em>. The second
+task, New Storage Host Group, creates storage host groups with the host
+group name as a workflow input.</p>
+<p>When the workflow is executed, the count 'N' is determined as 2, and
+two create storage host group tasks are executed in parallel. When all
+the instances of the task reach a final state, the parallel loop
+completes.</p>
+<p>The workflow input field required for this example is as follows:</p>
+<p>::: tablenoborder
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Property       | Description                                        |
++================+====================================================+
+| Storage Device | -   [Reference Name]{.ph                           |
+|                |     .uicontrol}&mdash;<em>StorageDevice</em>                  |
+|                |                                                    |
+|                | -   [Type]{.ph .uicontrol}&mdash;<em>Target Data Type</em>    |
+|                |                                                    |
+|                | -   [Intersight API Reference]{.ph                 |
+|                |     .uicontrol}&mdash;<em>/api/v1/storage/PureArrays</em>     |
+|                |                                                    |
+|                | -   [Selector Attribute]{.ph .uicontrol}&mdash;<em>Name</em>  |
+|                |                                                    |
+|                | -   [Selector Attribute]{.ph                       |
+|                |     .uicontrol}&mdash;<em>Vendor</em>                         |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+:::</p>
+<p>The following table lists the properties for the Parallel Loop task:</p>
+<p>::: tablenoborder
+Property   Description</p>
+<hr>
+<p>Count      [Count]{.ph .uicontrol}&mdash;<em>2</em>
+:::</p>
+<p>The following table lists the properties for the New Storage Host Group
+task:</p>
+<p>::: tablenoborder
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Property       | Description                                        |
++================+====================================================+
+| Storage Device | [Workflow Input]{.ph                               |
+|                | .uicontrol}&mdash;<em>${workflow.input.StorageDevice}</em>   |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Host Group     | [Custom Value]{.ph                                 |
+|                | .uicontrol}&mdash;<em>HostGroupName{{.iteration}}</em>        |
+|                |                                                    |
+|                | The keyword <em>.iteration</em> in a workflow template    |
+|                | input to control the inputs that feed into the     |
+|                | task.                                              |
++&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+:::</p>
+<p>After you execute the workflow, you would see the following output:</p>
+<pre tabindex="0"><code>├── New Storage Host Group
+├── ...
+│   ├── Inputs
+│   │   └── Host Group: HostGroupName0
+│   │       └── Storage Device:{ 2 }
+│   │           ├── Moid: 619efa1d6e64612d317a248a
+│   │           └── ObjectType: storage.PureArray
+│   └── Outputs
+│       ├── ConfigResults:[ 1 ]
+│       │   └── Object: { 4 }
+│       │       ├── ConfigResCtx: { 1 }
+│       │       │   └── EntityData: { 1 }
+│       │       │       └── task: workflow.ApiTask
+│       │       ├── Message: Host group created successfully.
+│       │       ├── State: Ok
+│       │       └── Type: Config
+│       └── Host Group: HostGroupName0
+├── New Storage Host Group
+└── ...
+    ├── Inputs
+    │   └── Host Group: HostGroupName1
+    │       └── Storage Device:{ 2 }
+    │           ├── Moid: 619efa1d6e64612d317a248a
+    │           └── ObjectType: storage.PureArray
+    └── Outputs
+        ├── ConfigResults:[ 1 ]
+        │   └── Object: { 4 }
+        │       ├── ConfigResCtx: { 1 }
+        │       │   └── EntityData: { 1 }
+        │       │       └── task: workflow.ApiTask
+        │       ├── Message: Host group created successfully.
+        │       ├── State: Ok
+        │       └── Type: Config
+        └── Host Group: HostGroupName1
+</code></pre><p>The following is a sample code view:</p>
+<pre tabindex="0"><code>{
+  &#34;Catalog&#34;: {
+    &#34;Moid&#34;: &#34;5e6109bc696f6e2d31f856e5&#34;,
+    &#34;ObjectType&#34;: &#34;workflow.Catalog&#34;,
+    &#34;link&#34;: &#34;https://www.intersightcom/api/v1/workflow/Catalogs/5e6109bc696f6e2d31f856e5&#34;
+  },
+  &#34;DefaultVersion&#34;: true,
+  &#34;Description&#34;: &#34;&#34;,
+  &#34;InputDefinition&#34;: [
+    {
+      &#34;CustomDataTypeProperties&#34;: {
+        &#34;CatalogMoid&#34;: &#34;&#34;,
+        &#34;CustomDataTypeId&#34;: &#34;&#34;,
+        &#34;CustomDataTypeName&#34;: &#34;&#34;,
+        &#34;ObjectType&#34;: &#34;workflow.CustomDataProperty&#34;
+      },
+      &#34;Default&#34;: {
+        &#34;IsValueSet&#34;: false,
+        &#34;ObjectType&#34;: &#34;workflow.DefaultValue&#34;,
+        &#34;Override&#34;: false,
+        &#34;Value&#34;: null
+      },
+      &#34;Description&#34;: &#34;&#34;,
+      &#34;DisplayMeta&#34;: {
+        &#34;InventorySelector&#34;: true,
+        &#34;ObjectType&#34;: &#34;workflow.DisplayMeta&#34;,
+        &#34;WidgetType&#34;: &#34;None&#34;
+      },
+      &#34;InputParameters&#34;: null,
+      &#34;IsArray&#34;: false,
+      &#34;Label&#34;: &#34;Storage Device&#34;,
+      &#34;Max&#34;: 0,
+      &#34;Min&#34;: 0,
+      &#34;Name&#34;: &#34;StorageDevice&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.TargetDataType&#34;,
+      &#34;Properties&#34;: [
+        {
+          &#34;ConnectorAttribute&#34;: &#34;RegisteredDevice.Moid&#34;,
+          &#34;ConstraintAttributes&#34;: [
+            &#34;ObjectType&#34;
+          ],
+          &#34;DisplayAttributes&#34;: [
+            &#34;Name&#34;,
+            &#34;Vendor&#34;
+          ],
+          &#34;ObjectType&#34;: &#34;workflow.TargetProperty&#34;,
+          &#34;Selector&#34;: &#34;/api/v1/storage/PureArrays&#34;,
+          &#34;SelectorProperty&#34;: {
+            &#34;Body&#34;: null,
+            &#34;Method&#34;: &#34;GET&#34;,
+            &#34;ObjectType&#34;: &#34;workflow.SelectorProperty&#34;
+          },
+          &#34;SupportedObjects&#34;: [
+            &#34;storage.PureArray&#34;
+          ]
+        }
+      ],
+      &#34;Required&#34;: true
+    }
+  ],
+  &#34;InputParameterSet&#34;: [],
+  &#34;Label&#34;: &#34;Parallel Loop&#34;,
+  &#34;Name&#34;: &#34;ParallelLoop&#34;,
+  &#34;OutputDefinition&#34;: [],
+  &#34;OutputParameters&#34;: null,
+  &#34;Properties&#34;: {
+    &#34;Cloneable&#34;: true,
+    &#34;EnableDebug&#34;: false,
+    &#34;ExternalMeta&#34;: true,
+    &#34;ObjectType&#34;: &#34;workflow.WorkflowProperties&#34;,
+    &#34;Retryable&#34;: false,
+    &#34;SupportStatus&#34;: &#34;Supported&#34;
+  },
+  &#34;Tags&#34;: [],
+  &#34;Tasks&#34;: [
+    {
+      &#34;Description&#34;: &#34;&#34;,
+      &#34;Label&#34;: &#34;&#34;,
+      &#34;Name&#34;: &#34;StartTask&#34;,
+      &#34;NextTask&#34;: &#34;parallelLoop1&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.StartTask&#34;
+    },
+    {
+      &#34;Description&#34;: &#34;&#34;,
+      &#34;Label&#34;: &#34;&#34;,
+      &#34;Name&#34;: &#34;SuccessEndTask&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.SuccessEndTask&#34;
+    },
+    {
+      &#34;Description&#34;: &#34;&#34;,
+      &#34;Label&#34;: &#34;&#34;,
+      &#34;Name&#34;: &#34;FailureEndTask&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.FailureEndTask&#34;
+    },
+    {
+      &#34;Count&#34;: &#34;2&#34;,
+      &#34;Description&#34;: &#34;A Parallel Loop is a control task that runs one task or one sub-workflow multiple times based on a specified count.  The count can be a static value that is specified during design time or a dynamic value that is derived from workflow inputs or task outputs.  When the loop is executed, the count &#39;N&#39; is determined, N tasks or sub-workflows are scheduled for execution in parallel.  When all N instances of the task or sub-workflow reach a final state the parallel loop will complete and workflow execution will move on to the next task.  If any one of the tasks or sub-workflows fails, then the entire loop will fail.  Dynamic values for count must be specified as a template.  For example, if a loop must run for a count which matches the length of a workflow input called StringArray, then the count must be specified using a template &#39;{{ len .global.workflow.input.StringArray }}&#39;.  The iteration of the loop is available using the keyword &#39;.iteration&#39; and it can be used to control inputs that feed into the task.  For example, the task inside the loop needs to take one value from the workflow input StringArray, then the task string input can be mapped to the template &#39;{{ index .global.workflow.input.StringArray .iteration}}&#39; during design.&#34;,
+      &#34;Label&#34;: &#34;Parallel Loop&#34;,
+      &#34;LoopStartTask&#34;: &#34;NewStorageHostGroup1&#34;,
+      &#34;Name&#34;: &#34;parallelLoop1&#34;,
+      &#34;NumberOfBatches&#34;: 1,
+      &#34;ObjectType&#34;: &#34;workflow.LoopTask&#34;,
+      &#34;OnSuccess&#34;: &#34;SuccessEndTask&#34;,
+      &#34;Parallel&#34;: true
+    },
+    {
+      &#34;CatalogMoid&#34;: &#34;5c2fc884696f6e2d316c5d59&#34;,
+      &#34;Description&#34;: &#34;Create a host group with host group name as input. On successful execution, the newly created host group name is generated as output.&#34;,
+      &#34;InputParameters&#34;: {
+        &#34;HostGroupName&#34;: &#34;HostGroupName{{.iteration}}&#34;,
+        &#34;StorageDevice&#34;: &#34;${workflow.input.StorageDevice}&#34;
+      },
+      &#34;Label&#34;: &#34;New Storage Host Group&#34;,
+      &#34;Name&#34;: &#34;NewStorageHostGroup1&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.WorkerTask&#34;,
+      &#34;OnFailure&#34;: &#34;&#34;,
+      &#34;OnSuccess&#34;: &#34;&#34;,
+      &#34;RollbackDisabled&#34;: false,
+      &#34;TaskDefinitionId&#34;: &#34;5f7ed8a2696f6e2d30eb388b&#34;,
+      &#34;TaskDefinitionName&#34;: &#34;NewStorageHostGroup&#34;,
+      &#34;UseDefault&#34;: false,
+      &#34;Version&#34;: 2
+    }
+  ],
+  &#34;UiInputFilters&#34;: [],
+  &#34;UiRenderingData&#34;: {
+    &#34;Positions&#34;: [
+      {
+        &#34;Name&#34;: &#34;StartTask&#34;,
+        &#34;X&#34;: 269.5,
+        &#34;Y&#34;: 45.5
+      },
+      {
+        &#34;Name&#34;: &#34;SuccessEndTask&#34;,
+        &#34;X&#34;: 269.5,
+        &#34;Y&#34;: 303
+      },
+      {
+        &#34;Name&#34;: &#34;FailureEndTask&#34;,
+        &#34;X&#34;: 412.5,
+        &#34;Y&#34;: 303
+      },
+      {
+        &#34;Name&#34;: &#34;parallelLoop1&#34;,
+        &#34;X&#34;: 149.01800537109375,
+        &#34;Y&#34;: 116.75314331054688
+      },
+      {
+        &#34;Name&#34;: &#34;NewStorageHostGroup1&#34;,
+        &#34;X&#34;: 185,
+        &#34;Y&#34;: 177
+      }
+    ]
+  },
+  &#34;Version&#34;: 1,
+  &#34;WorkflowMetadata&#34;: null
+}
+</code></pre><p>:::</p>
+<p>::: section</p>
+<h2 id="managing-the-lifecycle-of-a-workflow" class="title sectiontitle">Managing the Lifecycle of a Workflow</h2>
+<p>Workflow management consists of organizing, creating, updating, and
+deletion of workflows. The following table describes the set of actions
+that you can perform with workflows in Cisco Intersight.</p>
+<p>::: tablenoborder
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Actions                           | Description                       |
++===================================+===================================+
+| View Workflows                    | Choosing [Orchestration]{.ph      |
+|                                   | .uicontrol} from the left         |
+|                                   | navigation pane will display all  |
+|                                   | workflows in a tabular format.    |
+|                                   | You can view information such as  |
+|                                   | the workflow name and             |
+|                                   | description, the number of        |
+|                                   | versions available, the number of |
+|                                   | times the workflow has been       |
+|                                   | executed, the last execution      |
+|                                   | status, validation information    |
+|                                   | and the last update time and      |
+|                                   | date.                             |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Create a New Workflow             | Choose [Orchestration]{.ph        |
+|                                   | .uicontrol} from the left         |
+|                                   | navigation pane and click [Create |
+|                                   | Workflow]{.ph .uicontrol}. This   |
+|                                   | option opens up the Workflow      |
+|                                   | Designer, using which you can     |
+|                                   | create a new workflow.            |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Create a Version for a Workflow   | You can create multiple versions  |
+|                                   | for a workflow. In addition, you  |
+|                                   | can set a specific version of the |
+|                                   | workflow as the default version   |
+|                                   | for the workflow. See [Managing   |
+|                                   | Versions for                      |
+|                                   | Workflows                         |
+|                                   | ](../../../../../../../../help/re |
+|                                   | sources/Workflow_Designer#managin |
+|                                   | g_versions_for_workflows){.xref}. |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Delete a Workflow                 | From the tabular list of          |
+|                                   | workflows, you can select a       |
+|                                   | workflow and click [Delete]{.ph   |
+|                                   | .uicontrol}. This will remove the |
+|                                   | workflow and all versions of the  |
+|                                   | workflow.                         |
+|                                   |                                   |
+|                                   | You cannot delete a workflow when |
+|                                   | :                                 |
+|                                   |                                   |
+|                                   | -   workflow is used as           |
+|                                   |     sub-workflow task in another  |
+|                                   |     workflow.                     |
+|                                   |                                   |
+|                                   | -   workflow is in running state. |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Execute a Workflow                | Select a workflow from the        |
+|                                   | tabular list of workflows and     |
+|                                   | choose [Execute]{.ph .uicontrol}. |
+|                                   | Alternatively, you can click the  |
+|                                   | workflow name, and then choose    |
+|                                   | [Execute]{.ph .uicontrol} in the  |
+|                                   | Workflow Designer.                |
+|                                   |                                   |
+|                                   | ::: {.note .important}            |
+|                                   | [Important:]{.importanttitle}     |
+|                                   |                                   |
+|                                   | Workflow execution includes       |
+|                                   | privilege-based validation for    |
+|                                   | tasks. With the introduction of   |
+|                                   | privilege-based validation for    |
+|                                   | virtualization, compute and       |
+|                                   | storage tasks, a user must have   |
+|                                   | all the required privileges to    |
+|                                   | execute all the domain tasks      |
+|                                   | within a workflow. For example, a |
+|                                   | user can successfully execute a   |
+|                                   | workflow that includes storage    |
+|                                   | and virtualization tasks only if  |
+|                                   | the user has both Storage and     |
+|                                   | Virtualization Administrator      |
+|                                   | privileges. In the absence of     |
+|                                   | either one of these privileges,   |
+|                                   | the [Execute]{.ph .uicontrol}     |
+|                                   | button will not be displayed and  |
+|                                   | the user cannot execute the       |
+|                                   | workflow.                         |
+|                                   |                                   |
+|                                   | However, an Account Administrator |
+|                                   | can execute all workflow.         |
+|                                   | :::                               |
+|                                   |                                   |
+|                                   | While configuring the properties  |
+|                                   | of a workflow, if you selected    |
+|                                   | the [Retryable]{.ph .uicontrol}   |
+|                                   | option, then in the event of a    |
+|                                   | workflow failure, you can either  |
+|                                   | choose to execute the workflow    |
+|                                   | again from the point of failure,  |
+|                                   | or you can execute the entire     |
+|                                   | workflow again.                   |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Clone a Workflow                  | From the tabular list of          |
+|                                   | workflows, you can select a       |
+|                                   | workflow and click [Clone]{.ph    |
+|                                   | .uicontrol}. This will clone the  |
+|                                   | selected workflow.                |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Save a Workflow as                | From the tabular list of          |
+|                                   | workflows, you can choose a       |
+|                                   | workflow and click. By default,   |
+|                                   | the workflow details are          |
+|                                   | displayed in the [Designer]{.ph   |
+|                                   | .uicontrol} tab. You can choose   |
+|                                   | [Save As]{.ph .uicontrol} option  |
+|                                   | from the [Action]{.ph .uicontrol} |
+|                                   | drop-down list to clone or create |
+|                                   | a new version of the existing     |
+|                                   | workflow.                         |
+|                                   |                                   |
+|                                   | You can also perform this         |
+|                                   | operation in the [General]{.ph    |
+|                                   | .uicontrol} tab.                  |
+|                                   |                                   |
+|                                   | In the [Save As]{.ph .uicontrol}  |
+|                                   | screen, you can choose one of the |
+|                                   | following:                        |
+|                                   |                                   |
+|                                   | -   [New Version]{.ph             |
+|                                   |     .uicontrol}&mdash;Specify a new   |
+|                                   |     version and related           |
+|                                   |     description. Click [Save]{.ph |
+|                                   |     .uicontrol}.                  |
+|                                   |                                   |
+|                                   |     This option is not available  |
+|                                   |     for a system generated        |
+|                                   |     workflow.                     |
+|                                   |                                   |
+|                                   | -   [Clone]{.ph                   |
+|                                   |     .uicontrol}&mdash;Specify         |
+|                                   |     user-friendly short name,     |
+|                                   |     reference name, description,  |
+|                                   |     and tag key. Click [Save]{.ph |
+|                                   |     .uicontrol}. For more         |
+|                                   |     information, see [Cloning a   |
+|                                   |     Workflow](../../../../../../  |
+|                                   | ../../help/resources/Workflow_Des |
+|                                   | igner#cloning_a_workflow){.xref}. |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+:::
+:::</p>
+<p>::: {#id_131513__CloningWorkflow .section}</p>
+<h2 id="cloning-a-workflow" class="title sectiontitle">Cloning a Workflow</h2>
+<p>You can clone a workflow. The cloned workflow is identical to the
+original workflow. You can edit the new workflow immediately. You might
+do this, for example, to create a workflow that is similar to the source
+workflow that can be edited based on your requirements. The new workflow
+has a new, separate version history.</p>
+<p>To clone a workflow, complete the following steps:</p>
+<ol>
+<li>
+<p>Choose [Orchestration]{.ph .uicontrol} from the left navigation
+pane.</p>
+</li>
+<li>
+<p>From the tabular list of workflows, select a workflow and choose
+[Clone]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>In the [Clone Workflow]{.ph .uicontrol} screen, edit the
+user-friendly short name, reference name, description, and
+organization details. The organization mappings are displayed only
+for pre-canned workflows and not for the custom workflows.</p>
+</li>
+<li>
+<p>Check the [Open Clone in Editor]{.ph .uicontrol} check box if you
+want to open the cloned workflow in the workflow designer and edit
+the details.</p>
+<p>::: {.note .note}
+[Note:]{.notetitle}
+[Open Clone in Editor]{.ph .uicontrol} check box is not displayed
+when you clone a workflow using the [Save As]{.ph .uicontrol}
+option.
+:::</p>
+</li>
+<li>
+<p>Click [Clone]{.ph .uicontrol}.
+:::</p>
+</li>
+</ol>
+<p>::: {#id_131513__section_azj_mg5_dpb .section}</p>
+<h2 id="managing-versions-for-workflows" class="title sectiontitle">Managing Versions for Workflows</h2>
+<p>Cisco Intersight allows you to create and manage versions for workflows.
+In addition to creating versions, you can also set a specific version as
+the default version for the workflow. You can create a version of a
+workflow and execute it only if you are one of the following users:</p>
+<ul>
+<li>
+<p>Account Administrator</p>
+</li>
+<li>
+<p>User with Workflow Designer privileges</p>
+</li>
+</ul>
+<p>Read-Only users can only view versions of a workflow. They cannot
+create, edit, execute or delete versions. Users with Storage
+Administrator and Virtualization Administrator privileges can only view
+and execute specific versions of a workflow.</p>
+<p>To create a version for a workflow, complete the following steps:</p>
+<ol>
+<li>
+<p>Choose [Orchestration]{.ph .uicontrol} from the left navigation
+pane.</p>
+</li>
+<li>
+<p>From the tabular list of workflows, select a workflow and choose
+[Manage Versions]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>In the [Manage Versions]{.keyword .wintitle} screen, you can perform
+the following tasks:</p>
+<ul>
+<li>
+<p>Create a new version for the workflow</p>
+</li>
+<li>
+<p>Execute a specific version of the workflow</p>
+</li>
+<li>
+<p>Delete a specific version. You cannot directly delete the
+default version of a workflow. To delete the default version,
+perform the following:</p>
+<ul>
+<li>
+<p>Make another version the default.</p>
+</li>
+<li>
+<p>Change the workflow version to be deleted as non-default.</p>
+</li>
+<li>
+<p>Delete the workflow version that was changes as non-default.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Set a specific version of the workflow as the default version</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Choose [Create a New Version]{.ph .uicontrol} and enter the
+following details:</p>
+<ul>
+<li>
+<p>[Source Version]{.ph .uicontrol}&mdash;Choose a specific version
+that will form the source for the new version that you are
+creating.</p>
+</li>
+<li>
+<p>[Version]{.ph .uicontrol}&mdash;Specify a version number for the
+workflow.</p>
+</li>
+<li>
+<p>[Description]{.ph .uicontrol}&mdash;Enter a description for the
+version so that you can identify it.</p>
+</li>
+<li>
+<p>[Set as Default Version]{.ph .uicontrol}&mdash;Check this check box
+to set this new version as the default version for the workflow.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click [Create]{.ph .uicontrol}.</p>
+<p>After creating a version for a workflow, clicking on the version
+number on the [Manage Versions]{.keyword .wintitle} screen opens the
+workflow in Workflow Designer.</p>
+</li>
+</ol>
+<p>::: {.note .note}
+[Note:]{.notetitle}</p>
+<p>Deleting a workflow will delete all versions created for the workflow.
+:::
+:::</p>
+<p>::: section</p>
+<h2 id="exporting-a-workflow" class="title sectiontitle">Exporting a Workflow</h2>
+<p>Intersight Cloud Orchestrator enables you to export workflows from an
+account to your system and then import them to another account.</p>
+<p>To export a workflow, complete the following steps:</p>
+<ol>
+<li>
+<p>Choose [Orchestration]{.ph .uicontrol} from the left navigation
+pane.</p>
+</li>
+<li>
+<p>Click the [Workflow]{.ph .uicontrol} tab.</p>
+</li>
+<li>
+<p>From the tabular list of workflows, do one of the following:</p>
+<ul>
+<li>
+<p>Select a workflow, click the [Ellipsis (&hellip;)]{.ph .uicontrol}
+icon in the same row, and then choose [Export Workflow]{.ph
+.uicontrol}.</p>
+</li>
+<li>
+<p>Select multiple workflows, click the [Ellipsis (&hellip;)]{.ph
+.uicontrol} icon from the header or footer of the tabular list,
+and then choose [Export Workflow]{.ph .uicontrol}.</p>
+<p>::: {.note .note}
+[Note:]{.notetitle} You can also export workflows from the
+[Actions]{.ph .uicontrol} menu in the [Workflow
+Designer]{.keyword .wintitle} window.
+:::</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the [Export Workflow]{.ph .uicontrol} screen:</p>
+<p>a.  In the [JSON File Name]{.ph .uicontrol} field, use the default
+filename or enter a filename of your choice for the JSON file
+that stores the workflow components.</p>
+<p>b.  Use the [Export Tags]{.ph .uicontrol} toggle button to include
+or exclude the user-defined tags. ICO does not export the
+system-defined tags.</p>
+<p>c.  Click [Export]{.ph .uicontrol}.</p>
+<p>d.  Save a local copy of the JSON file.</p>
+</li>
+</ol>
+<h2 id="importing-a-workflow" class="title sectiontitle">Importing a Workflow</h2>
+<p>Intersight Cloud Orchestrator enables you to import workflows to your
+account by importing a JSON file that contains the workflow components.
+You can create the JSON file by exporting the workflow components from
+another account.</p>
+<p>To import a workflow, complete the following steps:</p>
+<ol>
+<li>
+<p>Choose [Orchestration]{.ph .uicontrol} from the left navigation
+pane.</p>
+</li>
+<li>
+<p>Click [Import]{.ph .uicontrol}.</p>
+<p>The [Import]{.keyword .wintitle} wizard appears.</p>
+</li>
+<li>
+<p>In the [Select File]{.keyword .wintitle} screen:</p>
+<p>a.  From the [Organization]{.ph .uicontrol} drop-down list, choose
+the organization to which you want to import the workflow(s).</p>
+<p>b.  Click [Browse]{.ph .uicontrol}, and then select the JSON file
+that contains the Workflow(s).</p>
+<pre><code>::: {.note .note}
+[Note:]{.notetitle} Ensure that the file size of the JSON file
+is not more than 1MB. If the file size is more than 1MB, export
+the workflow(s) in batches, and then try import.
+:::
+</code></pre>
+<p>c.  Click [Next]{.ph .uicontrol}.</p>
+<pre><code>Intersight Cloud Orchestrator validates the JSON file and
+displays the workflow(s) in the [Details]{.keyword .wintitle}
+screen.
+</code></pre>
+</li>
+<li>
+<p>In the [Details]{.keyword .wintitle} screen:</p>
+<p>a.  To associate an additional tag to the components listed in the
+table, enter the tag in the [Set Tags]{.ph .uicontrol} field.</p>
+<pre><code>::: {.note .note}
+[Note:]{.notetitle} [Set Tags]{.ph .uicontrol} is an optional
+field. You must enter the tag in the `key:value`{.ph .codeph}
+format.
+:::
+</code></pre>
+<p>b.  If one or more workflow components are already available in the
+system, choose a rule to replace or skip the duplicate
+components.</p>
+<p>c.  Click [Import]{.ph .uicontrol}.</p>
+</li>
+<li>
+<p>In the [Import Result]{.keyword .wintitle} screen:</p>
+<p>a.  Verify the status of the imported workflow.</p>
+<p>b.  If you want to view the details of the import request:</p>
+<pre><code>-   Click the link displayed above the table.
+
+-   Alternatively, click the [Requests]{.ph .uicontrol} icon
+    displayed in the menu bar.
+
+    For more information, see
+    [Requests](../../../../../../../../help/resources/Workflow_Designer#requests){.xref}.
+</code></pre>
+<p>c.  Click [Close]{.ph .uicontrol}.</p>
+</li>
+</ol>
+<p>You can execute the imported workflow from the [Workflows]{.ph
+.uicontrol} tab.
+:::</p>
+<p>::: section</p>
+<h2 id="defining-workflow-input-rules" class="title sectiontitle">Defining Workflow Input Rules</h2>
+<p>Intersight Cloud Orchestrator allows you to configure input rules that
+control the display of fields in the workflow execution screen. You can
+define these input rules for a workflow by using the Intersight API and
+while creating a composite data type. By default, all input fields for a
+workflow are displayed in the workflow execution screen. By configuring
+input rules, the fields in this screen are displayed or hidden based on
+the value selected for a previous input field.</p>
+<p>After configuring input rules in the workflow definition using the
+Intersight API, you can view the input rules using the [Code]{.ph
+.uicontrol} tab in the Workflow Designer.</p>
+<p>Following is a sample of a simple input rule set for a workflow:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;InputParameterSet&#34;</span><span style="color:#a40000">:</span><span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;ObjectType&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;workflow.ParameterSet&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;Name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;rule-1&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;ControlParameter&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;input-1&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;Condition&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;eq&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;Value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;true&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;EnableParameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span><span style="color:#4e9a06">&#34;input-2&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;ObjectType&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;workflow.ParameterSet&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;Name&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;rule-2&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;ControlParameter&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;input-1&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;Condition&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;ne&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;Value&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;true&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">&#34;EnableParameters&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span><span style="color:#4e9a06">&#34;input-3&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span>
+</span></span></code></pre></div><p>Following is an example for the parameter sets defined at workflow
+level:</p>
+<pre tabindex="0"><code>{
+  &#34;Label&#34;: &#34;Provision VM&#34;,
+  &#34;Name&#34;: &#34;ProvisionVM&#34;,
+  &#34;DefaultVersion&#34;: true,
+  &#34;Description&#34;: &#34;&#34;,
+  // Parameter set defintion 
+  &#34;InputParameterSet&#34;: [
+    {
+      // rule-1 enables &#39;vmwarehost&#39; input when value of &#39;vmtype&#39; is &#39;vmware&#39;
+      &#34;Name&#34;: &#34;rule-1&#34;,
+      &#34;ControlParameter&#34;: &#34;vmtype&#34;,
+      &#34;Condition&#34;: &#34;eq&#34;,
+      &#34;Value&#34;: &#34;vmware&#34;,
+      &#34;EnableParameters&#34;: [
+        &#34;vmwarehost&#34;
+      ]
+    },
+    {
+      // rule-2 enables &#39;hxcluster&#39; input when value of &#39;vmtype&#39; is &#39;hx&#39;
+      &#34;Name&#34;: &#34;rule-2&#34;,
+      &#34;ControlParameter&#34;: &#34;vmtype&#34;,
+      &#34;Condition&#34;: &#34;eq&#34;,
+      &#34;Value&#34;: &#34;hx&#34;,
+      &#34;EnableParameters&#34;: [
+        &#34;hxcluster&#34;
+      ]
+    }
+  ],
+  &#34;InputDefinition&#34;: [
+    {
+      &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataType&#34;,
+      &#34;InputParameters&#34;: null,
+      &#34;Label&#34;: &#34;VM Type&#34;,
+      &#34;Name&#34;: &#34;vmtype&#34;,
+      &#34;Required&#34;: false,
+      &#34;Properties&#34;: {
+        &#34;ClassId&#34;: &#34;workflow.PrimitiveDataProperty&#34;,
+        &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataProperty&#34;,
+        &#34;Constraints&#34;: {
+          &#34;ClassId&#34;: &#34;workflow.Constraints&#34;,
+          &#34;ObjectType&#34;: &#34;workflow.Constraints&#34;,
+          &#34;EnumList&#34;: [
+            {
+              &#34;ClassId&#34;: &#34;workflow.EnumEntry&#34;,
+              &#34;ObjectType&#34;: &#34;workflow.EnumEntry&#34;,
+              &#34;Label&#34;: &#34;VMWare&#34;,
+              &#34;Value&#34;: &#34;vmware&#34;
+            },
+            {
+              &#34;ClassId&#34;: &#34;workflow.EnumEntry&#34;,
+              &#34;ObjectType&#34;: &#34;workflow.EnumEntry&#34;,
+              &#34;Label&#34;: &#34;HX&#34;,
+              &#34;Value&#34;: &#34;hx&#34;
+            }
+          ],
+          &#34;Max&#34;: 0,
+          &#34;Min&#34;: 0,
+          &#34;Regex&#34;: &#34;&#34;
+        },
+        &#34;InventorySelector&#34;: [],
+        &#34;Secure&#34;: false,
+        &#34;Type&#34;: &#34;enum&#34;
+      }
+    },
+    {
+      &#34;Name&#34;: &#34;vmname&#34;,
+      &#34;Label&#34;: &#34;VM Name&#34;,
+      &#34;Required&#34;: false,
+      &#34;Properties&#34;: {
+        &#34;Type&#34;: &#34;string&#34;,
+        &#34;Constraints&#34;: {
+          &#34;Min&#34;: 0,
+          &#34;Max&#34;: 0
+        },
+        &#34;Secure&#34;: false
+      },
+      &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataType&#34;
+    },
+    {
+      &#34;Name&#34;: &#34;vmwarehost&#34;,
+      &#34;Label&#34;: &#34;Host&#34;,
+      &#34;Required&#34;: false,
+      &#34;Properties&#34;: {
+        &#34;Type&#34;: &#34;string&#34;,
+        &#34;Constraints&#34;: {
+          &#34;Min&#34;: 0,
+          &#34;Max&#34;: 0
+        },
+        &#34;Secure&#34;: false
+      },
+      &#34;Default&#34;: {
+        &#34;Override&#34;: false,
+        &#34;Value&#34;: null
+      },
+      &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataType&#34;
+    },
+    {
+      &#34;Name&#34;: &#34;hxcluster&#34;,
+      &#34;Label&#34;: &#34;Cluster&#34;,
+      &#34;Required&#34;: false,
+      &#34;Properties&#34;: {
+        &#34;Type&#34;: &#34;string&#34;,
+        &#34;Constraints&#34;: {
+          &#34;Min&#34;: 0,
+          &#34;Max&#34;: 0
+        },
+        &#34;Secure&#34;: false
+      },
+      &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataType&#34;
+    }
+  ],
+  &#34;OutputDefinition&#34;: [],
+  &#34;OutputParameters&#34;: null,
+  &#34;Tasks&#34;: [
+    {
+      &#34;ClassId&#34;: &#34;workflow.StartTask&#34;,
+      &#34;Description&#34;: &#34;&#34;,
+      &#34;Label&#34;: &#34;&#34;,
+      &#34;Name&#34;: &#34;StartTask&#34;,
+      &#34;NextTask&#34;: &#34;NewProfile1596244596840&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.StartTask&#34;
+    },
+    {
+      &#34;ClassId&#34;: &#34;workflow.SuccessEndTask&#34;,
+      &#34;Description&#34;: &#34;&#34;,
+      &#34;Label&#34;: &#34;&#34;,
+      &#34;Name&#34;: &#34;SuccessEndTask&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.SuccessEndTask&#34;
+    },
+    {
+      &#34;ClassId&#34;: &#34;workflow.FailureEndTask&#34;,
+      &#34;Description&#34;: &#34;&#34;,
+      &#34;Label&#34;: &#34;&#34;,
+      &#34;Name&#34;: &#34;FailureEndTask&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.FailureEndTask&#34;
+    },
+    {
+      &#34;CatalogMoid&#34;: &#34;5dd45ab6696f6e2d301e2df6&#34;,
+      &#34;ClassId&#34;: &#34;workflow.WorkerTask&#34;,
+      &#34;Description&#34;: &#34;Task to create a Profile&#34;,
+      &#34;InputParameters&#34;: null,
+      &#34;Label&#34;: &#34;Provision VM&#34;,
+      &#34;Name&#34;: &#34;ProvisionVM1596244596840&#34;,
+      &#34;ObjectType&#34;: &#34;workflow.WorkerTask&#34;,
+      &#34;OnFailure&#34;: &#34;&#34;,
+      &#34;OnSuccess&#34;: &#34;SuccessEndTask&#34;,
+      &#34;TaskDefinitionId&#34;: &#34;5efd7c84696f6e2d309e6877&#34;,
+      &#34;TaskDefinitionName&#34;: &#34;NewProfile&#34;,
+      &#34;Version&#34;: 1
+    }
+  ],
+  &#34;Version&#34;: 1
+}
+</code></pre><p>Following is an example for the parameter sets defined at custom data
+type level:</p>
+<pre tabindex="0"><code>{
+  &#34;Label&#34;: &#34;ClusterType&#34;,
+  &#34;Name&#34;: &#34;ClusterType&#34;,
+  &#34;CompositeType&#34;: true,
+  &#34;Description&#34;: &#34;Type definition for a cluster information.&#34;,
+  &#34;TypeDefinition&#34;: [
+    {
+      &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataType&#34;,
+      &#34;Label&#34;: &#34;Cluster Type&#34;,
+      &#34;Name&#34;: &#34;clustertype&#34;,
+      &#34;Properties&#34;: {
+        &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataProperty&#34;,
+        &#34;Constraints&#34;: {
+          &#34;ObjectType&#34;: &#34;workflow.Constraints&#34;,
+          &#34;EnumList&#34;: [
+            {
+              &#34;ObjectType&#34;: &#34;workflow.EnumEntry&#34;,
+              &#34;Label&#34;: &#34;VM Ware&#34;,
+              &#34;Value&#34;: &#34;vmware&#34;
+            },
+            {
+              &#34;ObjectType&#34;: &#34;workflow.EnumEntry&#34;,
+              &#34;Label&#34;: &#34;HX AP&#34;,
+              &#34;Value&#34;: &#34;hxap&#34;
+            }
+          ]
+        },
+        &#34;Type&#34;: &#34;enum&#34;
+      }
+    },
+    {
+      &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataType&#34;,
+      &#34;Label&#34;: &#34;VMware Cluster&#34;,
+      &#34;Name&#34;: &#34;vmwarecluster&#34;
+    },
+    {
+      &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataType&#34;,
+      &#34;Label&#34;: &#34;HX Cluster&#34;,
+      &#34;Name&#34;: &#34;hxcluster&#34;
+    },
+    {
+      &#34;ObjectType&#34;: &#34;workflow.PrimitiveDataType&#34;,
+      &#34;Label&#34;: &#34;Cluster Description&#34;,
+      &#34;Name&#34;: &#34;clusterdescr&#34;
+    }
+  ],
+  &#34;ParameterSet&#34;: [
+    {
+      &#34;Name&#34;: &#34;rule-1&#34;,
+      &#34;Field&#34;: &#34;clustertype&#34;,
+      &#34;Condition&#34;: &#34;eq&#34;,
+      &#34;Value&#34;: &#34;vmware&#34;,
+      &#34;ShowFields&#34;: [
+        &#34;vmwarecluster&#34;
+      ]
+    },
+    {
+      &#34;Name&#34;: &#34;rule-2&#34;,
+      &#34;Field&#34;: &#34;clustertype&#34;,
+      &#34;Condition&#34;: &#34;eq&#34;,
+      &#34;Value&#34;: &#34;hxap&#34;,
+      &#34;ShowFields&#34;: [
+        &#34;hxcluster&#34;
+      ]
+    }
+  ]
+}
+</code></pre><p>:::</p>
+<h2 id="supported-workflows-for-storage-targets">Supported Workflows for Storage Targets</h2>
+<p>The following table lists workflows supported in the various storage
+targets available on Intersight:</p>
+<table>
+<thead>
+<tr>
+<th>List of Storage Workflows</th>
+<th style="text-align:center">Pure Storage</th>
+<th style="text-align:center">NetApp</th>
+<th style="text-align:center">Hitachi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New Storage Host</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+</tr>
+<tr>
+<td>New Storage Host Group</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>New VMFS Datastore</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+</tr>
+<tr>
+<td>New NAS Datastore</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>Remove NFS Datastore</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>Remove Storage Host</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+</tr>
+<tr>
+<td>Remove Storage Export Policy</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>Remove Storage Host Group</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>Remove VMFS Datastore</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>Update Storage Host</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+</tr>
+<tr>
+<td>Update NAS Datastore</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>Update VMFS Datastore</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>New Storage Interface</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>New Storage Export Policy</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td>New Storage Virtual Machine</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+</tbody>
+</table>
+
+	
+	
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="User mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/twitter" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/stack" aria-label="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/slack" aria-label="Slack">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Developer mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2023 Cisco Systems All Rights Reserved</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
+	
+		<p class="mt-2"><a href="/about/">About Goldydocs</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha512-E/owfVh8/U1xwhvIT4HSI064DRc1Eo/xf7AYax84rt9gVqA8tc/JNH/lvTl1tuw9PUHQIMGUtObkjYkgRjFqAA==" crossorigin="anonymous"></script>
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src='/js/deflate.js'></script>
+<script src="/js/main.min.0df8230201e8a69481dceaf8138a4187f74aaa2cbd4771f365bdf85869c9d57a.js" integrity="sha256-DfgjAgHoppSB3Or4E4pBh/dKqiy9R3HzZb34WGnJ1Xo=" crossorigin="anonymous"></script>
+<script src='/js/prism.js'></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

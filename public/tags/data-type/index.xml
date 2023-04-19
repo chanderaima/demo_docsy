@@ -1,0 +1,707 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Intersight Help Center – Data Type</title>
+    <link>http://localhost:8080/tags/data-type/</link>
+    <description>Recent content in Data Type on Cisco Intersight Help Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Jan 2022 21:23:12 +0530</lastBuildDate>
+    
+	  <atom:link href="http://localhost:8080/tags/data-type/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Data Type</title>
+      <link>http://localhost:8080/docs/ico/datatype/</link>
+      <pubDate>Fri, 28 Jan 2022 15:53:12 +0000</pubDate>
+      
+      <guid>http://localhost:8080/docs/ico/datatype/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Data types also specify boundaries for values, and constraints like regular expressions.&lt;/p&gt;
+&lt;p&gt;Cisco Intersight provides a whole range of system-defined data types
+that you can use in your workflows. In addition, you can also create a
+data type in Cisco Intersight. To view all data types that are currently
+available or configured, choose Orchestration &lt;strong&gt;&amp;gt;&lt;/strong&gt; Data Types. A
+dashboard displays the following details under these tabs, namely, My
+Data Types, System Data Types, and All Data Types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Number of Composite Type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Number of System Defined Data Type&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can view a tabular list of data types with the following
+information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Display Name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Composite Type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Last Updated&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Organization&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From this screen, as an Account Administrator, or as a user with
+Workflow Designer privileges, you can perform the following actions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new data type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit or delete a custom data type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone a data type&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You cannot edit or delete a system-defined data type.&lt;/p&gt;
+&lt;p&gt;There are many input types defined in Cisco Intersight representing a
+broad selection of categorical, numeric, and text parameters. For
+example, some existing data types are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Generic Text Input (the least restricted input type)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IPv4 Address&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OS Type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Memory Size Selector&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Primitive data type&amp;mdash;Represents primitive data like String, Float,
+Integer, Boolean, Json, or Enum. Following are the attributes
+specific to primitive data types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Secure&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Constraints (specifies limits and boundaries for values)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Object Selector (lists the Cisco Intersight managed object
+selectors). This attribute is available only when the primitive
+data is String. Following are the attributes specific to Object
+Selector:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Intersight API Reference&amp;mdash;Enter the URL of the Intersight
+API configured with parameters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Selector Attribute&amp;mdash;Enter the attribute name(s) that needs
+to be displayed in the input table column. You can add
+multiple selector attributes by clicking +.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Value Attribute&amp;mdash;Enter the value to be passed as an input
+while executing a task. This value should be any one of the
+attribute name specified in the Selector Attribute field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Array data type&amp;mdash;Represents an array of a given type. It can be an
+array of primitive data, reference data, or of custom data type.
+Following are the attributes specific to array data types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ArrayItemType&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Min&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Max&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MoReference data type&amp;mdash;Represents Cisco Intersight Managed object
+reference. Following are the attributes specific to reference data
+types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Intersight API Reference&amp;mdash;Enter the URL of the Intersight API
+configured with parameters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Selector Attribute&amp;mdash;Enter the attribute name(s) that needs to
+be displayed in the input table column. You can add multiple
+selector attributes by clicking +.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Target data type&amp;mdash;Represents a target endpoint or device. Following
+are the attributes specific to target data types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Intersight API Reference&amp;mdash;Enter the URL of the Intersight API
+configured with parameters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Selector Attribute&amp;mdash;Enter the attribute name(s) that needs to
+be displayed in the input table column. You can add multiple
+selector attributes by clicking +.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support Objects&amp;mdash;Enter the object filter used for mentioning
+the interesting object in the task definition. You can add
+multiple support objects by clicking +.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Constraint Attribute&amp;mdash;Enter the attribute used for defining
+decision conditions to choose the right implementation task. You
+can add multiple constraint attributes by clicking +.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connector Attribute&amp;mdash;Enter the attribute used for defining what
+value to be passed as input to the implementation task.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Custom data type&amp;mdash;Allows defining type constraints once and then
+use them in multiple tasks and workflows. Following are the
+attributes specific to target data types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Custom Data Type Name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Catalog Moid&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You choose existing input types from a list that displays a name, type,
+and category for each variable. The list can be filtered to make finding
+a given data type manageable.&lt;/p&gt;
+&lt;p&gt;If none of the existing data types serves your need in a particular
+application, it is possible to create custom data types by defining
+restrictions on existing data types.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-data-type&#34;&gt;Creating a Data Type&lt;/h2&gt;
+&lt;p&gt;To create a data type, perform the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Orchestration from the left navigation pane and click Data
+Types.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Create Data Type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the Create Data Type screen, enter the following information:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Organization&amp;mdash;Choose an organization from the drop-down list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Name&amp;mdash;Enter a name for the custom data type definition. The name
+can be alphanumeric and can include a combination of upper case and
+lower case letters and special characters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Label&amp;mdash;Enter a label that helps you identify the data type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description&amp;mdash;Enter a description, if required.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set Tags&amp;mdash;Enter a tag in the key:value format, if required.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Select the parameters for the data type&amp;mdash;Choose Simple or
+Composite. A Simple data type has only a singular value, while a
+composite data type has multiple properties.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;20&#34;&gt;
+&lt;li&gt;For example, a LoginName is a simple data type whereas a
+MailingAddress would be a Composite data type (with street, city,
+state, and so on.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Target data type is not supported when you choose Composite
+as a parameter input.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;To add additional inputs, click Add Field and click New Definition.
+Then, enter the following information:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Label&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Required&amp;mdash;Update this field only when you are adding a Composite
+data type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type&amp;mdash;Choose a data type for primitive data type. For example,
+String, Integer, Float, Boolean, Json, Enum, MoReference, Target
+Data Type, or custom data type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;The fields displayed depend on the value you select for the Type
+field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;If you select the data type as Enum, specify the following:&lt;/p&gt;
+&lt;p&gt;a.  Enum List&amp;mdash;Enum label and value. You can add multiple selector
+attributes by clicking +.&lt;/p&gt;
+&lt;p&gt;b.  Widget type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you select the data type as String, specify the following:&lt;/p&gt;
+&lt;p&gt;a.  Minimum and MaximumRange&lt;/p&gt;
+&lt;p&gt;b.  Regex&amp;mdash;Validates the regular expression when you select String
+in the Type field.&lt;/p&gt;
+&lt;p&gt;c.  Secure&amp;mdash;Indicates that the values of these properties are
+encrypted and stored in Cisco Intersight.&lt;/p&gt;
+&lt;p&gt;d.  ObjectSelector&amp;mdash;Enable to configure the Intersight managed
+object selectors. This attribute is available only when the
+primitive data is String. Specify the Intersight API Reference
+and selector attributes to feed the input from the table
+selection. Value will be passed according to the configuration
+set in the Value attribute.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you select the data type as Integer or Float, specify the
+following:&lt;/p&gt;
+&lt;p&gt;a.  Minimum and MaximumRange.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you select the data type as MoReference, specify the following:&lt;/p&gt;
+&lt;p&gt;a.  Intersight API Reference&amp;mdash;Enter the URL of the Intersight API
+configured with parameters.&lt;/p&gt;
+&lt;p&gt;b.  Selector Attribute&amp;mdash;Enter the attribute name(s) that needs to
+be displayed in the input table column. You can add multiple
+selector attributes by clicking +.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you selected a composite data type, you can specify the field
+mapping details. With field mapping, you can pass the value from the
+parent composite data type to a child composite data type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;21&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;To specify the field mapping, do the following:&lt;/p&gt;
+&lt;p&gt;a.  Key&amp;mdash;The input field that you want to hide.&lt;/p&gt;
+&lt;p&gt;b.  Value Attribute&amp;mdash;The value in a template style to be passed
+dynamically during the execution. The inputs are referenced as
+\${datatype.type.AttributeName}.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Click Add.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add a Parameter Set rule, click Add Rule &amp;gt; Parameter Set.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;22&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;For more information, see &lt;strong&gt;Error! Reference source not found.&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;a.  Name&amp;mdash;The name of the Parameter Set rule.&lt;/p&gt;
+&lt;p&gt;b.  If Field&amp;mdash;Select the input field that will be used for the
+Parameter Set rule.&lt;/p&gt;
+&lt;p&gt;c.  Condition&amp;mdash;The condition for the rule. The condition can be
+Equal to, Not equal to, Contains, or Matches Pattern.&lt;/p&gt;
+&lt;p&gt;d.  Value&amp;mdash;The value of the input (If Field) that will be used for
+the Parameter Set rule.&lt;/p&gt;
+&lt;p&gt;e.  Field to be shown&amp;mdash;Select input fields that should be made
+available when the Parameter Set rule condition is satisfied.&lt;/p&gt;
+&lt;p&gt;f.  Click Save.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;13&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Click Preview to validate the definitions that you have added and
+make corrections, if required.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Add.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;23&#34;&gt;
+&lt;li&gt;The data type that you added is displayed in the tabular list on the
+Data Types screen. You can now create a workflow and use this data
+type in the workflow input. Similar to workflows, you can define the
+Parameter Set rules at custom data type level.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;data-type-parameter-set-rule&#34;&gt;Data Type Parameter Set Rule&lt;/h2&gt;
+&lt;p&gt;When you create a composite data type, you can specify the fields for
+the data type. After you define the fields, you can set a Parameter Set
+rules. The Parameter Set rule control the availability of specific
+parameters or inputs during the execution. After the first input is
+specified, the Parameter Set rule controls which subsequent input fields
+are made available during the execution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You can define a Parameter Set rule only for a custom data
+type that has more than two input fields with the supported data type.&lt;/p&gt;
+&lt;p&gt;The supported data types for the Parameter Set rules are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Boolean&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enum&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;String Object Selector&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MoReference&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example: The following example shows how to create a Parameter Set rule
+for a composite data type with four fields. The composite data type
+fields are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cluster Type&amp;mdash;Type is &lt;em&gt;Enum&lt;/em&gt; and Enum list is &lt;em&gt;VM&lt;/em&gt; and &lt;em&gt;HX&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VMware Cluster&amp;mdash;Type is &lt;em&gt;String&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HX Cluster&amp;mdash;Type is &lt;em&gt;String&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cluster Description&amp;mdash;Type is &lt;em&gt;String&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can create two Parameter Set rules. During the execution when the
+Cluster Type value is &lt;em&gt;VM&lt;/em&gt; only VMware Cluster field is made available.
+Alternately, when the Cluster Type value is &lt;em&gt;HX&lt;/em&gt;, only HX Cluster is
+made available. The details of the Parameter Set rules are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rule1&amp;mdash;If Field is &lt;em&gt;Cluster Type&lt;/em&gt;, Condition is &lt;em&gt;Equal to&lt;/em&gt;, Value
+is &lt;em&gt;VM&lt;/em&gt;, and Fields to be shown is &lt;em&gt;VMware Cluster.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rule2&amp;mdash;If Field is &lt;em&gt;Cluster Type&lt;/em&gt;, Condition is &lt;em&gt;Equal to&lt;/em&gt;, Value
+is &lt;em&gt;HX&lt;/em&gt;, and Fields to be shown is &lt;em&gt;HC Cluster.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cloning-a-data-type&#34;&gt;Cloning a Data Type&lt;/h2&gt;
+&lt;p&gt;You can clone a data type. The cloned data type is identical to the
+original data type. You can edit the new data type immediately. You
+might do this, for example, to create a data type that is similar to the
+source data type that can be edited based on your requirements. The new
+data type has a new, separate version history.&lt;/p&gt;
+&lt;p&gt;To clone a data type, complete the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Orchestration from the left navigation pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Data Type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the tabular list of data types, select a data type and choose
+Clone.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the Clone Data Type screen, edit the user-friendly short name,
+reference name, description, and organization details. The
+organization mappings are displayed only for pre-canned data types
+and not for the custom data types.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check the Open Clone in Editor check box if you want to open the
+cloned data type and edit the details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Clone.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;exporting-a-data-type&#34;&gt;Exporting a Data Type&lt;/h2&gt;
+&lt;p&gt;Intersight Cloud Orchestrator enables you to export data types from an
+account to your system and then import them to another account.&lt;/p&gt;
+&lt;p&gt;To export a data type, complete the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Orchestration from the left navigation pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Data Type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the tabular list of data types, do one of the following:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Select a data type, click the Ellipsis (&amp;hellip;) icon in the same row,
+and then choose Export Data Type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select multiple data types, click the Ellipsis (&amp;hellip;) icon from the
+header or footer of the tabular list, and then choose Export Data
+Type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the Export Data Type screen:&lt;/p&gt;
+&lt;p&gt;a.  In the JSON File Name field, use the default filename or enter a
+filename of your choice for the JSON file that stores the data
+type components.&lt;/p&gt;
+&lt;p&gt;b.  Use the Export Tags toggle button to include or exclude the
+user-defined tags. ICO does not export the system-defined tags.&lt;/p&gt;
+&lt;p&gt;c.  Click Export.&lt;/p&gt;
+&lt;p&gt;d.  Save a local copy of the JSON file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;importing-a-data-type&#34;&gt;Importing a Data Type&lt;/h2&gt;
+&lt;p&gt;Intersight Cloud Orchestrator enables you to import data types to your
+account by importing a JSON file that contains the data type components.
+You can create the JSON file by exporting the data type components from
+another account.&lt;/p&gt;
+&lt;p&gt;To import a data type, complete the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Orchestration from the left navigation pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Data Type.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Import.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;24&#34;&gt;
+&lt;li&gt;The Import wizard appears.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the Select File screen:&lt;/p&gt;
+&lt;p&gt;a.  From the Organization drop-down list, choose the organization to
+which you want to import the data type(s).&lt;/p&gt;
+&lt;p&gt;b.  Click Browse, and then select the JSON file that contains the
+data type(s).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Ensure that the file size of the JSON file is not more than
+1MB. If the file size is more than 1MB, export the data type(s) in
+batches, and then try import.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;c.  Click Next.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;25&#34;&gt;
+&lt;li&gt;Intersight Cloud Orchestrator validates the JSON file and displays
+&lt;blockquote&gt;
+&lt;p&gt;the data type(s) in the Details screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the Details screen:&lt;/p&gt;
+&lt;p&gt;a.  To associate an additional tag to the components listed in the
+table, enter the tag in the Set Tags field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Set Tags is an optional field. You must enter the tag in the
+key:value format.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;b.  If one or more data type components are already available in the
+system, choose a rule to replace or skip the duplicate components.&lt;/p&gt;
+&lt;p&gt;c.  Click Import.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the Import Result screen:&lt;/p&gt;
+&lt;p&gt;a.  Verify the status of the imported data type(s).&lt;/p&gt;
+&lt;p&gt;b.  If you want to view the details of the import request:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Click the link displayed above the table.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternatively, click the Requests icon displayed in the menu bar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;For more information, see
+&lt;a href=&#34;http://localhost:8080/docs/ico/wokflowdesigner/#requests&#34;&gt;Requests&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;a.  Click Close.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Template Syntax (Go Template)</title>
+      <link>http://localhost:8080/docs/ico/cheatsheet/</link>
+      <pubDate>Fri, 28 Jan 2022 21:23:12 +0530</pubDate>
+      
+      <guid>http://localhost:8080/docs/ico/cheatsheet/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;referencing-variables-in-the-workflow-designer&#34;&gt;Referencing variables in the Workflow Designer&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Usage&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Workflow Input&lt;/td&gt;
+&lt;td&gt;You can reference a workflow input by replacing NAME with the the reference name you have given it inside the workflow designer&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{{.global.workflow.input.NAME}} &lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Task Output&lt;/td&gt;
+&lt;td&gt;You can reference a task output by replacing TASK with the name of the task (from the Code view), and by replacing NAME with the name of the output&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{{.global.TASK.output.NAME}}   &lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Org Moid&lt;/td&gt;
+&lt;td&gt;The Moid of the Intersight org used to execute this workflow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{{.security.OrganizationMoid}}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;referencing-variables-in-the-task-designer&#34;&gt;Referencing variables in the Task Designer&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Usage&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Task Input&lt;/td&gt;
+&lt;td&gt;You can reference a task input by replacing NAME with the the reference name you have given it inside the task designer&lt;/td&gt;
+&lt;td&gt;{{.global.task.input.NAME}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sub-Task Output&lt;/td&gt;
+&lt;td&gt;You can reference a sub-task output by replacing SUBTASK with the reference name of the sub-task, and by replacing NAME with the name of the output&lt;/td&gt;
+&lt;td&gt;{{.global.SUBTASK.output.NAME}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;advanced-functions&#34;&gt;Advanced functions&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Usage&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Conditional&lt;/td&gt;
+&lt;td&gt;Will allow you to select what option you want to execute based on a conditional. Replace VALUE with the specific value you want to compare against.&lt;/td&gt;
+&lt;td&gt;{{if (eq .global.workflow.input.example VALUE)}}IF TRUE{{else if eq .global.workflow.input.example VALUE}}ELIF TRUE{{else}}ELSE{{end}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Optional variable&lt;/td&gt;
+&lt;td&gt;Only executes a block of the template if the variable was provided in the input. Inside of the with block, you refer to the name of the original variable as $x (or whatever variable you use)&lt;/td&gt;
+&lt;td&gt;{{with $x := .global.workflow.input.example}}{{$x}}{{end}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Regex&lt;/td&gt;
+&lt;td&gt;Apply a regex pattern to a string to filter out a sub-string. Replace REGEX with your regex pattern. This can be combined with the index feature below to filter out the n-th sub-string.&lt;/td&gt;
+&lt;td&gt;{{FindAllString .global.workflow.input.example &amp;ldquo;REGEX&amp;rdquo;}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Get n-th entry&lt;/td&gt;
+&lt;td&gt;Allows you to get the n-th entry from a list. Replace NUMBER with the position of the list item you want to select.&lt;/td&gt;
+&lt;td&gt;{{index .global.workflow.input.example NUMBER}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sub-parameter&lt;/td&gt;
+&lt;td&gt;Allows you to select the subparameter of a previous operation. Replace SUBELEMENT with the parameter you are looking for&lt;/td&gt;
+&lt;td&gt;{{(index .global.workflow.input.example NUMBER).SUBELEMENT}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Loop&lt;/td&gt;
+&lt;td&gt;Allows you to loop through a list and execute a template for each entry in the list. If you want to prepend something to your list, you can use if $index to only apply on the first pass of the loop&lt;/td&gt;
+&lt;td&gt;{{range $index, $element := .global.workflow.input.example}}{{$element}}{{end}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;List length&lt;/td&gt;
+&lt;td&gt;Get the length of a list&lt;/td&gt;
+&lt;td&gt;{{len .global.workflow.input.example}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

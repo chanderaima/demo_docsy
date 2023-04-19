@@ -1,0 +1,1631 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Intersight Help Center – Task</title>
+    <link>http://localhost:8080/tags/task/</link>
+    <description>Recent content in Task on Cisco Intersight Help Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Jan 2022 15:53:12 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:8080/tags/task/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Task Designer</title>
+      <link>http://localhost:8080/docs/ico/taskdesigner/</link>
+      <pubDate>Fri, 28 Jan 2022 15:53:12 +0000</pubDate>
+      
+      <guid>http://localhost:8080/docs/ico/taskdesigner/</guid>
+      <description>
+        
+        
+        
+
+
+
+&lt;a id=&#34;td-block-0&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--pink position-relative td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;container text-center td-arrow-down&#34;&gt;
+		&lt;div class=&#34;h4 mb-0&#34;&gt;
+			
+				&lt;p&gt;TechOS is the OS of the future.&lt;/p&gt;
+&lt;p&gt;Runs on &lt;strong&gt;bare metal&lt;/strong&gt; in the &lt;strong&gt;cloud&lt;/strong&gt;!&lt;/p&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;BR&gt;
+
+
+
+ 
+&lt;a id=&#34;td-block-1&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--blue td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row row&#34;&gt;
+			
+				&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center&#34;&gt;
+&lt;div class=&#34;mb-4 h1&#34;&gt;
+  &lt;i class=&#34;fas fa-lightbulb&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;h4 class=&#34;h3&#34;&gt;Fastest OS &lt;strong&gt;on the planet&lt;/strong&gt;!&lt;/h4&gt;
+&lt;div class=&#34;mb-0&#34;&gt;
+&lt;p&gt;The new &lt;strong&gt;TechOS&lt;/strong&gt; operating system is an open source project. It is a new project, but with grand ambitions.
+Please follow this space for updates!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center&#34;&gt;
+&lt;div class=&#34;mb-4 h1&#34;&gt;
+  &lt;i class=&#34;fas fa-brands fa-github&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;h4 class=&#34;h3&#34;&gt;Contributions welcome!&lt;/h4&gt;
+&lt;div class=&#34;mb-0&#34;&gt;
+&lt;p&gt;We do a &lt;a href=&#34;https://github.com/gohugoio/hugo/pulls&#34;&gt;Pull Request&lt;/a&gt; contributions workflow on &lt;strong&gt;GitHub&lt;/strong&gt;. New users are always welcome!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center&#34;&gt;
+&lt;div class=&#34;mb-4 h1&#34;&gt;
+  &lt;i class=&#34;fas fa-brands fa-twitter&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;h4 class=&#34;h3&#34;&gt;Follow us on Twitter!&lt;/h4&gt;
+&lt;div class=&#34;mb-0&#34;&gt;
+&lt;p&gt;For announcement of latest features etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/GoHugoIO&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center&#34;&gt;
+&lt;div class=&#34;mb-4 h1&#34;&gt;
+  &lt;i class=&#34;fas fa-brands fa-github&#34;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;h4 class=&#34;h3&#34;&gt;Contributions welcome!&lt;/h4&gt;
+&lt;div class=&#34;mb-0&#34;&gt;
+&lt;p&gt;We do a &lt;a href=&#34;https://github.com/gohugoio/hugo/pulls&#34;&gt;Pull Request&lt;/a&gt; contributions workflow on &lt;strong&gt;GitHub&lt;/strong&gt;. New users are always welcome!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+        &lt;style&gt;
+          #redoc input { height: 64px; }
+          #redoc span[type=&#34;put&#34;], span[type=&#34;get&#34;], span[type=&#34;delete&#34;], span[type=&#34;post&#34;], span[type=&#34;options&#34;], span[type=&#34;patch&#34;], span[type=&#34;basic&#34;], span[type=&#34;link&#34;], span[type=&#34;head&#34;] {
+              border-radius: 4px;
+            }
+          #redoc h2 { margin-top: 0px;}
+      &lt;/style&gt;
+  
+    
+    &lt;style&gt;
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #30638E;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color: #555;
+      }
+  &lt;/style&gt;
+  &lt;button onclick=&#34;topFunction()&#34; id=&#34;myBtn&#34; title=&#34;Go to top&#34;&gt;Top&lt;/button&gt;
+  &lt;script&gt;
+      
+      var mybutton = document.getElementById(&#34;myBtn&#34;);
+      
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop &gt; 20 || document.documentElement.scrollTop &gt; 20) {
+          mybutton.style.display = &#34;block&#34;;
+        } else {
+          mybutton.style.display = &#34;none&#34;;
+        }
+      }
+      
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+  &lt;/script&gt;
+    
+
+    
+    &lt;style&gt;
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    &lt;/style&gt;
+
+    
+   &lt;div id=&#34;redoc-container&#34;&gt;
+   &lt;redoc spec-url=&#39;https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v2.0/yaml/petstore.yaml&#39; hide-hostname=&#34;true&#34; suppress-warnings=&#34;true&#34; lazy-rendering  native-scrollbars scroll-y-offset=&#34;.js-navbar-scroll&#34; ZgotmplZ&gt;&lt;/redoc&gt;
+   &lt;/div&gt;
+    
+    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/redoc@latest/bundles/redoc.standalone.js&#34;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;td-card card mb-4&#34;&gt;
+  
+    &lt;div class=&#34;card-header&#34;&gt;
+      
+        &lt;strong&gt;Imagine&lt;/strong&gt;
+      
+    &lt;/div&gt;
+  
+  &lt;div class=&#34;card-body&#34;&gt;
+    
+      &lt;h5 class=&#34;card-title&#34;&gt;
+        
+          Artist and songwriter: John Lennon
+        
+      &lt;/h5&gt;
+    
+    
+      &lt;h6 class=&#34;card-title mb-2 text-muted&#34;&gt;
+        
+          Co-writer: Yoko Ono
+        
+      &lt;/h6&gt;
+    
+    
+      &lt;p class=&#34;card-text&#34;&gt;
+        
+          &lt;p&gt;Imagine there&amp;rsquo;s no heaven, It&amp;rsquo;s easy if you try&lt;br/&gt;
+No hell below us, above us only sky&lt;br/&gt;
+Imagine all the people living for today…&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+
+        
+      &lt;/p&gt;
+    
+  &lt;/div&gt;
+  
+    &lt;div class=&#34;card-footer&#34;&gt;
+      
+        &lt;img src=&#34;https://server.tld/%E2%80%A6/signature.png&#34; alt=&#34;SignatureJohnLennon&#34; title=&#34;Signature John Lennon&#34;&gt;
+      
+    &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;div class=&#34;td-card card&#34;&gt;
+  
+  
+    
+  
+  
+  &lt;div class=&#34;card-header bg-white&#34;&gt;&lt;strong&gt;C&lt;/strong&gt;&lt;/div&gt;
+  
+  &lt;div class=&#34;card-body code p-l0 m-0&#34;&gt;
+      &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;void&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000&#34;&gt;puts&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;EXIT_SUCCESS&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;td-card-deck card-deck mb-4&#34;&gt;
+  &lt;div class=&#34;td-card card mb-4&#34;&gt;
+  
+    &lt;div class=&#34;card-header&#34;&gt;
+      
+        Header card 1
+      
+    &lt;/div&gt;
+  
+  &lt;div class=&#34;card-body&#34;&gt;
+    
+    
+    
+      &lt;p class=&#34;card-text&#34;&gt;
+        
+          &lt;pre&gt;&lt;code&gt;Content card 1
+&lt;/code&gt;&lt;/pre&gt;
+
+        
+      &lt;/p&gt;
+    
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+  &lt;div class=&#34;td-card card mb-4&#34;&gt;
+  
+    &lt;div class=&#34;card-header&#34;&gt;
+      
+        Header card 2
+      
+    &lt;/div&gt;
+  
+  &lt;div class=&#34;card-body&#34;&gt;
+    
+    
+    
+      &lt;p class=&#34;card-text&#34;&gt;
+        
+          &lt;pre&gt;&lt;code&gt;Content card 2
+&lt;/code&gt;&lt;/pre&gt;
+
+        
+      &lt;/p&gt;
+    
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+  &lt;div class=&#34;td-card card mb-4&#34;&gt;
+  
+    &lt;div class=&#34;card-header&#34;&gt;
+      
+        Header card 3
+      
+    &lt;/div&gt;
+  
+  &lt;div class=&#34;card-body&#34;&gt;
+    
+    
+    
+      &lt;p class=&#34;card-text&#34;&gt;
+        
+          &lt;pre&gt;&lt;code&gt;Content card 3
+&lt;/code&gt;&lt;/pre&gt;
+
+        
+      &lt;/p&gt;
+    
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; To execute the new tasks for VMware vCenter networking
+operations, you should upgrade to Intersight Assist version 1.0.9-278.&lt;/p&gt;
+&lt;p&gt;To launch the Task Designer, choose Orchestration &lt;strong&gt;&amp;gt;&lt;/strong&gt; Task. A
+dashboard displays the following details under these tabs, namely, My
+Tasks, System Tasks, and All Tasks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Top Task Categories&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Number of System Defined Tasks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Top Workflows by Targets&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below the dashboard is a tabular list of tasks displaying the following
+information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Display Name&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Validation Status&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Last Update&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;System Defined&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Organization&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From this screen, with an account administrator or a Workflow Designer
+role, you can perform the following actions for an organization:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create a task&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Edit or delete a task&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Tasks created in an organization can be used in workflows
+created within that organization only.&lt;/p&gt;
+&lt;h3 id=&#34;supported-requests&#34;&gt;Supported Requests&lt;/h3&gt;
+&lt;p&gt;You can define and execute one or more API requests in the task
+definition. You can extract the required values from the API responses
+and use them in subsequent API requests as task output values. You
+provide values for different properties in an HTTP API request and use
+them in subsequent API request or as task output values. You can also
+provide values for different properties of an HTTP API request, such as,
+HTTP method, URL, header, cookies, etc.&lt;/p&gt;
+&lt;p&gt;The API requests can be executed on external targets that are reachable
+by Intersight, either directly or through device connectors. The
+supported HTTP authentication scheme is Basic Authentication over HTTPS.
+The external targets with their credentials are defined when specifying
+the Targets in the Targets screen (see: &lt;a href=&#34;file://E:%5Chelp%5Cfeatures%5Ccisco_intersight%5Cadmin&#34;&gt;Target
+Management&lt;/a&gt;). Hence,
+there is no need to provide credentials or authentication specific
+headers in the request. The input parameter of type target data type is
+the source from which the details are automatically collected from.&lt;/p&gt;
+&lt;h3 id=&#34;response-parser&#34;&gt;Response Parser&lt;/h3&gt;
+&lt;p&gt;The response parser contains information about the required values,
+their types, and the location in the API responses. You specify the
+required values along with API request details. These details are used
+by the response parser to extract values from the API responses. The
+extracted values are used as task output values and to determine the
+task execution status and the status message.&lt;/p&gt;
+&lt;p&gt;The supported response type is JSON. The response parser supports
+extraction of values from JSON responses. The users shall provide the
+information such as the value parameter name, type and the JSON path of
+the value location. You can extract multiple values from the API
+response by providing the above details for each required value.&lt;/p&gt;
+&lt;h3 id=&#34;outcomes&#34;&gt;Outcomes&lt;/h3&gt;
+&lt;p&gt;An outcome is the combination of a condition and task status. You use
+the extracted values from the API response to determine the task status
+and set the status with an appropriate message, when the conditions
+match. You can specify one or more outcomes and the outcomes are
+evaluated in the specified order. The first outcome condition that
+matches sets the task status and message. If none of the outcome
+condition matches, the task shall be marked as successful. The outcomes
+of a task are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Success&amp;mdash;Marks the API execution as Success if the condition
+matches&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Skip to Success&amp;mdash;Stops further API executions of the task and marks
+the task as successful when the condition matches&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Status&amp;mdash;Retains a task as work in progress, only updating the
+status&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Error&amp;mdash;Marks the API execution as Failed if the condition matches.
+Task retry will be attempted if the task has any retries left&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Terminal error&amp;mdash;Marks the API execution as Failed if the condition
+matches. This marks a non-recoverable error and no retries are
+attempted&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Skip Task Execution&amp;mdash;Skips execution of task if the condition
+matches in the API. This will skip execution of all the subsequent
+APIs in the task&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the task status is Terminal Error, there are no retries for that
+task.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-task&#34;&gt;Creating a Task&lt;/h2&gt;
+&lt;p&gt;Task creation can be broken down into the following sequence of steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Defining a task&amp;mdash;you specify the name of the task and provide a few
+other generic details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Defining task inputs and task outputs&amp;mdash;you can specify which input
+parameters are required to execute the task and the output expected
+from the execution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adding multiple API requests in the Task Designer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;defining-a-task&#34;&gt;Defining a Task&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Orchestration from the left navigation pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Tasks tab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Create Task.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drag and drop a task from the Tools section on the Design area.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the Task Properties area, choose the General tab and enter the
+following information:&lt;/p&gt;
+&lt;p&gt;a.  Organization&amp;mdash;Name of the organization that you are creating
+the task in&lt;/p&gt;
+&lt;p&gt;b.  Task Name&amp;mdash;A user-friendly short name for the task&lt;/p&gt;
+&lt;p&gt;c.  Description&amp;mdash;A description for the task&lt;/p&gt;
+&lt;p&gt;d.  Retry Count&amp;mdash;Number of times a task should be tried before it
+is marked failed&lt;/p&gt;
+&lt;p&gt;e.  Retry Delay&amp;mdash;Delay, in seconds, after which a task is tried
+again&lt;/p&gt;
+&lt;p&gt;f.  Timeout&amp;mdash;Timeout value, in seconds, after which a task is
+termed as timed out&lt;/p&gt;
+&lt;p&gt;g.  Set Tags&amp;mdash;Set a tag for the task in the key:value format&lt;/p&gt;
+&lt;p&gt;h.  Enable Rollback Task&amp;mdash;Enable to rollback a task and choose an
+appropriate task from the drop-down list. Create the required
+workflow inputs and map it accordingly&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Rollback operation for Assign IP Address to Virtual Machine
+Network task is not supported on Windows virtual machines.&lt;/p&gt;
+&lt;h3 id=&#34;defining-task-inputs-and-outputs&#34;&gt;Defining Task Inputs and Outputs&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In the Task Properties area, choose the Input tab and choose a
+parameter. For more information about the Input properties, see
+&lt;a href=&#34;http://localhost:8080/docs/ico/wokflowdesigner/&#34;&gt;Workflow Designer&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the Edit icon to open the Create Task Input dialog.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the Add Input screen, enter the following details:&lt;/p&gt;
+&lt;p&gt;a.  Display Name&amp;mdash;Enter user-friendly short name.&lt;/p&gt;
+&lt;p&gt;b.  Reference Name&lt;/p&gt;
+&lt;p&gt;c.  Description&amp;mdash;Detailed description of the input&lt;/p&gt;
+&lt;p&gt;d.  Value Restrictions&amp;mdash;Choose Required, Collection/Multiple, or
+can be left blank&lt;/p&gt;
+&lt;p&gt;e.  Type&amp;mdash;Choose a data type for primitive data type. For example,
+enum&lt;/p&gt;
+&lt;p&gt;f.  Enum List&amp;mdash;Label for the enum value&lt;/p&gt;
+&lt;p&gt;g.  Minimum and Maximum Range&lt;/p&gt;
+&lt;p&gt;h.  Regex&amp;mdash;Validates the regular expression when you select String
+in the Type field.&lt;/p&gt;
+&lt;p&gt;i.  Object Selector&amp;mdash;Enable to configure the Intersight managed
+object selectors. This attribute is available only when the
+primitive data is String. Specify the Intersight API Reference
+and selector attributes to feed the input from the table
+selection. Value will be passed according to the configuration
+set in the Value attribute.&lt;/p&gt;
+&lt;p&gt;j.  Intersight API Reference&amp;mdash;Enter the URL of the Intersight API
+configured with parameters.&lt;/p&gt;
+&lt;p&gt;k.  Selector Attribute&amp;mdash;Enter the attribute name(s) that needs to
+be displayed in the input table column. You can add multiple
+selector attributes by clicking +.&lt;/p&gt;
+&lt;p&gt;l.  Value Attribute&amp;mdash;Enter the value to be passed as an input while
+executing a task. This value should be any one of the attribute
+name specified in the Selector Attribute field. This attribute
+is available only when the primitive data is String.&lt;/p&gt;
+&lt;p&gt;m.  Secure&amp;mdash;Indicates that the values of these properties are
+encrypted and stored in Cisco Intersight.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;17&#34;&gt;
+&lt;li&gt;The fields displayed depend on the value you select for the Type
+field. Task designer does not support target date type.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Click Add.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Repeat this procedure to create multiple task inputs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the Task Properties area, choose the Output tab and choose a
+parameter. For more information about the output properties, see
+Input and Output.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The created task is available in the General category in Workflow
+Designer. You can create a workflow by dragging and dropping the task on
+the Workflow Design area.&lt;/p&gt;
+&lt;h3 id=&#34;template-engine-syntax&#34;&gt;Template Engine Syntax**&lt;/h3&gt;
+&lt;p&gt;The template engine uses prefix notation for the statements. In case of
+operational statements, the operators are specified before the operands.
+All the operations are invoked after all the operands are evaluated.&lt;/p&gt;
+&lt;h3 id=&#34;comparison-statements&#34;&gt;Comparison Statements**&lt;/h3&gt;
+&lt;p&gt;The comparison statements can be written using &lt;strong&gt;eq&lt;/strong&gt; (equal check),
+&lt;strong&gt;ne&lt;/strong&gt; (not equal check), &lt;strong&gt;lt&lt;/strong&gt; (less than check), &lt;strong&gt;le&lt;/strong&gt; (less than or
+equal check), &lt;strong&gt;gt&lt;/strong&gt; (greater than check), and &lt;strong&gt;ge&lt;/strong&gt; (greater than or
+equal check).&lt;/p&gt;
+&lt;p&gt;Here is an example that checks the parameter HttpStatusCode is in the
+client error code range 400 &amp;ndash; 500. Note that the template engine
+supports prefix notation and hence the operators &lt;strong&gt;and&lt;/strong&gt;, &lt;strong&gt;ge&lt;/strong&gt;, and
+&lt;strong&gt;lt&lt;/strong&gt; are specified before their operands.&lt;/p&gt;
+&lt;p&gt;{{and (ge .global.CreateSnapshot.output.HttpStatusCode 400) (lt .global.CreateSnapshot.output.HttpStatusCode 500)}}&lt;/p&gt;
+&lt;h3 id=&#34;conditional-statements&#34;&gt;Conditional Statements&lt;/h3&gt;
+&lt;p&gt;The template engine supports conditional statements in prefix notation
+syntax. This section has some examples of these conditional statements.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; \&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;comparision_statement&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Template&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;be&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;used&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;end&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; \&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;comparision_statement&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Template&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;be&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;used&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;else&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Template&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;be&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;used&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;end&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; \&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;comparision_statement&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Template&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;be&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;used&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;else&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; \&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;comparision_statement&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Tempalte&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;be&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;used&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;end&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;eq&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;HttpStatusCode&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;200&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)}}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;Snapshot&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;with&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Name&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;is&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;created&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;successfully&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;end&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;eq&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;HttpStatusCode&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;200&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)}}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;Snapshot&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;with&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Name&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;is&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;created&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;successfully&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;else&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;Snapshot&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;creation&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;failed&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;with&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;message&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;HttpStatusMsg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}.&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;end&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;eq&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;HttpStatusCode&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;200&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)}}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;Snapshot&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;with&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Name&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;is&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;created&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;successfully&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;else&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;eq&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;HttpStatusCode&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;409&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)}}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;A&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Snapshot&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;with&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Name&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;already&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;exists&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;else&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;Snapshot&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;creation&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;failed&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;with&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;message&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CreateSnapshot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;HttpStatusMsg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}.&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;end&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example-task-creating-a-snapshot-of-pure-flash-array&#34;&gt;Example Task: Creating a Snapshot of Pure Flash Array&lt;/h3&gt;
+&lt;p&gt;This example shows how to create a snapshot of a volume in a Pure Flash
+Array. Specify the following information in the General tab of the Task
+Properties area.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
+| Field | Value                                                        |
+| Name  |                                                              |
++=======+==============================================================+
+| Task  | New Pure Volume Snapshot                                     |
+| Name  |                                                              |
++&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
+| Retry | 1                                                            |
+| Count |                                                              |
+|       | The task will be retried once more when the task fails.      |
++&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
+| Retry | 10                                                           |
+| Delay |                                                              |
+|       | The task will be retried after 10 seconds.                   |
++&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
+| Ti    | 20                                                           |
+| meout |                                                              |
+|       | If the task does not complete execution in 20 seconds, then  |
+|       | it is marked as Failed. If a retry count is configured       |
+|       | (which is 1 for this task), the task is retried after the    |
+|       | specified retry delay, which is 10 seconds.                  |
++&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&lt;/p&gt;
+&lt;p&gt;The snapshot is created using the Pure Flash Array volume API. Below is
+a sample API request and response from Pure Flash Array API Reference.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;POST&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;volume&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    \&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;snap\&amp;#34;: true,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    \&amp;#34;source\&amp;#34;: \[\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;\&amp;lt;Volume Name 1&amp;gt;\&amp;#34;,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;\&amp;lt;Volume Name 2&amp;gt;\&amp;#34;&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    \&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From the above API, it can be inferred that the name of the source
+volume is required, for which the snapshot is created. To do this, add a
+task input parameter of type string to fetch the volume name as a task
+input. Assuming the task input parameter is named as VolumeName, the
+following template can be used to create the above request. This
+template is populated as value for Body field in the API request&amp;rsquo;s input
+panel.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    \&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;snap\&amp;#34;: true,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    \&amp;#34;source\&amp;#34;: \[\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;{{.global.task.input.VolumeName}}\&amp;#34;&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    \&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You either receive a success or a failure message for the request. The
+following is a sample of the success message. The success message
+displays the serial number and the new snapshot name against the Name
+and Serial properties. This information is extracted as a task output.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;200&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OK&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;        \&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;created\&amp;#34;: \&amp;#34;2017-12-16T05:12:53Z\&amp;#34;,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;name\&amp;#34;: \&amp;#34;\&amp;lt;snapshot name&amp;gt;\&amp;#34;,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;serial\&amp;#34;: \&amp;#34;\&amp;lt;serial number&amp;gt;\&amp;#34;,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;size\&amp;#34;: 5368709120,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;source\&amp;#34;: \&amp;#34;\&amp;lt;volume name&amp;gt;\&amp;#34;&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In case of a failure, the response displays an array of errors. Each
+error contains a message, a code, and a context. In this example, if the
+specified volume name is not found, the following message is displayed.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BAD&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;REQUEST&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;        \&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;msg\&amp;#34;: \&amp;#34;Volume does not exist.\&amp;#34;,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;code\&amp;#34;: 6,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;ctx\&amp;#34;: \&amp;#34;\&amp;lt;Volume Name&amp;gt;\&amp;#34;&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the msg property is present in the response, the property can be used
+to determine the task status with HTTP status code 400. The property
+named msg can be accessed using the JSON path \$[0].msg. The details
+to extract the parameters are provided as value for Response Parser
+field in API request&amp;rsquo;s input area. The path is a valid JSON path that
+locates a required data in the API response.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
+| Response          | Details                                          |
+| Parameter         |                                                  |
++===================+==================================================+
+| SnapshotName      | This parameter contains the extracted snapshot   |
+|                   | name in the API output.                          |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Name:&lt;/strong&gt; SnapshotName                       |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Path:&lt;/strong&gt; \$[0].name                       |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Type:&lt;/strong&gt; string                             |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
+| Serial            | This parameter contains the extracted serial     |
+|                   | value in the API output.                         |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Name:&lt;/strong&gt; Serial                             |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Path:&lt;/strong&gt; \$[0].serial                     |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Type:&lt;/strong&gt; string                             |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+
+| Error             | This parameter contains the extracted error      |
+|                   | message in the API output.                       |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Name:&lt;/strong&gt; Error                              |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Path:&lt;/strong&gt; \$[0].msg                        |
+|                   |                                                  |
+|                   | -   &lt;strong&gt;Type:&lt;/strong&gt; string                             |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&lt;/p&gt;
+&lt;p&gt;To define a task, drag and drop the &lt;strong&gt;Invoke Web API Request&lt;/strong&gt; task into
+the Task Designer area. Use the Properties area to populate API details.
+The following is sample information that can be entered the General tab.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| F    | Value                                                         |
+| ield |                                                               |
+| Name |                                                               |
++======+===============================================================+
+| Name | &lt;strong&gt;Create Snapshot&lt;/strong&gt;                                           |
+|      |                                                               |
+|      | The name must be unique. The APIs inside the task cannot be   |
+|      | named as &lt;strong&gt;Create Snapshot&lt;/strong&gt;. A name without space, such as   |
+|      | &lt;strong&gt;CreateSnapshot&lt;/strong&gt; can be used to refer the API output in     |
+|      | subsequent API requests. In this example the following        |
+|      | details are referred using API name.                          |
+|      |                                                               |
+|      | &lt;strong&gt;HTTP Status Code:&lt;/strong&gt;                                         |
+|      |                                                               |
+|      | {{.global.CreateSnapshot.output.HttpStatusCode}}              |
+|      |                                                               |
+|      | The parameters extracted from the response are referred using |
+|      | the API name after extracting the value from the response     |
+|      | through the response parser as follows:                       |
+|      |                                                               |
+|      | {{.global.CreateSnapshot.output.Serial}}                      |
++&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Set  | &lt;strong&gt;Checked - true&lt;/strong&gt;                                            |
+| Exte |                                                               |
+| rnal | As this is the first API and task does not have an input of   |
+| Ta   | type Target, a dialog appears that can be used to add a task  |
+| rget | input of Target type. The claimed Pure Storage Array target   |
+|      | is provided as value for this task input during execution.    |
++&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&lt;/p&gt;
+&lt;p&gt;The task input pertains to the API request details and to extract the
+required values from response. The following is an example of the
+required input values for the create snapshot API.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Field   | Value                                                      |
+| Name    |                                                            |
++=========+============================================================+
+| Method  | POST                                                       |
++&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| URL     | /volume                                                    |
+|         |                                                            |
+|         | The relative URL of the REST API end point is specified.   |
+|         | The host part is filled through the information in pure    |
+|         | target (Protocol, IPAddress, Port).                        |
++&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Body    | Content Type: JSON                                         |
+|         |                                                            |
+|         | Text:                                                      |
+|         |                                                            |
+|         | {\                                                         |
+|         |     \&amp;ldquo;snap\&amp;quot;: true,\                                       |
+|         |     \&amp;ldquo;source\&amp;quot;: [\                                        |
+|         |         \&amp;rdquo;{{.global.task.input.VolumeName}}\&amp;rdquo;\             |
+|         |     ]\                                                    |
+|         | }                                                          |
++&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| R       | The following parameters are added:                        |
+| esponse |                                                            |
+| Parser  | -   &lt;strong&gt;SnapshotName:&lt;/strong&gt; Path: \$[0].name, Type: string     |
+|         |                                                            |
+|         | -   &lt;strong&gt;Serial:&lt;/strong&gt; Path: \$[0].serial, Type: string         |
+|         |                                                            |
+|         | -   &lt;strong&gt;Error:&lt;/strong&gt; Path: \$[0].msg, Type: string             |
++&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&lt;/p&gt;
+&lt;p&gt;The extracted values from the API responses determine the task status.
+In this example, the following outcomes are added based on the API
+response.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If the status code is 401, the task encounters terminal failure with
+&lt;strong&gt;Authorization Failed&lt;/strong&gt; message. The retry also fails. Hence the
+outcome type is set as &lt;strong&gt;Terminal Error&lt;/strong&gt;. So, the task is not
+retried despite a retry is being specified.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Outcome    | Value                                                   |
+| Property   |                                                         |
++============+=========================================================+
+| Name       | &lt;strong&gt;Authorization Error&lt;/strong&gt;                                 |
+|            |                                                         |
+|            | Identifies an outcome in the outcomes list of task      |
+|            | designer. The name is not used for any other purpose.   |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Condition  | {{eq .global.CreateSnapshot.output.HttpStatusCode 401}} |
+|            |                                                         |
+|            | This condition checks whether the response status code  |
+|            | of API named &amp;lsquo;Create Snapshot&amp;rsquo; is 401.                  |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Outcome    | &lt;strong&gt;Terminal Error&lt;/strong&gt;                                      |
+| Type       |                                                         |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| _          | &lt;strong&gt;Authorization Error. Check the target credentials.&lt;/strong&gt;  |
+| _Message** |                                                         |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;If the HTTP status code is 400 and the extracted error is &lt;strong&gt;Volume
+does not exist&lt;/strong&gt;, the task fails terminally. In this case, the retry
+execution also fails, hence the outcome type is set as &lt;strong&gt;Terminal
+Error&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| O      | Value                                                       |
+| utcome |                                                             |
+| Pr     |                                                             |
+| operty |                                                             |
++========+=============================================================+
+| Name   | &lt;strong&gt;Volume does not exist&lt;/strong&gt;                                   |
+|        |                                                             |
+|        | The name here is to identify an outcome quickly in the      |
+|        | outcomes list of task. The name is not used for any other   |
+|        | purpose.                                                    |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Con    | {                                                           |
+| dition | {and (eq .global.CreateSnapshot.output.HttpStatusCode 400)\ |
+|        |  (eq .globa                                                 |
+|        | l.CreateSnapshot.output.Error \&amp;lsquo;Volume does not exist.\&amp;rsquo;)}} |
+|        |                                                             |
+|        | If we refer the sample response in previous sections, we    |
+|        | will get a 400-Bad Request with response containing error   |
+|        | msg &amp;lsquo;Volume does not exist.&amp;rsquo;.                               |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| O      | &lt;strong&gt;Terminal Error&lt;/strong&gt;                                          |
+| utcome |                                                             |
+| Type   |                                                             |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| M      | &lt;strong&gt;A volume with name {{.global.task.input.VolumeName}} does |
+| essage | not exist. Check the volume name given.&lt;/strong&gt;                   |
+|        |                                                             |
+|        | This outcome for a given volume name input &amp;lsquo;oracle-db&amp;rsquo; will |
+|        | fail the task with message &amp;lsquo;A volume with name oracle-db    |
+|        | does not exist. Check the volume name given.                |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;For any API failure caused by bad user input, do not retry and fail
+the task immediately.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| O      | Value                                                       |
+| utcome |                                                             |
+| Pr     |                                                             |
+| operty |                                                             |
++========+=============================================================+
+| **     | &lt;strong&gt;Any client error&lt;/strong&gt;                                        |
+| Name** |                                                             |
+|        | Identifies a result in the outcomes list of task designer,  |
+|        | and is not used for any other purpose                       |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| _      | {                                                           |
+| _Condi | {and (ge .global.CreateSnapshot.output.HttpStatusCode 400)\ |
+| tion** | (lt .global.CreateSnapshot.output.HttpStatusCode 500)}}     |
+|        |                                                             |
+|        | This condition checks if the HTTP status code is in the     |
+|        | range between 400 to 499.                                   |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| &lt;strong&gt;O    | &lt;strong&gt;Terminal Error&lt;/strong&gt;                                          |
+| utcome |                                                             |
+| Type&lt;/strong&gt; |                                                             |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| &lt;strong&gt;Mes  | API request                                                 |
+| sage&lt;/strong&gt; |  failed - {{.global.CreateSnapshot.output.HttpStatusCode}}\ |
+|        | {{if (index .global.CreateSnapshot.output `Error`)}}:\    |
+|        | {{.global.CreateSnapshot.output.Error}}{{else}} \           |
+|        | {{.global.CreateSnapshot.output.HttpStatusMsg}}{{end}}      |
+|        |                                                             |
+|        | This message checks that a valid error message is extracted |
+|        | by using an if else block                                   |
+|        |                                                             |
+|        | {{if (index .global.CreateSnapshot.output `Error`)}}      |
+|        |                                                             |
+|        | If the error value is &amp;lsquo;Snapshot not supported&amp;rsquo;, the task    |
+|        | status message is &amp;lsquo;API request failed &amp;ndash; 405: Snapshot not  |
+|        | supported&amp;rsquo;.                                                 |
+|        |                                                             |
+|        | If no valid error message is present in the response, the   |
+|        | HTTP status message is used. For example, **API request     |
+|        | failed &amp;ndash; 413 Payload Too Large**.                          |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;For errors on the server, the task must be tried again before
+setting the outcome type as &lt;strong&gt;Error&lt;/strong&gt; instead of &lt;strong&gt;Terminal Error&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;+&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| O   | Value                                                          |
+| utc |                                                                |
+| ome |                                                                |
+| Pr  |                                                                |
+| ope |                                                                |
+| rty |                                                                |
++=====+================================================================+
+| **  | &lt;strong&gt;Any server error&lt;/strong&gt;                                           |
+| Nam |                                                                |
+| e** | The name here is to identify an outcome quickly in the         |
+|     | outcomes list of task designer. The name is not used for any   |
+|     | other purpose.                                                 |
++&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| _   | {{and (ge .global.CreateSnapshot.output.HttpStatusCode 500) \  |
+| _Co | (lt .global.CreateSnapshot.output.HttpStatusCode 600)}}        |
+| ndi |                                                                |
+| tio | This condition checks if the HTTP status code is in the range  |
+| n** | between 500 to 599.                                            |
++&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| &lt;strong&gt;O | &lt;strong&gt;Error&lt;/strong&gt;                                                      |
+| utc |                                                                |
+| ome | The outcome type is set as &lt;strong&gt;Error&lt;/strong&gt;. Hence, the request is    |
+| Typ | retried, if retries are configured.                            |
+| e&lt;/strong&gt; |                                                                |
++&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| **  | API requ                                                       |
+| Mes | est failed - {{.global.CreateSnapshot.output.HttpStatusCode}}\ |
+| sag | {{if (index .global.CreateSnapshot.output `Error`)}}:\       |
+| e** | {{.global.CreateSnapshot.output.Error}}{                       |
+|     | {else}} {{.global.CreateSnapshot.output.HttpStatusMsg}}{{end}} |
+|     |                                                                |
+|     | This is the same message that is used in the client error      |
+|     | outcome.                                                       |
++&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;This can be termed as the final outcome for a successful completion.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| O      | Value                                                       |
+| utcome |                                                             |
+| Pr     |                                                             |
+| operty |                                                             |
++========+=============================================================+
+| **     | &lt;strong&gt;All Good&lt;/strong&gt;                                                |
+| Name** |                                                             |
+|        | The name identifies an outcome in the outcomes list of task |
+|        | designer. The name is not used for any other purpose.       |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| _      | &lt;strong&gt;True&lt;/strong&gt;                                                    |
+| _Condi |                                                             |
+| tion** | {{eq .global.CreateSnapshot.output.HttpStatusCode 200}}     |
+|        |                                                             |
+|        | &lt;strong&gt;True&lt;/strong&gt; can be used as the condition to capture all        |
+|        | scenarios or the specific success response status code can  |
+|        | be used, which is 200.                                      |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| &lt;strong&gt;O    | &lt;strong&gt;Success&lt;/strong&gt;                                                 |
+| utcome |                                                             |
+| Type&lt;/strong&gt; |                                                             |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| &lt;strong&gt;Mes  | A snapshot with name                                        |
+| sage&lt;/strong&gt; |                                                             |
+|        | {{.global.CreateSnapshot.output.SnapshotName}}              |
+|        |                                                             |
+|        | and serial                                                  |
+|        |                                                             |
+|        | {{.global.CreateSnapshot.output.Serial}}                    |
+|        |                                                             |
+|        | is created successfully for volume with name                |
+|        |                                                             |
+|        | {{.global.task.input.VolumeName}}                           |
+|        |                                                             |
+|        | .                                                           |
+|        |                                                             |
+|        | The outcome for a given volume name input oracle-db sets    |
+|        | the task to success with the message: **A snapshot with     |
+|        | name oracle-db.8 and serial B3CD9AF2175A4E2800011010 is     |
+|        | created successfully for volume with name oracle-db**.      |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&lt;/p&gt;
+&lt;p&gt;As part of this task, an inventory refresh request can be sent to pull
+the new snapshot inventory. This API contains the following details in
+the request.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;POST&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;v1&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;task&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PureScopedInventories&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    \&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Type\&amp;#34;: \&amp;#34;storage.PureVolumeSnapshot\&amp;#34;,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    \&amp;#34;NamingProperty\&amp;#34;: \&amp;#34;Name\&amp;#34;,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    \&amp;#34;Values\&amp;#34;: \[\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;\&amp;lt;Snapshot_Name&amp;gt;\&amp;#34;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    \],\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    \&amp;#34;RegisteredDevice\&amp;#34;: {\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;ObjectType\&amp;#34;: \&amp;#34;asset.DeviceRegistration\&amp;#34;,\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        \&amp;#34;Moid\&amp;#34;: \&amp;#34;\&amp;lt;Pure Device Registration Id&amp;gt;\&amp;#34;&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The snapshot name is obtained from previous API output by using the
+following reference: {{.global.CreateSnapshot.output.SnapshotName}}.&lt;/p&gt;
+&lt;p&gt;The device registration ID is obtained by performing a GET API of the
+selected target and extracting the &lt;strong&gt;MOID&lt;/strong&gt; from the
+&lt;strong&gt;RegisteredDevice&lt;/strong&gt;. For more information, see &lt;a href=&#34;http:///apidocs&#34;&gt;API
+Docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This section is realized by sending two Intersight API requests: GET
+/v1/asset/Targets/\&amp;lt;Target_Moid&amp;gt; and using the extracted registered
+device Moid in the above request. Having explained the API specific
+details in the previous section, we will quickly add two API calls to
+the same task.&lt;/p&gt;
+&lt;p&gt;Do not choose the Set External Target option in the General tab. This is
+because the API calls can be inferred as Intersight API calls.&lt;/p&gt;
+&lt;p&gt;This section captures the details related to the Intersight API call
+that gets the registered device Moid from the given target task input.&lt;/p&gt;
+&lt;p&gt;The outcomes shall be added for better experience with these Intersight
+API calls and since the previous section explains the outcomes in
+detail, this section does not cover them.&lt;/p&gt;
+&lt;p&gt;GET is used as the default, if no value is provided for Method field.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Field Name       | Value                                             |
++==================+===================================================+
+| &lt;strong&gt;API Name&lt;/strong&gt;     | Get Device Id                                     |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| &lt;strong&gt;Set External   | Unchecked/false                                   |
+| Target&lt;/strong&gt;         |                                                   |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| &lt;strong&gt;URL&lt;/strong&gt;          | /v1/asset/Targets/                                |
+|                  |                                                   |
+|                  | {{.global.task.input.Target.Moid}}                |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| &lt;strong&gt;Response       | We will extract the Moid of the                   |
+| Parser&lt;/strong&gt;         | &amp;lsquo;RegisteredDevice&amp;rsquo; relation.                      |
+|                  |                                                   |
+|                  | DeviceMoid &amp;ndash; Path: \$.RegisteredDevice.Moid,     |
+|                  | Type: string                                      |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&lt;/p&gt;
+&lt;p&gt;The target Moid required in the URL is populated from the task input
+Target. As part of this API output, the extracted device Moid can be
+referred in the next API request body with the following reference:&lt;/p&gt;
+&lt;p&gt;{{.global.GetDeviceId.output.DeviceMoid}}&lt;/p&gt;
+&lt;p&gt;Using this example, you can also capture details for the Intersight API
+that requests the inventory refresh for Pure Flash Array snapshots. The
+snapshot name is extracted from the first API and the device Moid is
+extracted from the second API to create a request for this API.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Field Name    | Value                                                |
++===============+======================================================+
+| &lt;strong&gt;API Name&lt;/strong&gt;  | Request Inventory Refresh                            |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| &lt;strong&gt;Set         | Unchecked or false                                   |
+| External      |                                                      |
+| Target&lt;/strong&gt;      |                                                      |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| &lt;strong&gt;Method&lt;/strong&gt;    | POST                                                 |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| &lt;strong&gt;URL&lt;/strong&gt;       | &lt;strong&gt;/v1/task/PureScopedInventories&lt;/strong&gt;                   |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| &lt;strong&gt;Body&lt;/strong&gt;      | Content Type: JSON                                   |
+|               |                                                      |
+|               | Text:                                                |
+|               |                                                      |
+|               | {\                                                   |
+|               |     \&amp;ldquo;Type\&amp;quot;: \&amp;ldquo;storage.PureVolumeSnapshot\&amp;rdquo;,\       |
+|               |     \&amp;ldquo;NamingProperty\&amp;quot;: \&amp;ldquo;Name\&amp;rdquo;,\                   |
+|               |     \&amp;ldquo;Values\&amp;quot;: [\                                  |
+|               |                                                      |
+|               |  \&amp;rdquo;{{.global.CreateSnapshot.output.SnapshotName}}\&amp;rdquo;\ |
+|               |     ],\                                             |
+|               |     \&amp;ldquo;RegisteredDevice\&amp;quot;: {\                         |
+|               |                                                      |
+|               |       \&amp;ldquo;ObjectType\&amp;quot;: \&amp;ldquo;asset.DeviceRegistration\&amp;rdquo;,\ |
+|               |         \&amp;ldquo;Mo                                         |
+|               | id\&amp;quot;: \&amp;rdquo;{{.global.GetDeviceId.output.DeviceMoid}}\&amp;rdquo;\ |
+|               |     }\                                               |
+|               | }                                                    |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&lt;/p&gt;
+&lt;p&gt;There is no response body for this request. Therefore, the outcomes can
+be added based on API HTTP status code to set the task status. The
+outcome is not added her as they have been captured in detail for the
+first outcome. The extracted values from the API response
+&lt;strong&gt;SnapshotName&lt;/strong&gt; and &lt;strong&gt;Serial&lt;/strong&gt; are mapped to task output so that they
+are available as task output that can be referred in subsequent tasks in
+a workflow. This can be done by creating two task output parameters
+named &amp;lsquo;&lt;strong&gt;SnapshotName&lt;/strong&gt;&amp;rsquo; and &amp;lsquo;&lt;strong&gt;Serial&lt;/strong&gt;&amp;rsquo; in &amp;lsquo;Output tab of Properties
+area. The task output can be mapped to take API response values by using
+Map to Task Output action. The values extracted using &lt;strong&gt;Response
+Parser&lt;/strong&gt; in an API can be mapped by selecting Parameters and then the
+API Name entry in Task Output drop down and providing the actual
+parameter names in Path field.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example: Obtaining Cisco ASA Details&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The previous example illustrates the need to make API requests to a
+claimed target in Intersight. This section explains a sample task that
+obtains simple information from Cisco ASA, while is reachable from
+Intersight Assist. Intersight does not have a device connector for Cisco
+ASA.&lt;/p&gt;
+&lt;p&gt;As a first step, Cisco ASA is added as custom target. Cisco ASA uses
+HTTP basic authentication and has REST API interface. Hence, requests
+can be made to Cisco ASA as part of Intersight IO tasks. The device must
+be reachable from Intersight Assist. The device can be added as a Custom
+Target in Targets screen, by providing IP address, credentials and
+Intersight Assist from which the device is reachable. Cisco ASA added as
+custom target must be configured from Intersight tasks. Though, Cisco
+ASA supports basic authentication and does not need a session token to
+be created in Intersight, you can use a session token to showcase the
+Web API support for handling values for request and response headers.&lt;/p&gt;
+&lt;p&gt;A session token is created and used in the request header to facilitate
+in the extraction of response headers. In this example, the task
+executes two API requests in Cisco ASA, namely create a session token
+and use the session token to obtain the Cisco ASA version.&lt;/p&gt;
+&lt;p&gt;To obtain a session token, use the &lt;strong&gt;Post&lt;/strong&gt; call /api/tokenservices&amp;rsquo; to
+create a session token. Use the &lt;strong&gt;Delete&lt;/strong&gt; request
+/api/tokenservices/\&lt;Token&gt; to delete the session. Cisco ASA expects a
+request to create a session token. It must include the basic
+authentication header that Intersight populates when using the details
+in the custom target.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;POST&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;api&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;tokenservices&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;204&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;No&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Content&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;Response&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Headers&lt;/span&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;X&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Auth&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Token&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; \&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;New&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Session&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Token&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The subsequent API requests must have the X-Auth-Token request header.&lt;/p&gt;
+&lt;p&gt;The following table explains the request details that need to be
+provided in Task Designer to create session token.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Field Name    | Value                                                |
++===============+======================================================+
+| API Name      | Get Session Token                                    |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Set External  | Checked                                              |
+| Target        |                                                      |
+|               | A task input of target type is added through the     |
+|               | Task Designer dialog.                                |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Method        | POST                                                 |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| URL           | /api/tokenservices                                   |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; There is no need to have a request body or response parser
+given because the API does not generate a response body.&lt;/p&gt;
+&lt;p&gt;Details, such as, response headers, cookies, status code, and status
+message, can be referred in subsequent API requests using references
+based on the API name as follows:&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Response     | Reference Name                                        |
+| Parameter    |                                                       |
++==============+=======================================================+
+| Headers&amp;mdash;-A | {{.global.GetSessionToken.output.HttpHeaders}}        |
+| map of       |                                                       |
+| headers with | A specific response header value can be obtained      |
+| keys being   | using two notations:                                  |
+| the header   | {{.glob                                               |
+| name and     | al.GetSessionToken.output.HttpHeaders.\&lt;HeaderName&gt;}} |
+| values being | or {{index .global.GetSessionToken.output.HttpHeaders |
+| a string     | `HeaderName`}}                                      |
+| array of     |                                                       |
+| header       | Examples of above notations are:                      |
+| values.      |                                                       |
+|              | {{.global.GetSessionToken.output.HttpHeaders.Date}}   |
+|              |                                                       |
+|              | {{index .global.GetSessionToken.output.HttpHeaders    |
+|              | `X-Auth-Token`}}                                    |
+|              |                                                       |
+|              | The above examples get the header value in the form   |
+|              | of &lt;strong&gt;string array&lt;/strong&gt; and individual values can be      |
+|              | accessed by index template function. The index        |
+|              | function can also be used to access a specific header |
+|              | in Headers.                                           |
+|              |                                                       |
+|              | {{index                                               |
+|              | .global.GetSessionToken.output.HttpHeaders.Date 0}}   |
+|              |                                                       |
+|              | {{index (index                                        |
+|              | .global.GetSessionToken.output.HttpHeaders            |
+|              | `X-Auth-Token`) 0}}                                 |
+|              |                                                       |
+|              | &lt;strong&gt;Note:&lt;/strong&gt; The template engine used by Intersight IO   |
+|              | considers hyphens (-) as special characters and does  |
+|              | not allow obtaining headers with hyphens using the    |
+|              | first dotted notation. Considering the fact that most |
+|              | of the header names are hyphenated, it is recommended |
+|              | to use the second notation only.                      |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Cookies&amp;mdash;A  | {{.global.GetSessionToken.output.HttpCookies}}        |
+| map of       |                                                       |
+| cookies with | The further values of specific cookies can be         |
+| keys being   | referred using either the dot notation or with index  |
+| cookie names | function. The details are explained in the previous   |
+| and the      | row about Headers.                                    |
+| values being |                                                       |
+| strings.     |                                                       |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| HTTP Status  | {{.global.GetSessionToken.output.HttpStatusCode}}     |
+| C            |                                                       |
+| ode&amp;mdash;Number |                                                       |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| HTTP Status  | {{.global.GetSessionToken.output.HttpStatusMsg}}      |
+| Mess         |                                                       |
+| age&amp;mdash;String |                                                       |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&lt;/p&gt;
+&lt;p&gt;The following table explains the various outcomes that the API request
+can produce.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Outcome Name    | Details                                            |
++=================+====================================================+
+| Unauthorized    | Condition&amp;mdash;{{eq                                   |
+|                 | .global.GetSessionToken.output.HttpStatusCode      |
+|                 | 401}}                                              |
+|                 |                                                    |
+|                 | Outcome Type:&amp;mdash;Terminal Error                     |
+|                 |                                                    |
+|                 | Message: Authorization failed. Check the target    |
+|                 | credentials.                                       |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Session Limit   | Condition&amp;mdash;{{eq                                   |
+| Breached        | .global.GetSessionToken.output.HttpStatusCode      |
+|                 | 503}}                                              |
+|                 |                                                    |
+|                 | Outcome&amp;mdash;Type: Error                              |
+|                 |                                                    |
+|                 | Message&amp;mdash;Maximum number of sessions reached.      |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| All Well        | Condition&amp;mdash;{{eq                                   |
+|                 | .global.GetSessionToken.output.HttpStatusCode      |
+|                 | 204}}                                              |
+|                 |                                                    |
+|                 | Outcome Type&amp;mdash;Success                             |
+|                 |                                                    |
+|                 | Message&amp;mdash;Session token is Obtained.               |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&lt;/p&gt;
+&lt;p&gt;The auth token obtained from the first API can be used in the second API
+to obtain the ASA version and other details as follows:&lt;/p&gt;
+&lt;p&gt;GET /api/monitoring/device/components/version\
+Request Headers:\
+X-Auth-Token: \&lt;Auth-Token-Obtained-from-Token-Api&gt;\
+200 OK\
+{\
+    \&amp;ldquo;kind\&amp;quot;: \&amp;ldquo;object#Version\&amp;rdquo;,\
+    \&amp;ldquo;selfLink\&amp;quot;: \&amp;quot;/api/monitoring/device/version\&amp;rdquo;,\
+    \&amp;ldquo;deviceType\&amp;quot;: \&amp;ldquo;ASAv\&amp;rdquo;,\
+    \&amp;ldquo;upTimeinSeconds\&amp;quot;: 208800,\
+    \&amp;ldquo;totalFlashinMB\&amp;quot;: 8192,\
+    \&amp;ldquo;currentTimeinSeconds\&amp;quot;: 1612870500,\
+    \&amp;ldquo;firewallMode\&amp;quot;: \&amp;ldquo;Transparent\&amp;rdquo;,\
+    \&amp;ldquo;asaVersion\&amp;quot;: \&amp;ldquo;9.5(2)\&amp;rdquo;\
+} &lt;/p&gt;
+&lt;p&gt;The following table explains the request details that need to be
+provided in Task Designer API request panel for the ASA version request.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Field Name    | Value                                                |
++===============+======================================================+
+| API Name      | Get ASA Version                                      |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Set External  | Checked                                              |
+| Target        |                                                      |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| URL           | /api/monitoring/device/components/version            |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| H             | {\                                                   |
+| eaders&amp;mdash;JSON |   \&amp;ldquo;X-Auth-Token\&amp;quot;: [\                              |
+| with header   |     \&amp;rdquo;{{index                                        |
+| name mapped   |  (index .global.GetSessionToken.output.HttpHeaders \ |
+| to array of   | `X-Auth-Token`) 0}}\&amp;rdquo;\                             |
+| header values |   ]\                                                |
+|               | }                                                    |
+|               |                                                      |
+|               | The token value is extracted from the previous API   |
+|               | response header and used here in this API request    |
+|               | header.                                              |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+
+| Response      | Version&amp;mdash;Path: \$.asaVersion, Type: string          |
+| Parser        |                                                      |
++&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+&lt;/p&gt;
+&lt;p&gt;A simple outcome checks for status code. If outcome is 200, the task is
+marked as failed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Name&amp;mdash;Not OK&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Condition&amp;mdash;{{ne .global.GetASAVersion.output.HttpStatusCode 200}}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Outcome Type&amp;mdash;Error&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Message&amp;mdash;GET ASA version failed&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The two API requests have been added to obtain session token and then to
+obtain the ASA version. The extracted API output can be mapped to the
+task output.&lt;/p&gt;
+&lt;h2 id=&#34;task-input-and-executor-output-mapping&#34;&gt;Task Input and Executor Output Mapping&lt;/h2&gt;
+&lt;p&gt;Task inputs and previous executors output can be used for direct mapping
+or transformed mappings. The syntax to refer to these will depend on the
+type of mapping. Task inputs are referenced as
+{{.global.task.input.InputName}} where InputName is the Reference Name
+given to the Task input and not the Display Name or Label. Similarly,
+task outputs are referenced as \${TaskName.output.TaskOutput}.&lt;/p&gt;
+&lt;p&gt;To specify an input mapping, select a task and click &lt;strong&gt;Edit&lt;/strong&gt; against a
+task input parameter.&lt;/p&gt;
+&lt;p&gt;The options available are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Static Value&lt;/strong&gt;&amp;mdash;Enter a value that is assigned to the task input
+field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Direct Mapping&lt;/strong&gt;&amp;mdash;Map an existing task input or previous executors
+output to the selected task input&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Transformed Mapping&lt;/strong&gt;&amp;mdash;Allows applying data transformation through a
+combination of one or more transformation stages for a task\&amp;rsquo;s
+input. In each transformation stage, you can select a transformation
+function along with its inputs. The transformation stages will be
+converted into a template. You can then preview the template and
+test the transformation with sample values.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Transformed mapping is only supported for task inputs of
+primitive data types, such as &lt;em&gt;string&lt;/em&gt;, &lt;em&gt;integer&lt;/em&gt;, &lt;em&gt;boolean&lt;/em&gt;, and
+&lt;em&gt;float&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Advanced Mapping&lt;/strong&gt;&amp;mdash;Map a Golang template to the task input. For
+example, FindAllString function returns a slice of all substrings
+that match the given regular expression in the given string.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FindAllString(s, regex string) ([]string, error)\
+Example: {{(FindAllString .global.task.input.NumberString \\&amp;rdquo;([0-9]+)\\&amp;rdquo;)}} \
+returns array [&amp;ldquo;123&amp;rdquo;, &amp;ldquo;456&amp;rdquo;] for input string &amp;ldquo;123 some text 456&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Atoi function converts the given number in string format to integer type.\
+Atoi(s string) (int, error)\
+Example: {{Atoi .global.task.input.SizeString}} \
+returns integer 2048 for input string &amp;ldquo;2048&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;exporting-a-task&#34;&gt;Exporting a Task&lt;/h2&gt;
+&lt;p&gt;Intersight Cloud Orchestrator enables you to export tasks from an
+account to your system and then import them to another account.&lt;/p&gt;
+&lt;p&gt;To export a task, complete the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Orchestration from the left navigation pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the tabular list of tasks, do one of the following:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Select a task, click the Ellipsis (&amp;hellip;) icon in the same row, and
+then choose Export Task.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select multiple tasks, click the Ellipsis (&amp;hellip;) icon from the header
+or footer of the tabular list, and then choose Export Task.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You can also export tasks from the Actions menu in the Task
+Designer window.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the Export Task screen:&lt;/p&gt;
+&lt;p&gt;a.  In the JSON File Name field, use the default filename or enter a
+filename of your choice for the JSON file that stores the task
+components.&lt;/p&gt;
+&lt;p&gt;b.  Use the Export Tags toggle button to include or exclude the
+user-defined tags. ICO does not export the system-defined tags.&lt;/p&gt;
+&lt;p&gt;c.  Click Export.&lt;/p&gt;
+&lt;p&gt;d.  Save a local copy of the JSON file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;importing-a-task&#34;&gt;Importing a Task&lt;/h2&gt;
+&lt;p&gt;Intersight Cloud Orchestrator enables you to import tasks to your
+account by importing a JSON file that contains the task components. You
+can create the JSON file by exporting the task components from another
+account.&lt;/p&gt;
+&lt;p&gt;To import a task, complete the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Orchestration from the left navigation pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Import.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;18&#34;&gt;
+&lt;li&gt;The Import wizard appears.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the Select File screen:&lt;/p&gt;
+&lt;p&gt;a.  From the Organization drop-down list, choose the organization to
+which you want to import the task(s).&lt;/p&gt;
+&lt;p&gt;b.  Click Browse, and then select the JSON file that contains the
+task(s).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Ensure that the file size of the JSON file is not more than
+1MB. If the file size is more than 1MB, export the task(s) in batches,
+and then try import.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;c.  Click Next.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;19&#34;&gt;
+&lt;li&gt;Intersight Cloud Orchestrator validates the JSON file and displays
+&lt;blockquote&gt;
+&lt;p&gt;the task(s) in the Details screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the Details screen:&lt;/p&gt;
+&lt;p&gt;a.  To associate an additional tag to the components listed in the
+table, enter the tag in the Set Tags field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Set Tags is an optional field. You must enter the tag in the
+key:value format.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;b.  If one or more task or task components are already available in the
+system, choose a rule to replace or skip the duplicate components.&lt;/p&gt;
+&lt;p&gt;c.  Click Import.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the Import Result screen:&lt;/p&gt;
+&lt;p&gt;a.  Verify the status of the imported task and task components.&lt;/p&gt;
+&lt;p&gt;b.  If you want to view the details of the import request:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Click the link displayed above the table.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alternatively, click the Requests icon displayed in the menu bar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;For more information, see
+&lt;a href=&#34;file://E:%5Chelp%5Cresources%5CWorkflow_Designer&#34;&gt;Requests&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;a.  Click Close.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;managing-the-lifecycle-of-a-task&#34;&gt;Managing the Lifecycle of a Task&lt;/h2&gt;
+&lt;p&gt;Task management consists of organizing, creating, updating, and deletion
+of tasks. The following table describes the set of actions that you can
+perform with tasks in Cisco Intersight.&lt;/p&gt;
+&lt;p&gt;+&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| A      | Description                                                 |
+| ctions |                                                             |
++========+=============================================================+
+| View   | Choosing Orchestration from the left navigation pane will   |
+| Tasks  | display all workflows in a tabular format. Clicking Tasks   |
+|        | will display all tasks in a tabular format. You can view    |
+|        | information such as the task name and description, the      |
+|        | number of versions available, the number of times the task  |
+|        | has been executed, the last execution status, validation    |
+|        | information and the last update time and date.              |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Create | Choose Orchestration from the left navigation pane and      |
+| a New  | click Tasks. Then, click Create Task. This option opens up  |
+| Task   | the Task Designer, using which you can create a new task.   |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Delete | From the tabular list of workflows, you can select a task   |
+| a Task | and click Delete. This will remove the task.                |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Clone  | From the tabular list of tasks, you can select a task and   |
+| a Task | click Clone. This will clone the selected task.             |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+
+| Save a | From the tabular list of tasks, you can choose a task and   |
+| Task   | click. By default, the workflow details are displayed in    |
+| as     | the Designer tab. You can choose Save As option from the    |
+|        | Action drop-down list to clone a task.                      |
+|        |                                                             |
+|        | In the Save As screen, you can specify user-friendly short  |
+|        | name, reference name, description, and tag key. Click Save. |
+|        | For more information, see Cloning a Task.                   |
++&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&lt;/p&gt;
+&lt;h2 id=&#34;cloning-a-task&#34;&gt;Cloning a Task&lt;/h2&gt;
+&lt;p&gt;You can clone only a user-defined task. The cloned task is identical to
+the original task. You can edit the new task immediately. You might do
+this, for example, to create a task that is similar to the source task
+that can be edited based on your requirements.&lt;/p&gt;
+&lt;p&gt;To clone a task, complete the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Orchestration from the left navigation pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click Tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From the tabular list of tasks, select a task and choose Clone.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the Clone Task screen, edit the user-friendly short name,
+reference name, and description.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check the Open Clone in Editor check box if you want to open the
+cloned task and edit the details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Open Clone in Editor check box is not displayed when you
+clone a task using the Save As option&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Click Clone. The cloned task will be created in the same
+organization the source task belongs to.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;supported-target-management-tasks&#34;&gt;Supported Target Management Tasks&lt;/h2&gt;
+&lt;p&gt;The Target Management tasks contain a subset of tasks that can be used
+within workflows to perform a range ot operations on the endpoint
+targets. The Target Management tasks supported in Intersight are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;New Target&amp;mdash;Claim a new endpoint within a workflow in Intersight.
+The supported target types are HTTP, SSH, Powershell, or Ansible
+endpoints.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get Target&amp;mdash;Get the details of a claimed target within a workflow.
+The task inputs are name, hostname or IP address, and target type.
+On successful execution, name, moid, hostname or IP address, port,
+connection status, and target type are generated as the task
+outputs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;The supported target types are HTTP, SSH, Powershell, or Ansible
+endpoints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!-- --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Remove Target&amp;mdash;Unclaim the target endpoint from Intersight. When a
+target is unclaimed, it is immediately detached from the
+corresponding Intersight account. The target retains any
+configuration applied before the unclaim operation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;compute-tasks-matrix&#34;&gt;Compute Tasks Matrix&lt;/h2&gt;
+&lt;p&gt;The following table lists compute tasks supported on UCS C-Series
+Standalone Server and Intersight Managed Mode (IMM) Server:&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Compute Tasks                      UCS C-Series Standalone    IMM Server
+Server&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Copy Server Profile                Y                          Y&lt;/p&gt;
+&lt;p&gt;Deploy Server Profile              Y                          Y&lt;/p&gt;
+&lt;p&gt;Dismount Server Virtual Media      Y                          N
+Device&lt;/p&gt;
+&lt;p&gt;Mount Server Virtual Media Device  Y                          N&lt;/p&gt;
+&lt;p&gt;Remove Server from Server Profile  Y                          Y&lt;/p&gt;
+&lt;p&gt;Restart IMC                        Y                          Y&lt;/p&gt;
+&lt;p&gt;Set Server One Time Boot Device    Y                          N&lt;/p&gt;
+&lt;p&gt;Set Server Power State             Y                          Y&lt;/p&gt;
+&lt;p&gt;Set Server to Server Profile       Y                          Y&lt;/p&gt;
+&lt;p&gt;Stop Server Operating System       Y                          Y&lt;/p&gt;
+&lt;p&gt;Add Server Policies to Profile     Y                          Y&lt;/p&gt;
+&lt;p&gt;Remove Server Policies from        Y                          Y
+Profile&lt;/p&gt;
+&lt;p&gt;New Server Profile                 Y                          Y&lt;/p&gt;
+&lt;p&gt;New Server Profile from Template   Y                          Y&lt;/p&gt;
+&lt;p&gt;Delete Server Virtual Drives       Y                          Y&lt;/p&gt;
+&lt;p&gt;Clear Server Storage Controller    Y                          Y
+Foreign Configuration&lt;/p&gt;
+&lt;p&gt;Import Server Storage Controller   Y                          Y
+Foreign Configuration&lt;/p&gt;
+&lt;p&gt;Set Server Physical Drive State    Y                          Y&lt;/p&gt;
+&lt;p&gt;New Server Precision Boot Device   Y                          N&lt;/p&gt;
+&lt;p&gt;Remove Server Precision Boot       Y                          N
+Device&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;supported-tasks-for-storage-targets&#34;&gt;Supported Tasks for Storage Targets&lt;/h2&gt;
+&lt;p&gt;The following table lists tasks supported in the various storage targets
+available on Intersight:&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;List of Tasks                         Pure Storage   NetApp    Hitachi&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Add Storage Export Policy to Volume   N              Y         N&lt;/p&gt;
+&lt;p&gt;Add Host to Storage Host Group        Y              N         N&lt;/p&gt;
+&lt;p&gt;Add Hosts to Storage Host Group       Y              N         N&lt;/p&gt;
+&lt;p&gt;Compress Storage Pool                 N              N         Y&lt;/p&gt;
+&lt;p&gt;Connect Initiators to Storage Host    Y              Y         Y&lt;/p&gt;
+&lt;p&gt;Connect Volume to Storage Host        Y              N         Y&lt;/p&gt;
+&lt;p&gt;Connect Volume to Storage Host Group  Y              N         N&lt;/p&gt;
+&lt;p&gt;Connect WWNs or IQNs to Storage Host  Y              N         N&lt;/p&gt;
+&lt;p&gt;Copy Storage Volume                   N              N         Y&lt;/p&gt;
+&lt;p&gt;Disconnect Initiators from Storage    Y              N         Y
+Host&lt;/p&gt;
+&lt;p&gt;Disconnect Volume from Storage Host   Y              N         Y&lt;/p&gt;
+&lt;p&gt;Disconnect Volume from Storage Host   Y              N         N
+Group&lt;/p&gt;
+&lt;p&gt;Disconnect WWNs or IQNs from Storage  Y              N         N
+Host&lt;/p&gt;
+&lt;p&gt;Expand Storage LUN                    N              Y         N&lt;/p&gt;
+&lt;p&gt;Edit Storage Pool                     N              N         Y&lt;/p&gt;
+&lt;p&gt;Expand Storage Volume                 Y              Y         Y&lt;/p&gt;
+&lt;p&gt;Find NetApp igroup LUN Map            N              Y         N&lt;/p&gt;
+&lt;p&gt;Expand Storage Pool                   N              N         Y&lt;/p&gt;
+&lt;p&gt;Find Storage LUN by ID                N              Y         N&lt;/p&gt;
+&lt;p&gt;Find Storage Volume by ID             Y              Y         N&lt;/p&gt;
+&lt;p&gt;Format Storage Volume                 N              N         Y&lt;/p&gt;
+&lt;p&gt;New Storage Export Policy             N              Y         N&lt;/p&gt;
+&lt;p&gt;New Storage Fibre Channel Interface   N              Y         N&lt;/p&gt;
+&lt;p&gt;New storage IP interface              N              Y         N&lt;/p&gt;
+&lt;p&gt;New Storage Host                      Y              Y         Y&lt;/p&gt;
+&lt;p&gt;New Storage Host Group                Y              N         N&lt;/p&gt;
+&lt;p&gt;New Storage LUN                       N              Y         N&lt;/p&gt;
+&lt;p&gt;New Storage LUN ID                    N              Y         N&lt;/p&gt;
+&lt;p&gt;New Storage Virtual Machine           N              Y         N&lt;/p&gt;
+&lt;p&gt;New Storage Pool                      N              N         Y&lt;/p&gt;
+&lt;p&gt;New Storage Volume                    Y              Y         Y&lt;/p&gt;
+&lt;p&gt;Remove storage export policy          N              Y         N&lt;/p&gt;
+&lt;p&gt;Remove Host from Storage Host Group   Y              N         N&lt;/p&gt;
+&lt;p&gt;Remove Hosts from Storage Host Group  Y              N         N&lt;/p&gt;
+&lt;p&gt;Remove Storage Host                   Y              Y         Y&lt;/p&gt;
+&lt;p&gt;Remove Storage Host Group             Y              N         N&lt;/p&gt;
+&lt;p&gt;Remove Storage LUN                    N              Y         N&lt;/p&gt;
+&lt;p&gt;Remove Storage LUN ID                 N              Y         N&lt;/p&gt;
+&lt;p&gt;Remove Storage Pool                   N              N         Y&lt;/p&gt;
+&lt;p&gt;Remove Storage Volume                 Y              Y         Y&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

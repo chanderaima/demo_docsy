@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Intersight Help Center – Placeholders</title>
+    <link>http://localhost:1313/categories/placeholders/</link>
+    <description>Recent content in Placeholders on Cisco Intersight Help Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="http://localhost:1313/categories/placeholders/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Overview</title>
+      <link>http://localhost:1313/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Cisco Intersight is a cloud operations platform that consists of optional, modular capabilities of advanced infrastructure, workload optimization, and Kubernetes services. Cisco Intersight infrastructure services include the deployment, monitoring, management, and support of your physical and virtual infrastructure. It supports Cisco Unified Computing System (Cisco UCS) and Cisco HyperFlex hyperconverged infrastructure (HCI), and other third-party Intersight-connected targets. The level of functionality may vary by target type.&lt;/p&gt;
+&lt;p&gt;With Intersight, you get all of the benefits of SaaS delivery and full lifecycle management of distributed Intersight-connected servers and third-party storage across data centers, remote sites, branch offices, and edge environments. This empowers you to analyze, update, fix, and automate your environment in ways that were not possible with prior generations&amp;rsquo; tools. As a result, your organization can achieve significant TCO savings and deliver applications faster in support of new business initiatives.&lt;/p&gt;
+&lt;p&gt;The Intersight platform works in conjunction with Cisco UCS Manager, Cisco Integrated Management Controller (IMC), and Cisco HyperFlex Connect. You can simply associate a model-based configuration to provision servers and associated storage and fabric automatically, regardless of form factor. Using profiles, IT staff can consistently align policy, server personality, and workloads. These policies can be created once and used to simplify server deployments, resulting in improved productivity and compliance, and lower risk of failures due to inconsistent configuration. In addition, Cisco provides integrations to third-party operations tools, starting with ServiceNow, to allow customers to use their existing solutions more efficiently.&lt;/p&gt;
+&lt;p&gt;Cisco Intersight offers flexible deployment either as Software as a Service (SaaS) on Intersight.com or running on your premises as Cisco Intersight Virtual Appliance. The virtual appliance provides the benefits of Cisco Intersight while allowing more flexibility for those with additional data locality and security requirements. The Cisco Intersight connected Virtual Appliance software can be deployed on premises, allowing users to take advantage of the SaaS functionality. The Private Virtual Appliance can be deployed on premises with further security restrictions. To learn more about the virtual appliance, see the Cisco Intersight Virtual Appliance Getting Started Guide.&lt;/p&gt;
+&lt;p&gt;Cisco Intersight includes an API that supports the OpenAPI Specification, a powerful definition format to describe RESTful APIs. Support for the OpenAPI specification provides access to an interoperable REST API with tools that automate the generation of the Intersight API documentation, API schemas, and SDKs. The Intersight API includes fully functional Python and PowerShell SDKs.&lt;/p&gt;
+&lt;p&gt;To get started with Intersight, watch the Getting Started with Cisco Intersight Infrastructure Services video.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

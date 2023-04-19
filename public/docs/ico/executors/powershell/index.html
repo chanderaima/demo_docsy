@@ -1,0 +1,1240 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.110.0">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Powershell | Cisco Intersight Help Center</title>
+<meta name="description" content="Intersight Cloud Orchestrator allows workflow designers to run PowerShell Script on a PowerShell target endpoint using the Invoke PowerShell Script embedded task in the workflow.">
+<meta property="og:title" content="Powershell" />
+<meta property="og:description" content="Intersight Cloud Orchestrator allows workflow designers to run PowerShell Script on a PowerShell target endpoint using the Invoke PowerShell Script embedded task in the workflow." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:8080/docs/ico/executors/powershell/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-01-28T21:22:21+05:30" />
+<meta property="article:modified_time" content="2022-01-28T21:22:21+05:30" /><meta property="og:site_name" content="Cisco Intersight Help Center" />
+<meta itemprop="name" content="Powershell">
+<meta itemprop="description" content="Intersight Cloud Orchestrator allows workflow designers to run PowerShell Script on a PowerShell target endpoint using the Invoke PowerShell Script embedded task in the workflow."><meta itemprop="datePublished" content="2022-01-28T21:22:21+05:30" />
+<meta itemprop="dateModified" content="2022-01-28T21:22:21+05:30" />
+<meta itemprop="wordCount" content="3159">
+<meta itemprop="keywords" content="Executors," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Powershell"/>
+<meta name="twitter:description" content="Intersight Cloud Orchestrator allows workflow designers to run PowerShell Script on a PowerShell target endpoint using the Invoke PowerShell Script embedded task in the workflow."/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" as="style">
+<link href="/scss/main.min.e11efc06b81857df9076372682bad7c32557f08e26a3110dc68e0400e7c28a9c.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/prism.css"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-00000000-0');
+}
+</script>
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"></span><span class="navbar-brand__name">Cisco Intersight Help Center</span></a>
+  <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link active" href="/docs/"><span class="active">Documentation</span></a>
+      </li>
+      <li class="nav-item mr-4 mb-2 mb-lg-0">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      <li class="nav-item dropdown mr-4 d-none d-lg-block">
+        
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div></li>
+      </ul>
+  </div>
+  <div class="navbar-nav d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+  </div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <div id="content-mobile">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/offline-search-index.be7c0104b838904556a506e9b6669232.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
+  <div id="content-desktop"></div>
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+	<a class="dropdown-item" href="/fa/">فارسی</a>
+	
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshome-li">
+  <a href="/docs/home/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docshome"><span class="">Home</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
+  <a href="/docs/getting-started/" title="Overview" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting Started</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedaccount_creation-li">
+  <a href="/docs/getting-started/account_creation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedaccount_creation"><span class="">Account Creation</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedclaimntarget-li">
+  <a href="/docs/getting-started/claimntarget/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedclaimntarget"><span class="">Claim Target</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docswhats_new-li">
+  <a href="/docs/whats_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docswhats_new"><span class="">What&#39;s New</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2023-li">
+  <a href="/docs/whats_new/2023/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2023"><span class="">2023</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2022-li">
+  <a href="/docs/whats_new/2022/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2022"><span class="">2022</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_new2021-li">
+  <a href="/docs/whats_new/2021/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_new2021"><span class="">2021</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docswhats_newtestdata-li">
+  <a href="/docs/whats_new/testdata/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docswhats_newtestdata"><span class="">New What&#39;s New</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsico-li">
+  <a href="/docs/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico"><span class="">Intersight Cloud Ochestrator</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicowokflowdesigner-li">
+  <a href="/docs/ico/wokflowdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner"><span class="">Workflow Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicotaskdesigner-li">
+  <a href="/docs/ico/taskdesigner/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicotaskdesigner"><span class="">Task Designer</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicodatatype-li">
+  <a href="/docs/ico/datatype/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicodatatype"><span class="">Data Type</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicowokflowdesigner-copy-li">
+  <a href="/docs/ico/wokflowdesigner-copy/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicowokflowdesigner-copy"><span class="">Sample Topic</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicocheatsheet-li">
+  <a href="/docs/ico/cheatsheet/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicocheatsheet"><span class="">Template Syntax (Go Template)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoico-li">
+  <a href="/docs/ico/ico/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico"><span class="">Cisco Intersight ICO</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoico-cleanup-li">
+  <a href="/docs/ico/ico-cleanup/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoico-cleanup"><span class="">Cisco Intersight ICO - Post-conversion Cleanup</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsicoexecutors-li">
+  <a href="/docs/ico/executors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsicoexecutors"><span class="">Executors</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsansible-li">
+  <a href="/docs/ico/executors/ansible/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible"><span class="">Ansible</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsansible-resuable-li">
+  <a href="/docs/ico/executors/ansible-resuable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsansible-resuable"><span class="">Ansible Resuable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsicoexecutorspowershell-li">
+  <a href="/docs/ico/executors/powershell/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorspowershell"><span class="td-sidebar-nav-active-item">Powershell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsssh-li">
+  <a href="/docs/ico/executors/ssh/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh"><span class="">SSH Commands</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorsssh-reusable-li">
+  <a href="/docs/ico/executors/ssh-reusable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorsssh-reusable"><span class="">SSH Commands - Reusable</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorssamplefile-li">
+  <a href="/docs/ico/executors/samplefile/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorssamplefile"><span class="">Sample File</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsicoexecutorswebapi-li">
+  <a href="/docs/ico/executors/webapi/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsicoexecutorswebapi"><span class="">WebAPI</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsico_new-li">
+  <a href="/docs/ico_new/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsico_new"><span class="">Hulk 2.0</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues1-li">
+  <a href="/docs/ico_new/newfeatues1/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues1"><span class="">New Features 1</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatues3-li">
+  <a href="/docs/ico_new/newfeatues3/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatues3"><span class="">New Features 2</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsico_newnewfeatures2-li">
+  <a href="/docs/ico_new/newfeatures2/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsico_newnewfeatures2"><span class=""></span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docscaveats-li">
+  <a href="/docs/caveats/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docscaveats"><span class="">Caveats</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfaqs-li">
+  <a href="/docs/faqs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfaqs"><span class="">FAQs</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsvidoes-li">
+  <a href="/docs/vidoes/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsvidoes"><span class="">Videos</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/google/docsy-example/tree/master/content/en/docs/ICO/Executors/powershell.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines fa-fw"></i> View page source</a>
+  <a href="https://github.com/google/docsy-example/edit/master/content/en/docs/ICO/Executors/powershell.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/google/docsy-example/new/master/content/en/docs/ICO/Executors/powershell.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> Create child page</a>
+  <a href="https://github.com/google/docsy-example/issues/new?title=Powershell" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create documentation issue</a>
+  <a href="https://github.com/google/docsy/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> Create project issue</a>
+  <a id="print" href="http://localhost:8080/docs/ico/executors/_print/"><i class="fa-solid fa-print fa-fw"></i> Print entire section</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#supported-targets">Supported Targets</a></li>
+    <li><a href="#using-the-executor-powershell-script-embedded-task">Using the Executor PowerShell Script embedded task</a></li>
+    <li><a href="#using-the-executor-powershell-script-custom-task">Using the Executor PowerShell Script custom task</a></li>
+    <li><a href="#template-parameters">Template Parameters</a></li>
+    <li><a href="#template-engine-syntax">Template Engine Syntax</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+	
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-tags">
+      
+        <h5 class="taxonomy-title">Tag Cloud</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/data-type/" data-taxonomy-term="data-type"><span class="taxonomy-label">Data Type</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">Executors</span><span class="taxonomy-count">4</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/sample/" data-taxonomy-term="sample"><span class="taxonomy-label">sample</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/ssh/" data-taxonomy-term="ssh"><span class="taxonomy-label">SSH</span><span class="taxonomy-count">2</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/task/" data-taxonomy-term="task"><span class="taxonomy-label">Task</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/test/" data-taxonomy-term="test"><span class="taxonomy-label">test</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/webapi/" data-taxonomy-term="webapi"><span class="taxonomy-label">WebAPI</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/whats-new/" data-taxonomy-term="whats-new"><span class="taxonomy-label">What&#39;s New</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/tags/workflow/" data-taxonomy-term="workflow"><span class="taxonomy-label">Workflow</span><span class="taxonomy-count">9</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+			
+				
+			
+			
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-categories">
+      
+        <h5 class="taxonomy-title">Categories</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/examples/" data-taxonomy-term="examples"><span class="taxonomy-label">Examples</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">executors</span><span class="taxonomy-count">3</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/ico/" data-taxonomy-term="ico"><span class="taxonomy-label">ICO</span><span class="taxonomy-count">17</span></a></li>
+        
+          <li><a class="taxonomy-term" href="http://localhost:8080/categories/placeholders/" data-taxonomy-term="placeholders"><span class="taxonomy-label">Placeholders</span><span class="taxonomy-count">1</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+		
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/">Documentation</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/ico/">Intersight Cloud Ochestrator</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="http://localhost:8080/docs/ico/executors/">Executors</a>
+  </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="http://localhost:8080/docs/ico/executors/powershell/" aria-disabled="true" class="btn-link disabled">Powershell</a>
+  </li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Powershell</h1>
+	<div class="lead">Intersight Cloud Orchestrator allows workflow designers to run PowerShell Script on a PowerShell target endpoint using the Invoke PowerShell Script embedded task in the workflow.</div>
+	<header class="article-meta">
+		
+
+  
+    
+      
+
+
+<div class="taxonomy taxonomy-terms-article taxo-tags">
+  <h5 class="taxonomy-title">Tags:</h5>
+  <ul class="taxonomy-terms">
+    
+      <li><a class="taxonomy-term" href="http://localhost:8080/tags/executors/" data-taxonomy-term="executors"><span class="taxonomy-label">Executors</span></a></li>
+    
+  </ul>
+</div>
+
+    
+      
+
+
+<div class="taxonomy taxonomy-terms-article taxo-categories">
+  <h5 class="taxonomy-title">Categories:</h5>
+  <ul class="taxonomy-terms">
+    
+      <li><a class="taxonomy-term" href="http://localhost:8080/categories/ico/" data-taxonomy-term="ico"><span class="taxonomy-label">ICO</span></a></li>
+    
+  </ul>
+</div>
+
+    
+  
+
+		
+	</header>    
+	<h1 id="overview">Overview</h1>
+<p>The Invoke PowerShell Script task is an out-of-box solution that allows you to automate PowerShell operations on the PowerShell target that is added as a PowerShell endpoint target in Cisco Intersight. This feature allows a workflow designer to extend the automation capabilities of the workflow engine beyond what is natively available in the task library and interact with the PowerShell target endpoint.
+For more information, see <a href="Docs_on_Intersight_Help_Center">Intersight Kubernetes Service</a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/MldPSHPYslU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="supported-targets">Supported Targets</h2>
+<p>The Invoke PowerShell Script task can be run only on the targets that are added as a PowerShell endpoint target type in Cisco Intersight.</p>
+<p>To run the PowerShell Script task on the PowerShell target endpoint from Cisco Intersight, ensure that:</p>
+<ul>
+<li>
+<p>The endpoint is reachable through Intersight Assist.</p>
+</li>
+<li>
+<p>The endpoint target is in the Connected state.</p>
+</li>
+<li>
+<p>PowerShell Remoting is enabled on the target endpoint to allow the endpoint to receive PowerShell remote commands.</p>
+</li>
+</ul>
+<p>To enable PowerShell Remoting on a PowerShell endpoint target, execute the following remoting script on the PowerShell target endpoint:</p>
+<div class="td-card card">
+  
+  
+    
+  
+  
+  
+  <div class="card-body code p-l0 m-0">
+      <pre tabindex="0"><code class="language-none" data-lang="none">
+Param (
+    [switch]$EnableBasicAuth = $false,
+    [switch]$SKipNetworkProfileCheck = $false,
+    [switch]$ForceNewSSLCert = $false,
+    [string]$SubjectName = $env:COMPUTERNAME,
+    [int]$CertValidityDays = 1095
+)
+
+Function New-SelfSignedCert
+{
+    Param (
+        [string]$SubjectName,
+        [int]$ValidDays = 1095
+    )
+
+    $hostnonFQDN = $env:computerName
+    $hostFQDN = [System.Net.Dns]::GetHostByName(($env:computerName)).Hostname
+    $SignatureAlgorithm = &#34;SHA256&#34;
+
+    $name = New-Object -COM &#34;X509Enrollment.CX500DistinguishedName.1&#34;
+    $name.Encode(&#34;CN=$SubjectName&#34;, 0)
+
+    $key = New-Object -COM &#34;X509Enrollment.CX509PrivateKey.1&#34;
+    $key.ProviderName = &#34;Microsoft Enhanced RSA and AES Cryptographic Provider&#34;
+    $key.KeySpec = 1
+    $key.Length = 4096
+    $key.SecurityDescriptor = &#34;D:PAI(A;;0xd01f01ff;;;SY)(A;;0xd01f01ff;;;BA)(A;;0x80120089;;;NS)&#34;
+    $key.MachineContext = 1
+    $key.Create()
+
+    $serverauthoid = New-Object -COM &#34;X509Enrollment.CObjectId.1&#34;
+    $serverauthoid.InitializeFromValue(&#34;1.3.6.1.5.5.7.3.1&#34;)
+    $ekuoids = New-Object -COM &#34;X509Enrollment.CObjectIds.1&#34;
+    $ekuoids.Add($serverauthoid)
+    $ekuext = New-Object -COM &#34;X509Enrollment.CX509ExtensionEnhancedKeyUsage.1&#34;
+    $ekuext.InitializeEncode($ekuoids)
+
+    $cert = New-Object -COM &#34;X509Enrollment.CX509CertificateRequestCertificate.1&#34;
+    $cert.InitializeFromPrivateKey(2, $key, &#34;&#34;)
+    $cert.Subject = $name
+    $cert.Issuer = $cert.Subject
+    $cert.NotBefore = (Get-Date).AddDays(-1)
+    $cert.NotAfter = $cert.NotBefore.AddDays($ValidDays)
+
+    $SigOID = New-Object -ComObject X509Enrollment.CObjectId
+    $SigOID.InitializeFromValue(([Security.Cryptography.Oid]$SignatureAlgorithm).Value)
+
+    [string[]] $AlternativeName  += $hostnonFQDN
+    $AlternativeName += $hostFQDN
+    $IAlternativeNames = New-Object -ComObject X509Enrollment.CAlternativeNames
+
+    foreach ($AN in $AlternativeName)
+    {
+        $AltName = New-Object -ComObject X509Enrollment.CAlternativeName
+        $AltName.InitializeFromString(0x3,$AN)
+        $IAlternativeNames.Add($AltName)
+    }
+
+    $SubjectAlternativeName = New-Object -ComObject X509Enrollment.CX509ExtensionAlternativeNames
+    $SubjectAlternativeName.InitializeEncode($IAlternativeNames)
+
+    [String[]]$KeyUsage = (&#34;DigitalSignature&#34;, &#34;KeyEncipherment&#34;)
+    $KeyUsageObj = New-Object -ComObject X509Enrollment.CX509ExtensionKeyUsage
+    $KeyUsageObj.InitializeEncode([int][Security.Cryptography.X509Certificates.X509KeyUsageFlags]($KeyUsage))
+    $KeyUsageObj.Critical = $true
+
+    $cert.X509Extensions.Add($KeyUsageObj)
+    $cert.X509Extensions.Add($ekuext)
+    $cert.SignatureInformation.HashAlgorithm = $SigOID
+    $CERT.X509Extensions.Add($SubjectAlternativeName)
+    $cert.Encode()
+
+    $enrollment = New-Object -COM &#34;X509Enrollment.CX509Enrollment.1&#34;
+    $enrollment.InitializeFromRequest($cert)
+    $certdata = $enrollment.CreateRequest(0)
+    $enrollment.InstallResponse(2, $certdata, 0, &#34;&#34;)
+
+    # extract/return the thumbprint from the generated cert
+    $parsed_cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+    $parsed_cert.Import([System.Text.Encoding]::UTF8.GetBytes($certdata))
+
+    return $parsed_cert.Thumbprint
+}
+
+# Setup error handling
+Trap
+{
+    $_
+    Exit 1
+}
+
+# Treat non terminating erros as terminating errors
+$ErrorActionPreference = &#34;Stop&#34;
+
+# Get the ID and security principal of the current user account
+$myWindowsID=[System.Security.Principal.WindowsIdentity]::GetCurrent()
+$myWindowsPrincipal=new-object System.Security.Principal.WindowsPrincipal($myWindowsID)
+
+# Get the security principal for the Administrator role
+$adminRole=[System.Security.Principal.WindowsBuiltInRole]::Administrator
+
+# Check to see if we are currently running &#34;as Administrator&#34;
+if (-Not $myWindowsPrincipal.IsInRole($adminRole))
+{
+    Write-Output &#34;ERROR: You need elevated Administrator privileges in order to run this script.&#34;
+    Write-Output &#34;       Start Windows PowerShell by using the Run as Administrator option.&#34;
+    Exit 2
+}
+
+
+# Ensure PowerShell version is greater that 3.0
+if ($PSVersionTable.PSVersion.Major -lt 3) {
+    Throw &#34;Minimum required PowerShell version is 3.0&#34;
+}
+
+# Ensure WinRM is present on the machine
+if (!(Get-Service &#34;WinRM&#34; -ErrorAction SilentlyContinue)) {
+    Throw &#34;WinRM service is not present on the machine&#34;
+}
+
+# Ensure WinRM is running on the machine
+if (!(Get-Service &#34;WinRM&#34; -ErrorAction SilentlyContinue | where {$_.Status -eq &#34;Running&#34;})) {
+    Write-Output &#34;WinRM service is not running&#34;
+    Write-Output &#34;Attempting to start WinRM service&#34;
+    Start-Service &#34;WinRM&#34;
+}
+
+# Check if PS Remoting is already enabled, if not enable it
+# WinRM should be running; check that we have a PS session config.
+if (!(Get-PSSessionConfiguration -Verbose:$false) -or (!(Get-ChildItem WSMan:\localhost\Listener)))
+{
+  if ($SkipNetworkProfileCheck) {
+    Write-Verbose &#34;Enabling PS Remoting without checking Network profile.&#34;
+    Enable-PSRemoting -SkipNetworkProfileCheck -Force -ErrorAction Stop
+    Write-Output &#34;Enabled PS Remoting.&#34;
+  }
+  else {
+    Write-Verbose &#34;Enabling PS Remoting.&#34;
+    Enable-PSRemoting -Force -ErrorAction Stop
+    Write-Output &#34;Enabled PS Remoting.&#34;
+  }
+}
+else
+{
+    Write-Verbose &#34;PS Remoting is already enabled.&#34;
+}
+
+# Ensure LocalAccountTokenFilterPolicy is set to 1
+# https://github.com/ansible/ansible/issues/42978
+# Needed for NTLM authentication
+$token_path = &#34;HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System&#34;
+$token_prop_name = &#34;LocalAccountTokenFilterPolicy&#34;
+$token_key = Get-Item -Path $token_path
+$token_value = $token_key.GetValue($token_prop_name, $null)
+if ($token_value -ne 1) {
+    Write-Verbose &#34;Setting LocalAccountTOkenFilterPolicy to 1&#34;
+    if ($null -ne $token_value) {
+        Remove-ItemProperty -Path $token_path -Name $token_prop_name
+    }
+    New-ItemProperty -Path $token_path -Name $token_prop_name -Value 1 -PropertyType DWORD &gt; $null
+}
+
+
+# Make sure there is a SSL listener.
+$listeners = Get-ChildItem WSMan:\localhost\Listener
+if (!($listeners | Where-Object {$_.Keys -like &#34;TRANSPORT=HTTPS&#34;}))
+{
+    # We cannot use New-SelfSignedCertificate on 2012R2 and earlier
+    $thumbprint = New-SelfSignedCert -SubjectName $SubjectName -ValidDays $CertValidityDays
+    Write-Output &#34;Self-signed SSL certificate generated; thumbprint: $thumbprint&#34;
+    # Create the hashtables of settings to be used.
+    $valueset = @{
+        Hostname = $SubjectName
+        CertificateThumbprint = $thumbprint
+    }
+    $selectorset = @{
+        Transport = &#34;HTTPS&#34;
+        Address = &#34;*&#34;
+    }
+    Write-Verbose &#34;Enabling SSL listener.&#34;
+    New-WSManInstance -ResourceURI &#39;winrm/config/Listener&#39; -SelectorSet $selectorset -ValueSet $valueset
+    Write-Verbose &#34;Enabled SSL listener.&#34;
+}
+else
+{
+    Write-Verbose &#34;SSL listener is already active.&#34;
+    # Force a new SSL cert on Listener if the $ForceNewSSLCert
+    if ($ForceNewSSLCert)
+    {
+        # We cannot use New-SelfSignedCertificate on 2012R2 and earlier
+        $thumbprint = New-SelfSignedCert -SubjectName $SubjectName -ValidDays $CertValidityDays
+        Write-Verbose &#34;Self-signed SSL certificate generated; thumbprint: $thumbprint&#34;
+        $valueset = @{
+            CertificateThumbprint = $thumbprint
+            Hostname = $SubjectName
+        }
+        # Delete the listener for SSL
+        $selectorset = @{
+            Address = &#34;*&#34;
+            Transport = &#34;HTTPS&#34;
+        }
+        Remove-WSManInstance -ResourceURI &#39;winrm/config/Listener&#39; -SelectorSet $selectorset
+        # Add new Listener with new SSL cert
+        New-WSManInstance -ResourceURI &#39;winrm/config/Listener&#39; -SelectorSet $selectorset -ValueSet $valueset
+    }
+}
+
+# Enable/Disable basic authentication as needed
+$basicAuth = Get-Item WSMan:\localhost\Service\Auth\Basic
+if ($EnableBasicAuth) {
+    if ($basicAuth.Value -eq &#34;true&#34;) {
+        Write-Output &#34;Basic authentication is already enabled&#34;
+    } else {
+        Write-Output &#34;Basic authentication is currently disabled&#34;
+        Set-Item WSMan:\localhost\Service\Auth\Basic -Value $true
+        Write-Output &#34;Basic authentication has been enabled&#34;
+    }
+} else {
+    if ($basicAuth.Value -eq &#34;true&#34;) {
+        Write-Output &#34;Basic authentication is currently enabled&#34;
+        Set-Item WSMan:\localhost\Service\Auth\Basic -Value $false
+        Write-Output &#34;Basic authentication has been disabled&#34;
+    } else {
+        Write-Output &#34;Basic authentication is already disabled&#34;
+    }
+}
+
+# Check firewall
+$rule = Get-NetFirewallRule | where {$_.DisplayName -eq &#34;Allow WinRM HTTPS&#34;}
+if ($rule) {
+    if ($rule.Profile.ToString() -eq &#34;Any&#34;) {
+        Write-Output &#34;Firewall rule already exists for WinRM&#34;
+    } else {
+        Set-NetFirewallRule -DisplayName &#34;Allow WinRM HTTPS&#34; -Profile Any
+    }
+} else {
+   Write-Output &#34;Creating firewall rule for WinRM&#34;
+   New-NetFirewallRule -Profile Any -Name &#34;Allow WinRM HTTPS&#34; -DisplayName &#34;Allow WinRM HTTPS&#34; -Direction Inbound -LocalPort 5986 -Protocol &#34;TCP&#34; -Action Allow -Enabled True | Out-Null
+}
+
+# Test a remoting connection to localhost, which should work.
+$httpResult = Invoke-Command -ComputerName &#34;localhost&#34; -ScriptBlock {$env:COMPUTERNAME} -ErrorVariable httpError -ErrorAction SilentlyContinue
+$httpsOptions = New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck
+$httpsResult = New-PSSession -UseSSL -ComputerName &#34;localhost&#34; -SessionOption $httpsOptions -ErrorVariable httpsError -ErrorAction SilentlyContinue
+if ($httpResult -and $httpsResult)
+{
+    Write-Verbose &#34;HTTP: Enabled | HTTPS: Enabled&#34;
+}
+elseif ($httpsResult -and !$httpResult)
+{
+    Write-Verbose &#34;HTTP: Disabled | HTTPS: Enabled&#34;
+}
+elseif ($httpResult -and !$httpsResult)
+{
+    Write-Verbose &#34;HTTP: Enabled | HTTPS: Disabled&#34;
+}
+else
+{
+    Write-Output &#34;Unable to establish an HTTP or HTTPS remoting session.&#34;
+    Throw &#34;Unable to establish an HTTP or HTTPS remoting session.&#34;
+}
+Write-Output &#34;PS Remoting has been successfully configured for Intersight.&#34;
+</code></pre>
+  </div>
+</div>
+
+<h2 id="using-the-executor-powershell-script-embedded-task">Using the Executor PowerShell Script embedded task</h2>
+<p>Use the <strong>Invoke PowerShell Script</strong> from the <strong>Executors</strong> section in
+the Intersight Orchestrator Workflow Designer UI to create a task for a
+PowerShell Script target endpoint.</p>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ABC</td>
+<td>Sample Text</td>
+</tr>
+</tbody>
+</table>
+<p>The following table explains the PowerShell Script task properties:</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 87%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>External Target</td>
+<td><p>The PowerShell endpoint on which the PowerShell Script task is run.</p>
+<p>The PowerShell Script target must be in the connected state.</p>
+<ul>
+<li><p>Static Value—Click Select External Target to select the PowerShell endpoint target from the Cisco Intersight target inventory.</p></li>
+<li><p>Direct Mapping—Select an existing workflow input or Task output field.</p></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>To create a new Workflow input, select Create Workflow Input from the drop-down. The Add Input screen appears with auto-populated fields.</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><p>Advanced Mapping—Map a Golang template to the task input.</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Script</td>
+<td><p>The PowerShell script to be executed on the endpoint.</p>
+<ul>
+<li><p>Static Value—The PowerShell script.</p></li>
+<li><p>Direct Mapping—Select an existing workflow input or Task output field.</p></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>To create a new Workflow input, select Create Workflow Input from the drop-down. The Add Input screen appears with auto-populated fields.</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><p>Advanced Mapping—Map a Golang template to the task input. For example, FindAllString function returns a slice of all substrings that match the given regular expression in the given string.</p></li>
+</ul>
+<p><strong>Note:</strong> When you specify the PowerShell script statement and enable the Response Parser Type as JSON, at the time of execution of the workflow, Intersight pipes <em>ConvertTo-Json</em> to the script to get the corresponding responses as JSON output. However, PowerShell script statements do not output to the pipe command, and the workflow may fail and return the error "An empty pipe element is not allowed.". For example, for a script foreach ($x in 1,2,3,4,5) {$x} with Response Parser Type as JSON, when the workflow is executed the workflow fails and returns the error "<em>An empty pipe element is not allowed</em>".</p>
+<p>You must wrap the PowerShell script statement with the $() operator, such as $(foreach ($x in 1,2,3,4,5) {$x} ) for the PowerShell script to work.</p></td>
+</tr>
+<tr class="odd">
+<td>Timeout</td>
+<td><p>The duration in seconds for which the task waits for a response from the PowerShell target endpoint.</p>
+<p>The field corresponds to the wsman:OperationTimeout field in the WinRM SOAP/XML message.</p>
+<ul>
+<li><p>Static Value—The timeout in seconds.</p></li>
+<li><p>Direct Mapping—Select the command timeout from the Workflow input or Task output.</p></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>To create a new Workflow input, select Create Workflow Input from the drop-down. The Add Input screen appears with auto-populated fields.</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><p>Transformed Mapping—Allows applying data transformation through a combination of one or more transformation stages for a task's input. In each transformation stage, you can select a transformation function along with its inputs. The transformation stages will be converted into a template.</p></li>
+<li><p>Advanced Mapping—Map a Golang template to the task input.</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Response Parser</td>
+<td><p>The response parser contains information about the required values, their types, and the location in the API responses. You specify the required values along with API request details. These details are used by the response parser to extract the values from the API responses.</p>
+<ul>
+<li><p>Static Value—Select the response type as JSON or Text.</p>
+<ul>
+<li><p>Enable JSON Parsing—Select enable to parse the script response and extract the data from it.</p></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>Depth—The number of levels of the contained objects that must be included in the JSON representation.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Path—The content specific path information that identifies the parameter value within the content. The value is usually XPath or JSONPath.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Name—The name of the output under which the captured value is saved.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Type—The response parameter type—String, Integer, Float, or Boolean.</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><p>Enable Text Parsing—Select enable to parse the script response and extract data from it.</p></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>Regular Expression—The regular expression of the line in the command response where the interested capture value resides. The format to specify the capture value in this input is $&lt;Name of the parameter&gt;. For example, if the value of the Regular Expression field is $&lt;ParameterName&gt;\@cisco\.com, then the Name field must be given the value - ParameterName.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Name—The name of the output under which the captured value is saved. This name should be the same that is provided in the Regular Expression—$&lt;Name&gt;.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Type—The response parameter type—String, Integer, Float, or Boolean.</p>
+</blockquote></li>
+</ul></li>
+<li><p>Direct Mapping—Select the command timeout from the Workflow input or Task output.</p></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>To create a new Workflow input, select Create Workflow Input from the drop-down. The Add Input screen appears with auto-populated fields.</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><p>Transformed Mapping—Allows applying data transformation through a combination of one or more transformation stages for a task's input. In each transformation stage, you can select a transformation function along with its inputs. The transformation stages will be converted into a template.</p></li>
+<li><p>Advanced Mapping—Map a Golang template to the task input.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>The following table explains the task Output properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exit Code</td>
+<td>The exit code after the execution of the PowerShell script against the given endpoint.</td>
+</tr>
+<tr>
+<td>Response</td>
+<td>The response returned by the script.</td>
+</tr>
+<tr>
+<td>Extracted Parameters</td>
+<td>The list of output parameters extracted from the response.</td>
+</tr>
+</tbody>
+</table>
+<p>The following table explains the task Outcomes properties:</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 88%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Outcomes</td>
+<td><p>To use the extracted values from the API response to determine the task status and set the status with an appropriate message, when the conditions match, do the following:</p>
+<ol type="1">
+<li><p>Click Add Outcome.</p></li>
+<li><p>Name—The name for the outcome.</p></li>
+<li><p>Outcome Type—Select the outcome type as Success, Error, or Skip Task Execution.</p></li>
+</ol>
+<ol type="1">
+<li><p>For more information on Outcomes, see <a href="file://E:\\help\\resources\\Task_Designer">Outcomes</a></p></li>
+</ol>
+<ol start="4" type="1">
+<li><p>Message—The message when the condition is met.</p></li>
+<li><p>Condition—The condition for the outcome.</p></li>
+</ol>
+<ol start="2" type="1">
+<li><p>For example, {{eq .local.response.ExitCode "0"}}.</p></li>
+<li><p>This condition checks whether the response exit code of API is 0.</p></li>
+</ol></td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-the-executor-powershell-script-custom-task">Using the Executor PowerShell Script custom task</h2>
+<p>Use the <strong>Invoke PowerShell Script</strong> from the <strong>Executors</strong> section in
+the Intersight Orchestrator Task Designer UI .</p>
+<p>For more information on custom tasks, see <a href="file://E:%5Chelp%5Cresources%5CTask_Designer">Defining a
+Task</a></p>
+<p>The following table explains the PowerShell Script custom task
+properties:</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 89%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>General</td>
+<td><p>For more information, see <a href="file://E:\\help\\resources\\Task_Designer">Defining a Task</a></p>
+<p>.</p></td>
+</tr>
+<tr class="even">
+<td>Inputs</td>
+<td>External Target—The PowerShell endpoint target on which the PowerShell script task is run.</td>
+</tr>
+<tr class="odd">
+<td>Outputs</td>
+<td><p>To extract the required values from the API responses and map it to task outputs, do the following:</p>
+<ol type="1">
+<li><p>Create Task Output—Specify the task output.</p></li>
+<li><p>Map to Task Output—Check the check box to map the task output to an API response.</p></li>
+<li><p>Task Output—Select the API response to which the task output is mapped. The options available are:</p></li>
+</ol>
+<ul>
+<li><p><em>Exit Code | Invoke PowerShell Script</em></p></li>
+<li><p><em>Response | Invoke PowerShell Script</em></p></li>
+<li><p><em>Extracted Parameters | Invoke PowerShell Script</em></p></li>
+</ul>
+<p>For example, if you create a new task output <em>New Exit Code</em> and map it to <em>Exit Code | Invoke PowerShell Script</em>, after the workflow is executed, the output will show:</p>
+<p>.<br />
+└── Outputs/<br />
+    ├── ConfigResults:[ 1 ]/<br />
+    │   └── Object:{ 3 }/<br />
+    │       ├── ConfigResCtx:{ 1 }/<br />
+    │       │   └── EntityData:{ 1 }/<br />
+    │       │       └── task:workflow.PowerShellApiTask<br />
+    │       ├── State:Ok<br />
+    │       └── Type:Config<br />
+    ├── Custom_Task_Output:Handles NPM(K) PM(K) WS(K) CPU(s) Id SI ProcessName/<br />
+    │                        ----- ------ ----- ----- ------ -- -- -----------<br />
+    │                       264 16 4880 24808 1.11 2600 2 ApplicationFrameHost<br />
+    │                       405 28 109036 5628 85.55 2112 2 chrome<br />
+    │                       ...<br />
+    └── New Exit Code:0</p></td>
+</tr>
+</tbody>
+</table>
+<p>The following table explains the PowerShell Script custom task input:</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 87%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Script</td>
+<td><p>The PowerShell script to be executed on the target endpoint.</p>
+<ul>
+<li><p>Static Value—The PowerShell Script.</p></li>
+<li><p>Direct Mapping—Select an existing Task input or Task output field.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> When you use Direct Mapping and select a task input, and then execute the workflow it fails and returns the error <em>map[Text:get-service : The term 'map[Text:get-service' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.</em>.</p>
+<p>You must prefix <em>.Text</em> to the Direct Mapping input in Advanced Mapping. For example, for a task input Script, the Advanced Mapping input should be{{.global.task.input.Script.Text}}</p>
+</blockquote>
+<ul>
+<li><p>Advanced Mapping—Map a Golang template to the task input.</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Timeout</td>
+<td><p>The duration in seconds for which the task waits for a response from the PowerShell target endpoint.</p>
+<p>The field corresponds to the wsman:OperationTimeout field in the WinRM SOAP/XML message.</p>
+<ul>
+<li><p>Static Value—The timeout in seconds.</p></li>
+<li><p>Direct Mapping—Select the command timeout from the Task input or Task output.</p></li>
+<li><p>Transformed Mapping—Allows applying data transformation through a combination of one or more transformation stages for a task's input. In each transformation stage, you can select a transformation function along with its inputs. The transformation stages will be converted into a template.</p></li>
+<li><p>Advanced Mapping—Map a Golang template to the task input.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Response Parser</td>
+<td><p>The response parser contains information about the required values, their types, and the location in the API responses. You specify the required values along with API request details. These details are used by the response parser to extract the values from the API responses.</p>
+<ul>
+<li><p>Static Value—Select the response type as JSON or Text.</p>
+<ul>
+<li><p>Enable JSON Parsing—Select enable to parse the script response and extract the data from it.</p></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>Depth—The number of levels of the contained objects that must be included in the JSON representation.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Path—The content specific path information that identifies the parameter value within the content. The value is usually XPath or JSONPath.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Name—The name of the output under which the captured value is saved.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Type—The response parameter type—String, Integer, Float, or Boolean.</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><p>Enable Text Parsing—Select enable to parse the script response and extract data from it.</p></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>Regular Expression—The regular expression of the line in the command response where the interested capture value resides. The format to specify the capture value in this input is $&lt;Name of the parameter&gt;. For example, if the value of the Regular Expression field is $&lt;ParameterName&gt;\@cisco\.com, then the Name field must be given the value - ParameterName.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Name—The name of the output under which the captured value is saved. This name should be the same that is provided in the Regular Expression—$&lt;Name&gt;.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Type—The response parameter type—String, Integer, Float, or Boolean.</p>
+</blockquote></li>
+</ul></li>
+<li><p>Direct Mapping—Select the input from the Task input or Task output.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> When you use Direct Mapping and select a task input, and execute the workflow it fails and returns the error <em>Error in execution: API request cannot be populated: invalid character 'm' looking for beginning of value</em>.</p>
+<p>You must pipe <em>ToJson</em> to Direct Mapping in Advanced Mapping. For example, for a task input ResponseParser, the Advanced Mapping input should be {{.global.task.input.ResponseParser| ToJson}}.</p>
+</blockquote>
+<ul>
+<li><p>Advanced Mapping—Map a Golang template to the task input.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>The following table explains the PowerShell Script custom task Outcomes:</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 88%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Outcomes</td>
+<td><p>To use the extracted values from the API response to determine the task status and set the status with an appropriate message, when the conditions match, do the following:</p>
+<ol type="1">
+<li><p>Click Add Outcome.</p></li>
+<li><p>Name—The name for the outcome.</p></li>
+<li><p>Outcome Type—Select the outcome type. The options available are Success, Skip To Success, Error, Terminal Error, Skip Task Execution, or Status.</p></li>
+</ol>
+<ol start="4" type="1">
+<li><p>For more information on Outcomes, see <a href="file://E:\\help\\resources\\Task_Designer">Outcomes</a></p></li>
+</ol>
+<ol start="4" type="1">
+<li><p>Message—The message when the condition is met.</p></li>
+<li><p>Condition—The condition for the outcome.</p></li>
+</ol>
+<ol start="5" type="1">
+<li><p>For example, {{eq .global.InvokePowerShellScript1.output.ExitCode "0"}}.</p></li>
+<li><p>This condition checks whether the response exit code of the API named ‘InvokePowerShellScript1’ used in a custom task is 0.</p></li>
+</ol></td>
+</tr>
+</tbody>
+</table>
+<h2 id="template-parameters">Template Parameters</h2>
+<p>The request body template can refer to values from workflow inputs,
+previous task outputs, or implicit parameters for Intersight API calls.
+The following table explains the template parameters.</p>
+<table>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Prefix/Format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>{{.global.workflow.input.&lt;ParameterName&gt;}}</td>
+<td>Workflow input reference.</td>
+</tr>
+<tr class="even">
+<td>{{.global.&lt;TaskRefName&gt;.output.<br />
+Parameters.&lt;ParameterName&gt;}}</td>
+<td>Previous task output reference. <strong>TaskRefName</strong> is the name of the previous task having output <strong>ParameterName</strong>.</td>
+</tr>
+<tr class="odd">
+<td>{{.security.AccountMoid}}</td>
+<td>Implicit parameter reference to Account MoID under which the workflow is running.</td>
+</tr>
+<tr class="even">
+<td>{{.security.OrganizationMoid}}</td>
+<td>Implicit parameter reference to Organization MoID under which the workflow is running.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="template-engine-syntax">Template Engine Syntax</h2>
+<p>The template engine uses prefix notation for the statements. In case of
+operational statements, the operators are specified before the operands.
+All the operations are invoked after all the operands are evaluated.</p>
+<p><strong>Comparison Statements</strong></p>
+<p>The comparison statements can be written using <strong>eq</strong> (equal check),
+<strong>ne</strong> (not equal check), <strong>lt</strong> (less than check), <strong>le</strong> (less than or
+equal check), <strong>gt</strong> (greater than check), and <strong>ge</strong> (greater than or
+equal check).</p>
+<p>Here is an example that checks the parameter HttpStatusCode is in the
+client error code range 400 – 500. Note that the template engine
+supports prefix notation and hence the operators <strong>and</strong>, <strong>ge</strong>, and
+<strong>lt</strong> are specified before their operands.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>{{<span style="color:#000">and (ge .local.response.HttpStatusCode 400) (lt .local.response.HttpStatusCode 500)}}</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p><strong>Conditional Statements</strong></p>
+<p>The template engine supports conditional statements in prefix notation
+syntax. This section has some examples of these conditional statements.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>{{<span style="color:#000">if \&lt;comparision_statement&gt;}} Template to be used {{end}}  </span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span>{{<span style="color:#000">if \&lt;comparision_statement&gt;}} Template to be used {{else}} Template to be used {{end}}  </span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span>{{<span style="color:#000">if \&lt;comparision_statement&gt;}} Template to be used {{else if \&lt;comparision_statement}} Tempalte to be used {{end}}</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div>
+	
+	
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="User mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/twitter" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/stack" aria-label="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/slack" aria-label="Slack">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Developer mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2023 Cisco Systems All Rights Reserved</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
+	
+		<p class="mt-2"><a href="/about/">About Goldydocs</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha512-E/owfVh8/U1xwhvIT4HSI064DRc1Eo/xf7AYax84rt9gVqA8tc/JNH/lvTl1tuw9PUHQIMGUtObkjYkgRjFqAA==" crossorigin="anonymous"></script>
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src='/js/deflate.js'></script>
+<script src="/js/main.min.0df8230201e8a69481dceaf8138a4187f74aaa2cbd4771f365bdf85869c9d57a.js" integrity="sha256-DfgjAgHoppSB3Or4E4pBh/dKqiy9R3HzZb34WGnJ1Xo=" crossorigin="anonymous"></script>
+<script src='/js/prism.js'></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

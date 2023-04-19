@@ -1,0 +1,675 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco Intersight Help Center – executors</title>
+    <link>http://localhost:8080/categories/executors/</link>
+    <description>Recent content in executors on Cisco Intersight Help Center</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Jan 2022 15:53:22 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:8080/categories/executors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: SSH Commands</title>
+      <link>http://localhost:8080/docs/ico/executors/ssh/</link>
+      <pubDate>Fri, 28 Jan 2022 21:22:32 +0530</pubDate>
+      
+      <guid>http://localhost:8080/docs/ico/executors/ssh/</guid>
+      <description>
+        
+        
+        &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Test
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sample Text&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: SSH Commands - Reusable</title>
+      <link>http://localhost:8080/docs/ico/executors/ssh-reusable/</link>
+      <pubDate>Fri, 28 Jan 2022 21:22:54 +0530</pubDate>
+      
+      <guid>http://localhost:8080/docs/ico/executors/ssh-reusable/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;executors--invoke-ssh-commands---reusable-task&#34;&gt;Executors – Invoke SSH Commands - Reusable Task&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;Invoke SSH Commands&lt;/strong&gt; task executes SSH commands against the given Intersight SSH endpoint target.&lt;/p&gt;
+&lt;h2 id=&#34;supported-targets&#34;&gt;Supported Targets&lt;/h2&gt;
+&lt;p&gt;The Invoke SSH Commands task can be run only on the targets that are added as an SSH or Ansible endpoint target type in Cisco Intersight.&lt;/p&gt;
+&lt;p&gt;To run the SSH Command task on the SSH or Ansible endpoint target from Cisco Intersight, ensure that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The endpoint is reachable through Intersight Assist.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The endpoint target is in the Connected state.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The endpoint credentials are valid.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information on Intersight Target Claim, see &lt;a href=&#34;http://localhost:8080/help/getting_started/claim_targets#target_claim_using_intersight_assist&#34;&gt;Target Claim Using Intersight Assist&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;using-the-executor-ssh-commands-reusable-task&#34;&gt;Using the Executor SSH Commands Reusable Task&lt;/h2&gt;
+&lt;p&gt;Use the &lt;strong&gt;Invoke SSH Commands&lt;/strong&gt; from the &lt;strong&gt;Executors&lt;/strong&gt; section in the Intersight Orchestrator Task Designer UI to create a Invoke SSH Commands reusable task.&lt;/p&gt;
+&lt;p&gt;For more information on tasks, see &lt;a href=&#34;http://localhost:8080/help/resources/Task_Designer#defining_a_task&#34;&gt;Defining a Task&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following table explains the Invoke SSH Commands task properties:&lt;/p&gt;
+&lt;p&gt;Property&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;General&lt;/p&gt;
+&lt;p&gt;For more information, see &lt;a href=&#34;http://localhost:8080/help/resources/Task_Designer#defining_a_task&#34;&gt;Defining a Task&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Inputs&lt;/p&gt;
+&lt;p&gt;External Target—The external target on which the SSH commands are run. By default, the External Target task input is created for the task.&lt;/p&gt;
+&lt;p&gt;The SSH commands can be run only on targets added as SSH or Ansible endpoint target in Intersight and are in the connected state.&lt;/p&gt;
+&lt;p&gt;Outputs&lt;/p&gt;
+&lt;p&gt;To extract the required values from the command responses and map it to task outputs, do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create Task Output—Specify the task output.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Map to Task Output—Check the check box to map the task output to an command response.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Task Output—Select the command response to which the task output is mapped. The options available are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Exit Code | Invoke SSH Commands&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Command Output | Invoke SSH Commands&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Command Execution Error| Invoke SSH Commands&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Extracted Parameters | Invoke SSH Commands&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information on task outputs, see Executor Output properties.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The following table explains the Invoke SSH Commands executor input:&lt;/p&gt;
+&lt;p&gt;Property&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;SSH Command&lt;/p&gt;
+&lt;p&gt;The SSH commands that need to be executed on the remote server along with the details of command type.&lt;/p&gt;
+&lt;p&gt;Command— The SSH command string to execute against the given target. You need to specify only the command string.&lt;/p&gt;
+&lt;p&gt;You can specify multiple commands that need to run on the given target. For more information, see &lt;a href=&#34;http://localhost:8080/help/resources/Executor_SSH#using_ssh_commands&#34;&gt;Using SSH Commands&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;p&gt;The command chaining is allowed only when the command type is non-interactive.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Static Value—The SSH commands that are to be run on the remote server.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Non-Interactive Command—The SSH command that does not require user prompts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Interactive Command—The SSH commands that require user prompts. For example, the Sudo or install packages command prompts for the user inputs. To specify the user inputs for the command, do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Expect —The regular expression of the expect prompt of the interactive command. You must provide the complete regular expression of the Expect string and the expression must end with the special character &amp;lsquo;$&amp;rsquo; to match the end of the Expect string.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send—The answer string to the expect prompt. You can specify a string value.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;End prompt—The regular expression of the Shell Prompt of the remote server or target. You must provide the complete regular expression of the Shell Prompt and it must end with special character &amp;lsquo;$&amp;rsquo; to match the end of the Shell Prompt string.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Direct Mapping—Select an existing task input or task output field.&lt;/p&gt;
+&lt;p&gt;You can map only a custom data type of type SSH Command.&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;p&gt;Direct mapping of task input or output of string data type is not valid.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Advanced Mapping—You can use Go template expressions for advance use cases where data manipulation is required.&lt;/p&gt;
+&lt;p&gt;For example, to use substring of the task input StringInput in the SSH command, the advanced mapping can be:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{Command: &amp;quot;{{Substring .global.task.input.StringInput 5 15}}&amp;quot;, 
+CommandType: &amp;quot;NonInteractiveCmd&amp;quot;}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;em&gt;CommandType&lt;/em&gt; can be `NonInteractiveCmd` and `InteractiveCmd`.&lt;/p&gt;
+&lt;p&gt;Following is an example for the &amp;lsquo;InteractiveCmd&amp;rsquo;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+&amp;quot;Command&amp;quot;: &amp;quot;{{Substring .global.task.input.StringInput 5 15}}&amp;quot;,
+&amp;quot;CommandType&amp;quot;: &amp;quot;InteractiveCmd&amp;quot;,
+&amp;quot;ExpectPrompts&amp;quot;: [
+{
+&amp;quot;Expect&amp;quot;: &amp;quot;Password:\\s+$&amp;quot;,
+&amp;quot;Send&amp;quot;: &amp;quot;dummyValue&amp;quot;
+}
+],
+&amp;quot;ShellPrompt&amp;quot;: &amp;quot;\\[root\\@onprem-appliance\\]\\s+$&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For more information on template functions, see &lt;a href=&#34;http://localhost:8080/help/resources/Executor_SSH_Reusable#template_functions&#34;&gt;Template Functions&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Command Timeout&lt;/p&gt;
+&lt;p&gt;The command timeout in seconds for the execution of the command against the given endpoint. The range is 10 to 7200 seconds.&lt;/p&gt;
+&lt;p&gt;The default timeout value is 600 seconds.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Static Value—The command timeout in seconds for the execution of the command against the given target.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Direct Mapping——Select an existing task input or task output field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transformed Mapping—Allows applying data transformation through a combination of one or more transformation stages for a task&amp;rsquo;s input. In each transformation stage, you can select a transformation function along with its inputs. The transformation stages will be converted into a template.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Advanced Mapping—Map a Golang template to the task input. For example, &lt;code&gt;FindAllString&lt;/code&gt; function returns a slice of all substrings that match the given regular expression in the given string.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Expected Exit Codes&lt;/p&gt;
+&lt;p&gt;The list of expected exit codes for the SSH command that is run by the task. Task status is set to Success if the obtained exit code is present in the list of expected exit codes.&lt;/p&gt;
+&lt;p&gt;If this input is not specified, then the default exit code is 0 and is used to determine the status of command execution.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Static Value—The exit code for the SSH command that is run by the task.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Direct Mapping—Select the expected exit codes from the task input or task output.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Advanced Mapping—Map a Golang template to the task input. For example, &lt;code&gt;FindAllString&lt;/code&gt; function returns a slice of all substrings that match the given regular expression in the given string.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Response Parser&lt;/p&gt;
+&lt;p&gt;The response parser specification which is used to extract the values from the command response.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Static Value&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Regular Expression—The regular expression of the line in the command response where the interested capture value resides. The format to specify the capture value in this input is &amp;lsquo;$&lt;Name of the parameter&gt;&amp;rsquo;. For example, if we need to capture &lt;em&gt;&amp;lsquo;intersight&amp;rsquo;&lt;/em&gt; in the sample response &amp;lsquo;&lt;a href=&#34;mailto:intersight@cisco.com&#34;&gt;intersight@cisco.com&lt;/a&gt;&amp;rsquo;, the regular expression looks like $&lt;Name&gt;\@cisco\.com where &amp;lsquo;&lt;em&gt;Name&lt;/em&gt;&amp;rsquo; is the name given to this captured parameter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Name—The name of the output under which the captured value is saved. This name should be the same that is provided in the Regular Expression—$&lt;Name&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—The response parameter type—String, Integer, Float, or Boolean.&lt;/p&gt;
+&lt;p&gt;The default value is String.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Direct Mapping—Select a task input or task output field.&lt;/p&gt;
+&lt;p&gt;To create a new Workflow input, select the Create Workflow Input from the drop-down. The Add Input screen appears with auto-populated fields.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Advanced Mapping—Map a Golang template to the task input. For example, &lt;code&gt;FindAllString&lt;/code&gt; function returns a slice of all substrings that match the given regular expression in the given string.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, see &lt;a href=&#34;http://localhost:8080/help/resources/Executor_SSH#response_parser&#34;&gt;Response Parser&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following table explains the SSH Command executor Outputs :&lt;/p&gt;
+&lt;p&gt;Property&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;Exit Code&lt;/p&gt;
+&lt;p&gt;The exit code after the execution of the command against the given endpoint.&lt;/p&gt;
+&lt;p&gt;Command Output&lt;/p&gt;
+&lt;p&gt;The complete response after the execution of the command against the given endpoint.&lt;/p&gt;
+&lt;p&gt;Command Execution Error&lt;/p&gt;
+&lt;p&gt;Captures the error encountered while executing the command.&lt;/p&gt;
+&lt;p&gt;Extracted Parameters&lt;/p&gt;
+&lt;p&gt;The response parser extracted outputs from the command execution response.&lt;/p&gt;
+&lt;p&gt;The following table explains the Invoke SSH Commands task Outcomes:&lt;/p&gt;
+&lt;p&gt;Property&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;Outcomes&lt;/p&gt;
+&lt;p&gt;To set the custom execution status and status message based on the obtained outputs, do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Click Add Outcome.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Name—The name for the outcome.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Outcome Type—Select the outcome type. The options available are Success, Skip To Success, Error, Terminal Error, Skip Task Execution, or Status.&lt;/p&gt;
+&lt;p&gt;For more information on Outcomes, see &lt;a href=&#34;http://localhost:8080/help/resources/Task_Designer#outcomes&#34;&gt;Outcomes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Message—The message when the condition is met.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Condition—The condition for the outcome.&lt;/p&gt;
+&lt;p&gt;For example, {{eq .global.InvokeSshCommands1.output.ExitCode &amp;ldquo;0&amp;rdquo;}}.&lt;/p&gt;
+&lt;p&gt;This condition checks whether the output `ExitCode` of the executor named `InvokeSshCommands1` equals to 0. If the condition is true, the task status is set to the value provided in `Outcome Type` and task status message is set to value provided in `Message`.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;using-ssh-commands&#34;&gt;Using SSH Commands&lt;/h2&gt;
+&lt;p&gt;You can specify multiple commands that need to run on the given target by chaining the commands with special characters. The following table explains the operators.&lt;/p&gt;
+&lt;p&gt;Operators&lt;/p&gt;
+&lt;p&gt;Function&lt;/p&gt;
+&lt;p&gt;&amp;amp;&amp;amp; (Logical AND)&lt;/p&gt;
+&lt;p&gt;The command following this operator will only execute if the command preceding this operator has been successfully executed.&lt;/p&gt;
+&lt;p&gt;; (Semi-colon)&lt;/p&gt;
+&lt;p&gt;The command following this operator will execute even if the command preceding this operator is not successfully executed.&lt;/p&gt;
+&lt;p&gt;|| ( Logical OR)&lt;/p&gt;
+&lt;p&gt;The command succeeding this operator is only executed if the command preceding it has failed.&lt;/p&gt;
+&lt;p&gt;| (Pipe)&lt;/p&gt;
+&lt;p&gt;The output of the first command acts as input to the second command.&lt;/p&gt;
+&lt;p&gt;! (NOT)&lt;/p&gt;
+&lt;p&gt;Negates an expression within a command. It is much like an “except” statement.&lt;/p&gt;
+&lt;p&gt;&amp;gt;,&amp;raquo;, &amp;lt; (Redirection)&lt;/p&gt;
+&lt;p&gt;Redirects the output of a command or a group of commands to a file or stream.&lt;/p&gt;
+&lt;h2 id=&#34;template-parameters&#34;&gt;Template Parameters&lt;/h2&gt;
+&lt;p&gt;The request body template can refer to values from task inputs, previous task outputs, or implicit parameters. The following table explains the template parameters.&lt;/p&gt;
+&lt;p&gt;Prefix/Format&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{.global.task.input.&amp;lt;ParameterName&amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Task input reference.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{.global.&amp;lt;ExecutorRefName&amp;gt;.output.&amp;lt;ParameterName&amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Previous executor output reference. &lt;strong&gt;ExecutorRefName&lt;/strong&gt; is the name of the previous executor having output &lt;strong&gt;ParameterName&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{.security.AccountMoid}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Implicit parameter reference to Account MoID under which the workflow is running.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{.security.OrganizationMoid}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Implicit parameter reference to Organization MoID under which the workflow is running.&lt;/p&gt;
+&lt;h2 id=&#34;template-functions&#34;&gt;Template Functions&lt;/h2&gt;
+&lt;p&gt;The template engine has in-built functions to transform values before they are populated in the request templates. The following table explains the functions supported in &lt;strong&gt;Invoke SSH Commands&lt;/strong&gt; task.&lt;/p&gt;
+&lt;p&gt;Function&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;TrimSpace&lt;/p&gt;
+&lt;p&gt;Returns a string after removing white spaces from a the string.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{TrimSpace .global.task.input.HostName}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ContainsString&lt;/p&gt;
+&lt;p&gt;Returns a boolean if a substring is present in a given string.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{if (ContainsString .global.task.input.SizeAsString \”MB\”)}}Mega Bytes{{else}}Bytes{{end}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;FindAllString&lt;/p&gt;
+&lt;p&gt;Returns a slice of substrings matching the regular expression in a given string.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{(FindAllString .global.task.input.NumberString \”([0-9]+)\”)}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns array [“123”, “456”] for input string “123 some text 456.”&lt;/p&gt;
+&lt;p&gt;ToJson&lt;/p&gt;
+&lt;p&gt;Converts a value to a JSON format.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{(FindAllString .global.task.input.NumberString \&amp;quot;([0-9]+)\&amp;quot;) | ToJson}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns JSON array literal [“123”, “456”] for input string “123 some text 456.”&lt;/p&gt;
+&lt;p&gt;AsArray&lt;/p&gt;
+&lt;p&gt;Takes in an element and returns an array of one element.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{AsArray .global.task.output.serverMo}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns an array of one server Mo.&lt;/p&gt;
+&lt;p&gt;Substring&lt;/p&gt;
+&lt;p&gt;Returns a substring within the given index bounds.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{Substring .global.task.input.StorageId 2 6}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns “ABCD” for string “12ABCD3456.”&lt;/p&gt;
+&lt;p&gt;IpToCidr&lt;/p&gt;
+&lt;p&gt;Returns the classless inter-domain routing (CIDR) notation of an IPv4 address and subnet mask.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;{{&lt;span style=&#34;color:#000&#34;&gt;IpToCidr .global.task.input.Ip .global.task.input.Netmask}}&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The above example returns “10.10.10.10/24” for the input parameters “10.10.10.10” and “255.255.255.0.”&lt;/p&gt;
+&lt;p&gt;LookupInSlice&lt;/p&gt;
+&lt;p&gt;Checks if a given value is present in given slice or array and returns true if it exists. This function can be used for any value.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{LookupInSlice .global.task.input.IpAddressList \”10.10.10.10\”}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns true for input [”10.10.10.10”, “20.20.20.20”].&lt;/p&gt;
+&lt;p&gt;Index&lt;/p&gt;
+&lt;p&gt;Returns a value from an array when an input index exists.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ index .global.task.input.nodes .global.task.input.idx }} 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above example, if nodes is an array of devices and idx is 2, the index function returns the second device in the array.&lt;/p&gt;
+&lt;p&gt;Itob&lt;/p&gt;
+&lt;p&gt;Converts an integer to a boolean.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ Itob global.task.input.OnOffFlip }} 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns true and false for inputs 1 and 0 respectively.&lt;/p&gt;
+&lt;p&gt;Itoa&lt;/p&gt;
+&lt;p&gt;Converts a given number to a string value.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ Itoa global.task.input.Port }} 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns “12345” for input 12345.&lt;/p&gt;
+&lt;p&gt;Itof&lt;/p&gt;
+&lt;p&gt;Converts a given integer to a float value.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ Itof global.task.input.Rate }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns 15.0 for an input 15.&lt;/p&gt;
+&lt;p&gt;Btoa&lt;/p&gt;
+&lt;p&gt;Converts a given boolean to a string value.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ Btoa global.task.input.OnOffFlip }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns “true” for input true.&lt;/p&gt;
+&lt;p&gt;Btoi&lt;/p&gt;
+&lt;p&gt;Converts a given boolean to a integer value.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ Btoi global.task.input.OnOffFlip }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns 1 and 0 for inputs true and false respectively.&lt;/p&gt;
+&lt;p&gt;Atob&lt;/p&gt;
+&lt;p&gt;Converts the given string into a boolean value.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ Atob global.task.input.OnOffFlip }}Returns true for input “true”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Atoi&lt;/p&gt;
+&lt;p&gt;Converts a given number in string format to the integer type.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{Atoi .global.task.input.SizeString}} returns integer 2048 for input string “2048”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ftoa&lt;/p&gt;
+&lt;p&gt;Converts a given number into the string form based on the given precision.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{Ftoa .global.task.input.Size 2}} returns the following output: 123.456 =&amp;gt; “123.45”, 1028 =&amp;gt; “1028.00”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ftoi&lt;/p&gt;
+&lt;p&gt;Converts a given float input to a integer value.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ Ftoi global.task.input.Rate }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above example returns 15 for an input 15.833.&lt;/p&gt;
+&lt;p&gt;Eval&lt;/p&gt;
+&lt;p&gt;Supports an expression evaluation function. The below example returns 2GB for a input value of 2048. Note that the second argument is passed as ‘.’ in the template, which represents the map of all parameters.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{Eval \&amp;quot;{{.global.task.input.Size}} / 1024\&amp;quot; .}}GB
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;template-engine-syntax&#34;&gt;Template Engine Syntax&lt;/h2&gt;
+&lt;p&gt;The template engine uses &lt;code&gt;prefix&lt;/code&gt; notation for the statements. In case of operational statements, the operators are specified before the operands. All the operations are invoked after all the operands are evaluated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Comparison Statements&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The comparison statements can be written using &lt;strong&gt;eq&lt;/strong&gt; (equal check), &lt;strong&gt;ne&lt;/strong&gt; (not equal check), &lt;strong&gt;lt&lt;/strong&gt; (less than check), &lt;strong&gt;le&lt;/strong&gt; (less than or equal check), &lt;strong&gt;gt&lt;/strong&gt; (greater than check), and &lt;strong&gt;ge&lt;/strong&gt; (greater than or equal check).&lt;/p&gt;
+&lt;p&gt;Here is an example that checks the parameter HttpStatusCode is in the client error code range 400 – 500. Note that the template engine supports prefix notation and hence the operators &lt;strong&gt;and&lt;/strong&gt;, &lt;strong&gt;ge&lt;/strong&gt;, and &lt;strong&gt;lt&lt;/strong&gt; are specified before their operands.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{and (ge .local.response.HttpStatusCode 400) (lt .local.response.HttpStatusCode 500)}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Conditional Statements&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The template engine supports conditional statements in prefix notation syntax. This section has some examples of these conditional statements.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{if &amp;lt;comparision_statement&amp;gt;}} Template to be used {{end}}
+
+{{if &amp;lt;comparision_statement&amp;gt;}} Template to be used {{else}} Template to be used {{end}}
+
+{{if &amp;lt;comparision_statement&amp;gt;}} Template to be used {{else if &amp;lt;comparision_statement}} Tempalte to be used {{end}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;response-parser&#34;&gt;Response Parser&lt;/h2&gt;
+&lt;p&gt;A response parser is a collection of parameters that model values to be extracted from the SSH command response.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example: Create a response parser to get the IP address for a ping command&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To get the IP address for the host such as &lt;em&gt;&lt;a href=&#34;https://www.example.com&#34;&gt;www.example.com&lt;/a&gt;&lt;/em&gt;, you can use the ping command:&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;td-card card&#34;&gt;
+  
+  
+  
+  
+  &lt;div class=&#34;card-body code p-l0 m-0&#34;&gt;
+      &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+    ping example.com -4
+    Pinging example.com [93.184.216.34] with 32 bytes of data:
+    Reply from 93.184.216.34: bytes=32 time=229ms TTL=53
+    Reply from 93.184.216.34: bytes=32 time=230ms TTL=53
+    Reply from 93.184.216.34: bytes=32 time=230ms TTL=53
+    Reply from 93.184.216.34: bytes=32 time=229ms TTL=53ping example.com
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+To extract the IP address from the command output for an SSH Command task, you can configure the response parser as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Regular Expression—Pinging\s+example.com\s+\[$&lt;IP&gt;\]\s+.*&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Name—IP&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;p&gt;This name should be the same that is provided in the Regular Expression field. In the above example, the Regular Expression uses name $&lt;IP&gt; so the Name specified must be &amp;ldquo;IP&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Type—String&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;invoke-ssh-command-reusable-task-examples&#34;&gt;Invoke SSH Command Reusable Task Examples&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Example 1: Create a reusable SSH Command task to list the current working directory on the host&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This example task runs on an Intersight SSH endpoint target. This task runs the &lt;em&gt;pwd&lt;/em&gt; command on the SSH endpoint target and obtains the current working directory in the output.&lt;/p&gt;
+&lt;p&gt;Property&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;General&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Organization—The organization that you are creating the task in.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Display Name—A user friendly short name to identify the task definition.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—The name of the Task definition.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Inputs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;External Target—By default, the External Target task input is created for the task.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—Target&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—Target Data Type&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outputs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ExitCode—Task output&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—ExitCode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—String&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Map to Task Output—&lt;em&gt;Exit Code | Invoke SSH Command&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Response—Task output&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—Response&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—String&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Map to Task Output—&lt;em&gt;Command Output| Invoke SSH Command&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lastline—Task output&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—Response&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—String&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Map to Task Output—&lt;em&gt;Extracted Parameters | Invoke SSH Command&lt;/em&gt; - &lt;em&gt;WorkingDirectory&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Error—Task output&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—Error&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—String&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Map to Task Output—&lt;em&gt;Extracted Parameters | Invoke SSH Command&lt;/em&gt; - &lt;em&gt;CommandExecutionError&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following table explains the Invoke SSH Command executor inputs:&lt;/p&gt;
+&lt;p&gt;Property&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;SSH Command&lt;/p&gt;
+&lt;p&gt;Static | Non-interactive—Command—pwd&lt;/p&gt;
+&lt;p&gt;Command Timeout&lt;/p&gt;
+&lt;p&gt;Default value.&lt;/p&gt;
+&lt;p&gt;Expected Exit Codes&lt;/p&gt;
+&lt;p&gt;Default value.&lt;/p&gt;
+&lt;p&gt;Response Parser&lt;/p&gt;
+&lt;p&gt;When you run the pwd command, you get the following output:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$pwd
+/home/user
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To extracts the path and display it, configure the response parser as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Regular Expression—$&lt;WorkingDirectory&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Name—WorkingDirectory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—String&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The configured response parser captures the entire response line.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2: Create a reusable SSH Command task to install jq Linux command line utility on a host using interactive SSH commands&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This example task runs on an Intersight SSH endpoint target. In this task, the &lt;em&gt;Sudo&lt;/em&gt; password is provided by the command input field, and jq Linux command line utility is installed on the SSH endpoint target.&lt;/p&gt;
+&lt;p&gt;The task properties required for this example are as following:&lt;/p&gt;
+&lt;p&gt;Property&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;General&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Organization—The organization that you are creating the task in.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Display Name—A user friendly short name to identify the task definition.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—The name of the Task definition.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Inputs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;External Target—By default, the External Target task input is created for the task.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—Target&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—Target Data Type&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outputs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ExitCode—Task output&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—ExitCode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—String&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Map to Task Output—&lt;em&gt;Exit Code | Invoke SSH Command&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Response—Task output&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reference Name—Response&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Type—String&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Map to Task Output—&lt;em&gt;Command Output| Invoke SSH Command&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following table explains the Invoke SSH Command executor inputs:&lt;/p&gt;
+&lt;p&gt;Property&lt;/p&gt;
+&lt;p&gt;Description&lt;/p&gt;
+&lt;p&gt;SSH Command&lt;/p&gt;
+&lt;p&gt;Static | Interactive—Command—&lt;em&gt;sudo yum install -y jq&lt;/em&gt; | Interactive&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Expect—The Expect string obtained while executing the SSH command is &lt;em&gt;[sudo]&lt;/em&gt; password for &lt;em&gt;qali:&lt;/em&gt;. You need to specify the Expect input as the regular expression of the Obtained prompt &lt;em&gt;\[sudo\]\spassword\sfor\sqali:\s$&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Send—&lt;em&gt;testPasswd&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Shell Prompt—The shell prompt obtained before executing the SSH command is &lt;em&gt;qali@automationvm-15:~$&lt;/em&gt;. You need to specify the regular expression of the obtained shell prompt &lt;em&gt;qali\@automationvm-15:~\$\s?$&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Command Timeout&lt;/p&gt;
+&lt;p&gt;Default value.&lt;/p&gt;
+&lt;p&gt;Expected Exit Codes&lt;/p&gt;
+&lt;p&gt;Default value.&lt;/p&gt;
+&lt;p&gt;Response Parser&lt;/p&gt;
+&lt;p&gt;Default value.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: WebAPI</title>
+      <link>http://localhost:8080/docs/ico/executors/webapi/</link>
+      <pubDate>Fri, 28 Jan 2022 15:53:22 +0000</pubDate>
+      
+      <guid>http://localhost:8080/docs/ico/executors/webapi/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;webapi&#34;&gt;WebAPI&lt;/h1&gt;
+&lt;p&gt;Param (
+[switch]$EnableBasicAuth = $false,
+[switch]$SKipNetworkProfileCheck = $false,
+[switch]$ForceNewSSLCert = $false,
+[string]$SubjectName = $env:COMPUTERNAME,
+[int]$CertValidityDays = 1095
+)&lt;/p&gt;
+&lt;p&gt;Function New-SelfSignedCert
+{
+Param (
+[string]$SubjectName,
+[int]$ValidDays = 1095
+)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
