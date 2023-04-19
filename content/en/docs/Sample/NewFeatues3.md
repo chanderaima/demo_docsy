@@ -11,7 +11,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ult
 
 ## Sliders - Pics
 
-{{< gallery-slider dir="/static/slider"  >}}
+{{< gallery-slider dir="slider"  >}}
 
 ## Sliders - Text
 
