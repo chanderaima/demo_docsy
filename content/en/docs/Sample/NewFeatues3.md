@@ -11,7 +11,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ult
 
 ## Sliders - Pics
 
-{{< gallery-slider dir="/slider" width="1200px" height="650px" >}}
+{{< gallery-slider dir="https://www.flickr.com/photos/debbieaima"  >}}
 
 ## Sliders - Text
 
