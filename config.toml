@@ -239,7 +239,7 @@ enable = false
     extended = true
     min = "0.75.0"
   [[module.imports]]
-    path = "https://github.com/chanderaima/demo_docsy"
+    path = "github.com/google/docsy"
     disable = false
   [[module.imports]]
     path = "github.com/google/docsy/dependencies"
