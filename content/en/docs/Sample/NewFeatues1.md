@@ -1,7 +1,6 @@
 ---
 title: ipsum faucibus vitae 1
 date: 2022-01-28T15:53:12.000Z
-draft: true
 tags: [Bikes]
 categories: [Road bikes]
 weight: 1
