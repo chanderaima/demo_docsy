@@ -138,7 +138,7 @@ github_project_repo = "https://github.com/chanderaima/demo_docsy"
 github_branch= "master"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "33dcc729e8943406"
+gcs_engine_id = "33dcc729e89434061"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
