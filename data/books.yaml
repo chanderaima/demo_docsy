@@ -1,6 +1,6 @@
   books:
   - name: Book of LifeThe Jamstack Book - Beyond Static Sites with JavaScript, APIs, and Markup
-    author: Chander Aima, Raymond Camden, Brian Rinaldi
+    author: Raymond Camden, Brian Rinaldi
     pages: 392
     publisher: ABC Publishers
     date_read: 2022-03-31
