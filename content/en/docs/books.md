@@ -3,7 +3,7 @@ title: Books
 date: 2022-01-28T15:53:12.000Z
 weight: 80
 ---
-
+## New Books
 {{< book-list data="books" >}}
 
 ## Lorem ipsum dolor sit ame
