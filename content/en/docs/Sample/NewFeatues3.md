@@ -7,7 +7,18 @@ weight: 2
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies sem, id luctus tortor. Nam tincidunt felis nec fringilla ullamcorper. Aenean congue lacus ut ipsum tempus, et lacinia nisi suscipit. Nulla pellentesque ante vitae leo efficitur, ut porta turpis tempus. Vivamus imperdiet urna eu nunc maximus semper.
 ---
 
+## Supported Systems
 
+|System   | Software Version  | 
+|---|---|
+| Cisco UCS Fabric Interconnects and connected HyperFlex and UCS B, C, S Series Servers  | For 6200 and 6300 Series Fabric Interconnects: Cisco UCS Manager 3.2 and later
+
+For 6400 Series Fabric Interconnects: Cisco UCS Manager 4.0 and later
+
+For 6500 Series Fabric Interconnects: Cisco UCS Manager 4.2(2a) and later  |
+| Dell PowerEdge Servers  | iDRAC v5.10.00.0 and later  |
+| Cisco UCS Director  | Cisco UCS Director 6.6.0.0 and later  |
+| NetApp Active IQ Unified Manager for NetApp ONTAP | Latest version of AIQUM is required (currently 9.13GA) |
 
 ## Sliders - Pics
 
