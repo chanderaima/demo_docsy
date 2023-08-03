@@ -11,14 +11,10 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ult
 
 |System   | Software Version  | 
 |---|---|
-| Cisco UCS Fabric Interconnects and connected HyperFlex and UCS B, C, S Series Servers  | For 6200 and 6300 Series Fabric Interconnects: Cisco UCS Manager 3.2 and later
-
-For 6400 Series Fabric Interconnects: Cisco UCS Manager 4.0 and later
-
-For 6500 Series Fabric Interconnects: Cisco UCS Manager 4.2(2a) and later  |
 | Dell PowerEdge Servers  | iDRAC v5.10.00.0 and later  |
 | Cisco UCS Director  | Cisco UCS Director 6.6.0.0 and later  |
 | NetApp Active IQ Unified Manager for NetApp ONTAP | Latest version of AIQUM is required (currently 9.13GA) |
+| Pure Storage FlashArray | Purity version FA 4.8 to FA 6.0.2 (REST API 1.x only) |
 
 ## Sliders - Pics
 
