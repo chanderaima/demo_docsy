@@ -7,6 +7,11 @@ weight: 1
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies sem, id luctus tortor. Nam tincidunt felis nec fringilla ullamcorper. Aenean congue lacus ut ipsum tempus, et lacinia nisi suscipit. Nulla pellentesque ante vitae leo efficitur, ut porta turpis tempus. Vivamus imperdiet urna eu nunc maximus semper.
 ---
 
+# New Demo for Almas 
+
+<marquee width="60%" direction="right" height="100px">
+Welcome Almas </marquee>
+
 ## Tabs + Syntax Highlighter + Code Copy
 {{< tabpane text=true right=false >}}
   {{% tab header="**YAML**:" %}}
